@@ -1,0 +1,75 @@
+.accent-stock {
+
+	padding: 0.75rem 0.9375rem 0.875rem;
+
+	background: rgba(100, 5, 255, 0.4);
+	box-shadow: 0.9375rem 0.9375rem 1.875rem rgba(12, 0, 32, 0.3);
+	backdrop-filter: blur(0.25rem);
+	border-radius: 0.9375rem;
+
+	// .accent-stock__header
+
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	// .accent-stock__name
+
+	&__name {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+
+		font-weight: 500;
+		font-size: 0.875rem;
+		line-height: 160%;
+		color: var(--theme-text-color);
+
+		img {
+			width: 1.875rem; height: auto; max-height: 1.875rem;
+			object-fit: contain;
+		}
+	}
+
+	// .accent-stock__value
+
+	&__value {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.125rem;
+
+		font-weight: 500;
+		font-size: 0.8125rem;
+		line-height: 160%;
+		color: var(--theme-text-color);
+
+		svg {
+			flex: 0 0 0.9375rem; width: 0.9375rem;
+		}
+	}
+
+	// .accent-stock__footer
+
+	&__footer {
+		padding-top: 2.375rem;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	// .accent-stock__price
+
+	&__price {
+		font-weight: 600;
+		font-size: 1rem;
+		color: var(--theme-text-color);
+	}
+
+	// .accent-stock__button
+
+	&__button {
+	}
+}

@@ -1,0 +1,1 @@
+export default function imageAspectRatio(){document.querySelectorAll(".image-aspect-ratio, figure img").forEach(t=>{t.getAttribute("width")&&t.getAttribute("height")&&t.style.setProperty("--aspect-ratio",`${t.getAttribute("width")}/${t.getAttribute("height")}`)})}

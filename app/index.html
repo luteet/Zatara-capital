@@ -1,0 +1,438 @@
+@@include("html/_header.html", {"class": " is-transparent"})
+
+	<main class="main">
+		<section class="index-hero">
+			<div class="index-hero__content">
+				<div class="index-hero__content_decor dots-decor"></div>
+				<span class="index-hero__heading section-name">Zatara capital</span>
+				<h1 class="index-hero__title main-title">
+					<mark>Безграничные возможности</mark>
+					трейдинга и инвестиций
+				</h1>
+				<div class="index-hero__text text">
+					<p>
+						Получите доступ к передовым инструментам, индивидуальной поддержке и надежной системе безопасности.
+					</p>
+				</div>
+				<a href="#" class="index-hero__button button">
+					<span>Регистрация</span>
+					<svg width="24" height="24" class="button-arrow">
+						<use href="img/sprites.svg#next-arrow"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="index-hero__image">
+				<div class="index-hero__image_decor dots-decor" aria-hidden="true"></div>
+				<div class="index-hero__image_inner">
+					<picture>
+						<source srcset="img/index/hero/index-hero-image.avif" type="image/avif">
+						<source srcset="img/index/hero/index-hero-image.webp" type="image/webp">
+						<img src="img/index/hero/index-hero-image.png" alt="" width="864" height="597" loading="lazy">
+					</picture>
+				</div>
+				<ul class="index-hero__stocks">
+					<li class="index-hero__stocks_item accent-stock">
+						<div class="accent-stock__header">
+							<h2 class="accent-stock__name">
+								<img src="img/companies/cat.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
+								CAT
+							</h2>
+							<span class="accent-stock__value success-style">
+								<svg width="15" height="15">
+									<use href="img/sprites.svg#up-right-arrow"></use>
+								</svg>
+								4.25%
+							</span>
+						</div>
+						<div class="accent-stock__footer">
+							<strong class="accent-stock__price">$276.44</strong>
+							<a href="#" class="accent-stock__button small-button">
+								Trade
+							</a>
+						</div>
+					</li>
+					<li class="index-hero__stocks_item accent-stock">
+						<div class="accent-stock__header">
+							<h2 class="accent-stock__name">
+								<img src="img/companies/cat.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
+								CAT
+							</h2>
+							<span class="accent-stock__value success-style">
+								<svg width="15" height="15">
+									<use href="img/sprites.svg#up-right-arrow"></use>
+								</svg>
+								4.25%
+							</span>
+						</div>
+						<div class="accent-stock__footer">
+							<strong class="accent-stock__price">$276.44</strong>
+							<a href="#" class="accent-stock__button small-button">
+								Trade
+							</a>
+						</div>
+					</li>
+					<li class="index-hero__stocks_item accent-stock">
+						<div class="accent-stock__header">
+							<h2 class="accent-stock__name">
+								<img src="img/companies/cat.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
+								CAT
+							</h2>
+							<span class="accent-stock__value success-style">
+								<svg width="15" height="15">
+									<use href="img/sprites.svg#up-right-arrow"></use>
+								</svg>
+								4.25%
+							</span>
+						</div>
+						<div class="accent-stock__footer">
+							<strong class="accent-stock__price">$276.44</strong>
+							<a href="#" class="accent-stock__button small-button">
+								Trade
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="index-hero__reviews">
+				<div class="theme-change">
+					<img src="img/trustoilot.svg" alt="" width="223" height="45" loading="lazy">
+					<img src="img/trustoilot-2.svg" alt="" width="223" height="45" loading="lazy">
+				</div>
+			</div>
+		</section>
+		<section class="stocks">
+			<h2 class="stocks__heading section-name">Выгодно</h2>
+			<div class="stocks__header">
+				<div class="stocks__header_col">
+					<h3 class="stocks__title section-title">
+						<mark>Инвестируйте</mark> в популярные акции
+					</h3>
+					<div class="stocks__text text">
+						<p>
+							От знакомых компаний до горячих стартапов - всегда есть из чего выбрать
+						</p>
+					</div>
+				</div>
+				<div class="stocks__header_col visible-on-desktop">
+					<a href="#" class="stocks__button button is-transparent is-min">
+						<span>Все акции</span>
+						<svg width="24" height="24" class="button-arrow">
+							<use href="img/sprites.svg#next-arrow"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="stocks__slider splide">
+				<div class="stocks__decor dots-decor" aria-hidden="true"></div>
+				<div class="stocks__track splide__track">
+					<ul class="stocks__list splide__list">
+						@@loop("html/_stocks-item-success.html", [
+							{
+								"logo": "google",
+								"name": "Google Inc.",
+							},
+							{
+								"logo": "apple",
+								"name": "Apple Inc.",
+							},
+							{
+								"logo": "adobe",
+								"name": "Adobe Inc.",
+							},
+							{
+								"logo": "amd",
+								"name": "AMD, Inc.",
+							},
+						])
+						@@loop("html/_stocks-item-failure.html", [
+							{
+								"logo": "amazon",
+								"name": "Amazon.com, Inc.",
+							},
+							{
+								"logo": "x-twitter",
+								"name": "Twitter Inc.",
+							},
+							{
+								"logo": "ibm",
+								"name": "IBM Inc.",
+							},
+							{
+								"logo": "exxon",
+								"name": "Exxon Mobil",
+							},
+						])
+					</ul>
+				</div>
+			</div>
+			<div class="stocks__footer visible-on-mob">
+				<a href="#" class="stocks__button button is-transparent is-min">
+					<span>Все акции</span>
+					<svg width="24" height="24" class="button-arrow">
+						<use href="img/sprites.svg#next-arrow"></use>
+					</svg>
+				</a>
+			</div>
+		</section>
+		<section class="about-company">
+			<div class="about-company__header">
+				<h2 class="about-company__section_name section-name">О компании</h2>
+				<h3 class="about-company__title section-title">
+					Ваш брокер <mark>успешной жизни</mark>
+				</h3>
+			</div>
+			<div class="about-company__advantages">
+				<ul class="about-company__advantages_list js-masonry-list">
+					<li class="about-company__advantages_item js-masonry-elm">
+						<div class="advantages-card">
+							<img src="img/about-us/about-us-icon-1.svg" width="50" height="50" loading="lazy" alt="" class="advantages-card__icon">
+							<div class="advantages-card__content">
+								<h4>Безопасность личных данных</h4>
+								<p>Наши тех. специалисты следят за безопасностью ваших личных данных, ежедневно обновляя платформу</p>
+							</div>
+						</div>
+					</li>
+					<li class="about-company__advantages_item js-masonry-elm">
+						<div class="advantages-card">
+							<img src="img/about-us/about-us-icon-2.svg" width="50" height="50" loading="lazy" alt="" class="advantages-card__icon">
+							<div class="advantages-card__content">
+								<h4>Круглосуточная поддержка</h4>
+								<p>Специалисты нашей службы поддержки готовы ответить на любые ваши вопросы 24/7</p>
+							</div>
+						</div>
+					</li>
+					<li class="about-company__advantages_item js-masonry-elm">
+						<div class="advantages-card">
+							<img src="img/about-us/about-us-icon-3.svg" width="50" height="50" loading="lazy" alt="" class="advantages-card__icon">
+							<div class="advantages-card__content">
+								<h4>Ежедневные начисления</h4>
+								<p>Для максимального комфорта наших клиентов мы производим выплаты каждый день</p>
+							</div>
+						</div>
+					</li>
+					<li class="about-company__advantages_item js-masonry-elm">
+						<div class="advantages-card">
+							<img src="img/about-us/about-us-icon-4.svg" width="50" height="50" loading="lazy" alt="" class="advantages-card__icon">
+							<div class="advantages-card__content">
+								<h4>Мгновенное исполнение ордеров</h4>
+								<p>Время – самый важный ресурс. На нашей платформе исполнение ордеров занимает от 0.01 секунд</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="about-company__content text">
+				<p>
+					Мы заботимся и обслуживаем каждого клиента, который присоединился к нам, это делает нас лучшим брокером по выбору многих инвесторов и трейдеров.
+				</p>
+				<p>
+					Предоставляя услуги клиентам со всего мира, мы помогаем им достичь успешной торговой карьеры. <br>
+					Мы доказали, что являемся лучшим брокером в жизни каждого трейдера и инвестора.
+				</p>
+			</div>
+			<div class="about-company__footer">
+				<a href="#" class="about-company__button button">
+					<span>Узнать больше</span>
+					<svg width="24" height="24" class="button-arrow">
+						<use href="img/sprites.svg#next-arrow"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="about-company__video">
+				<div class="about-company__video_background">
+					<div class="theme-change">
+						<img src="img/about-us/about-us-video-decor-dark.svg" width="0" height="0" loading="lazy" alt="">
+						<img src="img/about-us/about-us-video-decor-light.svg" width="0" height="0" loading="lazy" alt="">
+					</div>
+				</div>
+				<a href="#" class="about-company__video_link">
+					Узнай о нас <b>за 2 минуты</b>
+				</a>
+			</div>
+		</section>
+		<section class="markets">
+			<h2 class="markets__section_name section-name">Рынки</h2>
+			<h3 class="markets__title section-title">
+				Криптовалюты и акции
+			</h3>
+			<div class="markets__text text">
+				<p>
+					В этом списке есть, кажется, все возможные криптовалюты и акции – от маленьких и только начинающих свой путь проектов до крупнейших и известных
+				</p>
+			</div>
+			<div class="markets__tabs tabs">
+				<div class="markets__nav tabs-nav">
+					<ul class="tabs-nav__list">
+						<li>
+							<a href="#market-crypto" class="tabs-nav__link is-active">
+								Рынок криптовалют
+							</a>
+						</li>
+						<li>
+							<a href="#market-stocks" class="tabs-nav__link">
+								Рынок акций
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="markets__container tabs-container">
+					<div class="markets__decor dots-decor" aria-hidden="true"></div>
+					<div class="markets__block tabs-block is-active fade-in" id="market-crypto">
+						<div class="markets__table horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+							<div class="markets__table_inner">
+								<div class="markets__table_body">
+									<table class="markets__table_block">
+										<colgroup>
+											<col><col><col><col><col><col><col><col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th>Название (553 найдено)</th>
+												<th>Рыночн. кап.</th>
+												<th>Полн. разв. рын. кап.</th>
+												<th>Цена</th>
+												<th>Доступно монет</th>
+												<th>Всего монет</th>
+												<th>Объем торгов</th>
+												<th>Изм. в %</th>
+											</tr>
+										</thead>
+										<tbody>
+											@@loop("html/_markets-table-rows.html", [
+												{},
+												{},
+												{},
+											])
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="markets__footer">
+							<a href="#" class="markets__footer_link">
+								Купить криптовалюту
+							</a>
+						</div>
+					</div>
+					<div class="markets__block tabs-block" id="market-stocks">
+						<div class="markets__table horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+							<div class="markets__table_inner">
+								<div class="markets__table_body">
+									<table class="markets__table_block">
+										<colgroup>
+											<col><col><col><col><col><col><col><col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th>Название (553 найдено)</th>
+												<th>Рыночн. кап.</th>
+												<th>Полн. разв. рын. кап.</th>
+												<th>Цена</th>
+												<th>Доступно монет</th>
+												<th>Всего монет</th>
+												<th>Объем торгов</th>
+												<th>Изм. в %</th>
+											</tr>
+										</thead>
+										<tbody>
+											@@loop("html/_markets-table-rows.html", [
+												{},
+												{},
+												{},
+											])
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="markets__footer">
+							<a href="#" class="markets__footer_link">
+								Купить акции
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="why-we">
+			<div class="why-we__background" aria-hidden="true">
+				<div class="why-we__decor dots-decor"></div>
+			</div>
+			<div class="why-we__hero">
+				<h2 class="why-we__section_name section-name">
+					Почему мы
+				</h2>
+				<h3 class="why-we__title section-title">
+					Интересы наших клиентов <mark>всегда на первом месте</mark>
+				</h3>
+				<div class="why-we__text text">
+					<p>
+						Наш опыт показывает, если мы будем хорошо обслуживать наших клиентов, наш собственный успех последует за ними
+					</p>
+				</div>
+			</div>
+			<ol class="why-we__list set-animate">
+				<li class="why-we__item why-we-item">
+					<div class="why-we-item__body">
+						<span class="why-we-item__dot" aria-hidden="true"></span>
+						<span class="why-we-item__number"></span>
+						<span class="why-we-item__dot" aria-hidden="true"></span>
+						<span class="why-we-item__text">
+							Создайте аккаунт
+						</span>
+						<span class="why-we-item__dot" aria-hidden="true"></span>
+					</div>
+				</li>
+				<li class="why-we__item why-we-item">
+					<div class="why-we-item__body">
+						<span class="why-we-item__dot" aria-hidden="true"></span>
+						<span class="why-we-item__number"></span>
+						<span class="why-we-item__dot" aria-hidden="true"></span>
+						<span class="why-we-item__text">
+							Внесите депозит
+						</span>
+						<span class="why-we-item__dot" aria-hidden="true"></span>
+					</div>
+				</li>
+				<li class="why-we__item why-we-item">
+					<div class="why-we-item__body">
+						<span class="why-we-item__dot" aria-hidden="true"></span>
+						<span class="why-we-item__number"></span>
+						<span class="why-we-item__dot" aria-hidden="true"></span>
+						<span class="why-we-item__text">
+							Совершите сделку
+						</span>
+						<span class="why-we-item__dot" aria-hidden="true"></span>
+					</div>
+				</li>
+			</ol>
+		</section>
+		<section class="cooperating">
+			<div class="cooperating__decor dots-decor" aria-hidden="true"></div>
+			<div class="cooperating__body">
+				<div class="cooperating__background" aria-hidden="true">
+					<picture>
+						<source srcset="img/index/cooperating/cooperating-image.avif" type="image/avif">
+						<source srcset="img/index/cooperating/cooperating-image.webp" type="image/webp">
+						<img src="img/index/cooperating/cooperating-image.jpg" alt="" width="0" height="0" loading="lazy">
+					</picture>
+				</div>
+				<h2 class="cooperating__title section-title">
+					Начнем сотрудничество?
+				</h2>
+				<div class="cooperating__text">
+					<p>
+						Пройдите простую регистрацию для начала инвестиционной деятельности
+					</p>
+				</div>
+				<a href="#" class="cooperating__button button">
+					<span>Стать инвестором</span>
+					<svg width="24" height="24" class="button-arrow">
+						<use href="img/sprites.svg#next-arrow"></use>
+					</svg>
+				</a>
+			</div>
+		</section>
+	</main>
+
+@@include("html/_footer.html")

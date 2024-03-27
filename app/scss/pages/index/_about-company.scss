@@ -1,0 +1,291 @@
+html.is-active-light-theme .about-company::before {
+	animation-name: fadeOut;
+}
+
+html.is-active-light-theme .about-company::after {
+	animation-name: fadeIn;
+}
+
+.about-company {
+
+	@include _992 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-auto-rows: min-content;
+		gap: 0 1.25rem;
+
+		padding-top: 8.125rem;
+		margin-top: 12rem;
+	}
+
+	padding-top: 5rem;
+	margin-top: 6.25rem;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0; top: 0;
+		width: 100%; height: 100%;
+		background: linear-gradient(180deg, #001641 0%, rgba(0, 22, 65, 0) 100%);
+		border-radius: 3.75rem 3.75rem 0px 0px;
+
+		animation-duration: var(--animating-speed,0s);
+		animation-timing-function: ease;
+		animation-fill-mode: forwards;
+		animation-name: fadeIn;
+
+		z-index: -1;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0; top: 0;
+		width: 100%; height: 100%;
+		background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
+		border-radius: 3.75rem 3.75rem 0px 0px;
+
+		animation-duration: var(--animating-speed,0s);
+		animation-timing-function: ease;
+		animation-fill-mode: forwards;
+		animation-name: fadeOut;
+
+		z-index: -1;
+	}
+
+
+	// .about-company__header
+
+	&__header {
+	}
+
+	// .about-company__section_name
+
+	&__section_name {
+	}
+
+	// .about-company__title
+
+	&__title {
+		padding-top: 1.25rem;
+	}
+
+	// .about-company__advantages
+
+	&__advantages {
+		grid-column: 2; grid-row: 1/6;
+		padding-top: 1.875rem;
+		@include _992 {
+			padding-top: 0;
+		}
+	}
+
+	// .about-company__advantages_list
+
+	&__advantages_list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+
+		@include _550 {
+			gap: 0 1.25rem;
+		}
+	}
+
+	// .about-company__advantages_item
+
+	&__advantages_item {
+		width: 100%;
+
+		&:not(:first-child) {
+			padding-top: 1.25rem;
+		}
+
+		@include _550 {
+			width: calc(50% - 0.75rem);
+			padding-top: 1.25rem;
+		}
+
+		//&:nth-child(1)
+
+		&:nth-child(1) .advantages-card {
+			padding-bottom: 3.3125rem;
+		}
+
+		&:nth-child(1) .advantages-card, &:nth-child(4n + 1) .advantages-card {
+			background: linear-gradient(225.74deg, #C76647 0%, #500099 98.75%);
+			@include _550 {
+				min-height: 16.25rem;
+			}
+		}
+
+		&:nth-child(2) .advantages-card, &:nth-child(4n + 2) .advantages-card {
+			background: linear-gradient(225.74deg, #394EE0 0%, #500099 98.75%);
+		}
+
+		&:nth-child(3) .advantages-card, &:nth-child(4n + 3) .advantages-card {
+			background: linear-gradient(225.74deg, #1577A4 0%, #500099 98.75%);
+		}
+
+		&:nth-child(4) .advantages-card, &:nth-child(4n + 4) .advantages-card {
+			background: linear-gradient(225.74deg, #DB477C 0%, #500099 98.75%);
+			@include _550 {
+				min-height: 16.25rem;
+			}
+		}
+	}
+
+	// .about-company__content
+
+	&__content {
+		padding-top: 1.875rem;
+		
+		@include _992 {
+			max-width: 26.6875rem;
+		}
+	}
+
+	// .about-company__footer
+
+	&__footer {
+		padding-top: 1.875rem;
+		@include _992 {
+			padding-top: 2.5rem;
+		}
+	}
+
+	// .about-company__button
+
+	&__button {
+	}
+
+	// .about-company__video
+
+	&__video {
+		width: 100%; aspect-ratio: 5/4;
+
+		@include _992 {
+			width: 31.25rem; height: 31.25rem;
+			margin-top: -5.625rem; margin-bottom: -9.375rem;
+			margin-left: 1.5625rem;
+
+			justify-content: stretch;
+		}
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		position: relative;
+
+		canvas {
+			position: absolute;
+			inset: 0;
+			width: 100%; height: 100%;
+			pointer-events: none; user-select: none;
+
+			display: none;
+			@include _992 {
+				display: block;
+			}
+		}
+	}
+
+	// .about-company__video_background
+
+	&__video_background {
+
+		position: absolute;
+		left: 0; top: 0;
+		width: 100%; height: 100%;
+
+		img {
+			position: absolute;
+			left: 0; top: 50%;
+			width: 100%; height: auto;
+			object-fit: contain;
+			transform: translate(0,-50%) scale(1.5);
+			@include _992 {
+				transform: translate(0,-50%) scale(1);
+			}
+		}
+	}
+
+	// .about-company__video_link
+
+	&__video_link {
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0; top: 0;
+			width: 100%; height: 100%;
+		}
+
+		color: var(--theme-text-color);
+		font-size: 0.75rem;
+		line-height: 100%;
+
+		margin-top: 7rem;
+		padding-bottom: 0.625rem;
+
+		@include _992 {
+			margin-top: 6.25rem;
+			padding-right: 0.9375rem;
+			border-bottom: 0.0625rem solid var(--theme-text-color);
+		}
+
+		@media (any-hover: hover) {
+
+			transition: color .2s ease;
+
+			&:hover {
+				color: var(--accent);
+			}
+		
+			&:active {
+				color: var(--accent-active);
+			}
+		}
+	}
+}
+
+.advantages-card {
+
+	padding: 1.875rem 1.25rem;
+	background: linear-gradient(225.74deg, #C76647 0%, #500099 98.75%);
+	box-shadow: 0.9375rem 0.9375rem 1.875rem rgba(12, 0, 32, 0.3);
+	border-radius: 1.25rem;
+
+	// .advantages-card__icon
+
+	&__icon {
+		img {
+			width: auto; height: 3.125rem; max-width: 4.6875rem;
+			object-fit: contain;
+		}
+	}
+
+	// .advantages-card__content
+
+	&__content {
+
+		padding-top: 1.875rem;
+		color: var(--white);
+
+		h4 {
+			font-weight: 600;
+			font-size: 0.9375rem;
+			line-height: 160%;
+		}
+
+		p {
+			padding-top: 0.625rem;
+
+			font-size: 0.8125rem;
+			line-height: 160%;
+
+			opacity: .75;
+		}
+	}
+}

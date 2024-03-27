@@ -1,0 +1,1 @@
+export default function changeTheme(t){const e=localStorage.getItem("zatara-capital-theme"),a=document.querySelector("html");"dark"==t&&"dark"!=e?(localStorage.setItem("zatara-capital-theme","dark"),a.classList.remove("is-active-light-theme")):"light"==t&&"light"!=e&&(localStorage.setItem("zatara-capital-theme","light"),a.classList.add("is-active-light-theme"))}

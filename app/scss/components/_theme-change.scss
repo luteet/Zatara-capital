@@ -1,0 +1,28 @@
+.theme-change {
+	display: grid;
+	> * {
+		grid-area: 1/1;
+
+		animation-duration: var(--animating-speed,0s);
+		animation-timing-function: ease;
+		animation-fill-mode: forwards;
+
+		&:nth-child(1) {
+			animation-name: fadeIn;
+		}
+
+		&:nth-child(2) {
+			animation-name: fadeOut;
+		}
+	}
+}
+
+html.is-active-light-theme .theme-change > * {
+	&:nth-child(1) {
+		animation-name: fadeOut;
+	}
+
+	&:nth-child(2) {
+		animation-name: fadeIn;
+	}
+}

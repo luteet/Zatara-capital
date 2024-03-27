@@ -1,0 +1,35 @@
+.drop-down {
+
+	perspective: 100px;
+
+	&.is-active &__target_arrow {
+		transform: scaleY(-1) translateZ(0.02px);
+	}
+
+	// .drop-down__target
+
+	&__target {
+		
+	}
+
+	// .drop-down__target
+
+	&__target_arrow {
+		transition: transform .2s ease;
+	}
+
+	// .drop-down__block
+
+	&__block {
+		position: absolute;
+		left: 0; top: 0;
+
+		animation-duration: var(--animating-speed,0s);
+		animation-timing-function: ease;
+		animation-fill-mode: forwards;
+
+		opacity: 0; visibility: hidden;
+
+		z-index: 6;
+	}
+}
