@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ru" data-lang="ru">
+
+<head>
+	<script>
+		if (localStorage.getItem("zatara-capital-theme") == "light") document.querySelector("html").classList.add("is-active-light-theme");
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="theme-color" content="#001337">
+	<title>Zatara Capital</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__inner" data-aos="fade-in" data-aos-delay="50">
+				<div class="header__logo">
+					<a href="index.html" class="header__logo_link">
+						<div class="theme-change">
+							<img src="img/logo-dark.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo_img">
+							<img src="img/logo-light.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo_img">
+						</div>
+					</a>
+				</div>
+				<nav class="header__nav">
+					<div class="header__nav_body">
+						<a href="registration.html" class="header__nav_button button" aria-label="Регистрация">
+							<span>Регистрация</span>
+							<svg width="18" height="22">
+								<use href="img/sprites.svg#next-arrow"></use>
+							</svg>
+							<span class="button-flare" aria-hidden="true"></span>
+						</a>
+						<ul class="header__nav_list">
+							<li>
+								<a href="about-us.html">
+									<span>О компании</span>
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</a>
+								<div>
+									<ul>
+										<li>
+											<a href="about-us.html">
+												О нас
+											</a>
+										</li>
+										<li>
+											<a href="about-us.html?target=our-advantages">
+												Наши преимущества
+											</a>
+										</li>
+										<li>
+											<a href="documents.html">
+												Документация
+											</a>
+										</li>
+										<li>
+											<a href="funds-protection.html">
+												Защита средств
+											</a>
+										</li>
+										<li>
+											<a href="liquidity-providers.html">
+												Поставщики ликвидности
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="a-book.html">
+									<span>Торговля</span>
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</a>
+								<div>
+									<ul>
+										<li>
+											<a href="a-book.html">
+												Торги по модели A-Book
+											</a>
+										</li>
+										<li>
+											<a href="aggregation-liquidity.html">
+												Агрегация ликвидности
+											</a>
+										</li>
+										<li>
+											<a href="risk-management.html">
+												Риск менеджмент
+											</a>
+										</li>
+										<li>
+											<a href="stocks-and-ETFs.html">
+												Акции и ETF
+											</a>
+										</li>
+										<li>
+											<a href="currency-trading.html">
+												Торговля валютой
+											</a>
+										</li>
+										<li>
+											<a href="metal-trading.html">
+												Торговля металлами
+											</a>
+										</li>
+										<li>
+											<a href="futures-trading.html">
+												Торговля фьючерсами
+											</a>
+										</li>
+										<li>
+											<a href="options-trading.html">
+												Торговля опционами
+											</a>
+										</li>
+										<li>
+											<a href="investing-in-hedge-funds.html">
+												Инвестирование в хедж-фонды
+											</a>
+										</li>
+										<li>
+											<a href="bond-trading.html">
+												Торговля облигациями
+											</a>
+										</li>
+										<li>
+											<a href="cryptocurrency-trading.html">
+												Торговля криптовалютой
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="news.html">
+									<span>Новости</span>
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</a>
+								<div>
+									<ul>
+										<li>
+											<a href="news.html">
+												Новости рынка
+											</a>
+										</li>
+										<li>
+											<a href="holidays.html">
+												Праздничные дни
+											</a>
+										</li>
+										<li>
+											<a href="economic-calendar.html">
+												Экономический календарь
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="trading-platform.html">
+									<span>Торговая платформа</span>
+								</a>
+							</li>
+							<li>
+								<a href="faq.html">
+									<span>FAQ</span>
+								</a>
+							</li>
+							<li>
+								<a href="contacts.html">
+									<span>Контакты</span>
+								</a>
+							</li>
+						</ul>
+						<div class="header__nav_add">
+							<div class="header__nav_lang header__lang drop-down hover-mode">
+								<button class="header__lang_target drop-down__target" type="button" aria-label="Выбрать язык">
+									<img src="img/lang/lang-ru.svg" width="20" height="20" alt="" loading="lazy" class="header__lang_flag">
+									<span>Ru</span>
+									<svg width="24" height="24" class="drop-down__target_arrow">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</button>
+								<div class="header__lang_block drop-down__block on-right-mode">
+									<ul>
+										<li>
+											<a href="#" class="is-current">
+												<img src="img/lang/lang-ru.svg" width="20" height="20" alt="" loading="lazy" class="header__lang_flag">
+												<span>Ru</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/lang/lang-en.svg" width="20" height="20" alt="" loading="lazy" class="header__lang_flag">
+												<span>En</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="header__nav_theme header__theme">
+								<button class="header__theme_target" data-change-theme-to="dark">
+									<img src="img/dark-theme-icon.svg" width="12" height="12" loading="lazy" alt="">
+								</button>
+								<button class="header__theme_target" data-change-theme-to="light">
+									<img src="img/light-theme-icon.svg" width="12" height="12" loading="lazy" alt="">
+								</button>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<div class="header__account drop-down">
+					<button type="button" class="header__account_target drop-down__target" aria-label="Личный кабинет">
+						<span>Личный кабинет</span>
+						<svg width="19" height="20" class="visible-on-mob header__account_icon">
+							<use href="img/sprites.svg#user"></use>
+						</svg>
+						<svg width="24" height="24" class="header__account_arrow drop-down__target_arrow">
+							<use href="img/sprites.svg#drop-down-arrow"></use>
+						</svg>
+					</button>
+					<div class="header__account_block drop-down__block on-right-mode">
+						<ul>
+							<li>
+								<span class="success-color">
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#account-verification"></use>
+									</svg>
+									<span>
+										Верифицирован
+									</span>
+								</span>
+							</li>
+							<li>
+								<a href="registration.html">
+									Регистрация
+								</a>
+							</li>
+							<li>
+								<a href="login.html">
+									Войти
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<button class="header__burger" type="button" aria-label="Menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="breadcrumbs padding-start container" data-aos="fade-in" data-aos-delay="100">
+				<a href="index.html" class="breadcrumbs__link">Главная</a>
+				<span class="breadcrumbs__separator">/</span>
+				<a href="a-book.html" class="breadcrumbs__link">Торговля</a>
+				<span class="breadcrumbs__separator">/</span>
+				<span class="breadcrumbs__current">Риск менеджмент</span>
+			</div>
+			<section class="risk-managment accent-on-light">
+				<div class="risk-managment__header" data-aos="fade-in" data-aos-delay="200">
+					<h1 class="risk-managment__title hero-title">Риск менеджмент</h1>
+					<div class="risk-managment__nav tabs-nav">
+						<ul class="tabs-nav__list">
+							<li>
+								<a href="risk-management.html" class="tabs-nav__link">
+									Общая информация
+								</a>
+							</li>
+							<li>
+								<a class="tabs-nav__link is-active">
+									Функционал
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="risk-managment__text text" data-aos="fade-in" data-aos-delay="200">
+					<p>
+						Система риск-менеджмента позволяет устанавливать ограничения <b>5 различных параметров</b>, при реализации любого из которых позиции будут немедленно закрыты по текущим рыночным котировкам, а торговля заблокирована на определенное время. Установка ни одного из ограничений не является обязательной.
+					</p>
+				</div>
+				<ul class="risk-managment__list" data-aos="fade-in" data-aos-delay="300">
+					<li class="risk-managment__item">
+						<button class="risk-managment__item_target" type="button">
+							<span class="risk-managment__item_number"></span>
+							<span class="risk-managment__item_name">Максимальное кредитное плечо</span>
+							<span class="risk-managment__item_icon"></span>
+						</button>
+						<div class="risk-managment__item_block">
+							<div>
+								<div class="risk-managment__item_text text">
+									<p>
+										Ограничивает максимальные потери за сутки, исчисляемые от значения equity на начало торговых суток, вне зависимости от того, насколько возрастает equity счета за этот период. В отличие от ограничения «максимальная просадка», значение которого исчисляется от максимального значения equity после установки. Выражается в процентах от депозита. Является аналогом ограничения «максимальные потери за неделю».
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="risk-managment__item">
+						<button class="risk-managment__item_target" type="button">
+							<span class="risk-managment__item_number"></span>
+							<span class="risk-managment__item_name">Максимальные потери за сутки</span>
+							<span class="risk-managment__item_icon"></span>
+						</button>
+						<div class="risk-managment__item_block">
+							<div>
+								<div class="risk-managment__item_text text">
+									<p>
+										Ограничивает максимальные потери за сутки, исчисляемые от значения equity на начало торговых суток, вне зависимости от того, насколько возрастает equity счета за этот период. В отличие от ограничения «максимальная просадка», значение которого исчисляется от максимального значения equity после установки. Выражается в процентах от депозита. Является аналогом ограничения «максимальные потери за неделю».
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="risk-managment__item">
+						<button class="risk-managment__item_target" type="button">
+							<span class="risk-managment__item_number"></span>
+							<span class="risk-managment__item_name">Максимальные потери за неделю</span>
+							<span class="risk-managment__item_icon"></span>
+						</button>
+						<div class="risk-managment__item_block">
+							<div>
+								<div class="risk-managment__item_text text">
+									<p>
+										Ограничивает максимальные потери за сутки, исчисляемые от значения equity на начало торговых суток, вне зависимости от того, насколько возрастает equity счета за этот период. В отличие от ограничения «максимальная просадка», значение которого исчисляется от максимального значения equity после установки. Выражается в процентах от депозита. Является аналогом ограничения «максимальные потери за неделю».
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="risk-managment__item">
+						<button class="risk-managment__item_target" type="button">
+							<span class="risk-managment__item_number"></span>
+							<span class="risk-managment__item_name">Максимальная просадка</span>
+							<span class="risk-managment__item_icon"></span>
+						</button>
+						<div class="risk-managment__item_block">
+							<div>
+								<div class="risk-managment__item_text text">
+									<p>
+										Ограничивает максимальные потери за сутки, исчисляемые от значения equity на начало торговых суток, вне зависимости от того, насколько возрастает equity счета за этот период. В отличие от ограничения «максимальная просадка», значение которого исчисляется от максимального значения equity после установки. Выражается в процентах от депозита. Является аналогом ограничения «максимальные потери за неделю».
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="risk-managment__item">
+						<button class="risk-managment__item_target" type="button">
+							<span class="risk-managment__item_number"></span>
+							<span class="risk-managment__item_name">Минимальный остаток</span>
+							<span class="risk-managment__item_icon"></span>
+						</button>
+						<div class="risk-managment__item_block">
+							<div>
+								<div class="risk-managment__item_text text">
+									<p>
+										Ограничивает максимальные потери за сутки, исчисляемые от значения equity на начало торговых суток, вне зависимости от того, насколько возрастает equity счета за этот период. В отличие от ограничения «максимальная просадка», значение которого исчисляется от максимального значения equity после установки. Выражается в процентах от депозита. Является аналогом ограничения «максимальные потери за неделю».
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="risk-chart section-padding-start">
+				<div class="risk-chart__background section-background" aria-hidden="true">
+					<div class="section-background__decor dots-decor"></div>
+				</div>
+				<div class="risk-chart__inner">
+					<h2 class="risk-chart__title section-title add-decor is-center" data-aos="fade-in" data-aos-delay="100">
+						Схематическое представление функционирования параметров риск-менеджмента
+					</h2>
+					<div class="risk-chart__main horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false" data-aos="fade-in" data-aos-delay="200">
+						<div class="risk-chart__main_container">
+							<svg width="1240" height="433" viewBox="0 0 1240 433" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1240 384L127 384" stroke="#3EB52A" stroke-dasharray="4 4" />
+								<text fill="#3EB52A" xml:space="preserve" class="min-text-size">
+									<tspan x="147" y="360.288">LW</tspan>
+								</text>
+								<path d="M1240 290L1235 287.113V292.887L1240 290ZM1235.5 289.5L127 289.5V290.5L1235.5 290.5V289.5Z" class="theme-line-2" />
+								<path d="M127 4L124.113 9L129.887 9L127 4ZM126.5 8.5L126.5 384L127.5 384L127.5 8.5L126.5 8.5Z" class="theme-line-2" />
+								<line x1="1008.5" y1="9" x2="1008.5" y2="384" class="theme-line" />
+								<line x1="788.5" y1="9" x2="788.5" y2="384" class="theme-line" />
+								<line x1="568.5" y1="9" x2="568.5" y2="384" class="theme-line" />
+								<line x1="348.5" y1="9" x2="348.5" y2="384" class="theme-line" />
+								<path d="M1240 194L127 194" class="theme-line" />
+								<path d="M1240 119L127 119" class="theme-line" />
+								<path d="M1240 99L127 99" class="theme-line" />
+								<path d="M1240 9L127 9" class="theme-line" />
+								<text fill="#3D5075" xml:space="preserve" class="normal-text-size">
+									<tspan x="1184" y="425.884">Недели</tspan>
+								</text>
+								<text fill="#3D5075" xml:space="preserve" class="normal-text-size">
+									<tspan x="1002.36" y="427.884">4</tspan>
+								</text>
+								<text fill="#3D5075" xml:space="preserve" class="normal-text-size">
+									<tspan x="783.18" y="427.884">3</tspan>
+								</text>
+								<text fill="#3D5075" xml:space="preserve" class="normal-text-size">
+									<tspan x="561.266" y="427.884">2</tspan>
+								</text>
+								<text fill="#3D5075" xml:space="preserve" class="normal-text-size">
+									<tspan x="344.023" y="427.884">1</tspan>
+								</text>
+								<text fill="#3D5075" xml:space="preserve" class="normal-text-size">
+									<tspan x="121.461" y="427.884">0</tspan>
+								</text>
+								<text fill="#3D5075" xml:space="preserve" class="normal-text-size">
+									<tspan x="0.40625" y="388.884">-20%</tspan>
+								</text>
+								<text fill="#3D5075" xml:space="preserve" class="normal-text-size">
+									<tspan x="8.14062" y="294.884">0%</tspan>
+								</text>
+								<text fill="#3D5075" xml:space="preserve" class="normal-text-size">
+									<tspan x="4.48438" y="198.884">20%</tspan>
+								</text>
+								<text fill="#3D5075" xml:space="preserve" class="normal-text-size">
+									<tspan x="4" y="103.884">40%</tspan>
+								</text>
+								<text fill="#3D5075" xml:space="preserve" class="normal-text-size">
+									<tspan x="4.28125" y="13.884">60%</tspan>
+								</text>
+								<path d="M128 289.5C177.167 273 283.1 234.7 313.5 213.5C351.5 187 354 195.5 357 196C360 196.5 453 236 467.5 241C482 246 491.5 253 503.5 237.5C513.1 225.1 534.167 153.333 543.5 119C546.833 106.667 559.6 86.3999 584 104C608.4 121.6 652.5 131.333 671.5 134C678.833 135.333 694.7 135 699.5 123C705.5 108 721 38.9999 745.5 86.4999C747.333 93.3333 754.7 107 769.5 107C788 107 776 95.9999 810 98.4999C837.2 100.5 859.333 99.3333 867 98.4999C872.833 97.6666 886 92.9999 892 80.9999C899.5 65.9999 920.5 16.4999 945.5 33.9999C970.5 51.4999 964.5 53 977.5 38C990.5 23 988.5 -14 1023 14C1057.5 42 1051.5 19.9999 1071 14C1086.6 9.19999 1119.5 8.66667 1134 9" stroke="#247FEC" stroke-width="1.6" />
+								<path d="M1008 52L1004.54 58L1011.46 58L1008 52ZM1008 99L1011.46 93L1004.54 93L1008 99ZM1007.4 57.4L1007.4 93.6L1008.6 93.6L1008.6 57.4L1007.4 57.4Z" fill="#6405FF" />
+								<line x1="996" y1="51.5" x2="1020" y2="51.5" stroke="#EE3737" />
+								<line x1="996" y1="99.5" x2="1020" y2="99.5" stroke="#6405FF" />
+								<path d="M1008 4L1004.54 10L1011.46 10L1008 4ZM1008 51L1011.46 45L1004.54 45L1008 51ZM1007.4 9.4L1007.4 45.6L1008.6 45.6L1008.6 9.4L1007.4 9.4Z" fill="#EE3737" />
+								<text fill="#6405FF" xml:space="preserve" class="min-text-size">
+									<tspan x="1030" y="96.288">lim(max(DD))</tspan>
+								</text>
+								<text fill="#EE3737" xml:space="preserve" class="min-text-size">
+									<tspan x="1030" y="48.288">lim(Loss(W))</tspan>
+								</text>
+								<line x1="921" y1="119.5" x2="945" y2="119.5" stroke="#6405FF" />
+								<text fill="#6405FF" xml:space="preserve" class="min-text-size">
+									<tspan x="955" y="116.288">lim(max(DD))</tspan>
+								</text>
+								<path d="M933 31L929.536 37L936.464 37L933 31ZM933 119L936.464 113L929.536 113L933 119ZM932.4 36.4L932.4 113.6L933.6 113.6L933.6 36.4L932.4 36.4Z" fill="#6405FF" />
+								<text fill="#EE3737" xml:space="preserve" class="min-text-size">
+									<tspan x="811" y="143.288">lim(Loss(W))</tspan>
+								</text>
+								<line x1="777" y1="146.5" x2="801" y2="146.5" stroke="#EE3737" />
+								<path d="M789 99L785.536 105L792.464 105L789 99ZM789 146L792.464 140L785.536 140L789 146ZM788.4 104.4L788.4 140.6L789.6 140.6L789.6 104.4L788.4 104.4Z" fill="#EE3737" />
+								<line x1="717" y1="170.5" x2="741" y2="170.5" stroke="#6405FF" />
+								<text fill="#6405FF" xml:space="preserve" class="min-text-size">
+									<tspan x="751" y="167.288">lim(max(DD))</tspan>
+								</text>
+								<path d="M729 71L725.536 77L732.464 77L729 71ZM729 170L732.464 164L725.536 164L729 170ZM728.4 76.4L728.4 164.6L729.6 164.6L729.6 76.4L728.4 76.4Z" fill="#6405FF" />
+								<path d="M569 147L565.536 153L572.464 153L569 147ZM569 194L572.464 188L565.536 188L569 194ZM568.4 152.4L568.4 188.6L569.6 188.6L569.6 152.4L568.4 152.4Z" fill="#6405FF" />
+								<line x1="557" y1="146.5" x2="581" y2="146.5" stroke="#EE3737" />
+								<line x1="557" y1="194.5" x2="581" y2="194.5" stroke="#6405FF" />
+								<path d="M569 99L565.536 105L572.464 105L569 99ZM569 146L572.464 140L565.536 140L569 146ZM568.4 104.4L568.4 140.6L569.6 140.6L569.6 104.4L568.4 104.4Z" fill="#EE3737" />
+								<text fill="#6405FF" xml:space="preserve" class="min-text-size">
+									<tspan x="591" y="191.288">lim(max(DD))</tspan>
+								</text>
+								<text fill="#EE3737" xml:space="preserve" class="min-text-size">
+									<tspan x="591" y="143.288">lim(Loss(W))</tspan>
+								</text>
+								<path d="M349 243L345.536 249L352.464 249L349 243ZM349 290L352.464 284L345.536 284L349 290ZM348.4 248.4L348.4 284.6L349.6 284.6L349.6 248.4L348.4 248.4Z" fill="#6405FF" />
+								<line x1="337" y1="242.5" x2="361" y2="242.5" stroke="#EE3737" />
+								<line x1="337" y1="290.5" x2="361" y2="290.5" stroke="#6405FF" />
+								<path d="M349 195L345.536 201L352.464 201L349 195ZM349 242L352.464 236L345.536 236L349 242ZM348.4 200.4L348.4 236.6L349.6 236.6L349.6 200.4L348.4 200.4Z" fill="#EE3737" />
+								<text fill="#6405FF" xml:space="preserve" class="min-text-size">
+									<tspan x="371" y="287.288">lim(max(DD))</tspan>
+								</text>
+								<text fill="#EE3737" xml:space="preserve" class="min-text-size">
+									<tspan x="371" y="242.288">lim(Loss(W))</tspan>
+								</text>
+							</svg>
+						</div>
+					</div>
+					<dl class="risk-chart__legend" data-aos="fade-in" data-aos-delay="100">
+						<dt style="--color: #247FEC;"><span class="risk-chart__legend_line"></span></dt>
+						<dd>Equity</dd>
+
+						<dt style="--color: #6405FF;">lim(max(DD)) (20 %)</dt>
+						<dd>ограничение максимальной просадки</dd>
+
+						<dt style="--color: #EE3737;">lim(Loss(W)) (10 %)</dt>
+						<dd>ограничение максимальных потерь за неделю</dd>
+
+						<dt style="--color: #3EB52A;">LWM (Low watermark) (800 USD)</dt>
+						<dd>ограничение минимального остатка средств</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="a-book-advantages">
+				<div class="a-book-advantages__background section-background" aria-hidden="true"></div>
+				<div class="a-book-advantages__decor dots-decor" aria-hidden="true"></div>
+				<h2 class="a-book-advantages__title section-title add-decor" data-aos="fade-in" data-aos-delay="200">
+					Особенности работы функционала
+				</h2>
+				<div class="a-book-advantages__block text" data-aos="fade-in" data-aos-delay="200">
+					<h3>
+						Заявки на <mark>ввод и вывод средств</mark>
+					</h3>
+					<p>Заявки на ввод и вывод средств с торгового счета принимаются только в выходные дни. Непосредственно ввод либо вывод средств производится в начале торговой недели (понедельник 00:05 (EET)) с автоматической корректировкой значений риск-менеджмента (в денежном эквиваленте: долевое отношение при отсутствии заявки на изменение параметров риск-менеджмента не корректируется).</p>
+				</div>
+				<div class="a-book-advantages__image" data-aos="fade-in" data-aos-delay="100">
+					<picture>
+						<source srcset="img/risk-management/risk-management-features-image.avif" type="image/avif">
+						<source srcset="img/risk-management/risk-management-features-image.webp" type="image/webp">
+						<img src="img/risk-management/risk-management-features-image.png" alt="" width="348" height="390" loading="lazy" class="image-aspect-ratio">
+					</picture>
+				</div>
+				<div class="a-book-advantages__block text" data-aos="fade-in" data-aos-delay="200">
+					<h3>
+						Параметр <mark>«минимального остатка»</mark>
+					</h3>
+					<p>При выводе средств необходимо учитывать этот параметр (если он задан). Поскольку «минимальный остаток» представляет собой фиксированное значение в валюте, то при выводе суммы, за вычетом которой equity торгового счета станет меньше значения «минимального остатка», – произойдет реализация последнего и торговля на счете заблокируется в момент вывода средств (понедельник 00:05 (EET)).</p>
+				</div>
+				<div class="a-book-advantages__item" data-aos="fade-in" data-aos-delay="200">
+					Заявки на изменение параметров риск-менеджмента исполняются в начале торговой недели (понедельник 00:05 (EET)).
+				</div>
+			</section>
+			<section class="why-we">
+				<div class="why-we__background" aria-hidden="true">
+					<div class="why-we__decor dots-decor"></div>
+				</div>
+				<div class="why-we__hero" data-aos="fade-in" data-aos-delay="100">
+					<h2 class="why-we__section_name section-name">
+						Почему мы
+					</h2>
+					<h3 class="why-we__title section-title">
+						Интересы наших клиентов <mark>всегда на первом месте</mark>
+					</h3>
+					<div class="why-we__text text">
+						<p>
+							Наш опыт показывает, если мы будем хорошо обслуживать наших клиентов, наш собственный успех последует за ними
+						</p>
+					</div>
+				</div>
+				<ol class="why-we__list set-animate">
+					<li class="why-we__item why-we-item">
+						<div class="why-we-item__body">
+							<span class="why-we-item__dot" aria-hidden="true"></span>
+							<span class="why-we-item__number"></span>
+							<span class="why-we-item__dot" aria-hidden="true"></span>
+							<span class="why-we-item__text">
+								Создайте аккаунт
+							</span>
+							<span class="why-we-item__dot" aria-hidden="true"></span>
+						</div>
+					</li>
+					<li class="why-we__item why-we-item">
+						<div class="why-we-item__body">
+							<span class="why-we-item__dot" aria-hidden="true"></span>
+							<span class="why-we-item__number"></span>
+							<span class="why-we-item__dot" aria-hidden="true"></span>
+							<span class="why-we-item__text">
+								Внесите депозит
+							</span>
+							<span class="why-we-item__dot" aria-hidden="true"></span>
+						</div>
+					</li>
+					<li class="why-we__item why-we-item">
+						<div class="why-we-item__body">
+							<span class="why-we-item__dot" aria-hidden="true"></span>
+							<span class="why-we-item__number"></span>
+							<span class="why-we-item__dot" aria-hidden="true"></span>
+							<span class="why-we-item__text">
+								Совершите сделку
+							</span>
+							<span class="why-we-item__dot" aria-hidden="true"></span>
+						</div>
+					</li>
+				</ol>
+			</section>
+			<section class="cooperating">
+				<div class="cooperating__decor dots-decor" aria-hidden="true"></div>
+				<div class="cooperating__body">
+					<div class="cooperating__background" aria-hidden="true">
+						<div class="theme-change">
+							<picture>
+								<source srcset="img/index/cooperating/cooperating-image.avif" type="image/avif">
+								<source srcset="img/index/cooperating/cooperating-image.webp" type="image/webp">
+								<img src="img/index/cooperating/cooperating-image.jpg" alt="" width="0" height="0" loading="lazy">
+							</picture>
+							<picture>
+								<source srcset="img/index/cooperating/cooperating-image-light.avif" type="image/avif">
+								<source srcset="img/index/cooperating/cooperating-image-light.webp" type="image/webp">
+								<img src="img/index/cooperating/cooperating-image-light.jpg" alt="" width="0" height="0" loading="lazy">
+							</picture>
+						</div>
+					</div>
+					<h2 class="cooperating__title section-title" data-aos="fade-in" data-aos-delay="100" data-aos-anchor=".cooperating__body">
+						Начнем сотрудничество?
+					</h2>
+					<div class="cooperating__text" data-aos="fade-in" data-aos-delay="100" data-aos-anchor=".cooperating__body">
+						<p>
+							Пройдите простую регистрацию для начала инвестиционной деятельности
+						</p>
+					</div>
+					<div class="cooperating__footer" data-aos="fade-in" data-aos-delay="100" data-aos-anchor=".cooperating__body">
+						<a href="#" class="cooperating__button button">
+							<span>Стать инвестором</span>
+							<svg width="24" height="24" class="button-arrow">
+								<use href="img/sprites.svg#next-arrow"></use>
+							</svg>
+							<span class="button-flare" aria-hidden="true"></span>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__row visible-on-desktop">
+					<div class="footer__row_col">
+						<div class="footer__logo">
+							<a href="index.html" class="footer__logo_link">
+								<div class="theme-change">
+									<img src="img/logo-dark.svg" alt="Logo" width="150" height="35" loading="lazy" class="footer__logo_img">
+									<img src="img/logo-light.svg" alt="Logo" width="150" height="35" loading="lazy" class="footer__logo_img">
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="footer__row_col">
+						<form class="footer__form">
+							<input type="email" name="email" placeholder="Будь в курсе последних новостей / Введите свой E-mail" required>
+							<button class="button is-alternative is-min" type="submit">
+								Подписаться
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="footer__row visible-on-desktop">
+					<div class="footer__row_col">
+						<ul class="footer__contacts">
+							<li>
+								<a href="tel:+13146035827" aria-label="+1 314 603 5827">
+									<svg width="16" height="16">
+										<use href="img/sprites.svg#phone"></use>
+									</svg>
+									<span>
+										+1 314 603 5827
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="mailto:info@zataracs.com" aria-label="info@zataracs.com">
+									<svg width="16" height="16">
+										<use href="img/sprites.svg#email"></use>
+									</svg>
+									<span>
+										info@zataracs.com
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg width="16" height="16">
+										<use href="img/sprites.svg#map-point"></use>
+									</svg>
+									<span>
+										1801 Century Park East, ste 450, LA, CA, 90067, USA
+									</span>
+								</a>
+							</li>
+						</ul>
+						<div class="footer__copyright">
+							© 2023 Zatara Capital Securities
+						</div>
+					</div>
+					<div class="footer__row_col">
+						<nav class="footer__nav">
+							<ul>
+								<li><a href="#">Уведомление о рисках</a></li>
+								<li><a href="#">Политика в отношении конфликтов интересов</a></li>
+								<li><a href="#">Безопасность средств</a></li>
+								<li><a href="#">Политика идентификации клиентов</a></li>
+								<li><a href="#">Политика безопасности</a></li>
+								<li><a href="#">Политика возврата средств</a></li>
+								<li><a href="#">Условия и положения</a></li>
+								<li><a href="#">Политика исполнения сделок</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="footer__logo visible-on-mob">
+					<a href="index.html" class="footer__logo_link">
+						<div class="theme-change">
+							<img src="img/logo-dark-mob.svg" alt="Logo" width="150" height="35" loading="lazy" class="footer__logo_img">
+							<img src="img/logo-light-mob.svg" alt="Logo" width="150" height="35" loading="lazy" class="footer__logo_img">
+						</div>
+					</a>
+				</div>
+				<ul class="footer__contacts visible-on-mob">
+					<li>
+						<a href="tel:+13146035827" aria-label="+1 314 603 5827">
+							<svg width="16" height="16">
+								<use href="img/sprites.svg#phone"></use>
+							</svg>
+							<span>
+								+1 314 603 5827
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:info@zataracs.com" aria-label="info@zataracs.com">
+							<svg width="16" height="16">
+								<use href="img/sprites.svg#email"></use>
+							</svg>
+							<span>
+								info@zataracs.com
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg width="16" height="16">
+								<use href="img/sprites.svg#map-point"></use>
+							</svg>
+							<span>
+								1801 Century Park East, ste 450, LA, CA, 90067, USA
+							</span>
+						</a>
+					</li>
+				</ul>
+				<div class="footer__mob_nav drop-down visible-on-mob">
+					<button class="footer__mob_nav_target drop-down__target" aria-label="Правовая информация" type="button">
+						<span>Правовая информация</span>
+						<svg width="24" height="24" class="drop-down__target_arrow">
+							<use href="img/sprites.svg#drop-down-arrow"></use>
+						</svg>
+					</button>
+					<div class="footer__mob_nav_block drop-down__block">
+						<ul>
+							<li><a href="#">Уведомление о рисках</a></li>
+							<li><a href="#">Политика в отношении конфликтов интересов</a></li>
+							<li><a href="#">Безопасность средств</a></li>
+							<li><a href="#">Политика идентификации клиентов</a></li>
+							<li><a href="#">Политика безопасности</a></li>
+							<li><a href="#">Политика возврата средств</a></li>
+							<li><a href="#">Условия и положения</a></li>
+							<li><a href="#">Политика исполнения сделок</a></li>
+						</ul>
+					</div>
+				</div>
+				<form class="footer__form visible-on-mob">
+					<input type="email" name="email" placeholder="Введите свой E-mail" required>
+					<button class="button is-alternative is-min" type="submit">
+						Подписаться
+					</button>
+				</form>
+				<div class="footer__note">
+					<h2>Уведомление о рисках</h2>
+					<p>
+						Торговля валютой и производными финансовыми инструментами является спекулятивной и сопряжена с высоким уровнем риска, который может подходить не всем инвесторам. Существует вероятность потери вложенного капитала, поэтому компания рекомендует не вкладывать средства, которые вы не можете себе позволить. Более подробную информацию о рисках можно найти здесь.
+					</p>
+				</div>
+				<div class="footer__copyright visible-on-mob">
+					© 2023 Zatara Capital Securities
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>

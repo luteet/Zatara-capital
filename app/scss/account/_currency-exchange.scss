@@ -1,0 +1,96 @@
+.currency-exchange {
+
+	padding-top: 1.25rem;
+	
+	@include _992 {
+		padding-top: 2.5rem;
+		max-width: 67%;
+	}
+
+	// .currency-exchange__body
+
+	&__body {
+	}
+
+	// .currency-exchange__row
+
+	&__row {
+		display: grid;
+		gap: 1.875rem;
+		margin-top: 1.875rem;
+
+		@include _992 {
+			margin-top: 0;
+		}
+
+		@include _768 {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	&__col {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+
+		@include _992 {
+			gap: 1.875rem;
+		}
+	}
+
+	// .currency-exchange__item
+
+	&__item {
+	}
+
+	// .currency-exchange__footer
+
+	&__footer {
+		margin-top: 1.875rem;
+
+		display: flex;
+		flex-direction: column-reverse;
+		gap: 1.25rem;
+
+		@include _550 {
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			gap: 1.6875rem;
+		}
+	}
+
+	// .currency-exchange__submit
+
+	&__submit {
+	}
+
+	// .currency-exchange__add-info
+
+	&__add-info {
+		display: flex;
+		flex-direction: column;
+		gap: 0.9375rem;
+
+		@include _550 {
+			flex-wrap: wrap;
+			align-items: center;
+			flex-direction: row;
+		}
+
+		span {
+			display: block;
+
+			font-size: 0.875rem;
+			line-height: 100%;
+
+			&:nth-child(1) {
+				color: var(--theme-text-color);
+				opacity: 0.4;
+			}
+			&:nth-child(2) {
+				margin-top: 0.625rem;
+				b {font-weight: 600;}
+			}
+		}
+	}
+}

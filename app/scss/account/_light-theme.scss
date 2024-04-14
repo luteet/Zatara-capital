@@ -1,0 +1,151 @@
+html.is-active-light-theme {
+
+	background: var(--theme-primary-2);
+
+	/* .account-wrapper {
+		background: var(--theme-primary-2);
+	} */
+
+	.account-aside {
+		background: var(--white);
+	}
+
+	.drop-down__block.aside-mode {
+		background: var(--white);
+		box-shadow: .25rem .25rem .5rem var(--shadow-7);
+	}
+
+	.account-header {
+		@include _992 {
+			box-shadow: 0 0.0625rem 0px 0px var(--theme-primary-8);
+		}
+	}
+
+	.account-header__search form {
+		background: var(--white);
+		@include _992 {
+			background: transparent;
+		}
+	}
+
+	.account-header__search_input {
+		background: var(--theme-primary-2);
+		border-color: var(--theme-primary-4);
+	}
+
+	.account-header__min_nav a {
+		background: var(--white);
+		border: 0.0625rem solid var(--theme-primary-8);
+		@include _992 {
+			border: 0;
+			background: var(--theme-primary-2);
+		}
+	}
+
+	.account-aside {
+		border-right-color: var(--theme-primary-8);
+
+		.account-aside__nav_block > ul > li > a.is-current {
+			background: var(--theme-primary-6);
+		}
+
+		.account-aside__nav_block>ul>li>a.is-current+div {
+			background: var(--theme-primary-6);
+		}
+	}
+
+	.account-block__title {
+		color: #121212;
+		font-weight: 500;
+	}
+
+	.mobile-nav__target, .mobile-nav__block {
+		background: var(--white);
+	}
+
+	.mobile-nav {
+
+		.mobile-nav__item > ul > li > a.is-current {
+			background: var(--theme-primary-6);
+		}
+
+		.mobile-nav__item>ul>li>a.is-current+div {
+			background: var(--theme-primary-6);
+		}
+	}
+
+	.deposits__legends_button {
+		background: var(--white);
+		@include _992 {
+			background: var(--theme-primary-2);
+		}
+	}
+
+	.deposits__legends_button.is-active {
+		background: var(--white);
+		@include _992 {
+			background: var(--theme-primary-2);
+		}
+	}
+
+	.custom-select.is-min.ss-main, .custom-select.is-min.ss-content {
+		background: var(--white);
+	}
+
+	.recent-transactions__item {
+		box-shadow: 0.875rem 0.875rem 1.5rem rgba(1, 17, 50, 0.07);
+	}
+
+	.input.mode-2 {
+		background: var(--white);
+	}
+
+	.wallets-item {
+		box-shadow: 0.75rem 0.75rem 1.25rem rgba(0, 0, 0, 0.07);
+	}
+
+	.form-file__body {
+		border-color: var(--theme-primary-8);
+	}
+
+	.personal-data .checkbox__element {
+		background: var(--theme-primary-2);
+	}
+
+	.personal-data .checkbox__text {
+		color: #888;
+	}
+
+	.personal-data__note::before {
+		box-shadow: none;
+	}
+
+	.personal-data__note {
+		color: #888;
+	}
+
+	.personal-data__security_col>span {
+		color: #888;
+	}
+
+	.account-tabs__list {
+		@include _992 {
+			background: #EAEAEA;
+		}
+	}
+
+	.account-tabs__link.is-active {
+		background: var(--white);
+		color: var(--black);
+	}
+
+	.form-file .form-file__target {
+		background: var(--theme-primary-2);
+	}
+
+	.form-file.is-alt .form-file__body {
+		background: var(--theme-primary);
+		border: 0.0625rem solid var(--theme-secondary);
+	}
+
+}

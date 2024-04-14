@@ -1,0 +1,84 @@
+.about-us-hero {
+
+	@include _992 {
+
+		display: grid;
+		grid-template-columns: 50% auto;
+		//grid-template-rows: auto 3.125rem;
+		gap: 0 1.875rem;
+	}
+
+	// .about-us-hero__breadcrumbs
+
+	&__breadcrumbs {
+		
+	}
+
+	// .about-us-hero__title
+
+	&__title {
+		padding-top: 2.5rem;
+	}
+
+	// .about-us-hero__heading_text
+
+	&__heading_text {
+		padding-top: 2.5rem;
+		max-width: 38.125rem;
+
+		line-height: 160%;
+
+		@include _992 {
+			padding-top: 3.75rem;
+		}
+	}
+
+	// .about-us-hero__image
+
+	&__image {
+		width: 100%; aspect-ratio: 1/1;
+		@include _992 {
+			width: auto; aspect-ratio: auto;
+		}
+
+		grid-column: 2; grid-row: 1/6;
+		position: relative;
+		
+		img {
+			position: absolute;
+			left: 50%; top: 0;
+			transform: translate(-50%,0);
+			height: 100%; width: auto;
+			@include _992 {
+				left: 0;
+				transform: none;
+				height: 110%;
+			}
+		}
+	}
+
+	// .about-us-hero__text
+
+	&__text {
+		@include _992 {
+			padding-top: 1.875rem;
+		}
+
+		max-width: 38.125rem;
+	}
+
+	&__footer {
+		margin-top: 2.5rem;
+		justify-self: start;
+
+		@include _992 {
+			margin-top: 3.125rem;
+		}
+	}
+
+	// .about-us-hero__button
+
+	&__button {
+		
+	}
+}

@@ -1,0 +1,232 @@
+@@include("html/_account-header.html")
+
+	<div class="account-row">
+		<div class="account-col">
+			<div class="account-block stocks">
+				<div class="account-block__header">
+					<h1 class="account-title">
+						Мои акции
+					</h1>
+					<div class="trading-status is-close visible-on-mob">
+						<svg width="16" height="16">
+							<use href="img/sprites.svg#close-2"></use>
+						</svg>
+						<span>
+							Рынок закрыт
+						</span>
+					</div>
+					<search class="account-search" role="search">
+						<form>
+							<svg width="24" height="24" class="account-search__icon">
+								<use href="img/sprites.svg#search"></use>
+							</svg>
+							<input type="search" name="search" placeholder="Поиск акций..." class="account-search__input input mode-2">
+						</form>
+					</search>
+				</div>
+				@@include("html/_mobile-nav.html")
+				<div class="account-table is-alt horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+					<div class="account-table__inner">
+						<div class="account-table__container">
+							<table class="account-table__block">
+								<colgroup><col><col><col><col><col><col></colgroup>
+								<thead>
+									<tr>
+										<th></th>
+										<th>Наименование</th>
+										<th>Кол-во</th>
+										<th>Цена</th>
+										<th>24h %</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<a href="account-crypto-single.html" class="account-table__info">
+												<div class="account-table__info_logo none-round">
+													<img src="img/crypto/Bitcoin.svg" alt="" width="30" height="30" loading="lazy">
+												</div>
+												<b class="account-table__info_name">Bitcoin</b>
+												<span class="account-table__info_initials">BTC</span>
+											</a>
+										</td>
+										<td>0.0035</td>
+										<td>$26159.44</td>
+										<td class="success-color">0.57%</td>
+										<td>
+											<div class="account-table__settings drop-down">
+												<button class="account-table__settings_target drop-down__target" type="button">
+													<svg width="29" height="3">
+														<use href="img/sprites.svg#etc"></use>
+													</svg>
+												</button>
+												<div class="account-table__settings_block drop-down__block on-right-mode">
+													<ul>
+														<li>
+															<a href="#">
+																Купить еще
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																Продать
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<a href="account-crypto-single.html" class="account-table__info">
+												<div class="account-table__info_logo none-round">
+													<img src="img/crypto/Ethereum-2.svg" alt="" width="30" height="30" loading="lazy">
+												</div>
+												<b class="account-table__info_name">Ethereum</b>
+												<span class="account-table__info_initials">ETH</span>
+											</a>
+										</td>
+										<td>2</td>
+										<td>$1640.38</td>
+										<td class="none-color">0%</td>
+										<td>
+											<div class="account-table__settings drop-down">
+												<button class="account-table__settings_target drop-down__target" type="button">
+													<svg width="29" height="3">
+														<use href="img/sprites.svg#etc"></use>
+													</svg>
+												</button>
+												<div class="account-table__settings_block drop-down__block on-right-mode">
+													<ul>
+														<li>
+															<a href="#">
+																Купить еще
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																Продать
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<a href="account-crypto-single.html" class="account-table__info">
+												<div class="account-table__info_logo none-round">
+													<img src="img/crypto/Tether.svg" alt="" width="30" height="30" loading="lazy">
+												</div>
+												<b class="account-table__info_name">Tether</b>
+												<span class="account-table__info_initials">USDT</span>
+											</a>
+										</td>
+										<td>10000</td>
+										<td>$0.99933</td>
+										<td class="failure-color">-0.1%</td>
+										<td>
+											<div class="account-table__settings drop-down">
+												<button class="account-table__settings_target drop-down__target" type="button">
+													<svg width="29" height="3">
+														<use href="img/sprites.svg#etc"></use>
+													</svg>
+												</button>
+												<div class="account-table__settings_block drop-down__block on-right-mode">
+													<ul>
+														<li>
+															<a href="#">
+																Купить еще
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																Продать
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="account-col">
+			<div class="trading-status is-close visible-on-desktop">
+				<svg width="16" height="16">
+					<use href="img/sprites.svg#close-2"></use>
+				</svg>
+				<span>
+					Рынок закрыт
+				</span>
+			</div>
+			<div class="account-block refill-account">
+				<div class="account-block__body">
+					<h2 class="refill-account__title account-block__title">
+						Пополнить баланс
+					</h2>
+					<form class="refill-account__inner">
+						<div class="refill-account__item">
+							<span>Платёжная система</span>
+							<select name="payment-system" class="custom-select">
+								<option value="Tether" data-html='<div class="refill-account__option"><img src="img/crypto/Tether.svg" width="36" height="26" alt=""><b>Tether <span>(TRC20)</span></b></div>'>
+									Tether (TRC20)
+								</option>
+								<option value="Bitcoin" data-html='<div class="refill-account__option"><img src="img/crypto/Bitcoin.svg" width="36" height="26" alt=""><b>Bitcoin <span>(TRC20)</span></b></div>'>
+									Bitcoin (TRC20)
+								</option>
+							</select>
+						</div>
+						<div class="refill-account__item">
+							<span>Сумма</span>
+							<input type="text" name="sum" class="input" placeholder="0" inputmode="numeric">
+							<span>USDT</span>
+						</div>
+						<button class="refill-account__submit button" type="button">
+							<span>Пополнить</span>
+						</button>
+						<div class="refill-account__note">
+							Комиссия: 0.00USDT
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+@@include("html/_account-footer.html")

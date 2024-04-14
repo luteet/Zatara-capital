@@ -1,0 +1,77 @@
+.intuitive-trading {
+
+	padding-top: 5rem;
+
+	@include _992 {
+		padding-top: 8.125rem;
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0 6.25rem;
+	}
+
+	z-index: 0;
+
+	// .intuitive-trading__title
+
+	&__title {
+	}
+
+	// .intuitive-trading__text
+
+	&__text {
+		padding-top: 1.875rem;
+		@include _992 {
+			padding-top: 2.5rem;
+		}
+	}
+
+	// .intuitive-trading__image
+
+	&__image {
+
+		padding-top: 1.875rem;
+		@include _992 {
+			padding-top: 0;
+		}
+
+		position: relative;
+		text-align: center;
+
+		grid-column: 1; grid-row: 1/4;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 50%; top: 4.5625rem;
+			transform: translate(-50%,0);
+			width: 32.375rem; height: 32.375rem;
+			border-radius: 50%;
+			background: linear-gradient(180deg, #0036F4 0%, rgba(1, 23, 65, 0) 100%);
+			z-index: -1;
+		}
+
+		img {
+			max-width: 13.125rem;
+			@include _992 {
+				max-width: 19.6875rem;
+			}
+		}
+	}
+}
+
+.intuitive-trading + .why-we {
+	margin-top: 0;
+}
+
+
+
+.intuitive-trading + .why-we .why-we {
+	&__decor {
+		@include _992 {
+			right: calc(50% - 37.5rem); left: auto;
+			top: 0;
+			transform: translate(0,-35%);
+		}
+	}
+}

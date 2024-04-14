@@ -1,0 +1,307 @@
+@@include("html/_account-header.html")
+
+	<div class="account-row">
+		<div class="account-col">
+			<div class="account-block stocks">
+				<div class="account-block__header">
+					<h1 class="account-title">
+						Форекс
+					</h1>
+					<div class="trading-status is-close visible-on-mob">
+						<svg width="16" height="16">
+							<use href="img/sprites.svg#close-2"></use>
+						</svg>
+						<span>
+							Рынок закрыт
+						</span>
+					</div>
+					<search class="account-search" role="search">
+						<form>
+							<svg width="24" height="24" class="account-search__icon">
+								<use href="img/sprites.svg#search"></use>
+							</svg>
+							<input type="search" name="search" placeholder="Поиск акций..." class="account-search__input input mode-2">
+						</form>
+					</search>
+				</div>
+				@@include("html/_mobile-nav.html")
+				<div class="account-table horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+					<div class="account-table__inner">
+						<div class="account-table__container">
+							<table class="account-table__block">
+								<colgroup><col><col><col><col><col></colgroup>
+								<thead>
+									<tr>
+										<th></th>
+										<th>Наименование</th>
+										<th>Цена</th>
+										<th>24h %</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info none-logo">
+												<b class="account-table__info_name">AED/AUD</b>
+												<span class="account-table__info_initials">
+													United Arab Emirates dirham - Australian dollar
+												</span>
+											</div>
+										</td>
+										<td>0.4252451</td>
+										<td class="success-color">0.05%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info none-logo">
+												<b class="account-table__info_name">AED/BHD</b>
+												<span class="account-table__info_initials">United Arab Emirates dirham - Bahraini dinar</span>
+											</div>
+										</td>
+										<td>0.10502837</td>
+										<td class="success-color">4.44%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info none-logo">
+												<b class="account-table__info_name">AED/CAD</b>
+												<span class="account-table__info_initials">United Arab Emirates dirham - Canadian dollar</span>
+											</div>
+										</td>
+										<td>0.3706563</td>
+										<td class="success-color">0.05%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info none-logo">
+												<b class="account-table__info_name">AED/CHF</b>
+												<span class="account-table__info_initials">United Arab Emirates dirham - Swiss franc</span>
+											</div>
+										</td>
+										<td>0.2408792</td>
+										<td class="success-color">0.05%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info none-logo">
+												<b class="account-table__info_name">AED/DKK</b>
+												<span class="account-table__info_initials">United Arab Emirates dirham - Danish krone</span>
+											</div>
+										</td>
+										<td>1.92206</td>
+										<td class="success-color">4.44%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info none-logo">
+												<b class="account-table__info_name">AED/EUR</b>
+												<span class="account-table__info_initials">United Arab Emirates dirham - Euro</span>
+											</div>
+										</td>
+										<td>0.2578649</td>
+										<td class="success-color">4.44%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info none-logo">
+												<b class="account-table__info_name">AED/GBP</b>
+												<span class="account-table__info_initials">United Arab Emirates dirham - Pound sterling</span>
+											</div>
+										</td>
+										<td>0.2164622</td>
+										<td class="success-color">0.05%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info none-logo">
+												<b class="account-table__info_name">AED/INR</b>
+												<span class="account-table__info_initials">United Arab Emirates dirham - Indian rupee</span>
+											</div>
+										</td>
+										<td>22.48046</td>
+										<td class="success-color">0.05%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info none-logo">
+												<b class="account-table__info_name">AED/JPY</b>
+												<span class="account-table__info_initials">United Arab Emirates dirham - Japanese yen</span>
+											</div>
+										</td>
+										<td>39.878813</td>
+										<td class="success-color">0.05%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info none-logo">
+												<b class="account-table__info_name">AED/NOK</b>
+												<span class="account-table__info_initials">United Arab Emirates dirham - Norwegian krone</span>
+											</div>
+										</td>
+										<td>39.878813</td>
+										<td class="success-color">0.05%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="account-pagination pagination">
+					<a href="#" class="is-current">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<span>...</span>
+					<a href="#">15</a>
+					<a href="#">
+						<svg width="7" height="12">
+							<use href="img/sprites.svg#page-next-arrow"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="account-col">
+			<div class="trading-status is-close visible-on-desktop">
+				<svg width="16" height="16">
+					<use href="img/sprites.svg#close-2"></use>
+				</svg>
+				<span>
+					Рынок закрыт
+				</span>
+			</div>
+			<div class="account-block refill-account">
+				<div class="account-block__body">
+					<h2 class="refill-account__title account-block__title">
+						Пополнить баланс
+					</h2>
+					<form class="refill-account__inner">
+						<div class="refill-account__item">
+							<span>Платёжная система</span>
+							<select name="payment-system" class="custom-select">
+								<option value="Tether" data-html='<div class="refill-account__option"><img src="img/crypto/Tether.svg" width="36" height="26" alt=""><b>Tether <span>(TRC20)</span></b></div>'>
+									Tether (TRC20)
+								</option>
+								<option value="Bitcoin" data-html='<div class="refill-account__option"><img src="img/crypto/Bitcoin.svg" width="36" height="26" alt=""><b>Bitcoin <span>(TRC20)</span></b></div>'>
+									Bitcoin (TRC20)
+								</option>
+							</select>
+						</div>
+						<div class="refill-account__item">
+							<span>Сумма</span>
+							<input type="text" name="sum" class="input" placeholder="0" inputmode="numeric">
+							<span>USDT</span>
+						</div>
+						<button class="refill-account__submit button" type="button">
+							<span>Пополнить</span>
+						</button>
+						<div class="refill-account__note">
+							Комиссия: 0.00USDT
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+@@include("html/_account-footer.html")

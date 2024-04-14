@@ -1,0 +1,237 @@
+.how-it-works {
+
+	padding-bottom: 5rem;
+	@include _992 {
+		padding-bottom: 8.125rem;
+	}
+
+	// .how-it-works__background
+
+	&__background {
+	}
+
+	// .how-it-works__decor
+
+	&__decor {
+		display: none;
+
+		@include _992 {
+			display: block;
+
+			left: calc(50% - 40.625rem); top: 0;
+			width: 4.6875rem; height: 9.0625rem;
+			transform: translate(0,-40%);
+		}
+	}
+
+	// .how-it-works__title
+
+	&__title {
+	}
+
+	// .how-it-works__inner
+
+	&__inner {
+		padding-top: 2.5rem;
+		@include _992 {
+			padding-top: 4.375rem;
+		}
+
+		overflow-x: auto;
+		margin: 0 -1.875rem;
+	}
+
+	// .how-it-works__container
+
+	&__container {
+		
+	}
+
+	// .how-it-works__body
+
+	&__body {
+		min-width: 56.25rem;
+		padding: 0 1.875rem 1.875rem;
+	}
+
+	// .how-it-works__row
+
+	&__row {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0.625rem;
+
+		max-width: calc(200vw - var(--container-padding) * 4);
+		@include _768 {
+			max-width: none;
+			gap: 1.875rem;
+
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+
+	// .how-it-works__info
+
+	&__info {
+		max-width: min(calc(100vw - var(--container-padding) * 2), 33.75rem);
+		background: var(--theme-primary-2);
+
+		@include _768 {
+			flex: 0 1 calc(50% - 0.9375rem);
+		}
+
+		@include _992 {
+			background: var(--theme-primary-4);
+		}
+
+		padding: 0.9063rem 0.9375rem 0.9063rem 1.25rem;
+		border-radius: 0.625rem;
+
+		@media (min-width: 360px) {
+			padding: 0.9063rem 1.4375rem 0.9063rem 1.875rem;
+		}
+
+		display: flex;
+		align-items: center;
+
+		box-shadow: 0.375rem 0.375rem 1rem var(--shadow-2);
+
+		h3 {
+			font-weight: 600;
+			font-size: 1.375rem;
+			line-height: 160%;
+			text-transform: uppercase;
+		}
+
+		p {
+			font-size: 0.875rem;
+		}
+	}
+
+	// .how-it-works__info_col
+
+	&__info_col {
+		&:nth-child(1) {
+			padding-right: 1rem; margin-right: 1rem;
+			border-right: 0.0625rem solid var(--theme-secondary-5);
+
+			@media (min-width: 360px) {
+				padding-right: 1.25rem; margin-right: 1.25rem;
+			}
+		}
+	}
+
+	// .how-it-works__scheme
+
+	&__scheme {
+
+		display: grid;
+		grid-template-columns: 1fr 1.3fr 1.3fr 1.2fr;
+		align-items: center;
+
+		position: relative;
+		max-width: 64.8125rem;
+		margin: 2.5rem auto 0;
+
+		@include _992 {
+			margin: 4.375rem auto 0;
+			grid-template-columns: 1fr 1.3fr 1.3fr 1.1fr;
+		}
+
+	}
+
+	// .how-it-works__scheme_list
+
+	&__scheme_list {
+		&:nth-child(3) {
+			justify-self: start;
+			padding-right: 2.1875rem;
+
+			li {
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				text-align: end;
+				gap: 0.9375rem;
+
+				padding-right: 0.9375rem;
+
+				&::after {
+					content: "";
+					width: 0.375rem; height: 0.375rem; flex: 0 0 0.375rem;
+					border-radius: 50%;
+					background: var(--accent);
+					box-shadow: 0px 0px 1rem 0.3125rem var(--accent);
+				}
+			}
+		}
+
+		&:last-child {
+			justify-self: end;
+			padding-left: 2.1875rem;
+
+			li {
+				display: flex;
+				align-items: center;
+				//justify-content: flex-end;
+				text-align: start;
+				gap: 0.9375rem;
+
+				padding-left: 0.9375rem;
+
+				&::before {
+					content: "";
+					width: 0.375rem; height: 0.375rem; flex: 0 0 0.375rem;
+					border-radius: 50%;
+					background: var(--accent-2);
+					box-shadow: 0px 0px 1rem 0.3125rem var(--accent-2);
+				}
+			}
+		}
+
+		li:not(:first-child) {
+			margin-top: 1.5625rem;
+			
+		}
+
+		li {
+			min-height: 1.625rem;
+
+			color: var(--theme-secondary-2);
+			
+		}
+	}
+
+	// .how-it-works__scheme_block
+
+	&__scheme_block {
+		text-align: center;
+		justify-self: center;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		padding: 1.5625rem;
+
+		background: var(--theme-primary-4);
+		border-radius: 0.625rem;
+		box-shadow: 0.375rem 0.375rem 1rem var(--shadow-2);
+
+		min-height: 5.625rem; min-width: 10.625rem;
+
+		font-weight: 600;
+		font-size: 1.25rem;
+		line-height: 100%;
+		
+
+		//width: 170px;
+		img {
+			max-width: 7.5rem; height: auto; max-height: 5.625rem;
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+}

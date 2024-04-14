@@ -1,0 +1,133 @@
+.investor-protection {
+
+	counter-reset: number;
+	transform: none !important;
+
+	// .investor-protection__block
+
+	&__block {
+		/* min-height: 100vh;
+		min-height: 100svh; */
+		//padding-bottom: 100vh;
+
+		//position: relative;
+		
+
+		&:not(:first-child) {
+			margin-top: var(--height,0);
+		}
+
+		&:nth-child(2) {
+			//margin-top: -995px;
+		}
+
+		&:last-child {
+			z-index: 2;
+		}
+
+		&:last-child &_inner {
+			padding-bottom: 5rem;
+			@include _992 {
+				padding-bottom: 7.5rem;
+			}
+		}
+	}
+
+	&__block:nth-child(-n + 9) &__text::before {
+		content: "0"counter(number);
+	}
+
+	/* &__block .pin-spacer {
+		background: linear-gradient(90deg, transparent 0%, var(--theme-primary) 100%);
+	} */
+
+	// .investor-protection__block_inner
+
+	&__block_inner {
+		position: relative;
+		padding-top: 5rem;
+		padding-bottom: 6.625rem;
+
+		@include _992 {
+			padding-top: 8.125rem;
+			padding-bottom: 9.375rem;
+		}
+		
+		/* min-height: 100vh;
+		min-height: 100svh; */
+	}
+
+	/* &__block.is-pin &__block_inner {
+		position: fixed;
+		left: 0; bottom: 0;
+	} */
+
+	&__block_decor {
+		position: absolute;
+		right: calc(50% - 44rem); top: 6.5625rem;
+		width: 9.0625rem; height: 4.6875rem;
+		z-index: 2;
+	}
+
+	// .investor-protection__block_background
+
+	&__block_background {
+		//border-radius: 1.875rem 1.875rem 0 0;
+		background: var(--theme-primary);
+
+		&::before, &::after {
+			z-index: 2;
+		}
+	}
+
+	&__content {
+		position: relative;
+		z-index: 2;
+	}
+
+	// .investor-protection__title
+
+	&__title {
+	}
+
+	&__title + &__text {
+		margin-top: 2.5rem;
+		@include _992 {
+			margin-top: 3.75rem;
+		}
+	}
+
+	// .investor-protection__text
+
+	&__text {
+
+		@include _992 {
+			padding-left: 10.9375rem;
+		}
+
+		position: relative;
+		
+		&::before {
+			counter-increment: number;
+			content: counter(number);
+
+			padding-bottom: 0.625rem;
+
+			font-size: 4rem;
+			line-height: 100%;
+			font-weight: 900;
+			-webkit-text-stroke-width: 0.0625rem;
+			-webkit-text-stroke-color: var(--accent);
+			color: transparent;
+
+			@include _992 {
+				position: absolute;
+				left: 0; top: 0;
+
+				font-size: 7.5rem;
+				padding-bottom: 0;
+			}
+		}
+		
+	}
+}

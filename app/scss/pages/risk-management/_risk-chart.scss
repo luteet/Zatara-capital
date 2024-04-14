@@ -1,0 +1,130 @@
+.risk-chart {
+
+	padding-bottom: 5rem;
+	
+	@include _992 {
+		padding-bottom: 8.125rem;
+	}
+
+	// .risk-chart__background
+
+	&__background {
+		background: var(--theme-primary);
+
+		&::before, &::after {
+			z-index: 1;
+		}
+
+		.dots-decor {
+			z-index: 2;
+		}
+	}
+
+	// .risk-chart__title
+
+	&__title {
+		z-index: 2;
+		padding-bottom: 4.375rem;
+	}
+
+	// .risk-chart__main
+
+	&__main {
+
+		position: relative;
+		z-index: 2;
+
+		overflow-x: auto;
+		margin: 0 -1.875rem;
+
+		.simplebar-track {
+			z-index: 2;
+		}
+
+		svg {
+
+			width: 100%; height: auto;
+			aspect-ratio: 1240/433;
+
+			.min-text-size {
+				font-size: 12px;
+				font-family: var(--main-font);
+			}
+
+			.normal-text-size {
+				font-size: 16px;
+				font-family: var(--main-font);
+			}
+		}
+	}
+
+	&__main_container {
+		padding: 1.875rem;
+		min-width: 75rem;
+	}
+
+	&__inner {
+		position: relative;
+		z-index: 2;
+	}
+
+	// .risk-chart__legend
+
+	&__legend {
+		padding-top: 3.125rem;
+
+		position: relative;
+		z-index: 2;
+		
+		display: grid;
+		gap: 0.5rem;
+
+		@include _992 {
+			gap: 1.25rem;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		dt {
+			
+			&:not(:first-child) {
+				padding-top: 0.75rem;
+			}
+
+			display: inline-flex;
+			align-items: center;
+			
+			color: var(--color);
+			font-size: 0.875rem;
+			line-height: 120%;
+
+			@include _992 {
+				justify-content: flex-end;
+
+				text-align: end;
+				font-size: 1rem;
+
+				&:not(:first-child) {
+					padding-top: 0;
+				}
+			}
+		}
+
+		dd {
+			display: inline-flex;
+			align-items: center;
+
+			font-size: 0.875rem;
+			line-height: 120%;
+			font-weight: 500;
+			color: var(--theme-secondary-2);
+		}
+	}
+
+	// .risk-chart__legend_line
+
+	&__legend_line {
+		display: inline-block;
+		width: 1.875rem; height: 0.125rem;
+		background: var(--color);
+	}
+}

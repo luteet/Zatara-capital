@@ -1,0 +1,143 @@
+@@include("html/_header.html", {"class": ""})
+
+	<main class="main">
+		<div class="breadcrumbs padding-start container" data-aos="fade-in" data-aos-delay="100">
+			<a href="index.html" class="breadcrumbs__link">Главная</a>
+			<span class="breadcrumbs__separator">/</span>
+			<a href="a-book.html" class="breadcrumbs__link">Торговля</a>
+			<span class="breadcrumbs__separator">/</span>
+			<span class="breadcrumbs__current">Риск менеджмент</span>
+		</div>
+		<section class="hero is-large-padding-bottom">
+			<h1 class="hero__title hero-title" data-aos="fade-in" data-aos-delay="200">Риск менеджмент</h1>
+			<div class="hero__image" data-aos="fade-in" data-aos-delay="100">
+				<div class="hero__image_nav tabs-nav">
+					<ul class="tabs-nav__list">
+						<li>
+							<a href="risk-management.html" class="tabs-nav__link is-active">
+								Общая информация
+							</a>
+						</li>
+						<li>
+							<a href="risk-management-2.html" class="tabs-nav__link">
+								Функционал
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="hero__image_inner is-center">
+					<picture>
+						<source srcset="img/risk-management/risk-management-hero-image.avif" type="image/avif">
+						<source srcset="img/risk-management/risk-management-hero-image.webp" type="image/webp">
+						<img src="img/risk-management/risk-management-hero-image.png" alt="" width="478" height="369" class="image-aspect-ratio" style="--aspect-ratio: 478/369;" loading="lazy">
+					</picture>
+				</div>
+			</div>
+			<div class="hero__content text" data-aos="fade-in" data-aos-delay="200">
+				<p>Торговля на валютном рынке сопряжена с риском потери части или всех средств. На степень риска влияет множество факторов, контролировать которые вручную является объективно сложной задачей.</p>
+				<p>Компанией разработана система внешнего контроля за торговлей трейдеров, доступная каждому желающему. Трейдер может установить ряд ограничений, при реализации одного из которых сделки автоматически закроются и возможность торговли заблокируется на определенный период времени. Также, невозможно любое моментальное изменение уровня ограничений в сторону увеличения, поэтому трейдер не может увеличивать свои потери сверх изначально определенных ограничений в момент нарастания убытка.</p>
+			</div>
+		</section>
+		<section class="general-info section-padding-start">
+			<div class="general-info__background section-background" aria-hidden="true">
+				<div class="section-background__decor dots-decor" aria-hidden="true"></div>
+			</div>
+			<h2 class="general-info__title section-title add-decor is-center" data-aos="fade-in" data-aos-delay="100">Общая информация</h2>
+			<div class="general-info__name" data-aos="fade-in" data-aos-delay="100">
+				Психологическое состояние трейдера
+			</div>
+			<div class="general-info__legends" data-aos="fade-in" data-aos-delay="100">
+				<span class="success-element">
+					Спокойствие
+				</span>
+				<span class="failure-element">
+					Психологическое давление
+				</span>
+			</div>
+			<div class="general-info__inner horizontal-scrollbar center-scroll-position" data-aos="fade-in" data-aos-delay="100" data-simplebar data-simplebar-auto-hide="false">
+				<div class="general-info__container">
+					<div class="general-info__scheme arrows-wrapper">
+						<canvas class="arrow-canvas" aria-hidden="true"></canvas>
+						<canvas class="arrow-canvas-2" aria-hidden="true"></canvas>
+						<div class="general-info__scheme_col">
+							<div class="general-info__scheme_head success-element visible-on-desktop arrow-item" data-arrow-to="[block-1-1, bottom, top]">Спокойствие</div>
+							<div class="general-info__scheme_block text arrow-item" data-arrow-id="block-1-1" data-arrow-to="[block-2-2, right, left]; [block-2-4, right, left]">
+								<h3>Установка ограничений</h3>
+								<p>(производится в спокойной обстановке без влияния эмоций)</p>
+							</div>
+							<div class="general-info__scheme_block text is-success-accent arrow-item" data-arrow-id="block-1-2" data-arrow-to="[block-1-1, top, bottom]">
+								<h3>Изменение ограничений</h3>
+								<p>возможно только по прошествии определенного времени, что дает возможность трейдеру стабилизировать психологическое состояние</p>
+							</div>
+						</div>
+						<div class="general-info__scheme_col">
+							<div class="general-info__scheme_head failure-element visible-on-desktop arrow-item" data-arrow-to="[block-2-1, bottom, top]">Психологическое давление</div>
+							<div class="general-info__scheme_block text arrow-item" data-arrow-id="block-2-1" data-arrow-to="[block-2-2, bottom, top]; [block-2-3, bottom, top]; [block-2-4, bottom, top]">
+								<svg class="general-info__scheme_icon failure-color" width="30" height="30"><use href="img/sprites.svg#decor-close"></use></svg>
+								<h3>Установка ограничений</h3>
+								<p>(ошибки вследствие давления эмоций)</p>
+							</div>
+							<div class="general-info__scheme_row">
+								<div class="general-info__scheme_block text arrow-item" data-label="Торговля" data-success-label="Торговля" data-arrow-id="block-2-2" data-arrow-to="[block-2-4, bottom, top]">
+									<svg class="general-info__scheme_icon failure-color" width="30" height="30"><use href="img/sprites.svg#decor-close"></use></svg>
+									<h3>Изменение ограничений</h3>
+									<p>(увеличение потенциальных потерь в момент убытков вплоть до "слива")</p>
+								</div>
+								<div class="general-info__scheme_block text arrow-item" data-label="Торговля" data-arrow-id="block-2-3" data-arrow-to="[block-2-4, bottom, top]">
+									<svg class="general-info__scheme_icon failure-color" width="30" height="30"><use href="img/sprites.svg#decor-close"></use></svg>
+									<h3>Потери</h3>
+									<p>(из-за неверно выставленных уровней ограничений)</p>
+								</div>
+							</div>
+							<div class="general-info__scheme_block text is-failure-accent is-start-label arrow-item" 
+							data-success-label-1="Время до разблокировки возможности торговли" 
+							data-success-label-2="Стабилизация психологического состояния трейдера" 
+							data-success-label="Торговля"
+							data-label="Торговля" 
+							data-arrow-id="block-2-4" 
+							data-arrow-to="[block-2-5, bottom, top]; [block-1-2, bottom, bottom]">
+								<h3>Реализация ограничений</h3>
+								<p>(Stop-Loss и т.п.)</p>
+							</div>
+							<div class="general-info__scheme_block text is-end-label" data-label="Продолжение торговли" data-arrow-id="block-2-5">
+								<svg class="general-info__scheme_icon failure-color" width="30" height="30"><use href="img/sprites.svg#decor-close"></use></svg>
+								<h3>Новые ошибки и убытки</h3>
+								<p>(из-за продолжения торговли под психологическим прессингом от полученных только что убытков)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="advantages-system section-padding-start">
+			<div class="advantages-system__background section-background" aria-hidden="true">
+				<div class="section-background__decor dots-decor is-end"></div>
+			</div>
+			<div class="advantages-system__inner">
+				<h2 class="advantages-system__title section-title add-decor is-center-on-mob" data-aos="fade-in" data-aos-delay="200">
+					Преимущества системы
+				</h2>
+				<div class="advantages-system__image" data-aos="fade-in" data-aos-delay="100">
+					<div class="advantages-system__image_inner">
+						<picture>
+							<source srcset="img/risk-management/risk-management-advantages-image.avif" type="image/avif">
+							<source srcset="img/risk-management/risk-management-advantages-image.webp" type="image/webp">
+							<img src="img/risk-management/risk-management-advantages-image.png" alt="" width="402" height="580" class="image-aspect-ratio" loading="lazy">
+						</picture>
+					</div>
+				</div>
+				<div class="advantages-system__content text" data-aos="fade-in" data-aos-delay="200">
+					<ul>
+						<li>Снятие с трейдера психологической нагрузки ввиду понимания того, что заданные уровни ограничений потерь невозможно изменить в ходе торговли.</li>
+						<li>Отсутствие возможности со стороны трейдера изменить уровни ограничений моментально: подача на изменение уровня ограничения исполняется не ранее начала следующей торговой недели. Таким образом, трейдер не может увеличить уровень потерь в состоянии психологического давления.</li>
+						<li>Невозможность продолжения торговли некоторое время после реализации одного из ограничений (как правило, до начала следующей торговой недели). Это исключает торговлю в состоянии психологического давления (у трейдера есть время успокоиться и пересмотреть свои ошибки до следующей недели).</li>
+						<li>Защита от ошибочных действий трейдера, совершаемых под воздействием сильных эмоций.</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		@@include("html/_why-we.html")
+		@@include("html/_cooperating.html")
+	</main>
+
+@@include("html/_footer.html")

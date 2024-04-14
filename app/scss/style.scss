@@ -13,6 +13,13 @@
 @import 'components/header';
 @import 'components/accent-stock';
 @import 'components/tabs';
+@import 'components/breadcrumbs';
+@import 'components/advantages-block';
+@import 'components/pagination';
+@import 'components/hero-block';
+@import 'components/datepicker';
+
+@import 'pages/authentication/main';
 
 @import 'pages/index/hero';
 @import 'pages/index/stocks';
@@ -20,6 +27,47 @@
 @import 'pages/index/markets';
 @import 'pages/index/why-we';
 @import 'pages/index/cooperating';
-//@import 'pages';
+
+@import 'pages/about-us/hero';
+@import 'pages/about-us/info';
+@import 'pages/about-us/our-advantages';
+
+@import 'pages/documents/main';
+
+@import 'components/hero';
+
+@import 'pages/funds-protection/investor-protection';
+
+@import 'pages/liquidity-providers/banks';
+
+@import 'pages/a-book/hero';
+@import 'pages/a-book/advantages';
+
+@import 'pages/aggregation-liquidity/how-it-works';
+@import 'pages/aggregation-liquidity/advantages';
+
+@import 'pages/risk-management/general-info';
+@import 'pages/risk-management/advantages-system';
+@import 'pages/risk-management/hero';
+@import 'pages/risk-management/risk-chart';
+
+@import 'pages/trading-platform/mobile-app';
+@import 'pages/trading-platform/stay-informed';
+@import 'pages/trading-platform/intuitive-trading';
+
+@import 'pages/news/card';
+@import 'pages/news/main';
+@import 'pages/news/single';
+@import 'pages/news/holidays';
+@import 'pages/news/holidays-item';
+
+@import 'pages/economic-calendar/main';
+
+@import 'pages/faq/main';
+@import 'pages/faq/item';
+
+@import 'pages/contacts/our-contacts';
+@import 'pages/contacts/feedback';
 
 @import 'components/footer';
+@import 'components/light-theme';

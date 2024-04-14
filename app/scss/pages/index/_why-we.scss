@@ -1,10 +1,10 @@
 .why-we {
 
-	padding-top: 5rem;
-	margin-top: 6.25rem;
+	padding-top: 5rem; padding-bottom: 4.9375rem;
+	//margin-top: 6.25rem;
 
 	@include _992 {
-		padding-top: 8.125rem;
+		padding-top: 8.125rem; padding-bottom: 10.8125rem;
 	}
 
 	// .why-we__background
@@ -15,13 +15,19 @@
 		width: 100%; height: 100%;
 		z-index: -1;
 
+		//background: var(--theme-primary);
+
 		&::before {
 			content: '';
 			position: absolute;
 			left: 0; top: 0;
 			width: 100%; height: 100%;
 			background: linear-gradient(180deg, #001641 0%, rgba(0, 22, 65, 0) 100%);
-			border-radius: 3.75rem 3.75rem 0px 0px;
+			border-radius: 1.875rem 1.875rem 0 0;
+
+			@include _992 {
+				border-radius: 3.75rem 3.75rem 0 0;
+			}
 	
 			animation-duration: var(--animating-speed,0s);
 			animation-timing-function: ease;
@@ -37,7 +43,11 @@
 			left: 0; top: 0;
 			width: 100%; height: 100%;
 			background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
-			border-radius: 3.75rem 3.75rem 0px 0px;
+			border-radius: 1.875rem 1.875rem 0 0;
+
+			@include _992 {
+				border-radius: 3.75rem 3.75rem 0 0;
+			}
 	
 			animation-duration: var(--animating-speed,0s);
 			animation-timing-function: ease;
@@ -360,4 +370,8 @@
 	&__text {
 		font-weight: 500;
 	}
+}
+
+.why-we + .cooperating {
+	padding-top: 0;
 }

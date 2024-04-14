@@ -1,0 +1,63 @@
+@@include("html/_header.html", {"class": ""})
+
+	<main class="main">
+		<div class="breadcrumbs padding-start container" data-aos="fade-in" data-aos-delay="100">
+			<a href="index.html" class="breadcrumbs__link">Главная</a>
+			<span class="breadcrumbs__separator">/</span>
+			<a href="about-us.html" class="breadcrumbs__link">О компании</a>
+			<span class="breadcrumbs__separator">/</span>
+			<span class="breadcrumbs__current">Поставщики ликвидности</span>
+		</div>
+		<section class="hero">
+			<div class="hero__decor dots-decor is-bottom" aria-hidden="true"></div>
+			<h1 class="hero__title hero-title" data-aos="fade-in" data-aos-delay="200">Поставщики ликвидности</h1>
+			<div class="hero__image" data-aos="fade-in" data-aos-delay="100">
+				<div class="hero__image_inner is-center">
+					<picture>
+						<source srcset="img/liquidity-providers/liquidity-providers-hero-image.avif" type="image/avif">
+						<source srcset="img/liquidity-providers/liquidity-providers-hero-image.webp" type="image/webp">
+						<img src="img/liquidity-providers/liquidity-providers-hero-image.png" alt="" width="315" height="480" class="image-aspect-ratio is-min" style="--aspect-ratio: 315/480;" loading="lazy">
+					</picture>
+				</div>
+			</div>
+			<div class="hero__content text" data-aos="fade-in" data-aos-delay="200">
+				<em>Мы заботимся о том, чтобы торговые распоряжения наших Клиентов принимались и исполнялись мгновенно.</em>
+				<p>Для этого мы напрямую сотрудничаем с институциональными брокерами, ликвидность которых обеспечивается ведущими мировыми поставщиками ликвидности.</p>
+			</div>
+		</section>
+		<section class="banks accent-on-light">
+			<div class="banks__background section-background" aria-hidden="true"></div>
+			<div class="banks__decor dots-decor" aria-hidden="true"></div>
+			<h2 class="banks__title section-title add-decor" data-aos="fade-in" data-aos-delay="100">Банки и финансовые организации</h2>
+			<div class="banks__inner horizontal-scrollbar is-min-2" data-simplebar data-simplebar-auto-hide="false" data-aos="fade-in" data-aos-delay="200">
+				<div class="banks__inner_body">
+					<ul class="banks__list">
+						@@include("html/_banks-item.html", {"logo": "1"})
+						@@include("html/_banks-item-light.html", {"logo": "2"})
+						@@include("html/_banks-item-light.html", {"logo": "3"})
+						@@include("html/_banks-item.html", {"logo": "4"})
+						@@include("html/_banks-item.html", {"logo": "5"})
+						@@include("html/_banks-item.html", {"logo": "6"})
+						@@include("html/_banks-item-light.html", {"logo": "7"})
+						@@include("html/_banks-item-light.html", {"logo": "8"})
+						@@include("html/_banks-item-light.html", {"logo": "9"})
+						@@include("html/_banks-item-light.html", {"logo": "10"})
+						@@include("html/_banks-item-light.html", {"logo": "11"})
+						@@include("html/_banks-item-light.html", {"logo": "12"})
+						@@include("html/_banks-item.html", {"logo": "13"})
+						@@include("html/_banks-item.html", {"logo": "14"})
+						@@include("html/_banks-item.html", {"logo": "15"})
+						@@include("html/_banks-item-light.html", {"logo": "16"})
+						@@include("html/_banks-item.html", {"logo": "17"})
+						@@include("html/_banks-item.html", {"logo": "18"})
+						@@include("html/_banks-item.html", {"logo": "19"})
+						@@include("html/_banks-item.html", {"logo": "20"})
+					</ul>
+				</div>
+			</div>
+		</section>
+		@@include("html/_why-we.html")
+		@@include("html/_cooperating.html")
+	</main>
+
+@@include("html/_footer.html")

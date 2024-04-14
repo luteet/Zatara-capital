@@ -1,0 +1,186 @@
+@@include("html/_account-header.html")
+
+	<div class="account-block">
+		<h1 class="account-title">
+			Настройки
+		</h1>
+		@@include("html/_mobile-nav.html")
+		<form class="personal-data">
+			<div class="account-tabs">
+				<ul class="account-tabs__list">
+					<li>
+						<a href="account-personal-data.html" class="account-tabs__link is-active">
+							Личные данные
+						</a>
+					</li>
+					<li>
+						<a href="account-change-avatar.html" class="account-tabs__link">
+							Изменить аватар
+						</a>
+					</li>
+					<li>
+						<a href="account-change-password.html" class="account-tabs__link">
+							Изменить пароль
+						</a>
+					</li>
+					<li>
+						<a href="account-change-email.html" class="account-tabs__link">
+							Изменить e-mail
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="personal-data__row">
+				<div class="personal-data__block account-block">
+					<div class="account-block__body is-min">
+						<h2 class="account-block__title is-large">Личные параметры</h2>
+						<label class="personal-data__form_item form-item">
+							<span>Ваше имя</span>
+							<input type="text" name="name" placeholder="Имя" value="Oleg" class="input">
+						</label>
+						<label class="personal-data__form_item form-item">
+							<span>Ваш логин</span>
+							<input type="text" name="login" placeholder="Логин" value="John Dow" class="input">
+						</label>
+						<label class="personal-data__form_item form-item">
+							<span>Ваш e-mail</span>
+							<input type="email" name="email" placeholder="E-mail" value="webzenkov@gmail.com" class="input">
+						</label>
+						<label class="personal-data__form_item form-item">
+							<span>Ваш часовой пояс (GMT)</span>
+							<select name="gmt" class="custom-select">
+								<option value="+0:00">+0:00</option>
+								<option value="+1:00">+1:00</option>
+								<option value="+2:00">+2:00</option>
+								<option value="+3:00">+3:00</option>
+								<option value="+4:00">+4:00</option>
+							</select>
+						</label>
+						<div class="personal-data__form_item">
+							<label class="checkbox">
+								<input type="checkbox" name="notification-on-email" class="checkbox__input">
+								<span class="checkbox__element">
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#check-2"></use>
+									</svg>
+								</span>
+								<span class="checkbox__text">
+									Не получать оповещения на e-mail
+								</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="personal-data__block account-block">
+					<div class="account-block__body is-min">
+						<h2 class="account-block__title is-large">Личные данные</h2>
+						<div class="personal-data__form_row">
+							<label class="personal-data__form_item form-item">
+								<span>Страна</span>
+								<select name="country" class="custom-select">
+									<option value="Украина">Украина</option>
+									<option value="Страна 1">Страна 1</option>
+									<option value="Страна 2">Страна 2</option>
+									<option value="Страна 3">Страна 3</option>
+								</select>
+							</label>
+							<label class="personal-data__form_item form-item">
+								<span>Гражданство</span>
+								<select name="nationality" class="custom-select">
+									<option value="Украинское">Украинское</option>
+									<option value="Гражданство 1">Гражданство 1</option>
+									<option value="Гражданство 2">Гражданство 2</option>
+									<option value="Гражданство 3">Гражданство 3</option>
+								</select>
+							</label>
+							<label class="personal-data__form_item form-item">
+								<span>Город</span>
+								<input type="text" name="city" placeholder="" value="" class="input">
+							</label>
+							<label class="personal-data__form_item form-item">
+								<span>Дата рождения</span>
+								<input type="text" name="birthday" placeholder="" value="" class="input">
+							</label>
+							<label class="personal-data__form_item form-item">
+								<span>Адрес</span>
+								<input type="text" name="address" placeholder="" value="" class="input">
+							</label>
+							<label class="personal-data__form_item form-item">
+								<span>Телеграм</span>
+								<input type="text" name="telegram" placeholder="" value="" class="input">
+							</label>
+							<label class="personal-data__form_item form-item">
+								<span>Почтовый индекс</span>
+								<input type="text" name="post-code" placeholder="" value="" class="input">
+							</label>
+							<label class="personal-data__form_item form-item">
+								<span>Номер телефона</span>
+								<input type="tel" name="tel" placeholder="" value="" class="input">
+							</label>
+						</div>
+						<div class="personal-data__note">
+							<p>Мы никогда и ни при каких обстоятельствах не передаем личные данные третьим лицам</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="personal-data__block account-block">
+				<div class="account-block__body is-min">
+					<h2 class="account-block__title is-large">Безопасность</h2>
+					<div class="personal-data__security">
+						<div class="personal-data__security_col">
+							<span>Контроль смены IP-адреса</span>
+							<div class="personal-data__security_item">
+								<select name="ip-address-change-control" class="custom-select">
+									<option value="По умолчанию">По умолчанию</option>
+									<option value="По умолчанию 1">По умолчанию 1</option>
+									<option value="По умолчанию 2">По умолчанию 2</option>
+									<option value="По умолчанию 3">По умолчанию 3</option>
+								</select>
+							</div>
+							<span>Автовыход через</span>
+							<div class="personal-data__security_item">
+								<input type="text" value="0" placeholder="0" inputmode="numeric" class="input">
+								<span>мин.</span>
+							</div>
+						</div>
+						<div class="personal-data__security_col">
+							<div class="personal-data__security_item">
+								<label class="checkbox">
+									<input type="checkbox" class="checkbox__input">
+									<span class="checkbox__element">
+										<svg width="24" height="24">
+											<use href="img/sprites.svg#check-2"></use>
+										</svg>
+									</span>
+									<span class="checkbox__text">
+										Привязывать сессию к IP-адресу
+									</span>
+								</label>
+							</div>
+							<div class="personal-data__security_item">
+								<label class="checkbox">
+									<input type="checkbox" class="checkbox__input">
+									<span class="checkbox__element">
+										<svg width="24" height="24">
+											<use href="img/sprites.svg#check-2"></use>
+										</svg>
+									</span>
+									<span class="checkbox__text">
+										Запретить параллельные сессии
+									</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="personal-data__footer">
+				<button class="personal-data__submit button" type="button" aria-label="Сохранить">
+					<span>Сохранить</span>
+				</button>
+			</div>
+		</form>
+	</div>
+
+@@include("html/_account-footer.html")

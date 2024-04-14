@@ -1,0 +1,14 @@
+.hero-block {
+	
+	padding-top: 2.5rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 1.875rem 0.9375rem;
+
+	.text {
+		max-width: 25.0625rem;
+	}
+}

@@ -1,0 +1,51 @@
+@@include("html/_account-header.html")
+
+	<div class="account-block">
+		<h1 class="account-title">
+			Вывод средств
+		</h1>
+		@@include("html/_mobile-nav.html")
+		<div class="replenishment account-block">
+			<div class="replenishment__body account-block__body">
+				<div class="replenishment__row">
+					<div class="replenishment__item form-item">
+						<span>Сумма</span>
+						<span>
+							<input type="text" name="value" inputmode="numeric" placeholder="0" class="input">
+							<span><b>USDT</b></span>
+						</span>
+					</div>
+					<div class="replenishment__item form-item">
+						<span>Платёжная система</span>
+						<span>
+							<select name="currency" class="custom-select">
+								<option value="Tether" data-html='<div class="refill-account__option"><img src="img/crypto/Tether.svg" width="36" height="26" alt=""><b>Tether <span>(TRC20)</span></b></div>'>
+									Tether (TRC20)
+								</option>
+								<option value="Bitcoin" data-html='<div class="refill-account__option"><img src="img/crypto/Bitcoin.svg" width="36" height="26" alt=""><b>Bitcoin <span>(TRC20)</span></b></div>'>
+									Bitcoin (TRC20)
+								</option>
+							</select>
+						</span>
+					</div>
+					<div class="replenishment__item form-item">
+						<span>Баланс будет пополнен на сумму:</span>
+						<span class="form-item__text">
+							<b>1000.00</b> USDT (TRC20)
+						</span>
+					</div>
+					<div class="replenishment__item form-item">
+						<span>Комиссия:</span>
+						<span class="form-item__text">
+							<b>0.00</b> USDT (TRC20)
+						</span>
+					</div>
+				</div>
+				<button class="replenishment__submit button" type="submit" aria-label="Пополнить">
+					<span>Пополнить</span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+@@include("html/_account-footer.html")

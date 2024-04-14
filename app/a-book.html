@@ -1,0 +1,102 @@
+@@include("html/_header.html", {"class": ""})
+
+	<main class="main">
+		<div class="breadcrumbs padding-start container" data-aos="fade-in" data-aos-delay="100">
+			<a href="index.html" class="breadcrumbs__link">Главная</a>
+			<span class="breadcrumbs__separator">/</span>
+			<a href="a-book.html" class="breadcrumbs__link">Торговля</a>
+			<span class="breadcrumbs__separator">/</span>
+			<span class="breadcrumbs__current">Торги по модели A-Book</span>
+		</div>
+		<section class="a-book accent-on-light">
+			<h1 class="a-book__title hero-title" data-aos="fade-in" data-aos-delay="200">
+				Торги по модели A-Book
+			</h1>
+			<div class="a-book__text text is-min" data-aos="fade-in" data-aos-delay="200">
+				<p>
+					Компания работает по 100%-й A-book модели, хеджируя на внешних контрагентах все клиентские позиции. Компания не заинтересована в убытках клиента, поскольку зарабатывает лишь с уплаченной им комиссии за совершение сделок.
+				</p>
+			</div>
+			<div class="a-book__scheme arrows-wrapper" data-aos="fade-in" data-aos-delay="200">
+				<canvas class="arrow-canvas" aria-hidden="true"></canvas>
+				<canvas class="arrow-canvas-2" aria-hidden="true"></canvas>
+				<h2 class="a-book__name is-success">A-book</h2>
+				<ul class="a-book__list">
+					<li class="a-book__item arrow-item" data-arrow-id="client" data-arrow-label="Потери клиента" data-arrow-to="[broker, bottom, top]; [agent-bank, right, right, centerArrow]">
+						<p>Клиент</p>
+					</li>
+					<li class="a-book__item arrow-item" data-arrow-id="broker" data-arrow-to="[agent-bank, bottom, top]">
+						<p>Брокер</p>
+					</li>
+					<li class="a-book__item arrow-item" data-arrow-id="agent-bank" data-arrow-label="Доходность клиента" data-arrow-to="[client, left, left, centerArrow]">
+						<img src="img/a-book/a-book-hero-icon-1.svg" width="130" height="60" loading="lazy" alt="">
+						<p>Контрагенты 1-го и последующих уровней</p>
+						<img src="img/a-book/a-book-hero-icon-2.svg" width="40" height="40" loading="lazy" alt="">
+						<p>Межбанк</p>
+						<svg width="32" height="30" class="a-book__item_status success-color"><use href="img/sprites.svg#decor-check"></use></svg>
+					</li>
+				</ul>
+			</div>
+			<div class="a-book__scheme arrows-wrapper" data-aos="fade-in" data-aos-delay="300">
+				<canvas class="arrow-canvas" aria-hidden="true"></canvas>
+				<canvas class="arrow-canvas-2" aria-hidden="true"></canvas>
+				<h2 class="a-book__name is-failure">B-book</h2>
+				<ul class="a-book__list">
+					<li class="a-book__item arrow-item" data-arrow-id="client" data-arrow-label="Потери клиента" data-arrow-to="[broker, bottom, top]; [broker, right, right, centerArrow]">
+						<p>Клиент</p>
+					</li>
+					<li class="a-book__item arrow-item" data-arrow-id="broker" data-arrow-label="Доходность клиента" data-arrow-to="[conflict, bottom, top]; [client, left, left, centerArrow]">
+						<p>Брокер</p>
+					</li>
+					<li class="a-book__item arrow-item" data-arrow-id="conflict" data-arrow-to="[param-1, left, left, noneArrow]; [param-2, left, left, noneArrow]; [param-3, left, left, noneArrow]; [param-4, left, left, noneArrow]">
+						<p>Конфликт интересов</p>
+						<svg width="32" height="30" class="a-book__item_status failure-color"><use href="img/sprites.svg#decor-close"></use></svg>
+					</li>
+					<li class="a-book__item_list">
+						<ul>
+							<li class="arrow-item" data-arrow-id="param-1">Ухудшение исполнения торговых приказов</li>
+							<li class="arrow-item" data-arrow-id="param-2">Введение ограничений на торговлю</li>
+							<li class="arrow-item" data-arrow-id="param-3">Отмена доходных сделок</li>
+							<li class="arrow-item" data-arrow-id="param-4">Отказ в выплате прибыли</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="a-book-advantages accent-on-light">
+			<div class="a-book-advantages__background section-background" aria-hidden="true"></div>
+			<div class="a-book-advantages__decor dots-decor" aria-hidden="true"></div>
+			<h2 class="a-book-advantages__title section-title add-decor" data-aos="fade-in" data-aos-delay="200">
+				Преимущества A-book модели
+			</h2>
+			<div class="a-book-advantages__block text" data-aos="fade-in" data-aos-delay="200">
+				<h3>
+					Отсутствие <mark>рисков банкротства</mark>
+				</h3>
+				<p>В случае работы по B-book и смешанной модели компания несет дополнительные риски, так как выступает контрагентом по сделкам клиента, заработок клиента становится потерями компании, и наоборот.</p>
+				<p>Данная причина привела к банкротству довольно большого количества компаний, ввиду слишком больших заработков клиентов короткий промежуток времени.</p>
+				<p>Zatara Capital Securities не несет данных рисков банкротства, поскольку не выступает контрагентом по сделкам клиентов.</p>
+			</div>
+			<div class="a-book-advantages__image" data-aos="fade-in" data-aos-delay="100">
+				<picture>
+					<source srcset="img/a-book/a-book-advantages-image.avif" type="image/avif">
+					<source srcset="img/a-book/a-book-advantages-image.webp" type="image/webp">
+					<img src="img/a-book/a-book-advantages-image.png" alt="" width="374" height="410" loading="lazy" class="image-aspect-ratio">
+				</picture>
+			</div>
+			<div class="a-book-advantages__block text" data-aos="fade-in" data-aos-delay="100">
+				<h3>
+					Отсутствие <mark>конфликта интересов</mark>
+				</h3>
+				<p>В случае работы по B-book и смешанной модели компания выступает контрагентом по сделкам клиента, заработок клиента становится потерями компании, и наоборот.</p>
+				<p>Схема работы по A-book модели полностью исключает конфликт интересов между компанией и клиентами, поскольку Компания не выступает контрагентам по сделкам клиентов и не заинтересована в их потерях.</p>
+			</div>
+			<div class="a-book-advantages__item" data-aos="fade-in" data-aos-delay="200">
+				Компания работает по 100%-й A-book модели, хеджируя все клиентские позиции на внешних контрагентах.
+			</div>
+		</section>
+		@@include("html/_why-we.html")
+		@@include("html/_cooperating.html")
+	</main>
+
+@@include("html/_footer.html")

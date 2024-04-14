@@ -1,0 +1,253 @@
+.about-us-info {
+
+	padding-top: 5.625rem;
+	position: relative;
+
+	@include _992 {
+		padding-top: 8.125rem;
+	}
+
+	// .about-us-info__background
+
+	&__background {
+		overflow: hidden;
+
+		
+	}
+
+	&__background_decor {
+		position: absolute;
+		left: 0; top: 0;
+		@include _992 {
+			transform: translate(-50%,-25%);
+			width: 125rem;
+		}
+		aspect-ratio: 1/1;
+		background: var(--gradient-circle);
+		border-radius: 50%;
+		opacity: .5;
+	}
+
+	// .about-us-info__decor
+
+	&__decor {
+		right: calc(50% - 43.75rem); top: -6.25rem;
+		width: 6.875rem; height: 11.25rem;
+		transform: translate(0,10%);
+	}
+
+	// .about-us-info__block
+
+	&__block {
+
+		display: flex;
+		flex-direction: column;
+		
+		@include _992 {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		&:not(:nth-child(3)) {
+			padding-top: 5rem;
+			@include _992 {
+				padding-top: 8.125rem;
+			}
+		}
+	}
+
+	&__block.is-reverse & {
+		&__title {
+			grid-column: 1; grid-row: 1;
+		}
+
+		&__image {
+			grid-column: 2; grid-row: 2/5;
+			justify-content: center;
+			text-align: center;
+		}
+
+		&__content {
+			grid-column: 1; grid-row: 2;
+			@include _992 {
+				max-width: 34.6875rem;
+			}
+		}
+
+		&__footer {
+			grid-column: 1; grid-row: 3;
+		}
+	}
+
+	// .about-us-info__title
+
+	&__title {
+		grid-column: 2; grid-row: 1;
+	}
+
+	// .about-us-info__image
+
+	&__image {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		
+		margin-top: 1.875rem;
+
+		@include _992 {
+			text-align: start;
+			margin-top: 0;
+		}
+
+		grid-column: 1; grid-row: 2/5;
+		position: relative;
+
+		&.add-decor::before {
+			content: "";
+			position: absolute;
+			left: 50%; top: 50%;
+			width: 100%; aspect-ratio: 1/1;
+			transform: translate(-50%,-50%);
+			background: var(--decor-circles) center / contain no-repeat;
+			pointer-events: none;
+			@include _992 {
+				transform: translate(-60%,-50%);
+			}
+		}
+
+		&.add-decor-2::before {
+			position: absolute;
+			left: 50%; top: 0;
+			@include _992 {
+				content: "";
+				transform: translate(-50%,-25%);
+				width: 105rem;
+			}
+			aspect-ratio: 1/1;
+			background: var(--gradient-circle);
+			border-radius: 50%;
+			opacity: .4;
+			pointer-events: none;
+		}
+
+		img {
+			max-width: 31.25rem;
+			transform: translate(0,1.875rem);
+			padding: 0 0.9375rem;
+			object-fit: contain;
+			@include _992 {
+				padding: 0;
+			}
+		}
+
+		&.is-min img {
+			max-width: 13.75rem;
+			@include _992 {
+				max-width: 18.375rem;
+			}
+		}
+	}
+
+	&__image_decor {
+		left: 0; top: 0;
+		transform: translate(40%,-20%);
+		width: 9.0625rem; height: 9.0625rem;
+		clip-path: var(--decor-clip-right-bottom);
+		pointer-events: none;
+
+		display: none;
+		@include _992 {
+			display: block;
+		}
+	}
+
+	// .about-us-info__content
+
+	&__content {
+		padding-top: 2.5rem;
+		grid-column: 2; grid-row: 2;
+	}
+
+	&__footer {
+		grid-column: 2; grid-row: 3;
+		margin-top: 3.125rem;
+		justify-self: start;
+
+		margin-left: auto; margin-right: auto;
+		@include _992 {
+			margin-left: 0; margin-right: 0;
+		}
+	}
+
+	// .about-us-info__note
+
+	&__note {
+		margin-top: 2.5rem;
+		@include _992 {
+			margin-top: 8.125rem;
+		}
+	}
+
+	&__note_inner {
+		position: relative;
+		z-index: 2;
+
+		padding: 1.25rem 1.875rem 2.0625rem 1.25rem;
+
+		@include _992 {
+			padding: 1.875rem;
+			grid-template-columns: 5rem auto;
+			align-items: center;
+
+			border-radius: 0px 2.5rem;
+		}
+
+		background: var(--theme-primary-2);
+		box-shadow: 0px 1.25rem 2.5rem rgba(0, 12, 35, 0.3);
+		border-radius: 0px 1.875rem;
+
+		display: grid;
+		grid-template-columns: 100%;
+		
+	}
+
+	// .about-us-info__note_icon
+
+	&__note_icon {
+		
+
+		img {
+			transform: rotate(-25deg) translate(0,-15%);
+			width: 1.875rem; height: 1.875rem;
+
+			@include _992 {
+				width: 3.125rem; height: 3.125rem;
+			}
+		}
+	}
+
+	// .about-us-info__note_text
+
+	&__note_text {
+
+		padding-top: 1rem;
+
+		@include _550 {
+			font-size: 1rem;
+		}
+
+		@include _992 {
+			padding-top: 0;
+			
+			font-size: 1.25rem;
+		}
+
+		font-size: 0.875rem;
+		line-height: 160%;
+	}
+
+	// .about-us-info__image_decor
+
+	&__image_decor {
+	}
+}

@@ -1,0 +1,59 @@
+@@include("html/_header.html", {"class": ""})
+
+	<main class="main">
+		<section class="authentication padding-start accent-on-light">
+			<form class="authentication__block is-min" data-aos="fade-in" data-aos-delay="100">
+				<img src="img/login/login-decor-image-2.png" width="0" height="0" loading="lazy" alt="" aria-hidden="true" class="authentication__decor">
+				<h1 class="authentication__title section-title is-center">
+					Авторизация
+				</h1>
+				<div class="authentication__row">
+					<div class="authentication__col">
+						<label class="form-label">
+							<span>Логин</span>
+							<input type="text" name="login" placeholder="Придумайте логин" required class="input">
+						</label>
+						<label class="form-label">
+							<span>Пароль</span>
+							<input type="password" name="password" placeholder="Придумайте пароль" required class="input">
+							<button class="toggle-visible-password" type="button">
+								<svg width="24" height="24">
+									<use href="img/sprites.svg#password-hidden"></use>
+								</svg>
+								<svg width="24" height="24">
+									<use href="img/sprites.svg#password-visible"></use>
+								</svg>
+							</button>
+						</label>
+					</div>
+				</div>
+				<div class="authentication__min_row">
+					<label class="authentication__checkbox checkbox">
+						<input type="checkbox" name="privacy" required checked class="checkbox__input">
+						<span class="checkbox__element">
+							<svg width="16" height="16">
+								<use href="img/sprites.svg#check-2"></use>
+							</svg>
+						</span>
+						<span class="checkbox__text">
+							Запомнить это устройство
+						</span>
+					</label>
+					<a href="#" class="authentication__link link">
+						Забыли пароль?
+					</a>
+				</div>
+				<div class="authentication__footer">
+					<button class="authentication__submit button" type="submit" aria-label="Вход">
+						<span>Вход</span>
+						<span class="button-flare" aria-hidden="true"></span>
+					</button>
+					<div class="authentication__note">
+						Нет аккаунта? <a href="registration.html">Зарегистрируйтесь</a>
+					</div>
+				</div>
+			</form>
+		</section>
+	</main>
+
+@@include("html/_footer-none.html")

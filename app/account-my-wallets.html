@@ -1,0 +1,251 @@
+@@include("html/_account-header.html")
+
+	<div class="account-block">
+		<div class="account-block__header">
+			<h1 class="account-title">
+				Мои кошельки
+			</h1>
+			<div class="account-block__header_text text">
+				<p>
+					Укажите ваши платежные реквизиты для дальнейшего вывода средств
+				</p>
+			</div>
+		</div>
+		@@include("html/_mobile-nav.html")
+		<div class="wallets">
+			<ul class="wallets__list">
+				<li class="wallets__item wallets-item">
+					<div class="wallets-item__col">
+						<div class="wallets-item__info">
+							<img src="img/crypto/Ethereum-2.svg" width="30" height="30" loading="lazy" alt="">
+							<span>Ethereum</span>
+						</div>
+					</div>
+					<div class="wallets-item__col">
+						<div class="wallets-item__address">
+							<input type="text" name="address" value="" placeholder="Укажите адрес кошелька..." class="input mode-3" id="crypto-wallet-address-1">
+							<button class="copy-target" data-clipboard-target="#crypto-wallet-address-1" type="button">
+								<svg width="20" height="20">
+									<use href="img/sprites.svg#copy"></use>
+								</svg>
+							</button>
+						</div>
+						<button class="wallets-item__remove" aria-label="Trash">
+							<svg width="20" height="20">
+								<use href="img/sprites.svg#trash"></use>
+							</svg>
+						</button>
+					</div>
+				</li>
+				<li class="wallets__item wallets-item">
+					<div class="wallets-item__col">
+						<div class="wallets-item__info">
+							<img src="img/crypto/Bitcoin.svg" width="30" height="30" loading="lazy" alt="">
+							<span>Bitcoin</span>
+						</div>
+					</div>
+					<div class="wallets-item__col">
+						<div class="wallets-item__address">
+							<input type="text" name="address" value="" placeholder="Укажите адрес кошелька..." class="input mode-3" id="crypto-wallet-address-2">
+							<button class="copy-target" data-clipboard-target="#crypto-wallet-address-2" type="button">
+								<svg width="20" height="20">
+									<use href="img/sprites.svg#copy"></use>
+								</svg>
+							</button>
+						</div>
+						<button class="wallets-item__remove" aria-label="Trash">
+							<svg width="20" height="20">
+								<use href="img/sprites.svg#trash"></use>
+							</svg>
+						</button>
+					</div>
+				</li>
+				<li class="wallets__item wallets-item">
+					<div class="wallets-item__col">
+						<div class="wallets-item__info">
+							<img src="img/crypto/Bitcoin-cash.svg" width="30" height="30" loading="lazy" alt="">
+							<span>Bitcoin Cash</span>
+						</div>
+					</div>
+					<div class="wallets-item__col">
+						<div class="wallets-item__address">
+							<input type="text" name="address" value="" placeholder="Укажите адрес кошелька..." class="input mode-3" id="crypto-wallet-address-3">
+							<button class="copy-target" data-clipboard-target="#crypto-wallet-address-3" type="button">
+								<svg width="20" height="20">
+									<use href="img/sprites.svg#copy"></use>
+								</svg>
+							</button>
+						</div>
+						<button class="wallets-item__remove" aria-label="Trash">
+							<svg width="20" height="20">
+								<use href="img/sprites.svg#trash"></use>
+							</svg>
+						</button>
+					</div>
+				</li>
+				<li class="wallets__item wallets-item">
+					<div class="wallets-item__col">
+						<div class="wallets-item__info">
+							<img src="img/crypto/DOGE.svg" width="30" height="30" loading="lazy" alt="">
+							<span>Dogecoin</span>
+						</div>
+					</div>
+					<div class="wallets-item__col">
+						<div class="wallets-item__address">
+							<input type="text" name="address" value="" placeholder="Укажите адрес кошелька..." class="input mode-3" id="crypto-wallet-address-4">
+							<button class="copy-target" data-clipboard-target="#crypto-wallet-address-5" type="button">
+								<svg width="20" height="20">
+									<use href="img/sprites.svg#copy"></use>
+								</svg>
+							</button>
+						</div>
+						<button class="wallets-item__remove" aria-label="Trash">
+							<svg width="20" height="20">
+								<use href="img/sprites.svg#trash"></use>
+							</svg>
+						</button>
+					</div>
+				</li>
+				<li class="wallets__item wallets-item">
+					<div class="wallets-item__col">
+						<div class="wallets-item__info">
+							<img src="img/crypto/LTC.svg" width="30" height="30" loading="lazy" alt="">
+							<span>Litecoin</span>
+						</div>
+					</div>
+					<div class="wallets-item__col">
+						<div class="wallets-item__address">
+							<input type="text" name="address" value="" placeholder="Укажите адрес кошелька..." class="input mode-3" id="crypto-wallet-address-5">
+							<button class="copy-target" data-clipboard-target="#crypto-wallet-address-5" type="button">
+								<svg width="20" height="20">
+									<use href="img/sprites.svg#copy"></use>
+								</svg>
+							</button>
+						</div>
+						<button class="wallets-item__remove" aria-label="Trash">
+							<svg width="20" height="20">
+								<use href="img/sprites.svg#trash"></use>
+							</svg>
+						</button>
+					</div>
+				</li>
+				<li class="wallets__item wallets-item">
+					<div class="wallets-item__col">
+						<div class="wallets-item__info">
+							<img src="img/crypto/DASH.svg" width="30" height="30" loading="lazy" alt="">
+							<span>Dash</span>
+						</div>
+					</div>
+					<div class="wallets-item__col">
+						<div class="wallets-item__address">
+							<input type="text" name="address" value="" placeholder="Укажите адрес кошелька..." class="input mode-3" id="crypto-wallet-address-6">
+							<button class="copy-target" data-clipboard-target="#crypto-wallet-address-6" type="button">
+								<svg width="20" height="20">
+									<use href="img/sprites.svg#copy"></use>
+								</svg>
+							</button>
+						</div>
+						<button class="wallets-item__remove" aria-label="Trash">
+							<svg width="20" height="20">
+								<use href="img/sprites.svg#trash"></use>
+							</svg>
+						</button>
+					</div>
+				</li>
+				<li class="wallets__item wallets-item">
+					<div class="wallets-item__col">
+						<div class="wallets-item__info">
+							<img src="img/crypto/Ripple.svg" width="30" height="30" loading="lazy" alt="">
+							<span>Ripple</span>
+						</div>
+					</div>
+					<div class="wallets-item__col">
+						<div class="wallets-item__address">
+							<input type="text" name="address" value="" placeholder="Укажите адрес кошелька..." class="input mode-3" id="crypto-wallet-address-7">
+							<button class="copy-target" data-clipboard-target="#crypto-wallet-address-7" type="button">
+								<svg width="20" height="20">
+									<use href="img/sprites.svg#copy"></use>
+								</svg>
+							</button>
+						</div>
+						<button class="wallets-item__remove" aria-label="Trash">
+							<svg width="20" height="20">
+								<use href="img/sprites.svg#trash"></use>
+							</svg>
+						</button>
+					</div>
+				</li>
+				<li class="wallets__item wallets-item">
+					<div class="wallets-item__col">
+						<div class="wallets-item__info">
+							<img src="img/crypto/TRX.svg" width="30" height="30" loading="lazy" alt="">
+							<span>TRON</span>
+						</div>
+					</div>
+					<div class="wallets-item__col">
+						<div class="wallets-item__address">
+							<input type="text" name="address" value="" placeholder="Укажите адрес кошелька..." class="input mode-3" id="crypto-wallet-address-8">
+							<button class="copy-target" data-clipboard-target="#crypto-wallet-address-8" type="button">
+								<svg width="20" height="20">
+									<use href="img/sprites.svg#copy"></use>
+								</svg>
+							</button>
+						</div>
+						<button class="wallets-item__remove" aria-label="Trash">
+							<svg width="20" height="20">
+								<use href="img/sprites.svg#trash"></use>
+							</svg>
+						</button>
+					</div>
+				</li>
+				<li class="wallets__item wallets-item">
+					<div class="wallets-item__col">
+						<div class="wallets-item__info">
+							<img src="img/crypto/Tether.svg" width="30" height="30" loading="lazy" alt="">
+							<span>Tether (trc20)</span>
+						</div>
+					</div>
+					<div class="wallets-item__col">
+						<div class="wallets-item__address">
+							<input type="text" name="address" value="" placeholder="Укажите адрес кошелька..." class="input mode-3" id="crypto-wallet-address-9">
+							<button class="copy-target" data-clipboard-target="#crypto-wallet-address-9" type="button">
+								<svg width="20" height="20">
+									<use href="img/sprites.svg#copy"></use>
+								</svg>
+							</button>
+						</div>
+						<button class="wallets-item__remove" aria-label="Trash">
+							<svg width="20" height="20">
+								<use href="img/sprites.svg#trash"></use>
+							</svg>
+						</button>
+					</div>
+				</li>
+				<li class="wallets__item wallets-item">
+					<div class="wallets-item__col">
+						<div class="wallets-item__info">
+							<img src="img/crypto/Tether-2.svg" width="30" height="30" loading="lazy" alt="">
+							<span>Tether (erc20)</span>
+						</div>
+					</div>
+					<div class="wallets-item__col">
+						<div class="wallets-item__address">
+							<input type="text" name="address" value="" placeholder="Укажите адрес кошелька..." class="input mode-3" id="crypto-wallet-address-10">
+							<button class="copy-target" data-clipboard-target="#crypto-wallet-address-10" type="button">
+								<svg width="20" height="20">
+									<use href="img/sprites.svg#copy"></use>
+								</svg>
+							</button>
+						</div>
+						<button class="wallets-item__remove" aria-label="Trash">
+							<svg width="20" height="20">
+								<use href="img/sprites.svg#trash"></use>
+							</svg>
+						</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+@@include("html/_account-footer.html")

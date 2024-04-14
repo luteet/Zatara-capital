@@ -1,0 +1,238 @@
+.economic-calendar {
+
+	padding-bottom: 4.375rem;
+
+	// .economic-calendar__background
+
+	&__background {
+		position: absolute;
+		left: 0; top: 0;
+		width: 100%; height: 100%;
+
+		display: none;
+		@include _992 {
+			display: block;
+		}
+	}
+
+	// .economic-calendar__decor
+
+	&__decor {
+		@include _992 {
+			position: absolute;
+			&:nth-child(1) {
+				left: calc(50% - 48.125rem); top: 16%;
+				width: 4.6875rem; height: 9.0625rem;
+			}
+
+			&:nth-child(2) {
+				right: calc(50% - 48.125rem); bottom: 0;
+				width: 4.6875rem; height: 9.0625rem;
+				transform: translate(0,0%);
+			}
+		}
+	}
+
+	// .economic-calendar__hero
+
+	&__hero {
+	}
+
+	// .economic-calendar__title
+
+	&__title {
+	}
+
+	// .economic-calendar__text
+
+	&__text {
+	}
+
+	// .economic-calendar__block
+
+	&__block {
+		margin-top: 3.125rem;
+
+		background: var(--theme-primary-2);
+		box-shadow: 0px 1.25rem 2.5rem var(--shadow-5);
+		border-radius: 1.25rem;
+
+		padding: 0 0 1.875rem;
+
+		@include _992 {
+			padding: 0;
+		}
+
+	}
+
+	// .economic-calendar__block_hero
+
+	&__block_hero {
+		padding: 1.875rem 1.875rem 0;
+	}
+
+	// .economic-calendar__icons
+
+	&__icons {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.625rem;
+
+		svg {
+			width: 1.5rem; height: 1.5rem;
+		}
+	}
+
+	// .economic-calendar__date
+
+	&__date {
+		padding-top: 0.8125rem;
+
+		input {
+			width: 100%;
+
+			padding: 1rem 1.25rem;
+			border-radius: 0.375rem;
+			background: var(--theme-primary-4);
+
+			font-weight: 500;
+			line-height: 120%;
+			color: var(--theme-text-color);
+
+			&::placeholder {
+				color: var(--theme-secondary-2);
+			}
+		}
+	}
+
+	// .economic-calendar__block_inner
+
+	&__block_inner {
+		overflow-x: auto;
+	}
+
+	// .economic-calendar__block_container
+
+	&__block_container {
+		
+	}
+
+	// .economic-calendar__block_table
+
+	&__block_table {
+
+		padding: 0 1.875rem;
+
+		width: 100%;
+		min-width: 56.25rem;
+		border-spacing: 0;
+
+		col {
+			&:nth-child(1) {
+				width: 15%;
+			}
+
+			&:nth-child(3) {
+				width: 35%;
+			}
+
+			&:nth-child(4),&:nth-child(5),&:nth-child(6) {
+				width: 10%;
+			}
+		}
+
+		tr {
+			td {
+				color: var(--theme-secondary-2);
+				line-height: 120%;
+
+				padding: 1.25rem 0;
+
+				&[rowspan] {
+					vertical-align: top;
+					&:first-child {
+						padding: 22.5px 0;
+					}
+				}
+
+				&:not([rowspan]) {
+
+				}
+			}
+
+			&:not(:last-child) td:not([rowspan]) {
+				border-bottom: 0.0625rem solid var(--theme-secondary-5);
+			}
+
+			td:nth-last-child(1), td:nth-last-child(2), td:nth-last-child(3) {
+				font-size: 0.75rem;
+				line-height: 120%;
+
+				vertical-align: center;
+
+				span:not(:first-child) {
+					display: block;
+					padding-top: 0.3125rem;
+				}
+			}
+		}
+	}
+
+	// .economic-calendar__block_country
+
+	&__block_country {
+
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		//padding: 5px 0;
+
+		img {
+			flex: 0 0 1.5rem; width: 1.5rem; height: 1.5rem;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+	}
+
+	// .economic-calendar__block_drop_down
+
+	&__block_drop_down {
+		.drop-down__target {
+			background: transparent;
+
+			display: flex;
+			align-items: center;
+			gap: 0.625rem;
+
+			padding: 0.625rem 0;
+
+			color: var(--theme-secondary-2);
+		}
+
+		ul {
+			background: var(--theme-primary-4);
+			border-radius: 0.625rem;
+			min-width: 6.25rem;
+
+			padding: 0.625rem 0;
+
+			a {
+				display: block;
+				padding: 0.3125rem 0.9375rem;
+				color: var(--theme-text-color);
+
+				@media (any-hover: hover) {
+					transition: color .2s ease;
+					&:hover {
+						color: var(--accent);
+					}
+				
+					&:active {
+						color: var(--accent-2);
+					}
+				}
+			}
+		}
+	}
+}

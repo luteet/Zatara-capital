@@ -1,0 +1,63 @@
+@@include("html/_account-header.html")
+
+	<div class="account-block">
+		<h1 class="account-title">
+			Настройки
+		</h1>
+		@@include("html/_mobile-nav.html")
+		<form class="change-avatar account-block">
+			<div class="account-tabs">
+				<ul class="account-tabs__list">
+					<li>
+						<a href="account-personal-data.html" class="account-tabs__link">
+							Личные данные
+						</a>
+					</li>
+					<li>
+						<a href="account-change-avatar.html" class="account-tabs__link is-active">
+							Изменить аватар
+						</a>
+					</li>
+					<li>
+						<a href="account-change-password.html" class="account-tabs__link">
+							Изменить пароль
+						</a>
+					</li>
+					<li>
+						<a href="account-change-email.html" class="account-tabs__link">
+							Изменить e-mail
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="account-block__body">
+				<h2 class="account-block__title is-large">Изменить аватар</h2>
+				<div class="change-avatar__row">
+					<div class="change-avatar__col">
+						<div class="change-avatar__file form-file is-alt">
+							<div class="form-file__body">
+								<span></span>
+								<label class="form-file__target" aria-label="Выберите файл">
+									<input type="file" name="avatar" required>
+									<span>Выберите файл</span>
+								</label>
+							</div>
+						</div>
+						<div class="change-avatar__note">
+							<p>Изображение смасштабируется автоматически</p>
+						</div>
+					</div>
+					<div class="change-avatar__col">
+						<button class="change-avatar__button button" type="button" aria-label="Загрузить">
+							<span>Загрузить</span>
+						</button>
+						<button class="change-avatar__button button is-alternative" type="button" aria-label="Удалить">
+							<span>Удалить</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+@@include("html/_account-footer.html")

@@ -5,12 +5,23 @@ import imageAspectRatio from "./image-aspect-ratio.js";
 import sliders from "./sliders.js";
 import masonry from "./simple-masonry.js";
 import aboutCompanyVideo from "./about-company-video.js";
+import scrollPin from "./scroll-pin.js";
+import schemeArrows from "./arrows.js";
+import datepicker from "./datepicker.js";
+
+gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.config({
+	ignoreMobileResize: true
+});
 
 const 
 	body = document.querySelector('body'),
 	html = document.querySelector('html'),
 	menu = document.querySelectorAll('.header__burger, .header__nav, body'),
 	header = document.querySelector('.header');
+
+
+const themeChangeEvent = new Event("theme-change");
 
 
 // =-=-=-=-=-=-=-=-=-=- <image-aspect-ratio> -=-=-=-=-=-=-=-=-=-=-
@@ -57,7 +68,7 @@ body.addEventListener('click', function (event) {
 	const headerThemeTarget = $(".header__theme_target")
 	if(headerThemeTarget) {
 	
-		changeTheme(headerThemeTarget.dataset.changeThemeTo);
+		changeTheme(headerThemeTarget.dataset.changeThemeTo, themeChangeEvent);
 	
 	}
 	
@@ -69,8 +80,23 @@ body.addEventListener('click', function (event) {
 	
 	const headerNavListItem = $(".header__nav_list > li")
 	if(!headerNavListItem) {
-	
 		document.querySelectorAll(".header__nav_list > li.is-hover").forEach(listItem => listItem.classList.remove("is-hover"))
+	}
+
+	if($(".header__nav_list > li > div a")) {
+		menu.forEach(element => {
+			element.classList.remove('is-mobile-menu-active')
+		})
+	}
+
+	const headerNavLink = $(".header__nav_list > ul > li > a");
+	if(headerNavLink) {
+
+		if(headerNavLink.closest("li").querySelector("div")) {
+			if(!accountAsideNavBlockLink.classList.contains("is-active") && accountAsideNavBlockLink.classList.contains("is-current")) {
+				event.preventDefault();
+			}
+		}
 	
 	}
 	
@@ -124,6 +150,107 @@ body.addEventListener('click', function (event) {
 	
 	// =-=-=-=-=-=-=-=-=-=-=-=- </tabs> -=-=-=-=-=-=-=-=-=-=-=-=
 
+
+	// =-=-=-=-=-=-=-=-=-=-=-=- <documents-view-all> -=-=-=-=-=-=-=-=-=-=-=-=
+	
+	const documentsViewAll = $(".documents__view_all")
+	if(documentsViewAll) {
+	
+		const list = documentsViewAll.closest("section").querySelector(".documents__list");
+		if(list) {
+			list.classList.add("view-all");
+		}
+	
+	}
+	
+	// =-=-=-=-=-=-=-=-=-=-=-=- </documents-view-all> -=-=-=-=-=-=-=-=-=-=-=-=
+
+
+	// =-=-=-=-=-=-=-=-=-=-=-=- <risk-managment> -=-=-=-=-=-=-=-=-=-=-=-=
+	
+	const ristManagmentItemTarget = $(".risk-managment__item_target")
+	if(ristManagmentItemTarget) {
+	
+		ristManagmentItemTarget.parentElement.classList.toggle("is-active");
+	
+	}
+	
+	// =-=-=-=-=-=-=-=-=-=-=-=- </risk-managment> -=-=-=-=-=-=-=-=-=-=-=-=
+
+
+	// =-=-=-=-=-=-=-=-=-=-=-=- <holidays> -=-=-=-=-=-=-=-=-=-=-=-=
+	
+	const holidaysItemTarget = $(".holidays-item__target")
+	if(holidaysItemTarget) {
+	
+		const currentItem = holidaysItemTarget.parentElement,
+		activeItem = currentItem.parentElement.querySelectorAll(".is-active");
+
+		if(currentItem.classList.contains("is-active")) {
+			activeItem.forEach(activeItem => {
+				activeItem.classList.remove("is-active")
+			})
+		} else {
+			activeItem.forEach(activeItem => {
+				activeItem.classList.remove("is-active");;
+			})
+
+			currentItem.classList.add("is-active");
+		}
+
+	}
+	
+	// =-=-=-=-=-=-=-=-=-=-=-=- </holidays> -=-=-=-=-=-=-=-=-=-=-=-=
+
+
+
+	// =-=-=-=-=-=-=-=-=-=-=-=- <FAQ> -=-=-=-=-=-=-=-=-=-=-=-=
+	
+	const faqBlockItemTarget = $(".faq-block-item__target")
+	if(faqBlockItemTarget) {
+	
+		const currentItem = faqBlockItemTarget.parentElement,
+		activeItem = currentItem.closest(".faq__inner").querySelectorAll(".is-active");
+
+		if(currentItem.classList.contains("is-active")) {
+			activeItem.forEach(activeItem => {
+				activeItem.classList.remove("is-active")
+			})
+		} else {
+			activeItem.forEach(activeItem => {
+				activeItem.classList.remove("is-active");;
+			})
+
+			currentItem.classList.add("is-active");
+		}
+
+	}
+	
+	// =-=-=-=-=-=-=-=-=-=-=-=- </FAQ> -=-=-=-=-=-=-=-=-=-=-=-=
+
+
+	// =-=-=-=-=-=-=-=-=-=-=-=- <toggle-visible-password> -=-=-=-=-=-=-=-=-=-=-=-=
+	
+	const toggleVisiblePassword = $(".toggle-visible-password")
+	if(toggleVisiblePassword) {
+
+		event.preventDefault()
+
+		const parent = toggleVisiblePassword.parentElement,
+		input = parent.querySelector("input");
+
+		toggleVisiblePassword.classList.toggle("is-visible");
+
+		if(toggleVisiblePassword.classList.contains("is-visible")) {
+			input.type = "text";
+		} else {
+			input.type = "password";
+		}
+	
+	}
+	
+	// =-=-=-=-=-=-=-=-=-=-=-=- </toggle-visible-password> -=-=-=-=-=-=-=-=-=-=-=-=
+
 })
 
 // =-=-=-=-=-=-=-=-=-=-=-=- </click-events> -=-=-=-=-=-=-=-=-=-=-=-=
@@ -160,6 +287,8 @@ function resize() {
 	if(windowSize != window.innerWidth) {
 		html.style.setProperty("--svh", window.innerHeight * 0.01 + "px");
 	}
+
+	document.querySelectorAll(".mobile-app__advantages li").forEach(item => item.style.setProperty("--height", `${item.offsetHeight}px`));
 	
 	windowSize = window.innerWidth;
 	deviceType = getDeviceType();
@@ -190,8 +319,10 @@ document.querySelectorAll(".header__nav_list > li > a").forEach(link => {
 	})
 
 	link.addEventListener("click", (event) => {
-		if(!link.closest("li").classList.contains("is-hover")) event.preventDefault();
-		link.closest("li").classList.add("is-hover");
+		if(link.closest("li").querySelector("div")) {
+			if(!link.closest("li").classList.contains("is-hover")) event.preventDefault();
+			link.closest("li").classList.add("is-hover");
+		}
 	})
 })
 
@@ -203,7 +334,7 @@ document.querySelectorAll(".header__nav_list > li > a").forEach(link => {
 document.addEventListener("DOMContentLoaded", () => {
 	setTimeout(() => {
 		document.body.classList.add("is-init");
-	},500)
+	},200)
 })
 
 // =-=-=-=-=-=-=-=-=-=-=-=- </on-start> -=-=-=-=-=-=-=-=-=-=-=-=
@@ -239,14 +370,57 @@ masonry({
 // =-=-=-=-=-=-=-=-=-=-=-=- </grid> -=-=-=-=-=-=-=-=-=-=-=-=
 
 
+// =-=-=-=-=-=-=-=-=-=-=-=- <datepicker> -=-=-=-=-=-=-=-=-=-=-=-=
+
+datepicker();
+
+// =-=-=-=-=-=-=-=-=-=-=-=- </datepicker> -=-=-=-=-=-=-=-=-=-=-=-=
+
+
 aboutCompanyVideo();
+
+scrollPin()
+
+schemeArrows(windowSize);
+
+document.querySelectorAll(".center-scroll-position").forEach(inner => {
+	setTimeout(() => {
+		inner.querySelectorAll(".simplebar-content-wrapper").forEach(wrapper => {
+			wrapper.scrollLeft = (wrapper.scrollWidth - wrapper.offsetWidth) / 2;
+		})
+	},0)
+})
 
 
 // =-=-=-=-=-=-=-=-=-=-=-=- <animation> -=-=-=-=-=-=-=-=-=-=-=-=
 
-/* AOS.init({
+function getCoords(elem) {
+	let box = elem.getBoundingClientRect();
+
+	return {
+		top: box.top + window.scrollY,
+		right: box.right + window.scrollX,
+		bottom: box.bottom + window.scrollY,
+		left: box.left + window.scrollX
+	};
+}
+
+let url = new URL(window.location);
+if (url.searchParams.get("target")) {
+	window.scrollTo({
+		left: 0,
+		top: getCoords(document.querySelector(`#${url.searchParams.get("target")}`)).top,
+		behavior: "smooth"
+	})
+	
+	history.pushState("", "", "");
+
+}
+
+AOS.init({
 	disable: "mobile",
-}); */
+	once: true,
+});
 
 document.querySelectorAll(".why-we__list").forEach(element => {
 

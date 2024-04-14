@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-lang="ru">
 
 <head>
 	<script>
 		if (localStorage.getItem("zatara-capital-theme") == "light") document.querySelector("html").classList.add("is-active-light-theme");
 	</script>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<meta name="theme-color" content="#001337">
 	<title>Zatara Capital</title>
 	<link rel="stylesheet" href="css/style.min.css">
@@ -16,206 +16,255 @@
 
 	<div class="wrapper">
 		<header class="header is-transparent">
-			<div class="header__logo">
-				<a href="index.html" class="header__logo_link">
-					<div class="theme-change">
-						<img src="img/logo-dark.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo_img">
-						<img src="img/logo-light.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo_img">
-					</div>
-				</a>
-			</div>
-			<nav class="header__nav">
-				<div class="header__nav_body">
-					<a href="#" class="header__nav_button button" aria-label="Регистрация">
-						<span>Регистрация</span>
-						<svg width="18" height="22">
-							<use href="img/sprites.svg#next-arrow"></use>
-						</svg>
+			<div class="header__inner" data-aos="fade-in" data-aos-delay="50">
+				<div class="header__logo">
+					<a href="index.html" class="header__logo_link">
+						<div class="theme-change">
+							<img src="img/logo-dark.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo_img">
+							<img src="img/logo-light.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo_img">
+						</div>
 					</a>
-					<ul class="header__nav_list">
-						<li>
-							<a href="#">
-								<span>О компании</span>
-								<svg width="24" height="24">
-									<use href="img/sprites.svg#drop-down-arrow"></use>
-								</svg>
-							</a>
-							<div>
-								<ul>
-									<li>
-										<a href="#">
-											О нас
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Наши преимущества
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Документация
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Защита средств
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Поставщики ликвидности
-										</a>
-									</li>
-								</ul>
+				</div>
+				<nav class="header__nav">
+					<div class="header__nav_body">
+						<a href="registration.html" class="header__nav_button button" aria-label="Регистрация">
+							<span>Регистрация</span>
+							<svg width="18" height="22">
+								<use href="img/sprites.svg#next-arrow"></use>
+							</svg>
+							<span class="button-flare" aria-hidden="true"></span>
+						</a>
+						<ul class="header__nav_list">
+							<li>
+								<a href="about-us.html">
+									<span>О компании</span>
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</a>
+								<div>
+									<ul>
+										<li>
+											<a href="about-us.html">
+												О нас
+											</a>
+										</li>
+										<li>
+											<a href="about-us.html?target=our-advantages">
+												Наши преимущества
+											</a>
+										</li>
+										<li>
+											<a href="documents.html">
+												Документация
+											</a>
+										</li>
+										<li>
+											<a href="funds-protection.html">
+												Защита средств
+											</a>
+										</li>
+										<li>
+											<a href="liquidity-providers.html">
+												Поставщики ликвидности
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="a-book.html">
+									<span>Торговля</span>
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</a>
+								<div>
+									<ul>
+										<li>
+											<a href="a-book.html">
+												Торги по модели A-Book
+											</a>
+										</li>
+										<li>
+											<a href="aggregation-liquidity.html">
+												Агрегация ликвидности
+											</a>
+										</li>
+										<li>
+											<a href="risk-management.html">
+												Риск менеджмент
+											</a>
+										</li>
+										<li>
+											<a href="stocks-and-ETFs.html">
+												Акции и ETF
+											</a>
+										</li>
+										<li>
+											<a href="currency-trading.html">
+												Торговля валютой
+											</a>
+										</li>
+										<li>
+											<a href="metal-trading.html">
+												Торговля металлами
+											</a>
+										</li>
+										<li>
+											<a href="futures-trading.html">
+												Торговля фьючерсами
+											</a>
+										</li>
+										<li>
+											<a href="options-trading.html">
+												Торговля опционами
+											</a>
+										</li>
+										<li>
+											<a href="investing-in-hedge-funds.html">
+												Инвестирование в хедж-фонды
+											</a>
+										</li>
+										<li>
+											<a href="bond-trading.html">
+												Торговля облигациями
+											</a>
+										</li>
+										<li>
+											<a href="cryptocurrency-trading.html">
+												Торговля криптовалютой
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="news.html">
+									<span>Новости</span>
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</a>
+								<div>
+									<ul>
+										<li>
+											<a href="news.html">
+												Новости рынка
+											</a>
+										</li>
+										<li>
+											<a href="holidays.html">
+												Праздничные дни
+											</a>
+										</li>
+										<li>
+											<a href="economic-calendar.html">
+												Экономический календарь
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="trading-platform.html">
+									<span>Торговая платформа</span>
+								</a>
+							</li>
+							<li>
+								<a href="faq.html">
+									<span>FAQ</span>
+								</a>
+							</li>
+							<li>
+								<a href="contacts.html">
+									<span>Контакты</span>
+								</a>
+							</li>
+						</ul>
+						<div class="header__nav_add">
+							<div class="header__nav_lang header__lang drop-down hover-mode">
+								<button class="header__lang_target drop-down__target" type="button" aria-label="Выбрать язык">
+									<img src="img/lang/lang-ru.svg" width="20" height="20" alt="" loading="lazy" class="header__lang_flag">
+									<span>Ru</span>
+									<svg width="24" height="24" class="drop-down__target_arrow">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</button>
+								<div class="header__lang_block is-transparent drop-down__block on-right-mode">
+									<ul>
+										<li>
+											<a href="#" class="is-current">
+												<img src="img/lang/lang-ru.svg" width="20" height="20" alt="" loading="lazy" class="header__lang_flag">
+												<span>Ru</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/lang/lang-en.svg" width="20" height="20" alt="" loading="lazy" class="header__lang_flag">
+												<span>En</span>
+											</a>
+										</li>
+									</ul>
+								</div>
 							</div>
-						</li>
-						<li>
-							<a href="#">
-								<span>Торговля</span>
-								<svg width="24" height="24">
-									<use href="img/sprites.svg#drop-down-arrow"></use>
-								</svg>
-							</a>
-							<div>
-								<ul>
-									<li>
-										<a href="#">
-											О нас
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Наши преимущества
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Документация
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Защита средств
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Поставщики ликвидности
-										</a>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li>
-							<a href="#">
-								<span>Новости</span>
-								<svg width="24" height="24">
-									<use href="img/sprites.svg#drop-down-arrow"></use>
-								</svg>
-							</a>
-							<div>
-								<ul>
-									<li>
-										<a href="#">
-											О нас
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Наши преимущества
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Документация
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Защита средств
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Поставщики ликвидности
-										</a>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li>
-							<a href="#">
-								<span>Торговая платформа</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span>FAQ</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span>Контакты</span>
-							</a>
-						</li>
-					</ul>
-					<div class="header__nav_add">
-						<div class="header__nav_lang header__lang drop-down hover-mode">
-							<button class="header__lang_target drop-down__target" type="button" aria-label="Выбрать язык">
-								<img src="img/lang/lang-ru.svg" width="20" height="20" alt="" loading="lazy" class="header__lang_flag">
-								<span>Ru</span>
-								<svg width="24" height="24" class="drop-down__target_arrow">
-									<use href="img/sprites.svg#drop-down-arrow"></use>
-								</svg>
-							</button>
-							<div class="header__lang_block drop-down__block on-right-mode">
-								<ul>
-									<li>
-										<a href="#" class="is-current">
-											<img src="img/lang/lang-ru.svg" width="20" height="20" alt="" loading="lazy" class="header__lang_flag">
-											<span>Ru</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="img/lang/lang-en.svg" width="20" height="20" alt="" loading="lazy" class="header__lang_flag">
-											<span>En</span>
-										</a>
-									</li>
-								</ul>
+							<div class="header__nav_theme header__theme">
+								<button class="header__theme_target" data-change-theme-to="dark">
+									<img src="img/dark-theme-icon.svg" width="12" height="12" loading="lazy" alt="">
+								</button>
+								<button class="header__theme_target" data-change-theme-to="light">
+									<img src="img/light-theme-icon.svg" width="12" height="12" loading="lazy" alt="">
+								</button>
 							</div>
 						</div>
-						<div class="header__nav_theme header__theme">
-							<button class="header__theme_target" data-change-theme-to="dark">
-								<img src="img/dark-theme-icon.svg" width="12" height="12" loading="lazy" alt="">
-							</button>
-							<button class="header__theme_target" data-change-theme-to="light">
-								<img src="img/light-theme-icon.svg" width="12" height="12" loading="lazy" alt="">
-							</button>
-						</div>
+					</div>
+				</nav>
+				<div class="header__account drop-down">
+					<button type="button" class="header__account_target drop-down__target" aria-label="Личный кабинет">
+						<span>Личный кабинет</span>
+						<svg width="19" height="20" class="visible-on-mob header__account_icon">
+							<use href="img/sprites.svg#user"></use>
+						</svg>
+						<svg width="24" height="24" class="header__account_arrow drop-down__target_arrow">
+							<use href="img/sprites.svg#drop-down-arrow"></use>
+						</svg>
+					</button>
+					<div class="header__account_block drop-down__block on-right-mode">
+						<ul>
+							<li>
+								<span class="success-color">
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#account-verification"></use>
+									</svg>
+									<span>
+										Верифицирован
+									</span>
+								</span>
+							</li>
+							<li>
+								<a href="registration.html">
+									Регистрация
+								</a>
+							</li>
+							<li>
+								<a href="login.html">
+									Войти
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-			</nav>
-			<a href="#" class="header__account" aria-label="Личный кабинет">
-				<span>Личный кабинет</span>
-				<svg width="19" height="20" class="visible-on-mob header__account_icon">
-					<use href="img/sprites.svg#user"></use>
-				</svg>
-				<svg width="24" height="24" class="header__account_arrow">
-					<use href="img/sprites.svg#drop-down-arrow"></use>
-				</svg>
-			</a>
-			<button class="header__burger" type="button" aria-label="Menu">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
+				<button class="header__burger" type="button" aria-label="Menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
 		</header>
 
-		<main class="main">
-			<section class="index-hero">
-				<div class="index-hero__content">
+		<main class="main alt-footer-on-light">
+			<section class="index-hero accent-on-light">
+				<div class="index-hero__content" data-aos="fade-in" data-aos-delay="200">
 					<div class="index-hero__content_decor dots-decor"></div>
 					<span class="index-hero__heading section-name">Zatara capital</span>
 					<h1 class="index-hero__title main-title">
@@ -227,27 +276,38 @@
 							Получите доступ к передовым инструментам, индивидуальной поддержке и надежной системе безопасности.
 						</p>
 					</div>
-					<a href="#" class="index-hero__button button">
+					<a href="registration.html" class="index-hero__button button" aria-label="Регистрация">
 						<span>Регистрация</span>
 						<svg width="24" height="24" class="button-arrow">
 							<use href="img/sprites.svg#next-arrow"></use>
 						</svg>
+						<span class="button-flare" aria-hidden="true"></span>
 					</a>
 				</div>
 				<div class="index-hero__image">
 					<div class="index-hero__image_decor dots-decor" aria-hidden="true"></div>
-					<div class="index-hero__image_inner">
-						<picture>
-							<source srcset="img/index/hero/index-hero-image.avif" type="image/avif">
-							<source srcset="img/index/hero/index-hero-image.webp" type="image/webp">
-							<img src="img/index/hero/index-hero-image.png" alt="" width="864" height="597" loading="lazy">
-						</picture>
+					<div class="index-hero__image_inner" data-aos="fade-in" data-aos-delay="100">
+						<div class="theme-change">
+							<picture>
+								<source srcset="img/index/hero/index-hero-image.avif" type="image/avif">
+								<source srcset="img/index/hero/index-hero-image.webp" type="image/webp">
+								<img src="img/index/hero/index-hero-image.png" alt="" width="864" height="597" loading="lazy">
+							</picture>
+							<picture>
+								<source srcset="img/index/hero/index-hero-image-light.avif" type="image/avif">
+								<source srcset="img/index/hero/index-hero-image-light.webp" type="image/webp">
+								<img src="img/index/hero/index-hero-image-light.png" alt="" width="864" height="597" loading="lazy">
+							</picture>
+						</div>
 					</div>
 					<ul class="index-hero__stocks">
-						<li class="index-hero__stocks_item accent-stock">
+						<li class="index-hero__stocks_item accent-stock" data-aos="fade-in" data-aos-delay="100">
 							<div class="accent-stock__header">
 								<h2 class="accent-stock__name">
-									<img src="img/companies/cat.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
+									<div class="theme-change">
+										<img src="img/companies/cat.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
+										<img src="img/companies/cat-light.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
+									</div>
 									CAT
 								</h2>
 								<span class="accent-stock__value success-style">
@@ -264,10 +324,13 @@
 								</a>
 							</div>
 						</li>
-						<li class="index-hero__stocks_item accent-stock">
+						<li class="index-hero__stocks_item accent-stock" data-aos="fade-in" data-aos-delay="150">
 							<div class="accent-stock__header">
 								<h2 class="accent-stock__name">
-									<img src="img/companies/cat.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
+									<div class="theme-change">
+										<img src="img/companies/baba.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
+										<img src="img/companies/baba-light.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
+									</div>
 									CAT
 								</h2>
 								<span class="accent-stock__value success-style">
@@ -284,10 +347,10 @@
 								</a>
 							</div>
 						</li>
-						<li class="index-hero__stocks_item accent-stock">
+						<li class="index-hero__stocks_item accent-stock" data-aos="fade-in" data-aos-delay="200">
 							<div class="accent-stock__header">
 								<h2 class="accent-stock__name">
-									<img src="img/companies/cat.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
+									<img src="img/companies/meta.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
 									CAT
 								</h2>
 								<span class="accent-stock__value success-style">
@@ -306,16 +369,16 @@
 						</li>
 					</ul>
 				</div>
-				<div class="index-hero__reviews">
+				<div class="index-hero__reviews" data-aos="fade-in" data-aos-delay="300">
 					<div class="theme-change">
 						<img src="img/trustoilot.svg" alt="" width="223" height="45" loading="lazy">
 						<img src="img/trustoilot-2.svg" alt="" width="223" height="45" loading="lazy">
 					</div>
 				</div>
 			</section>
-			<section class="stocks">
-				<h2 class="stocks__heading section-name">Выгодно</h2>
-				<div class="stocks__header">
+			<section class="stocks accent-on-light">
+				<h2 class="stocks__heading section-name" data-aos="fade-in" data-aos-delay="100">Выгодно</h2>
+				<div class="stocks__header" data-aos="fade-in" data-aos-delay="150">
 					<div class="stocks__header_col">
 						<h3 class="stocks__title section-title">
 							<mark>Инвестируйте</mark> в популярные акции
@@ -338,7 +401,7 @@
 				<div class="stocks__slider splide">
 					<div class="stocks__decor dots-decor" aria-hidden="true"></div>
 					<div class="stocks__track splide__track">
-						<ul class="stocks__list splide__list">
+						<ul class="stocks__list splide__list" data-aos="fade-in" data-aos-delay="200">
 							<li class="stocks__item stock-item splide__slide">
 								<div class="stock-item__header">
 									<h4 class="stock-item__name">
@@ -372,7 +435,10 @@
 								<div class="stock-item__header">
 									<h4 class="stock-item__name">
 										<span class="stock-item__logo" aria-hidden="true">
-											<img src="img/companies/apple.svg" alt="">
+											<span class="theme-change">
+												<img src="img/companies/apple.svg" alt="">
+												<img src="img/companies/apple-light.svg" alt="">
+											</span>
 										</span>
 										Apple Inc.
 									</h4>
@@ -412,9 +478,9 @@
 								<div class="stock-item__footer">
 									<div class="stock-item__info">
 										<strong class="stock-item__price">$131.94</strong>
-										<b class="stock-item__price_change success-style" aria-label="+0.04%">
+										<b class="stock-item__price_change failure-style" aria-label="+0.04%">
 											<svg width="15" height="15">
-												<use href="img/sprites.svg#up-right-arrow"></use>
+												<use href="img/sprites.svg#down-right-arrow"></use>
 											</svg>
 											<span>0.04%</span>
 										</b>
@@ -430,7 +496,10 @@
 								<div class="stock-item__header">
 									<h4 class="stock-item__name">
 										<span class="stock-item__logo" aria-hidden="true">
-											<img src="img/companies/amd.svg" alt="">
+											<span class="theme-change">
+												<img src="img/companies/amd.svg" alt="">
+												<img src="img/companies/amd-light.svg" alt="">
+											</span>
 										</span>
 										AMD, Inc.
 									</h4>
@@ -459,9 +528,12 @@
 								<div class="stock-item__header">
 									<h4 class="stock-item__name">
 										<span class="stock-item__logo" aria-hidden="true">
-											<img src="img/companies/amazon.svg" alt="">
+											<span class="theme-change">
+												<img src="img/companies/amazon.svg" alt="">
+												<img src="img/companies/amazon-light.svg" alt="">
+											</span>
 										</span>
-										Amazon.com, Inc.
+										Amazon Inc.
 									</h4>
 									<a href="#" class="stock-item__button small-button">
 										More
@@ -470,9 +542,9 @@
 								<div class="stock-item__footer">
 									<div class="stock-item__info">
 										<strong class="stock-item__price">$131.94</strong>
-										<b class="stock-item__price_change failure-style" aria-label="+0.04%">
+										<b class="stock-item__price_change success-style" aria-label="+0.04%">
 											<svg width="15" height="15">
-												<use href="img/sprites.svg#down-right-arrow"></use>
+												<use href="img/sprites.svg#up-right-arrow"></use>
 											</svg>
 											<span>0.04%</span>
 										</b>
@@ -488,7 +560,10 @@
 								<div class="stock-item__header">
 									<h4 class="stock-item__name">
 										<span class="stock-item__logo" aria-hidden="true">
-											<img src="img/companies/x-twitter.svg" alt="">
+											<span class="theme-change">
+												<img src="img/companies/x-twitter.svg" alt="">
+												<img src="img/companies/x-twitter-light.svg" alt="">
+											</span>
 										</span>
 										Twitter Inc.
 									</h4>
@@ -499,9 +574,9 @@
 								<div class="stock-item__footer">
 									<div class="stock-item__info">
 										<strong class="stock-item__price">$131.94</strong>
-										<b class="stock-item__price_change failure-style" aria-label="+0.04%">
+										<b class="stock-item__price_change success-style" aria-label="+0.04%">
 											<svg width="15" height="15">
-												<use href="img/sprites.svg#down-right-arrow"></use>
+												<use href="img/sprites.svg#up-right-arrow"></use>
 											</svg>
 											<span>0.04%</span>
 										</b>
@@ -517,7 +592,10 @@
 								<div class="stock-item__header">
 									<h4 class="stock-item__name">
 										<span class="stock-item__logo" aria-hidden="true">
-											<img src="img/companies/ibm.svg" alt="">
+											<span class="theme-change">
+												<img src="img/companies/ibm.svg" alt="">
+												<img src="img/companies/ibm-light.svg" alt="">
+											</span>
 										</span>
 										IBM Inc.
 									</h4>
@@ -528,9 +606,9 @@
 								<div class="stock-item__footer">
 									<div class="stock-item__info">
 										<strong class="stock-item__price">$131.94</strong>
-										<b class="stock-item__price_change failure-style" aria-label="+0.04%">
+										<b class="stock-item__price_change success-style" aria-label="+0.04%">
 											<svg width="15" height="15">
-												<use href="img/sprites.svg#down-right-arrow"></use>
+												<use href="img/sprites.svg#up-right-arrow"></use>
 											</svg>
 											<span>0.04%</span>
 										</b>
@@ -557,9 +635,9 @@
 								<div class="stock-item__footer">
 									<div class="stock-item__info">
 										<strong class="stock-item__price">$131.94</strong>
-										<b class="stock-item__price_change failure-style" aria-label="+0.04%">
+										<b class="stock-item__price_change success-style" aria-label="+0.04%">
 											<svg width="15" height="15">
-												<use href="img/sprites.svg#down-right-arrow"></use>
+												<use href="img/sprites.svg#up-right-arrow"></use>
 											</svg>
 											<span>0.04%</span>
 										</b>
@@ -583,14 +661,14 @@
 					</a>
 				</div>
 			</section>
-			<section class="about-company">
-				<div class="about-company__header">
+			<section class="about-company accent-on-light">
+				<div class="about-company__header" data-aos="fade-in" data-aos-delay="200">
 					<h2 class="about-company__section_name section-name">О компании</h2>
 					<h3 class="about-company__title section-title">
 						Ваш брокер <mark>успешной жизни</mark>
 					</h3>
 				</div>
-				<div class="about-company__advantages">
+				<div class="about-company__advantages" data-aos="fade-in" data-aos-delay="100">
 					<ul class="about-company__advantages_list js-masonry-list">
 						<li class="about-company__advantages_item js-masonry-elm">
 							<div class="advantages-card">
@@ -630,7 +708,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="about-company__content text">
+				<div class="about-company__content text" data-aos="fade-in" data-aos-delay="250">
 					<p>
 						Мы заботимся и обслуживаем каждого клиента, который присоединился к нам, это делает нас лучшим брокером по выбору многих инвесторов и трейдеров.
 					</p>
@@ -639,15 +717,16 @@
 						Мы доказали, что являемся лучшим брокером в жизни каждого трейдера и инвестора.
 					</p>
 				</div>
-				<div class="about-company__footer">
+				<div class="about-company__footer" data-aos="fade-in" data-aos-delay="300">
 					<a href="#" class="about-company__button button">
 						<span>Узнать больше</span>
 						<svg width="24" height="24" class="button-arrow">
 							<use href="img/sprites.svg#next-arrow"></use>
 						</svg>
+						<span class="button-flare" aria-hidden="true"></span>
 					</a>
 				</div>
-				<div class="about-company__video">
+				<div class="about-company__video" data-aos="fade-in" data-aos-delay="300">
 					<div class="about-company__video_background">
 						<div class="theme-change">
 							<img src="img/about-us/about-us-video-decor-dark.svg" width="0" height="0" loading="lazy" alt="">
@@ -659,17 +738,17 @@
 					</a>
 				</div>
 			</section>
-			<section class="markets">
-				<h2 class="markets__section_name section-name">Рынки</h2>
-				<h3 class="markets__title section-title">
+			<section class="markets accent-on-light">
+				<h2 class="markets__section_name section-name" data-aos="fade-in" data-aos-delay="100">Рынки</h2>
+				<h3 class="markets__title section-title" data-aos="fade-in" data-aos-delay="100">
 					Криптовалюты и акции
 				</h3>
-				<div class="markets__text text">
+				<div class="markets__text text" data-aos="fade-in" data-aos-delay="100">
 					<p>
 						В этом списке есть, кажется, все возможные криптовалюты и акции – от маленьких и только начинающих свой путь проектов до крупнейших и известных
 					</p>
 				</div>
-				<div class="markets__tabs tabs">
+				<div class="markets__tabs tabs" data-aos="fade-in" data-aos-delay="200">
 					<div class="markets__nav tabs-nav">
 						<ul class="tabs-nav__list">
 							<li>
@@ -684,7 +763,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="markets__container tabs-container">
+					<div class="markets__container tabs-container" data-aos="fade-in" data-aos-delay="100">
 						<div class="markets__decor dots-decor" aria-hidden="true"></div>
 						<div class="markets__block tabs-block is-active fade-in" id="market-crypto">
 							<div class="markets__table horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
@@ -947,11 +1026,11 @@
 					</div>
 				</div>
 			</section>
-			<section class="why-we">
+			<section class="why-we is-accent-on-light">
 				<div class="why-we__background" aria-hidden="true">
 					<div class="why-we__decor dots-decor"></div>
 				</div>
-				<div class="why-we__hero">
+				<div class="why-we__hero" data-aos="fade-in" data-aos-delay="100">
 					<h2 class="why-we__section_name section-name">
 						Почему мы
 					</h2>
@@ -964,7 +1043,7 @@
 						</p>
 					</div>
 				</div>
-				<ol class="why-we__list set-animate">
+				<ol class="why-we__list set-animate" data-aos="fade-in" data-aos-delay="100">
 					<li class="why-we__item why-we-item">
 						<div class="why-we-item__body">
 							<span class="why-we-item__dot" aria-hidden="true"></span>
@@ -1004,26 +1083,36 @@
 				<div class="cooperating__decor dots-decor" aria-hidden="true"></div>
 				<div class="cooperating__body">
 					<div class="cooperating__background" aria-hidden="true">
-						<picture>
-							<source srcset="img/index/cooperating/cooperating-image.avif" type="image/avif">
-							<source srcset="img/index/cooperating/cooperating-image.webp" type="image/webp">
-							<img src="img/index/cooperating/cooperating-image.jpg" alt="" width="0" height="0" loading="lazy">
-						</picture>
+						<div class="theme-change">
+							<picture>
+								<source srcset="img/index/cooperating/cooperating-image.avif" type="image/avif">
+								<source srcset="img/index/cooperating/cooperating-image.webp" type="image/webp">
+								<img src="img/index/cooperating/cooperating-image.jpg" alt="" width="0" height="0" loading="lazy">
+							</picture>
+							<picture>
+								<source srcset="img/index/cooperating/cooperating-image-light.avif" type="image/avif">
+								<source srcset="img/index/cooperating/cooperating-image-light.webp" type="image/webp">
+								<img src="img/index/cooperating/cooperating-image-light.jpg" alt="" width="0" height="0" loading="lazy">
+							</picture>
+						</div>
 					</div>
-					<h2 class="cooperating__title section-title">
+					<h2 class="cooperating__title section-title" data-aos="fade-in" data-aos-delay="100" data-aos-anchor=".cooperating__body">
 						Начнем сотрудничество?
 					</h2>
-					<div class="cooperating__text">
+					<div class="cooperating__text" data-aos="fade-in" data-aos-delay="100" data-aos-anchor=".cooperating__body">
 						<p>
 							Пройдите простую регистрацию для начала инвестиционной деятельности
 						</p>
 					</div>
-					<a href="#" class="cooperating__button button">
-						<span>Стать инвестором</span>
-						<svg width="24" height="24" class="button-arrow">
-							<use href="img/sprites.svg#next-arrow"></use>
-						</svg>
-					</a>
+					<div class="cooperating__footer" data-aos="fade-in" data-aos-delay="100" data-aos-anchor=".cooperating__body">
+						<a href="#" class="cooperating__button button">
+							<span>Стать инвестором</span>
+							<svg width="24" height="24" class="button-arrow">
+								<use href="img/sprites.svg#next-arrow"></use>
+							</svg>
+							<span class="button-flare" aria-hidden="true"></span>
+						</a>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -1106,8 +1195,8 @@
 				<div class="footer__logo visible-on-mob">
 					<a href="index.html" class="footer__logo_link">
 						<div class="theme-change">
-							<img src="img/logo-dark.svg" alt="Logo" width="150" height="35" loading="lazy" class="footer__logo_img">
-							<img src="img/logo-light.svg" alt="Logo" width="150" height="35" loading="lazy" class="footer__logo_img">
+							<img src="img/logo-dark-mob.svg" alt="Logo" width="150" height="35" loading="lazy" class="footer__logo_img">
+							<img src="img/logo-light-mob.svg" alt="Logo" width="150" height="35" loading="lazy" class="footer__logo_img">
 						</div>
 					</a>
 				</div>

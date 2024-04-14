@@ -1,0 +1,110 @@
+.payment-transactions {
+
+	margin: 2.5rem -0.625rem 0;
+	padding-bottom: 1.875rem;
+
+	overflow-x: auto;
+
+	@include _992 {
+		padding-bottom: 0;
+		margin: 2.5rem 0 0;
+	}
+
+	// .payment-transactions__inner
+
+	&__inner {
+		padding: 0 0.625rem;
+	}
+
+	// .payment-transactions__container
+
+	&__container {
+		min-width: 63.125rem;
+		@include _992 {
+			min-width: auto;
+		}
+	}
+
+	// .payment-transactions__table
+
+	&__table {
+		
+		min-width: 62.5rem;
+		@include _992 {
+			min-width: auto;
+			width: 100%;
+		}
+
+		padding: 1.875rem 1.875rem 3rem;
+		background: var(--theme-primary-4);
+		border-radius: 1.25rem;
+
+		border-spacing: 0;
+
+		col {
+			&:nth-child(3) {
+				width: 20%;
+			}
+			&:nth-child(4) {
+				width: 12.5%;
+			}
+			&:nth-child(6) {
+				width: 13.75rem;
+			}
+		}
+
+		thead {
+			th {
+				text-align: start;
+
+				font-weight: 500;
+				font-size: 0.875rem;
+				line-height: 160%;
+				color: var(--theme-secondary-2);
+			}
+		}
+
+		tbody {
+			td {
+				padding-top: 1.875rem;
+
+				font-size: 0.875rem;
+				line-height: 160%;
+
+				b {
+					font-weight: 500;
+				}
+			}
+		}
+
+	}
+
+	// .payment-transactions__system
+
+	&__system {
+		display: flex;
+		align-items: center;
+		gap: 0.625rem;
+
+		img {
+			width: 2.1875rem; height: 1.5rem;
+			object-fit: contain;
+		}
+	}
+
+	// .payment-transactions__status
+
+	&__status {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.625rem;
+
+		font-size: 0.875rem;
+		line-height: 160%;
+		font-weight: 500;
+
+		svg {
+			flex: 0 0 1.5rem; width: 1.5rem; height: 1.5rem;
+		}
+	}
+}

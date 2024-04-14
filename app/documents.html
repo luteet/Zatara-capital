@@ -1,0 +1,37 @@
+@@include("html/_header.html", {"class": ""})
+
+	<main class="main">
+		<div class="breadcrumbs padding-start container accent-on-light" data-aos="fade-in" data-aos-delay="100">
+			<a href="index.html" class="breadcrumbs__link">Главная</a>
+			<span class="breadcrumbs__separator">/</span>
+			<a href="about-us.html" class="breadcrumbs__link">О компании</a>
+			<span class="breadcrumbs__separator">/</span>
+			<span class="breadcrumbs__current">Лицензии и документы</span>
+		</div>
+		<section class="documents accent-on-light">
+			<h2 class="documents__title hero-title add-decor" data-aos="fade-in" data-aos-delay="200">Лицензии и документы</h2>
+			<div class="documents__inner">
+				<div class="documents__decor dots-decor" aria-hidden="true"></div>
+				<ul class="documents__list" data-aos="fade-in" data-aos-delay="300">
+					@@loop("html/_documents-item.html", [
+						{},
+						{},
+						{},
+						{},
+						{},
+						{},
+						{},
+						{},
+						{},
+					])
+				</ul>
+				<button class="documents__view_all button is-transparent" type="button">
+					<span>Показать все</span>
+				</button>
+			</div>
+		</section>
+		@@include("html/_why-we.html")
+		@@include("html/_cooperating.html")
+	</main>
+
+@@include("html/_footer.html")

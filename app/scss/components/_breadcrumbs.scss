@@ -1,0 +1,39 @@
+.breadcrumbs {
+	
+	font-size: 0.875rem;
+	line-height: 160%;
+
+	margin-top: 2.5rem;
+
+	// .breadcrumbs__link
+
+	&__link {
+
+		color: var(--theme-secondary-2);
+
+		@media (any-hover: hover) {
+
+			transition: color .2s ease;
+
+			&:hover {
+				color: var(--accent);
+			}
+		
+			&:active {
+				color: var(--accent-active);
+			}
+		}
+	}
+
+	// .breadcrumbs__separator
+
+	&__separator {
+		color: var(--theme-secondary-2);
+	}
+
+	// .breadcrumbs__current
+
+	&__current {
+		color: var(--theme-secondary-4);
+	}
+}

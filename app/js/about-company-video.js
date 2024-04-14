@@ -42,12 +42,14 @@ export default function aboutCompanyVideo() {
 				//context.lineTo(coords["size"], coords["size"]);
 				context.lineTo(linkCoords["x"] + link.offsetWidth * 2, linkCoords["y"] + link.offsetHeight * 1.95);
 
-				context.strokeStyle = "#FFF";
+				context.strokeStyle = localStorage.getItem("zatara-capatial-theme-stroke") ? localStorage.getItem("zatara-capatial-theme-stroke") : "#FFF";
 				context.stroke();
 			}
 		}
 
 		resize();
+
+		document.documentElement.addEventListener("theme-change", resize)
 
 		window.addEventListener("resize", resize)
 	})

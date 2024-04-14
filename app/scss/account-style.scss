@@ -1,0 +1,183 @@
+@import 'mixin';
+@import 'vars';
+@import 'account-libs';
+@import 'null';
+@import 'global';
+@import 'font';
+@import 'form';
+
+@import 'components/button';
+@import 'components/theme-change';
+@import 'components/drop-down';
+@import 'components/datepicker';
+@import 'components/pagination';
+@import 'components/light-theme';
+@import 'account/light-theme';
+@import 'account/chart-tooltip';
+
+html {
+
+	font-size: 16px;
+
+	@include _992 {
+		font-size: 1.111vw;
+	}
+
+	@media (min-width: 1440px) {
+		font-size: 16px;
+	}
+
+	transition: background .2s;
+}
+
+body {
+	&.active-min-mode {
+
+		.drop-down__block.aside-mode {
+			display: block;
+		}
+		
+		.account-wrapper {
+			grid-template-columns: 4.3125rem calc(100% - 4.3125rem);
+		}
+
+		.account-aside__logo {
+			padding: 1.125rem 1rem 0;
+		}
+
+		.account-aside__logo_large {
+			opacity: 0; visibility: hidden;
+		}
+
+		.account-aside__logo_min {
+			opacity: 1; visibility: visible;
+		}
+
+		.account-aside__nav_block > h2 {
+			opacity: 0; visibility: hidden;
+		}
+
+		.account-aside__nav_block > ul > li > a {
+			padding: 1.125rem 1.3125rem;
+		}
+		
+		.account-aside__nav_block > ul > li > a span {
+			opacity: 0; visibility: hidden;
+		}
+
+		.account-aside__nav_block > ul > li > a.is-active + div {
+			grid-template-rows: 0fr;
+			padding-bottom: 0;
+		}
+
+		.account-aside__collapse {
+			padding: 1.125rem 1.375rem;
+			svg {
+				transform: scaleX(-1);
+			}
+			span {
+				opacity: 0; visibility: hidden;
+			}
+		}
+	}
+
+	transition: background .2s;
+}
+
+.account-wrapper {
+
+	@include _992 {
+		display: grid;
+		grid-template-columns: 16.875rem calc(100% - 16.875rem);
+		grid-template-rows: 4.625rem calc(100% - 4.625rem);
+
+		font-size: 1rem;
+
+		&.is-animating {
+			transition: grid-template-columns .5s;
+		}
+
+		&.is-animating {
+			.account-aside__nav_block > ul > li > a {
+				transition: color .2s, background .2s, padding .3s ease;
+			}
+			.account-aside__logo {
+				transition: padding .3s ease;
+			}
+			.account-aside__collapse {
+				transition: color .2s ease, padding .3s ease;
+			}
+		}
+	}
+}
+
+.account-main {
+	width: 100%;
+
+	padding: 2.5rem 0.625rem 4.375rem;
+
+	@include _992 {
+		//max-height: calc(100vh - 4.625rem);
+
+		//overflow-y: auto;
+
+		padding: 3.75rem 1.25rem 3.125rem;
+	}
+
+	@media (min-width: 1600px) {
+		padding: 3.75rem 2.5rem 3.125rem;
+	}
+
+	//scrollbar-color: var(--theme-secondary) var(--theme-primary);
+
+	font-size: 1rem;
+
+	/* &::-webkit-scrollbar {
+		background: var(--theme-primary);
+	}
+
+	&::-webkit-scrollbar-track {
+		padding: 2px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: var(--theme-secondary);
+		border-radius: 10px;
+		border: 4px solid var(--theme-primary);
+	} */
+	
+}
+
+@import 'account/aside';
+@import 'account/header';
+
+@import 'account/main-title';
+@import 'account/row';
+@import 'account/block';
+@import 'account/custom-select';
+@import 'account/mobile-nav';
+@import 'account/trading-status';
+@import 'account/search';
+@import 'account/table';
+@import 'account/pagination';
+@import 'account/tabs';
+
+@import 'account/deposits';
+@import 'account/recent-transactions';
+@import 'account/referral';
+@import 'account/my-accounts';
+@import 'account/refill-account';
+@import 'account/about-crypto';
+@import 'account/chart';
+@import 'account/null-block';
+@import 'account/wallets';
+@import 'account/replenishment';
+@import 'account/top-up';
+@import 'account/currency-exchange';
+@import 'account/payment-transactions';
+@import 'account/verification';
+@import 'account/personal-data';
+@import 'account/change-avatar';
+@import 'account/change-password';
+@import 'account/change-email';
+@import 'pages/contacts/our-contacts';

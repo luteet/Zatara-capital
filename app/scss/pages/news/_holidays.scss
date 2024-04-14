@@ -1,0 +1,108 @@
+.holidays {
+
+	padding-top: 2.5rem;
+	@include _992 {
+		padding-bottom: 4.375rem;
+	}
+
+	// .holidays__background
+
+	&__background {
+		position: absolute;
+		left: 0; top: 0;
+		width: 100%; height: 100%;
+
+		display: none;
+		@include _992 {
+			display: block;
+		}
+	}
+
+	// .holidays__background_decor
+
+	&__background_decor {
+		&:nth-child(1) {
+			position: absolute;
+			right: 0; top: 55rem;
+			transform: translate(50%,-50%);
+			width: 125rem; aspect-ratio: 1/1;
+			border-radius: 50%;
+			background: var(--gradient-circle);
+			opacity: .5;
+		}
+
+		&:nth-child(2) {
+			position: absolute;
+			left: calc(50% - 50rem); top: 63%;
+			transform: translate(50%,-50%);
+			width: 4.6875rem; height: 9.0625rem;
+		}
+
+		&:nth-child(3) {
+			position: absolute;
+			right: calc(50% - 46rem); bottom: 0%;
+			transform: translate(50%,0%);
+			width: 4.6875rem; height: 9.0625rem;
+		}
+	}
+
+	// .holidays__hero
+
+	&__hero {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 1.25rem;
+
+		
+	}
+
+	// .holidays__title
+
+	&__title {
+	}
+
+	// .holidays__text
+
+	&__text {
+		max-width: 24.4375rem;
+	}
+
+	// .holidays__list
+
+	&__list {
+		position: relative;
+
+		margin-top: 1.875rem;
+		@include _992 {
+			margin-top: 6.25rem;
+		}
+
+		display: flex;
+		flex-direction: column;
+		gap: 0.9375rem;
+
+		
+	}
+
+	// .holidays__list_decor
+
+	&__list_decor {
+		display: none;
+		@include _992 {
+			display: block;
+			position: absolute;
+			right: 0; top: 0;
+			width: 9.0625rem; height: 9.0625rem;
+			clip-path: var(--decor-clip-left-bottom);
+			transform: translate(70%,-50%);
+		}
+	}
+
+	// .holidays__item
+
+	&__item {
+
+
+	}
+}

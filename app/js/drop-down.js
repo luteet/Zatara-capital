@@ -1,7 +1,7 @@
 export default function dropDown() {
 
 	const dropDown = document.querySelectorAll('.drop-down');
-	const mainWrapper = document.querySelector(".wrapper");
+	const mainWrapper = document.querySelector(".wrapper") ? document.querySelector(".wrapper") : document.querySelector(".account-wrapper");
 	
 	const getDeviceType = () => {
 	
@@ -96,20 +96,36 @@ export default function dropDown() {
 
 					block.style.left = dropDownCoords.x + "px";
 					block.style.transform = "translate3d(0,0,0)";
+					if(block.classList.contains("aside-mode")) {
+						block.style.left = (dropDownCoords.x + document.querySelector(".account-aside").offsetWidth) + "px";
+						block.style.transform = "translate3d(0%,0,0)";
+					}
 
 				}
 				
 				if(target.getBoundingClientRect().bottom + heightDropDownList >= window.innerHeight) {
 					
-					block.style.top = (dropDownCoords.y - heightDropDownList) + "px";
-					block.classList.remove("on-bottom");
-					block.classList.add("on-top");
+					if(block.classList.contains("aside-mode")) {
+						block.style.top = (dropDownCoords.y - heightDropDownList) + "px";
+						block.classList.remove("on-bottom");
+						block.classList.add("on-top");
+					} else {
+						block.style.top = (dropDownCoords.y - heightDropDownList) + "px";
+						block.classList.remove("on-bottom");
+						block.classList.add("on-top");
+					}
 					
 				} else if(target.getBoundingClientRect().bottom + heightDropDownList < mainWrapper.offsetHeight) {
 					
-					block.style.top = (dropDownCoords.y + target.offsetHeight) + "px";
-					block.classList.remove("on-top");
-					block.classList.add("on-bottom");
+					if(block.classList.contains("aside-mode")) {
+						block.style.top = (dropDownCoords.y) + "px";
+						block.classList.remove("on-top");
+						block.classList.add("on-bottom");
+					} else {
+						block.style.top = (dropDownCoords.y + target.offsetHeight) + "px";
+						block.classList.remove("on-top");
+						block.classList.add("on-bottom");
+					}
 
 				}
 
@@ -206,54 +222,96 @@ export default function dropDown() {
 
 	})
 
-	window.addEventListener('resize', function () {
-
+	function resize() {
 		deviceType = getDeviceType();
+		
 
 		Array.from(dropDownArray).forEach(dropDownElement => {
+
+			
 
 			const target = dropDownElement["target"],
 				  block = dropDownElement["block"],
 				  wrapper = dropDownElement["wrapper"];
 				  
-			if(block.classList.contains('is-active')) {
+			if(wrapper.classList.contains('is-active')) {				
 
-				let heightDropDownList = list.offsetHeight, 
-					widthDropDownList = list.offsetWidth, 
+				let heightDropDownList = block.offsetHeight, 
+					widthDropDownList = block.offsetWidth, 
 					dropDownCoords = {y: wrapper.getBoundingClientRect().top + window.scrollY, x: wrapper.getBoundingClientRect().left + window.scrollX};
 
-				if(dropDownCoords.x >= widthDropDownList && dropDownCoords.x < (window.innerWidth - widthDropDownList)) {
+					if(dropDownCoords.x >= widthDropDownList && dropDownCoords.x < (window.innerWidth - widthDropDownList)) {
+
+						if(block.classList.contains("on-right-mode")) {
+							block.style.left = (dropDownCoords.x + target.offsetWidth) + "px";
+							block.style.transform = "translate3d(-100%,0,0)";
+						} else if(block.classList.contains("on-left-mode")) {
+							
+							block.style.left = (dropDownCoords.x + target.offsetWidth) + "px";
+							block.style.transform = "translate3d(0%,0,0)";
+						} else {
+							block.style.left = (dropDownCoords.x + target.offsetWidth / 2) + "px";
+							block.style.transform = "translate3d(-50%,0,0)";
+						}
 	
-					block.style.left = (dropDownCoords.x + target.offsetWidth / 2) + "px";
-					block.style.transform = "translate3d(-50%,0,0)";
-
-				} else if(dropDownCoords.x + 15 > window.innerWidth - widthDropDownList) {
+					} else if(dropDownCoords.x + 15 > window.innerWidth - widthDropDownList) {
+						
+						
+						if(block.classList.contains("on-left-mode")) {
+							block.style.left = (dropDownCoords.x + target.offsetWidth) + "px";
+							block.style.transform = "translate3d(0,0,0)";
+						} else {
+							block.style.left = (dropDownCoords.x - widthDropDownList + target.offsetWidth) + "px";
+							block.style.transform = "translate3d(0,0,0)";
+						}
+	
+						
+					} else if(dropDownCoords.x <= widthDropDownList) {
+	
+						block.style.left = dropDownCoords.x + "px";
+						block.style.transform = "translate3d(0,0,0)";
+						if(block.classList.contains("aside-mode")) {
+							block.style.left = (dropDownCoords.x + document.querySelector(".account-aside").offsetWidth) + "px";
+							block.style.transform = "translate3d(0%,0,0)";
+						}
+	
+					}
 					
-					block.style.left = (dropDownCoords.x - widthDropDownList + target.offsetWidth) + "px";
-					block.style.transform = "translate3d(0,0,0)";
-
+					if(target.getBoundingClientRect().bottom + heightDropDownList >= window.innerHeight) {
 					
-				} else if(dropDownCoords.x <= widthDropDownList) {
-
-					block.style.left = dropDownCoords.x + "px";
-					block.style.transform = "translate3d(0,0,0)";
-
-				}
-				
-				if(target.getBoundingClientRect().bottom + heightDropDownList >= window.innerHeight) {
-					
-					block.style.top = (dropDownCoords.y - heightDropDownList - 9) + "px";
-					
-				} else if(target.getBoundingClientRect().bottom + heightDropDownList < mainWrapper.offsetHeight) {
-					
-					block.style.top = (dropDownCoords.y + target.offsetHeight + 9) + "px";
-
-				}
+						if(block.classList.contains("aside-mode")) {
+							block.style.top = (dropDownCoords.y - heightDropDownList) + "px";
+							block.classList.remove("on-bottom");
+							block.classList.add("on-top");
+						} else {
+							block.style.top = (dropDownCoords.y - heightDropDownList) + "px";
+							block.classList.remove("on-bottom");
+							block.classList.add("on-top");
+						}
+						
+					} else if(target.getBoundingClientRect().bottom + heightDropDownList < mainWrapper.offsetHeight) {
+						
+						if(block.classList.contains("aside-mode")) {
+							block.style.top = (dropDownCoords.y) + "px";
+							block.classList.remove("on-top");
+							block.classList.add("on-bottom");
+						} else {
+							block.style.top = (dropDownCoords.y + target.offsetHeight) + "px";
+							block.classList.remove("on-top");
+							block.classList.add("on-bottom");
+						}
+	
+					}
 			}
 	
 		})
-		
-	})
+	}
+
+	window.addEventListener('resize', resize)
+	window.addEventListener('scroll', resize)
+	if(document.querySelector(".account-main")) {
+		document.querySelector(".account-main").addEventListener('scroll', resize)
+	}
 
 	document.body.addEventListener('click', function(event) {
 		if(!event.target.closest('.drop-down')) {

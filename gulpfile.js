@@ -110,12 +110,45 @@ function scriptsLib() {
 		//'node_modules/nouislider/dist/nouislider.min.js', // Кастомный input[range] | npm i nouislider --save | https://www.npmjs.com/package/nouislider
 		'node_modules/simplebar/dist/simplebar.min.js', // Кастомный скролбар | npm i simplebar --save | https://www.npmjs.com/package/simplebar
 		//'node_modules/fslightbox/index.js', // Галерея | npm i fslightbox --save | https://www.npmjs.com/package/fslightbox
-		'node_modules/chart.js/dist/chart.umd.js', // График | npm i chart.js --save | https://www.npmjs.com/package/chart.js
+		//'node_modules/chart.js/dist/chart.umd.js', // График | npm i chart.js --save | https://www.npmjs.com/package/chart.js
 		'node_modules/masonry-layout/dist/masonry.pkgd.min.js', // График | npm i chart.js --save | https://www.npmjs.com/package/chart.js
-		//'node_modules/vanillajs-datepicker/dist/js/datepicker.min.js', // Выбор даты | npm install --save vanillajs-datepicker | https://mymth.github.io/vanillajs-datepicker/#/
+		//'node_modules/vanillajs-datepicker/js/i18n/locales/ru.js', // Выбор даты | npm install --save vanillajs-datepicker | https://mymth.github.io/vanillajs-datepicker/#/
+		'node_modules/vanillajs-datepicker/dist/js/datepicker.min.js', // Выбор даты | npm install --save vanillajs-datepicker | https://mymth.github.io/vanillajs-datepicker/#/
 		//'node_modules/swiper/swiper-bundle.min.js', // Слайдер
 	])
 	.pipe(concat('libs.min.js'))
+	.pipe(uglify())
+	.pipe(dest('dist/js'))
+	.pipe(browserSync.stream())
+}
+
+function accountScriptsLib() {
+	return src([
+		//'node_modules/@splidejs/splide/dist/js/splide.min.js', // Слайдер | npm i @splidejs/splide --save | https://splidejs.com/guides/getting-started/
+		//'node_modules/@splidejs/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.min.js', // autoscroll для слайдера | $ npm install @splidejs/splide-extension-auto-scroll --save | https://splidejs.com/guides/getting-started/
+		//'node_modules/@splidejs/splide-extension-grid/dist/js/splide-extension-grid.min.js', // Сетка для слайдера | npm install @splidejs/splide-extension-grid --save | https://splidejs.com/guides/getting-started/
+		//'node_modules/vanilla-lazyload/dist/lazyload.min.js', // Lazyload img | npm i vanilla-lazyload --save | https://www.npmjs.com/package/vanilla-lazyload
+		//'node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js', // Полифил для window.scroll() | npm i smoothscroll-polyfill --save
+		'node_modules/clipboard/dist/clipboard.min.js', // Копирование в буфер обмена | npm i clipboard --save | https://www.npmjs.com/package/clipboard
+		//'node_modules/aos/dist/aos.js', // Анимация | npm i aos --save | https://www.npmjs.com/package/aos
+		//'node_modules/gsap/dist/gsap.min.js', // GSAP (Animation) | npm i gsap --save | https://www.npmjs.com/package/gsap
+		//'node_modules/gsap/dist/ScrollTrigger.min.js', // GSAP (Animation) | npm i gsap --save | https://www.npmjs.com/package/gsap
+		//'node_modules/split-type/umd/index.min.js', // split text | npm i split-type --save | https://www.npmjs.com/package/split-type
+		//'app/js/ScrollSmoother.min.js', // GSAP
+		//'node_modules/@studio-freight/lenis/dist/lenis.min.js', // smooth scroll | npm i @studio-freight/lenis --save | https://github.com/studio-freight/lenis
+		//'node_modules/@barba/core/dist/barba.umd.js', // smooth transitions between pages | npm install @barba/core --save | https://barba.js.org/docs/getstarted/intro/
+		'node_modules/slim-select/dist/slimselect.min.js', // Select | npm i slim-select --save | https://www.npmjs.com/package/slim-select
+		//'node_modules/sticky-js/dist/sticky.min.js' // Sticky | npm i sticky-js --save | https://www.npmjs.com/package/sticky-js
+		//'node_modules/nouislider/dist/nouislider.min.js', // Кастомный input[range] | npm i nouislider --save | https://www.npmjs.com/package/nouislider
+		'node_modules/simplebar/dist/simplebar.min.js', // Кастомный скролбар | npm i simplebar --save | https://www.npmjs.com/package/simplebar
+		//'node_modules/fslightbox/index.js', // Галерея | npm i fslightbox --save | https://www.npmjs.com/package/fslightbox
+		'node_modules/chart.js/dist/chart.umd.js', // График | npm i chart.js --save | https://www.npmjs.com/package/chart.js
+		//'node_modules/masonry-layout/dist/masonry.pkgd.min.js', // График | npm i chart.js --save | https://www.npmjs.com/package/chart.js
+		//'node_modules/vanillajs-datepicker/js/i18n/locales/ru.js', // Выбор даты | npm install --save vanillajs-datepicker | https://mymth.github.io/vanillajs-datepicker/#/
+		'node_modules/vanillajs-datepicker/dist/js/datepicker.min.js', // Выбор даты | npm install --save vanillajs-datepicker | https://mymth.github.io/vanillajs-datepicker/#/
+		//'node_modules/swiper/swiper-bundle.min.js', // Слайдер
+	])
+	.pipe(concat('account-libs.min.js'))
 	.pipe(uglify())
 	.pipe(dest('dist/js'))
 	.pipe(browserSync.stream())
@@ -168,6 +201,20 @@ function styles() {
 		.pipe(browserSync.stream())
 }
 
+function accountStyles() {
+	return src('app/scss/account-style.scss')
+		.pipe(scss({outputStyle: 'compressed'}))
+		.pipe(mediaGroup())
+		.pipe(autoprefixer({
+			overrideBrowserslist: ['last 1 version'],
+			cascade: false
+		}))
+		.pipe(minCSS())
+		.pipe(concat('account-style.min.css'))
+		.pipe(dest('dist/css'))
+		.pipe(browserSync.stream())
+}
+
 function stylesLib() {
 	return src([
 		'node_modules/normalize.css/normalize.css',
@@ -178,8 +225,25 @@ function stylesLib() {
 		'node_modules/aos/dist/aos.css', // Анимация
 		//'node_modules/nouislider/dist/nouislider.css', // Кастомный input[range]
 		'node_modules/simplebar/dist/simplebar.min.css', // Кастомный скролбар
+		'node_modules/vanillajs-datepicker/dist/css/datepicker.min.css',
 	])
 	.pipe(concat('_libs.scss'))
+	.pipe(dest('app/scss'))
+}
+
+function accountStylesLib() {
+	return src([
+		'node_modules/normalize.css/normalize.css',
+		//'node_modules/@splidejs/splide/dist/css/splide.min.css', // Слайдер
+		//'node_modules/@splidejs/splide/dist/css/splide-core.min.css', // Слайдер
+		//'node_modules/swiper/swiper-bundle.min.css', // Слайдер
+		'node_modules/slim-select/dist/slimselect.css', // Select
+		//'node_modules/aos/dist/aos.css', // Анимация
+		//'node_modules/nouislider/dist/nouislider.css', // Кастомный input[range]
+		'node_modules/simplebar/dist/simplebar.min.css', // Кастомный скролбар
+		'node_modules/vanillajs-datepicker/dist/css/datepicker.min.css',
+	])
+	.pipe(concat('_account-libs.scss'))
 	.pipe(dest('app/scss'))
 }
 
@@ -248,7 +312,7 @@ function sprites() {
 }
 
 function watching() {
-	watch(['app/scss/**/*.scss'], styles);
+	watch(['app/scss/**/*.scss'], series(styles, accountStyles));
 	watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
 	watch(['app/json/*.json'], json);
 	watch(['app/video/*.*'], video);
@@ -260,13 +324,16 @@ function watching() {
 
 exports.images = images;
 exports.styles = styles;
+exports.accountStyles = accountStyles;
 exports.watching = watching;
 exports.browsersyncStart = browsersyncStart;
 exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.scriptsLib = scriptsLib;
+exports.accountScriptsLib = accountScriptsLib;
 exports.cleanDist = cleanDist;
 exports.stylesLib = stylesLib;
+exports.accountStylesLib = accountStylesLib;
 exports.ttf2woff2Convert = ttf2woff2Convert;
 exports.fonts = fonts;
 exports.htmlComponents = htmlComponents;
@@ -279,5 +346,5 @@ exports.zipDel = zipDel;
 exports.fonts = series(ttf2woff2Convert, fonts);
 exports.folder = series(delFolder, createFolder);
 exports.zip = series(createFolder, createZip, zipDel);
-exports.start = parallel(stylesLib, styles, watching, scripts, scriptsLib, htmlCompilation, json, sprites, browsersyncStart);
-exports.default = parallel(stylesLib, styles, watching, scripts, scriptsLib, htmlCompilation, json, sprites, browsersync);
+exports.start = parallel(stylesLib, styles, accountStylesLib, accountStyles, watching, scripts, scriptsLib, accountScriptsLib, htmlCompilation, json, sprites, browsersyncStart);
+exports.default = parallel(stylesLib, styles, accountStylesLib, accountStyles, watching, scripts, scriptsLib, accountScriptsLib, htmlCompilation, json, sprites, browsersync);

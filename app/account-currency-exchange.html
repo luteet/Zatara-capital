@@ -1,0 +1,72 @@
+@@include("html/_account-header.html")
+
+	<div class="account-block">
+		<h1 class="account-title">
+			Обмен валют
+		</h1>
+		@@include("html/_mobile-nav.html")
+		<div class="currency-exchange account-block">
+			<div class="currency-exchange__body account-block__body">
+				<h2 class="account-block__title visible-on-mob">Обменять криптовалюту</h2>
+				<div class="currency-exchange__row">
+					<div class="currency-exchange__col">
+						<div class="currency-exchange__item form-item">
+							<span>Отдаю</span>
+							<span>
+								<select name="currency" class="custom-select">
+									<option value="Tether" data-html='<div class="refill-account__option"><img src="img/crypto/Tether.svg" width="36" height="26" alt=""><b>Tether <span>(TRC20)</span></b></div>'>
+										Tether (TRC20)
+									</option>
+									<option value="Bitcoin" data-html='<div class="refill-account__option"><img src="img/crypto/Bitcoin.svg" width="36" height="26" alt=""><b>Bitcoin <span>(TRC20)</span></b></div>'>
+										Bitcoin (TRC20)
+									</option>
+								</select>
+							</span>
+						</div>
+						<div class="currency-exchange__item form-item">
+							<span>Сумма</span>
+							<span>
+								<input type="text" placeholder="0" class="input">
+								<span>USDT (TRC20)</span>
+							</span>
+						</div>
+					</div>
+					<div class="currency-exchange__col">
+						<div class="currency-exchange__item form-item">
+							<span>Отдаю</span>
+							<span>
+								<select name="currency" class="custom-select">
+									<option value="Bitcoin" data-html='<div class="refill-account__option"><img src="img/crypto/Bitcoin.svg" width="36" height="26" alt=""><b>Bitcoin <span>(TRC20)</span></b></div>'>
+										Bitcoin (TRC20)
+									</option>
+									<option value="Tether" data-html='<div class="refill-account__option"><img src="img/crypto/Tether.svg" width="36" height="26" alt=""><b>Tether <span>(TRC20)</span></b></div>'>
+										Tether (TRC20)
+									</option>
+								</select>
+							</span>
+						</div>
+						<div class="currency-exchange__item form-item">
+							<span>Сумма</span>
+							<span>
+								<input type="text" placeholder="0" class="input">
+								<span><b>BTC</b></span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="currency-exchange__footer">
+					<button class="currency-exchange__submit button" type="submit" aria-label="Пополнить">
+						<span>Пополнить</span>
+					</button>
+					<div class="currency-exchange__add-info">
+						<div>
+							<span>Комиссия:</span>
+							<span><b>30.00</b> USDT (TRC20)</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+@@include("html/_account-footer.html")

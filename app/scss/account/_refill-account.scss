@@ -1,0 +1,111 @@
+.refill-account {
+
+	.account-block__body {
+		padding: 1.875rem 1.875rem 0.6875rem;
+	}
+
+	// .refill-account__title
+
+	&__title {
+	}
+
+	&__text {
+		padding-top: 1.875rem;
+
+		line-height: 100%;
+		font-weight: 500;
+	}
+
+	// .refill-account__inner
+
+	&__inner {
+		margin-top: 1.875rem;
+	}
+
+	// .refill-account__item
+
+	&__item {
+		&:not(:first-child) {
+			margin-top: 1.25rem;
+		}
+
+		position: relative;
+
+		> input {
+			width: 100%;
+			
+		}
+
+		.input {
+			padding-right: 3.75rem;
+		}
+
+		> span {
+			&:nth-child(1) {
+				font-size: 0.8125rem;
+				line-height: 100%;
+				opacity: .4;
+
+				margin-bottom: 0.625rem;
+
+				display: block;
+			}
+
+			&:nth-child(3) {
+				font-size: 0.8125rem;
+				line-height: 100%;
+				font-weight: 600;
+
+				position: absolute;
+				right: 0; bottom: 0;
+				height: 3.125rem;
+
+				padding: 0 0.9375rem;
+
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+
+	&__option {
+		display: flex;
+		align-items: center;
+		gap: 0 0.625rem;
+
+		font-size: 0.8125rem;
+		line-height: 100%;
+
+		img {
+			flex: 0 0 2.125rem; height: 1.625rem;
+			object-fit: contain; object-position: left;
+		}
+
+		span {
+			font-weight: 400;
+		}
+	}
+
+	// .refill-account__submit
+
+	&__submit {
+		width: 100%;
+		margin-top: 1.25rem;
+
+		&:last-child {
+			margin-bottom: 0.9375rem;
+		}
+	}
+
+	// .refill-account__note
+
+	&__note {
+		margin-top: 0.9375rem;
+
+		font-size: 0.75rem;
+		line-height: 100%;
+		color: var(--theme-text-color);
+		opacity: 0.4;
+
+	}
+}

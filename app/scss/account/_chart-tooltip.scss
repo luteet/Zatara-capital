@@ -1,0 +1,35 @@
+.chart-tooltip {
+	position: absolute;
+	transform: translate(0.9375rem,-50%);
+
+	background: var(--white);
+	color: var(--black);
+
+	transition: left .2s ease, top .2s ease, opacity .2s ease;
+
+	border-radius: 0.5rem;
+	pointer-events: none; user-select: none;
+
+	font-size: 0.75rem;
+	line-height: 150%;
+	font-weight: 600;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0; top: 50%;
+		transform: translate(-100%,-50%);
+		
+		border-right: 0.3125rem solid var(--white);
+		border-top: 0.3125rem solid transparent;
+		border-bottom: 0.3125rem solid transparent;
+	}
+
+	b {
+		font-weight: 700;
+	}
+
+	&__footer {
+
+	}
+}

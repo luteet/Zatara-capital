@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru" data-lang="ru">
+
+<head>
+	<script>
+		if (localStorage.getItem("zatara-capital-theme") == "light") document.querySelector("html").classList.add("is-active-light-theme");
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="theme-color" content="#001337">
+	<title>Zatara Capital</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__inner" data-aos="fade-in" data-aos-delay="50">
+				<div class="header__logo">
+					<a href="index.html" class="header__logo_link">
+						<div class="theme-change">
+							<img src="img/logo-dark.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo_img">
+							<img src="img/logo-light.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo_img">
+						</div>
+					</a>
+				</div>
+				<nav class="header__nav">
+					<div class="header__nav_body">
+						<a href="registration.html" class="header__nav_button button" aria-label="Регистрация">
+							<span>Регистрация</span>
+							<svg width="18" height="22">
+								<use href="img/sprites.svg#next-arrow"></use>
+							</svg>
+							<span class="button-flare" aria-hidden="true"></span>
+						</a>
+						<ul class="header__nav_list">
+							<li>
+								<a href="about-us.html">
+									<span>О компании</span>
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</a>
+								<div>
+									<ul>
+										<li>
+											<a href="about-us.html">
+												О нас
+											</a>
+										</li>
+										<li>
+											<a href="about-us.html?target=our-advantages">
+												Наши преимущества
+											</a>
+										</li>
+										<li>
+											<a href="documents.html">
+												Документация
+											</a>
+										</li>
+										<li>
+											<a href="funds-protection.html">
+												Защита средств
+											</a>
+										</li>
+										<li>
+											<a href="liquidity-providers.html">
+												Поставщики ликвидности
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="a-book.html">
+									<span>Торговля</span>
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</a>
+								<div>
+									<ul>
+										<li>
+											<a href="a-book.html">
+												Торги по модели A-Book
+											</a>
+										</li>
+										<li>
+											<a href="aggregation-liquidity.html">
+												Агрегация ликвидности
+											</a>
+										</li>
+										<li>
+											<a href="risk-management.html">
+												Риск менеджмент
+											</a>
+										</li>
+										<li>
+											<a href="stocks-and-ETFs.html">
+												Акции и ETF
+											</a>
+										</li>
+										<li>
+											<a href="currency-trading.html">
+												Торговля валютой
+											</a>
+										</li>
+										<li>
+											<a href="metal-trading.html">
+												Торговля металлами
+											</a>
+										</li>
+										<li>
+											<a href="futures-trading.html">
+												Торговля фьючерсами
+											</a>
+										</li>
+										<li>
+											<a href="options-trading.html">
+												Торговля опционами
+											</a>
+										</li>
+										<li>
+											<a href="investing-in-hedge-funds.html">
+												Инвестирование в хедж-фонды
+											</a>
+										</li>
+										<li>
+											<a href="bond-trading.html">
+												Торговля облигациями
+											</a>
+										</li>
+										<li>
+											<a href="cryptocurrency-trading.html">
+												Торговля криптовалютой
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="news.html">
+									<span>Новости</span>
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</a>
+								<div>
+									<ul>
+										<li>
+											<a href="news.html">
+												Новости рынка
+											</a>
+										</li>
+										<li>
+											<a href="holidays.html">
+												Праздничные дни
+											</a>
+										</li>
+										<li>
+											<a href="economic-calendar.html">
+												Экономический календарь
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="trading-platform.html">
+									<span>Торговая платформа</span>
+								</a>
+							</li>
+							<li>
+								<a href="faq.html">
+									<span>FAQ</span>
+								</a>
+							</li>
+							<li>
+								<a href="contacts.html">
+									<span>Контакты</span>
+								</a>
+							</li>
+						</ul>
+						<div class="header__nav_add">
+							<div class="header__nav_lang header__lang drop-down hover-mode">
+								<button class="header__lang_target drop-down__target" type="button" aria-label="Выбрать язык">
+									<img src="img/lang/lang-ru.svg" width="20" height="20" alt="" loading="lazy" class="header__lang_flag">
+									<span>Ru</span>
+									<svg width="24" height="24" class="drop-down__target_arrow">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</button>
+								<div class="header__lang_block drop-down__block on-right-mode">
+									<ul>
+										<li>
+											<a href="#" class="is-current">
+												<img src="img/lang/lang-ru.svg" width="20" height="20" alt="" loading="lazy" class="header__lang_flag">
+												<span>Ru</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/lang/lang-en.svg" width="20" height="20" alt="" loading="lazy" class="header__lang_flag">
+												<span>En</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="header__nav_theme header__theme">
+								<button class="header__theme_target" data-change-theme-to="dark">
+									<img src="img/dark-theme-icon.svg" width="12" height="12" loading="lazy" alt="">
+								</button>
+								<button class="header__theme_target" data-change-theme-to="light">
+									<img src="img/light-theme-icon.svg" width="12" height="12" loading="lazy" alt="">
+								</button>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<div class="header__account drop-down">
+					<button type="button" class="header__account_target drop-down__target" aria-label="Личный кабинет">
+						<span>Личный кабинет</span>
+						<svg width="19" height="20" class="visible-on-mob header__account_icon">
+							<use href="img/sprites.svg#user"></use>
+						</svg>
+						<svg width="24" height="24" class="header__account_arrow drop-down__target_arrow">
+							<use href="img/sprites.svg#drop-down-arrow"></use>
+						</svg>
+					</button>
+					<div class="header__account_block drop-down__block on-right-mode">
+						<ul>
+							<li>
+								<span class="success-color">
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#account-verification"></use>
+									</svg>
+									<span>
+										Верифицирован
+									</span>
+								</span>
+							</li>
+							<li>
+								<a href="registration.html">
+									Регистрация
+								</a>
+							</li>
+							<li>
+								<a href="login.html">
+									Войти
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<button class="header__burger" type="button" aria-label="Menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="authentication padding-start accent-on-light" data-aos="fade-in" data-aos-delay="100">
+				<form class="authentication__block">
+					<img src="img/login/login-decor-image.png" width="0" height="0" loading="lazy" alt="" aria-hidden="true" class="authentication__decor">
+					<h1 class="authentication__title section-title is-center">
+						Регистрация
+					</h1>
+					<div class="authentication__row">
+						<div class="authentication__col">
+							<label class="form-label">
+								<span>Имя и Фамилия</span>
+								<input type="text" name="fullname" placeholder="Имя и Фамилия" required class="input">
+							</label>
+							<label class="form-label">
+								<span>Логин</span>
+								<input type="text" name="login" placeholder="Придумайте логин" required class="input">
+							</label>
+							<label class="form-label">
+								<span>Электронная почта</span>
+								<input type="email" name="email" placeholder="Электронная почта" required class="input">
+							</label>
+						</div>
+						<div class="authentication__col">
+							<label class="form-label">
+								<span>Телефон</span>
+								<input type="tel" name="tel" placeholder="Ваш номер телефона" required class="input">
+							</label>
+							<label class="form-label">
+								<span>Пароль</span>
+								<input type="password" name="password" placeholder="Придумайте пароль" required class="input">
+								<button class="toggle-visible-password" type="button">
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#password-hidden"></use>
+									</svg>
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#password-visible"></use>
+									</svg>
+								</button>
+							</label>
+							<label class="form-label">
+								<span>Подтверждение пароля</span>
+								<input type="password" name="password-2" placeholder="Введите пароль еще раз" required class="input">
+								<button class="toggle-visible-password" type="button">
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#password-hidden"></use>
+									</svg>
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#password-visible"></use>
+									</svg>
+								</button>
+							</label>
+						</div>
+					</div>
+					<label class="authentication__checkbox checkbox">
+						<input type="checkbox" name="privacy" required checked class="checkbox__input">
+						<span class="checkbox__element">
+							<svg width="16" height="16">
+								<use href="img/sprites.svg#check-2"></use>
+							</svg>
+						</span>
+						<span class="checkbox__text">
+							Я прочитал(-а), понял(-а) и принимаю <a href="#">Условия использования</a>, <a href="#">Политику конфиденциальности</a>, <a href="#">Предупреждение о рисках</a>, <a href="#">Политику выявления конфликтов интересов</a> и <a href="#">Политику исполнения ордеров</a>
+						</span>
+					</label>
+					<button class="authentication__submit button" type="submit" aria-label="Регистрация">
+						<span>Регистрация</span>
+						<span class="button-flare" aria-hidden="true"></span>
+					</button>
+				</form>
+			</section>
+		</main>
+
+
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+@@include("html/_header.html", {"class": ""})
+
+	<main class="main alt-footer">
+		<div class="breadcrumbs padding-start container" data-aos="fade-in" data-aos-delay="100">
+			<a href="index.html" class="breadcrumbs__link">Главная</a>
+			<span class="breadcrumbs__separator">/</span>
+			<a href="news.html" class="breadcrumbs__link">Новости</a>
+			<span class="breadcrumbs__separator">/</span>
+			<span class="breadcrumbs__current">Новости рынка</span>
+		</div>
+		<section class="news accent-on-light">
+			<div class="news__background" aria-hidden="true">
+				<div class="news__decor"></div>
+				<div class="news__decor dots-decor"></div>
+				<div class="news__decor dots-decor"></div>
+			</div>
+			<div class="news__hero" data-aos="fade-in" data-aos-delay="200">
+				<h1 class="news__title hero-title">Новости рынка</h1>
+				<div class="news__text text">
+					<p>
+						Последние события на фондовом рынке, а также актуальные новости компании
+					</p>
+				</div>
+			</div>
+			<div class="news__inner">
+				<div class="news__inner_decor dots-decor" aria-hidden="true"></div>
+				<ul class="news__list">
+					@@loop("html/_news-card.html", [
+						{
+							"image": "1",
+							"title": "McDonald's sales, profit top estimates as cheaper burgers draw consumers",
+							"text": "McDonald's beat market expectations for quarterly profit and comparable sales on Thursday, as the restaurant chain's relatively cheaper burgers Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eaque dolores rerum, esse, at aut eos in, necessitatibus ducimus deleniti aperiam nesciunt nihil autem. Corrupti necessitatibus cum quibusdam reprehenderit nulla.",
+						},
+						{
+							"image": "2",
+							"title": "AbbVie raises profit forecast as Humira stays strong, new drugs impress",
+							"text": "AbbVie on Thursday raised its annual profit forecast after beating analysts' estimates for second-quarter earnings on a lower-than-expected...",
+						},
+						{
+							"image": "3",
+							"title": "ECB lifts interest rates by 25 bps, as expected",
+							"text": "The European Central Bank raised its key deposit rate by 25 basis points to 3.75% Thursday, its ninth increase in a row, as expected, as it continued...",
+						},
+						{
+							"image": "4",
+							"title": "U.S. GDP accelerates to 2.4% in the second quarter; jobless claims decline",
+							"text": "Economic growth in the U.S. accelerated in the second quarter as activity remained largely resilient in the face of an aggressive bout of Federal...",
+						},
+						{
+							"image": "5",
+							"title": "FTX's Bankman-Fried denies witness tampering, accepts gag order",
+							"text": "Lawyers for FTX founder Sam Bankman-Fried rejected prosecutors' claims that his discussions with a New York Times reporter amounted to witness...",
+						},
+						{
+							"image": "6",
+							"title": "Dollar edges up against euro, central banks in focus",
+							"text": "New York/LONDON - The dollar edged up against the euro and the pound on Monday after economic data continued to show the resilience of the U.S...",
+						},
+						{
+							"image": "7",
+							"title": "Twilio shares edge lower after RBC analysts cut rating",
+							"text": "Shares in Twilio Inc (NYSE:TWLO) inched down on Monday after analysts at RBC Capital Markets downgraded their rating of the cloud...",
+						},
+						{
+							"image": "8",
+							"title": "Exclusive-Airbus weighs separate boss for planemaking arm - sources",
+							"text": "PARIS - Airbus is contemplating a management shake-up that could restore a de facto separate leader for its planemaking business and free...",
+						},
+						{
+							"image": "9",
+							"title": "U.S. stocks are rising ahead of more earnings reports and the Fed's...",
+							"text": "U.S. stocks were rising to start the week, which features another batch of corporate earnings and the Federal Reserve’s next decision on interest rates.",
+						},
+					])
+				</ul>
+			</div>
+			<div class="news__footer" data-aos="fade-in" data-aos-delay="200">
+				<a href="#" class="news__view_more button visible-on-mob">
+					Показать больше
+				</a>
+				<div class="news__pagination pagination visible-on-desktop">
+					<a href="#" class="is-current">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<span>...</span>
+					<a href="#">15</a>
+					<a href="#">
+						<svg width="7" height="12">
+							<use href="img/sprites.svg#page-next-arrow"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</section>
+		@@include("html/_cooperating-2.html")
+	</main>
+
+@@include("html/_footer.html")

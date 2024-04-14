@@ -1,0 +1,53 @@
+.replenishment {
+
+	
+	margin-top: 2.5rem;
+
+	@include _992 {
+		max-width: 72.181%;
+	}
+
+	// .replenishment__body
+
+	&__body {
+		display: grid;
+		grid-template-columns: 100%;
+		gap: 0 1.875rem;
+
+		@include _992 {
+			grid-template-columns: 2fr 1fr;
+		}
+	}
+
+	// .replenishment__row
+
+	&__row {
+		display: grid;
+		grid-template-columns: 100%;
+		gap: 0.9375rem 1.875rem;
+
+		@include _550 {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	// .replenishment__item
+
+	&__item {
+		&:nth-child(3) {
+			margin-top: 0.625rem;
+			@include _992 {
+				margin-top: 0;
+			}
+		}
+	}
+
+	// .replenishment__submit
+
+	&__submit {
+		margin-top: 1.4375rem;
+		align-self: self-start;
+	}
+}
+
+

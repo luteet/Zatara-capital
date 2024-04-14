@@ -1,0 +1,391 @@
+@@include("html/_account-header.html")
+
+	<div class="account-row">
+		<div class="account-col">
+			<div class="account-block stocks">
+				<div class="account-block__header">
+					<h1 class="account-title">
+						Криптовалюты
+					</h1>
+					<div class="trading-status is-close visible-on-mob">
+						<svg width="16" height="16">
+							<use href="img/sprites.svg#close-2"></use>
+						</svg>
+						<span>
+							Рынок открыт
+						</span>
+					</div>
+					<search class="account-search" role="search">
+						<form>
+							<svg width="24" height="24" class="account-search__icon">
+								<use href="img/sprites.svg#search"></use>
+							</svg>
+							<input type="search" name="search" placeholder="Поиск акций..." class="account-search__input input mode-2">
+						</form>
+					</search>
+				</div>
+				@@include("html/_mobile-nav.html")
+				<div class="account-table horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+					<div class="account-table__inner">
+						<div class="account-table__container">
+							<table class="account-table__block">
+								<colgroup><col><col><col><col><col></colgroup>
+								<thead>
+									<tr>
+										<th></th>
+										<th>Наименование</th>
+										<th>Цена</th>
+										<th>24h %</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info">
+												<div class="account-table__info_logo">
+													<picture>
+														<source srcset="img/crypto/crypto-logo-1.avif" type="image/avif">
+														<source srcset="img/crypto/crypto-logo-1.webp" type="image/webp">
+														<img src="img/crypto/crypto-logo-1.png" alt="" width="30" height="30" loading="lazy">
+													</picture>
+												</div>
+												<b class="account-table__info_name">1inch</b>
+												<span class="account-table__info_initials">1INCH/USD</span>
+											</div>
+										</td>
+										<td>$0.246</td>
+										<td class="success-color">1.63%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info">
+												<div class="account-table__info_logo">
+													<picture>
+														<source srcset="img/crypto/crypto-logo-2.avif" type="image/avif">
+														<source srcset="img/crypto/crypto-logo-2.webp" type="image/webp">
+														<img src="img/crypto/crypto-logo-2.png" alt="" width="30" height="30" loading="lazy">
+													</picture>
+												</div>
+												<b class="account-table__info_name">Aave</b>
+												<span class="account-table__info_initials">AAVE/USD</span>
+											</div>
+										</td>
+										<td>$57.84</td>
+										<td class="success-color">2.02%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input checked type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info">
+												<div class="account-table__info_logo">
+													<picture>
+														<source srcset="img/crypto/crypto-logo-3.avif" type="image/avif">
+														<source srcset="img/crypto/crypto-logo-3.webp" type="image/webp">
+														<img src="img/crypto/crypto-logo-3.png" alt="" width="30" height="30" loading="lazy">
+													</picture>
+												</div>
+												<b class="account-table__info_name">Alchemy Pay</b>
+												<span class="account-table__info_initials">ACH/USD</span>
+											</div>
+										</td>
+										<td>$0.013682</td>
+										<td class="success-color">0.3%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info">
+												<div class="account-table__info_logo">
+													<picture>
+														<source srcset="img/crypto/crypto-logo-4.avif" type="image/avif">
+														<source srcset="img/crypto/crypto-logo-4.webp" type="image/webp">
+														<img src="img/crypto/crypto-logo-4.png" alt="" width="30" height="30" loading="lazy">
+													</picture>
+												</div>
+												<b class="account-table__info_name">Cardano</b>
+												<span class="account-table__info_initials">ADA/USD</span>
+											</div>
+										</td>
+										<td>$0.2632</td>
+										<td class="success-color">0.86%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info">
+												<div class="account-table__info_logo">
+													<picture>
+														<source srcset="img/crypto/crypto-logo-5.avif" type="image/avif">
+														<source srcset="img/crypto/crypto-logo-5.webp" type="image/webp">
+														<img src="img/crypto/crypto-logo-5.png" alt="" width="30" height="30" loading="lazy">
+													</picture>
+												</div>
+												<b class="account-table__info_name">Algorand</b>
+												<span class="account-table__info_initials">ALGO/USD</span>
+											</div>
+										</td>
+										<td>$0.095</td>
+										<td class="failure-color">-0.63%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info">
+												<div class="account-table__info_logo">
+													<picture>
+														<source srcset="img/crypto/crypto-logo-6.avif" type="image/avif">
+														<source srcset="img/crypto/crypto-logo-6.webp" type="image/webp">
+														<img src="img/crypto/crypto-logo-6.png" alt="" width="30" height="30" loading="lazy">
+													</picture>
+												</div>
+												<b class="account-table__info_name">Amp</b>
+												<span class="account-table__info_initials">AMP/USD</span>
+											</div>
+										</td>
+										<td>$0.00194</td>
+										<td class="success-color">0.52%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info">
+												<div class="account-table__info_logo">
+													<picture>
+														<source srcset="img/crypto/crypto-logo-7.avif" type="image/avif">
+														<source srcset="img/crypto/crypto-logo-7.webp" type="image/webp">
+														<img src="img/crypto/crypto-logo-7.png" alt="" width="30" height="30" loading="lazy">
+													</picture>
+												</div>
+												<b class="account-table__info_name">Ankr</b>
+												<span class="account-table__info_initials">ANKR/USD</span>
+											</div>
+										</td>
+										<td>$0.01986</td>
+										<td class="success-color">0.15%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info">
+												<div class="account-table__info_logo">
+													<picture>
+														<source srcset="img/crypto/crypto-logo-8.avif" type="image/avif">
+														<source srcset="img/crypto/crypto-logo-8.webp" type="image/webp">
+														<img src="img/crypto/crypto-logo-8.png" alt="" width="30" height="30" loading="lazy">
+													</picture>
+												</div>
+												<b class="account-table__info_name">Aragon</b>
+												<span class="account-table__info_initials">ANT/USD</span>
+											</div>
+										</td>
+										<td>$4.22</td>
+										<td class="success-color">0.95%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info">
+												<div class="account-table__info_logo">
+													<picture>
+														<source srcset="img/crypto/crypto-logo-9.avif" type="image/avif">
+														<source srcset="img/crypto/crypto-logo-9.webp" type="image/webp">
+														<img src="img/crypto/crypto-logo-9.png" alt="" width="30" height="30" loading="lazy">
+													</picture>
+												</div>
+												<b class="account-table__info_name">Cosmos</b>
+												<span class="account-table__info_initials">ATOM/USD</span>
+											</div>
+										</td>
+										<td>$7.172</td>
+										<td class="success-color">0.26%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+									<tr>
+										<td>
+											<label class="account-table__favorite" type="button">
+												<input type="checkbox">
+												<span>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-off"></use></svg>
+													<svg width="24" height="24"><use href="img/sprites.svg#favorite-on"></use></svg>
+												</span>
+											</label>
+										</td>
+										<td>
+											<div class="account-table__info">
+												<div class="account-table__info_logo">
+													<picture>
+														<source srcset="img/crypto/crypto-logo-10.avif" type="image/avif">
+														<source srcset="img/crypto/crypto-logo-10.webp" type="image/webp">
+														<img src="img/crypto/crypto-logo-10.png" alt="" width="30" height="30" loading="lazy">
+													</picture>
+												</div>
+												<b class="account-table__info_name">Axie Infinity</b>
+												<span class="account-table__info_initials">AXS/USD</span>
+											</div>
+										</td>
+										<td>$4.87</td>
+										<td class="success-color">1.23%</td>
+										<td><a href="#" class="link-2">Купить</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="account-pagination pagination">
+					<a href="#" class="is-current">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<span>...</span>
+					<a href="#">15</a>
+					<a href="#">
+						<svg width="7" height="12">
+							<use href="img/sprites.svg#page-next-arrow"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="account-col">
+			<div class="trading-status is-open visible-on-desktop">
+				<svg width="16" height="16">
+					<use href="img/sprites.svg#check-2"></use>
+				</svg>
+				<span>
+					Рынок открыт
+				</span>
+			</div>
+			<div class="account-block refill-account">
+				<div class="account-block__body">
+					<h2 class="refill-account__title account-block__title">
+						Обменять криптовалюту
+					</h2>
+					<form class="refill-account__inner">
+						<div class="refill-account__item">
+							<span>Отдаю</span>
+							<select name="payment-system" class="custom-select">
+								<option value="Etherium" data-html='<div class="refill-account__option"><img src="img/crypto/Ethereum.svg" width="36" height="26" alt=""><b>Etherium <span>(ETH)</span></b></div>'>
+									Etherium (ETH)
+								</option>
+								<option value="Tether" data-html='<div class="refill-account__option"><img src="img/crypto/Tether.svg" width="36" height="26" alt=""><b>Tether <span>(TRC20)</span></b></div>'>
+									Tether (TRC20)
+								</option>
+							</select>
+						</div>
+						<div class="refill-account__item">
+							<span></span>
+							<input type="text" name="sum-1" class="input" placeholder="0" inputmode="numeric">
+							<span>ETH</span>
+						</div>
+						<div class="refill-account__item">
+							<span>Получаю</span>
+							<select name="payment-system" class="custom-select">
+								<option value="Bitcoin" data-html='<div class="refill-account__option"><img src="img/crypto/Bitcoin.svg" width="36" height="26" alt=""><b>Bitcoin <span>(TRC20)</span></b></div>'>
+									Bitcoin (TRC20)
+								</option>
+								<option value="Tether" data-html='<div class="refill-account__option"><img src="img/crypto/Tether.svg" width="36" height="26" alt=""><b>Tether <span>(TRC20)</span></b></div>'>
+									Tether (TRC20)
+								</option>
+							</select>
+						</div>
+						<div class="refill-account__item">
+							<span></span>
+							<input type="text" name="sum-2" class="input" placeholder="0" inputmode="numeric">
+							<span>BTC</span>
+						</div>
+						<button class="refill-account__submit button" type="button" aria-label="Обменять">
+							<span>Обменять</span>
+						</button>
+						<div class="refill-account__note">
+							Комиссия: 0.00USDT
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+@@include("html/_account-footer.html")

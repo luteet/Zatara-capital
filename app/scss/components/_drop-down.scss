@@ -31,5 +31,31 @@
 		opacity: 0; visibility: hidden;
 
 		z-index: 6;
+
+		&.aside-mode {
+			display: none;
+			background: var(--theme-primary-10);
+			border-radius: 0.3125rem;
+			max-width: none !important;
+			padding: 0.9375rem 0;
+			a {
+				display: block;
+				padding: .4688rem 0.9375rem .4688rem;
+				font-size: .8125rem;
+				line-height: 100%;
+				font-weight: 500;
+				color: var(--theme-secondary-2);
+				@media (any-hover: hover) {
+					transition: color .2s;
+					&:hover {
+						color: var(--accent);
+					}
+				
+					&:active {
+						color: var(--accent-2);
+					}
+				}
+			}
+		}
 	}
 }

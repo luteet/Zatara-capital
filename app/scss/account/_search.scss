@@ -1,0 +1,28 @@
+.account-search {
+
+	flex: 1 1 100%;
+	
+	@include _992 {
+		flex: 1 1;
+		max-width: 29.75rem;
+	}
+
+	position: relative;
+
+	// .account-search__icon
+
+	&__icon {
+		position: absolute;
+		left: 0.9375rem; top: 50%;
+		transform: translate(0,-50%);
+		width: 1.125rem; height: 1.125rem;
+		color: var(--theme-secondary-4);
+	}
+
+	// .account-search__input
+
+	&__input {
+		width: 100%;
+		padding-left: 3.125rem;
+	}
+}

@@ -1,0 +1,92 @@
+.our-advantages {
+
+	padding-top: 5rem; padding-bottom: 6.25rem;
+	@include _992 {
+		padding-top: 7.5rem;
+	}
+
+	// .our-advantages__background
+
+	&__background {
+	}
+
+	// .our-advantages__title
+
+	&__title {
+	}
+
+	// .our-advantages__slider
+
+	&__slider {
+		margin-top: 2.5rem;
+		@include _992 {
+			margin-top: 4.375rem;
+		}
+	}
+
+	// .our-advantages__track
+
+	&__track {
+		&.splide__track {
+			overflow: visible;
+		}
+	}
+
+	// .our-advantages__list
+
+	&__list {
+		counter-reset: number;
+	}
+
+	// .our-advantages__slide
+
+	&__slide {
+	}
+}
+
+.our-advantages-card {
+
+	padding: 1.875rem 1.25rem;
+	background: var(--theme-primary-4);
+	box-shadow: 1.25rem 1.25rem 2.5rem var(--shadow);
+	border-radius: 1.25rem;
+
+	@include _992 {
+		padding: 2.5rem;
+	}
+
+	&:nth-child(-n + 9) &__number::before {
+		content: "0"counter(number);
+	}
+
+	// .our-advantages-card__number
+
+	&__number {
+		
+		&::before {
+			counter-increment: number;
+			content: counter(number);
+		
+			font-size: 2.5rem;
+			line-height: 100%;
+			text-transform: uppercase;
+			color: var(--accent);
+		}
+		
+	}
+
+	// .our-advantages-card__content
+
+	&__content {
+		padding-top: 0.9375rem;
+
+		@include _992 {
+			padding-top: 1.5625rem;
+		}
+
+		h3 {
+			color: var(--theme-text-color);
+			font-weight: 500;
+		}
+	}
+}

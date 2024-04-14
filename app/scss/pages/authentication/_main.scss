@@ -1,0 +1,163 @@
+.authentication {
+
+	min-height: 100svh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	//padding-bottom: var(--height-header);
+	padding-bottom: 3.125rem;
+
+	// .authentication__block
+
+	&__block {
+		position: relative;
+		margin: 3.125rem auto;
+		padding: 3.125rem 1.25rem;
+
+		background: var(--theme-primary-4);
+		border-radius: 1.25rem;
+
+		max-width: 56.25rem; width: 100%;
+
+		display: flex;
+		flex-direction: column;
+
+		@include _992 {
+			padding: 3.125rem 5rem;
+		}
+
+		&.is-min {
+			max-width: 28.125rem;
+			padding: 3.125rem 1.25rem;
+
+			@include _550 {
+				padding: 3.125rem;
+			}
+		}
+	}
+
+	// .authentication__decor
+
+	&__decor {
+		position: absolute;
+		right: 0; top: 0;
+		width: 6.25rem; height: auto;
+		transform: translate(15%,-25%);
+
+		@include _992 {
+			width: 9.375rem;
+			transform: translate(40%,-25%);
+		}
+	}
+
+	// .authentication__title
+
+	&__title {
+		padding-bottom: 1.875rem; margin-bottom: 2.5rem;
+		position: relative;
+
+		font-size: 1.5rem;
+		line-height: 120%;
+		
+		@include _992 {
+			font-size: 2rem;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 50%; bottom: 0;
+			transform: translate(-50%,0);
+			background: linear-gradient(90deg, rgba(219,71,213,0) 0%, #DB47D5 50%, rgba(219,71,213,0) 100%);
+			width: 13.75rem; height: 0.125rem;
+		}
+	}
+
+	// .authentication__row
+
+	&__row {
+		display: grid;
+		gap: 1.875rem;
+
+		@include _768 {
+			gap: 2.5rem;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	&__min_row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 0.625rem;
+
+		margin-top: 1.875rem;
+	}
+
+	&__min_row &__checkbox {
+		margin-top: 0;
+
+		.checkbox__text {
+			font-size: 0.75rem;
+		}
+	}
+
+	&__link {
+		font-size: 0.75rem;
+		line-height: 100%;
+	}
+
+	// .authentication__col
+
+	&__col {
+		display: flex;
+		flex-direction: column;
+		gap: 1.875rem;
+
+		&:nth-child(odd):last-child {
+			grid-column: 2 span;
+		}
+	}
+
+	// .authentication__checkbox
+
+	&__checkbox {
+		margin-top: 1.875rem;
+	}
+
+	// .authentication__submit
+
+	&__submit {
+		margin-top: 2.125rem;
+		max-width: 12.5rem;
+		width: 100%;
+	}
+
+	&__footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__note {
+		padding-top: 2.125rem;
+
+		font-size: 0.75rem;
+		line-height: 140%;
+		color: var(--theme-secondary-2);
+
+		a {
+			color: var(--accent-2);
+			text-underline-offset: 0.3ch;
+
+			@media (any-hover: hover) {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

@@ -1,8 +1,8 @@
 @@include("html/_header.html", {"class": " is-transparent"})
 
-	<main class="main">
-		<section class="index-hero">
-			<div class="index-hero__content">
+	<main class="main alt-footer-on-light">
+		<section class="index-hero accent-on-light">
+			<div class="index-hero__content" data-aos="fade-in" data-aos-delay="200">
 				<div class="index-hero__content_decor dots-decor"></div>
 				<span class="index-hero__heading section-name">Zatara capital</span>
 				<h1 class="index-hero__title main-title">
@@ -14,27 +14,38 @@
 						Получите доступ к передовым инструментам, индивидуальной поддержке и надежной системе безопасности.
 					</p>
 				</div>
-				<a href="#" class="index-hero__button button">
+				<a href="registration.html" class="index-hero__button button" aria-label="Регистрация">
 					<span>Регистрация</span>
 					<svg width="24" height="24" class="button-arrow">
 						<use href="img/sprites.svg#next-arrow"></use>
 					</svg>
+					<span class="button-flare" aria-hidden="true"></span>
 				</a>
 			</div>
 			<div class="index-hero__image">
 				<div class="index-hero__image_decor dots-decor" aria-hidden="true"></div>
-				<div class="index-hero__image_inner">
-					<picture>
-						<source srcset="img/index/hero/index-hero-image.avif" type="image/avif">
-						<source srcset="img/index/hero/index-hero-image.webp" type="image/webp">
-						<img src="img/index/hero/index-hero-image.png" alt="" width="864" height="597" loading="lazy">
-					</picture>
+				<div class="index-hero__image_inner" data-aos="fade-in" data-aos-delay="100">
+					<div class="theme-change">
+						<picture>
+							<source srcset="img/index/hero/index-hero-image.avif" type="image/avif">
+							<source srcset="img/index/hero/index-hero-image.webp" type="image/webp">
+							<img src="img/index/hero/index-hero-image.png" alt="" width="864" height="597" loading="lazy">
+						</picture>
+						<picture>
+							<source srcset="img/index/hero/index-hero-image-light.avif" type="image/avif">
+							<source srcset="img/index/hero/index-hero-image-light.webp" type="image/webp">
+							<img src="img/index/hero/index-hero-image-light.png" alt="" width="864" height="597" loading="lazy">
+						</picture>
+					</div>
 				</div>
 				<ul class="index-hero__stocks">
-					<li class="index-hero__stocks_item accent-stock">
+					<li class="index-hero__stocks_item accent-stock" data-aos="fade-in" data-aos-delay="100">
 						<div class="accent-stock__header">
 							<h2 class="accent-stock__name">
-								<img src="img/companies/cat.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
+								<div class="theme-change">
+									<img src="img/companies/cat.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
+									<img src="img/companies/cat-light.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
+								</div>
 								CAT
 							</h2>
 							<span class="accent-stock__value success-style">
@@ -51,10 +62,13 @@
 							</a>
 						</div>
 					</li>
-					<li class="index-hero__stocks_item accent-stock">
+					<li class="index-hero__stocks_item accent-stock" data-aos="fade-in" data-aos-delay="150">
 						<div class="accent-stock__header">
 							<h2 class="accent-stock__name">
-								<img src="img/companies/cat.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
+								<div class="theme-change">
+									<img src="img/companies/baba.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
+									<img src="img/companies/baba-light.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
+								</div>
 								CAT
 							</h2>
 							<span class="accent-stock__value success-style">
@@ -71,10 +85,10 @@
 							</a>
 						</div>
 					</li>
-					<li class="index-hero__stocks_item accent-stock">
+					<li class="index-hero__stocks_item accent-stock" data-aos="fade-in" data-aos-delay="200">
 						<div class="accent-stock__header">
 							<h2 class="accent-stock__name">
-								<img src="img/companies/cat.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
+								<img src="img/companies/meta.svg" width="30" height="18" loading="lazy" alt="" aria-hidden="true">
 								CAT
 							</h2>
 							<span class="accent-stock__value success-style">
@@ -93,16 +107,16 @@
 					</li>
 				</ul>
 			</div>
-			<div class="index-hero__reviews">
+			<div class="index-hero__reviews" data-aos="fade-in" data-aos-delay="300">
 				<div class="theme-change">
 					<img src="img/trustoilot.svg" alt="" width="223" height="45" loading="lazy">
 					<img src="img/trustoilot-2.svg" alt="" width="223" height="45" loading="lazy">
 				</div>
 			</div>
 		</section>
-		<section class="stocks">
-			<h2 class="stocks__heading section-name">Выгодно</h2>
-			<div class="stocks__header">
+		<section class="stocks accent-on-light">
+			<h2 class="stocks__heading section-name" data-aos="fade-in" data-aos-delay="100">Выгодно</h2>
+			<div class="stocks__header" data-aos="fade-in" data-aos-delay="150">
 				<div class="stocks__header_col">
 					<h3 class="stocks__title section-title">
 						<mark>Инвестируйте</mark> в популярные акции
@@ -125,43 +139,39 @@
 			<div class="stocks__slider splide">
 				<div class="stocks__decor dots-decor" aria-hidden="true"></div>
 				<div class="stocks__track splide__track">
-					<ul class="stocks__list splide__list">
-						@@loop("html/_stocks-item-success.html", [
-							{
-								"logo": "google",
-								"name": "Google Inc.",
-							},
-							{
-								"logo": "apple",
-								"name": "Apple Inc.",
-							},
-							{
-								"logo": "adobe",
-								"name": "Adobe Inc.",
-							},
-							{
-								"logo": "amd",
-								"name": "AMD, Inc.",
-							},
-						])
-						@@loop("html/_stocks-item-failure.html", [
-							{
-								"logo": "amazon",
-								"name": "Amazon.com, Inc.",
-							},
-							{
-								"logo": "x-twitter",
-								"name": "Twitter Inc.",
-							},
-							{
-								"logo": "ibm",
-								"name": "IBM Inc.",
-							},
-							{
-								"logo": "exxon",
-								"name": "Exxon Mobil",
-							},
-						])
+					<ul class="stocks__list splide__list" data-aos="fade-in" data-aos-delay="200">
+						@@include("html/_stocks-item-success.html", {
+							"logo": "google",
+							"name": "Google Inc.",
+						})
+						@@include("html/_stocks-item-success-light.html", {
+							"logo": "apple",
+							"name": "Apple Inc.",
+						})
+						@@include("html/_stocks-item-failure.html", {
+							"logo": "adobe",
+							"name": "Adobe Inc.",
+						})
+						@@include("html/_stocks-item-success-light.html", {
+							"logo": "amd",
+							"name": "AMD, Inc.",
+						})
+						@@include("html/_stocks-item-success-light.html", {
+							"logo": "amazon",
+							"name": "Amazon Inc.",
+						})
+						@@include("html/_stocks-item-success-light.html", {
+							"logo": "x-twitter",
+							"name": "Twitter Inc.",
+						})
+						@@include("html/_stocks-item-success-light.html", {
+							"logo": "ibm",
+							"name": "IBM Inc.",
+						})
+						@@include("html/_stocks-item-success.html", {
+							"logo": "exxon",
+							"name": "Exxon Mobil",
+						})
 					</ul>
 				</div>
 			</div>
@@ -174,14 +184,14 @@
 				</a>
 			</div>
 		</section>
-		<section class="about-company">
-			<div class="about-company__header">
+		<section class="about-company accent-on-light">
+			<div class="about-company__header" data-aos="fade-in" data-aos-delay="200">
 				<h2 class="about-company__section_name section-name">О компании</h2>
 				<h3 class="about-company__title section-title">
 					Ваш брокер <mark>успешной жизни</mark>
 				</h3>
 			</div>
-			<div class="about-company__advantages">
+			<div class="about-company__advantages" data-aos="fade-in" data-aos-delay="100">
 				<ul class="about-company__advantages_list js-masonry-list">
 					<li class="about-company__advantages_item js-masonry-elm">
 						<div class="advantages-card">
@@ -221,7 +231,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="about-company__content text">
+			<div class="about-company__content text" data-aos="fade-in" data-aos-delay="250">
 				<p>
 					Мы заботимся и обслуживаем каждого клиента, который присоединился к нам, это делает нас лучшим брокером по выбору многих инвесторов и трейдеров.
 				</p>
@@ -230,15 +240,16 @@
 					Мы доказали, что являемся лучшим брокером в жизни каждого трейдера и инвестора.
 				</p>
 			</div>
-			<div class="about-company__footer">
+			<div class="about-company__footer" data-aos="fade-in" data-aos-delay="300">
 				<a href="#" class="about-company__button button">
 					<span>Узнать больше</span>
 					<svg width="24" height="24" class="button-arrow">
 						<use href="img/sprites.svg#next-arrow"></use>
 					</svg>
+					<span class="button-flare" aria-hidden="true"></span>
 				</a>
 			</div>
-			<div class="about-company__video">
+			<div class="about-company__video" data-aos="fade-in" data-aos-delay="300">
 				<div class="about-company__video_background">
 					<div class="theme-change">
 						<img src="img/about-us/about-us-video-decor-dark.svg" width="0" height="0" loading="lazy" alt="">
@@ -250,17 +261,17 @@
 				</a>
 			</div>
 		</section>
-		<section class="markets">
-			<h2 class="markets__section_name section-name">Рынки</h2>
-			<h3 class="markets__title section-title">
+		<section class="markets accent-on-light">
+			<h2 class="markets__section_name section-name" data-aos="fade-in" data-aos-delay="100">Рынки</h2>
+			<h3 class="markets__title section-title" data-aos="fade-in" data-aos-delay="100">
 				Криптовалюты и акции
 			</h3>
-			<div class="markets__text text">
+			<div class="markets__text text" data-aos="fade-in" data-aos-delay="100">
 				<p>
 					В этом списке есть, кажется, все возможные криптовалюты и акции – от маленьких и только начинающих свой путь проектов до крупнейших и известных
 				</p>
 			</div>
-			<div class="markets__tabs tabs">
+			<div class="markets__tabs tabs" data-aos="fade-in" data-aos-delay="200">
 				<div class="markets__nav tabs-nav">
 					<ul class="tabs-nav__list">
 						<li>
@@ -275,7 +286,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="markets__container tabs-container">
+				<div class="markets__container tabs-container" data-aos="fade-in" data-aos-delay="100">
 					<div class="markets__decor dots-decor" aria-hidden="true"></div>
 					<div class="markets__block tabs-block is-active fade-in" id="market-crypto">
 						<div class="markets__table horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
@@ -354,85 +365,8 @@
 				</div>
 			</div>
 		</section>
-		<section class="why-we">
-			<div class="why-we__background" aria-hidden="true">
-				<div class="why-we__decor dots-decor"></div>
-			</div>
-			<div class="why-we__hero">
-				<h2 class="why-we__section_name section-name">
-					Почему мы
-				</h2>
-				<h3 class="why-we__title section-title">
-					Интересы наших клиентов <mark>всегда на первом месте</mark>
-				</h3>
-				<div class="why-we__text text">
-					<p>
-						Наш опыт показывает, если мы будем хорошо обслуживать наших клиентов, наш собственный успех последует за ними
-					</p>
-				</div>
-			</div>
-			<ol class="why-we__list set-animate">
-				<li class="why-we__item why-we-item">
-					<div class="why-we-item__body">
-						<span class="why-we-item__dot" aria-hidden="true"></span>
-						<span class="why-we-item__number"></span>
-						<span class="why-we-item__dot" aria-hidden="true"></span>
-						<span class="why-we-item__text">
-							Создайте аккаунт
-						</span>
-						<span class="why-we-item__dot" aria-hidden="true"></span>
-					</div>
-				</li>
-				<li class="why-we__item why-we-item">
-					<div class="why-we-item__body">
-						<span class="why-we-item__dot" aria-hidden="true"></span>
-						<span class="why-we-item__number"></span>
-						<span class="why-we-item__dot" aria-hidden="true"></span>
-						<span class="why-we-item__text">
-							Внесите депозит
-						</span>
-						<span class="why-we-item__dot" aria-hidden="true"></span>
-					</div>
-				</li>
-				<li class="why-we__item why-we-item">
-					<div class="why-we-item__body">
-						<span class="why-we-item__dot" aria-hidden="true"></span>
-						<span class="why-we-item__number"></span>
-						<span class="why-we-item__dot" aria-hidden="true"></span>
-						<span class="why-we-item__text">
-							Совершите сделку
-						</span>
-						<span class="why-we-item__dot" aria-hidden="true"></span>
-					</div>
-				</li>
-			</ol>
-		</section>
-		<section class="cooperating">
-			<div class="cooperating__decor dots-decor" aria-hidden="true"></div>
-			<div class="cooperating__body">
-				<div class="cooperating__background" aria-hidden="true">
-					<picture>
-						<source srcset="img/index/cooperating/cooperating-image.avif" type="image/avif">
-						<source srcset="img/index/cooperating/cooperating-image.webp" type="image/webp">
-						<img src="img/index/cooperating/cooperating-image.jpg" alt="" width="0" height="0" loading="lazy">
-					</picture>
-				</div>
-				<h2 class="cooperating__title section-title">
-					Начнем сотрудничество?
-				</h2>
-				<div class="cooperating__text">
-					<p>
-						Пройдите простую регистрацию для начала инвестиционной деятельности
-					</p>
-				</div>
-				<a href="#" class="cooperating__button button">
-					<span>Стать инвестором</span>
-					<svg width="24" height="24" class="button-arrow">
-						<use href="img/sprites.svg#next-arrow"></use>
-					</svg>
-				</a>
-			</div>
-		</section>
+		@@include("html/_why-we-2.html")
+		@@include("html/_cooperating.html")
 	</main>
 
 @@include("html/_footer.html")

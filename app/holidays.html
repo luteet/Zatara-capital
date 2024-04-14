@@ -1,0 +1,46 @@
+@@include("html/_header.html", {"class": ""})
+
+	<main class="main alt-footer">
+		<div class="breadcrumbs padding-start container" data-aos="fade-in" data-aos-delay="100">
+			<a href="index.html" class="breadcrumbs__link">Главная</a>
+			<span class="breadcrumbs__separator">/</span>
+			<a href="news.html" class="breadcrumbs__link">Новости</a>
+			<span class="breadcrumbs__separator">/</span>
+			<span class="breadcrumbs__current">Праздничные дни</span>
+		</div>
+		<section class="holidays accent-on-light">
+			<div class="holidays__background" aria-hidden="true">
+				<div class="holidays__background_decor"></div>
+				<div class="holidays__background_decor dots-decor"></div>
+				<div class="holidays__background_decor dots-decor"></div>
+			</div>
+			<div class="holidays__hero" data-aos="fade-in" data-aos-delay="200">
+				<h1 class="holidays__title hero-title">Праздничные дни</h1>
+				<div class="holidays__text text">
+					<p>
+						Полный список международных праздничных дней на 2023 год
+					</p>
+				</div>
+			</div>
+			<div class="holidays__list" data-aos="fade-in" data-aos-delay="300">
+				<div class="holidays__list_decor dots-decor" aria-hidden="true"></div>
+				@@loop("html/_holidays-item.html", [
+					{"name": "Январь"},
+					{"name": "Февраль"},
+					{"name": "Март"},
+					{"name": "Апрель"},
+					{"name": "Май"},
+					{"name": "Июнь"},
+					{"name": "Июль"},
+					{"name": "Август"},
+					{"name": "Сентябрь"},
+					{"name": "Октябрь"},
+					{"name": "Ноябрь"},
+					{"name": "Декабрь"},
+				])
+			</div>
+		</section>
+		@@include("html/_cooperating-2.html")
+	</main>
+
+@@include("html/_footer.html")

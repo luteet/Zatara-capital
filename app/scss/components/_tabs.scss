@@ -12,12 +12,27 @@
 		@media (min-width: 360px) {
 			display: inline-grid;
 			grid-template-columns: 1fr 1fr;
+			&.is-large {
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+			}
 		}
 
 		border-radius: 0.625rem;
 		background: var(--theme-primary-2);
 
 		padding: 0.3125rem;
+
+		li {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&__list.is-large &__link {
+		color: var(--theme-secondary-2);
+		&.is-active {
+			color: var(--white);
+		}
 	}
 
 	// .tabs-nav__link
@@ -25,7 +40,8 @@
 	&__link {
 		display: block;
 		text-align: center;
-
+		width: 100%;
+		
 		padding: 1.0625rem 1rem;
 
 		@include _992 {
@@ -37,7 +53,7 @@
 		font-weight: 500;
 		background: transparent;
 		color: var(--theme-text-color);
-		border-radius: 0.625rem;
+		border-radius: 0.5625rem;
 
 		transition: background .3s ease, color .3s ease;
 

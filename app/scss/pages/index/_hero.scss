@@ -3,6 +3,8 @@
 	min-height: 46.875rem;
 	padding-top: calc(3.125rem + var(--static-header-height));
 
+	transition: bakcground .3s ease;
+
 	@include _992 {
 		padding-top: clamp(6.25rem, 25vh, 12.5rem);
 
@@ -37,7 +39,6 @@
 	// .index-hero__heading
 
 	&__heading {
-		
 	}
 
 	// .index-hero__title
@@ -124,7 +125,7 @@
 				width: 250%;
 			}
 			width: 400%; aspect-ratio: 1/1;
-			background: radial-gradient(circle, rgba(143,45,252,0.7) 0%, rgba(143,45,252,0.3) 20%, rgba(143,45,252,0.05) 40%, rgba(143,45,252,0) 50%);
+			background: var(--gradient-circle);
 			border-radius: 50%;
 			opacity: .5;
 		}
@@ -146,7 +147,7 @@
 			max-width: 36.4375rem;
 		}
 
-		@media (min-width: #{$container+200}px) {
+		@media (min-width: #{$container+12.5}rem) {
 			transform: translate(5rem,0);
 		}
 	}

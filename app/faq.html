@@ -1,0 +1,170 @@
+@@include("html/_header.html", {"class": ""})
+
+	<main class="main alt-footer">
+		<div class="breadcrumbs padding-start container" data-aos="fade-in" data-aos-delay="100">
+			<a href="index.html" class="breadcrumbs__link">Главная</a>
+			<span class="breadcrumbs__separator">/</span>
+			<span class="breadcrumbs__current">FAQ</span>
+		</div>
+		<section class="hero">
+			<div class="hero__decor dots-decor" aria-hidden="true"></div>
+			<h1 class="hero__title hero-title" data-aos="fade-in" data-aos-delay="200">Ответы на вопросы</h1>
+			<div class="hero__image alt-decor" data-aos="fade-in" data-aos-delay="100">
+				<div class="hero__image_inner is-top">
+					<picture>
+						<source srcset="img/faq/faq-hero-image.avif" type="image/avif">
+						<source srcset="img/faq/faq-hero-image.webp" type="image/webp">
+						<img src="img/faq/faq-hero-image.png" alt="" width="500" height="500" class="image-aspect-ratio is-large" style="--aspect-ratio: 500/500;" loading="lazy">
+					</picture>
+				</div>
+			</div>
+			<div class="hero__content text" data-aos="fade-in" data-aos-delay="200">
+				<p>Здесь собраны ответы на вопросы, которые наиболее часто задают наши инвесторы и участники партнерской программы. </p>
+				<p>Если среди представленных вопросов тот, на который вы желаете получить ответ, отсутствует, вы можете задать его представителю технической поддержки. Ответ будет предоставлен в кратчайшие сроки.</p>
+			</div>
+			<div class="hero__footer" data-aos="fade-in" data-aos-delay="300">
+				<a href="registration.html" class="hero__button button" aria-label="Регистрация">
+					<span>Регистрация</span>
+					<svg width="24" height="24" class="button-arrow">
+						<use href="img/sprites.svg#next-arrow"></use>
+					</svg>
+					<span class="button-flare" aria-hidden="true"></span>
+				</a>
+			</div>
+		</section>
+		<div class="faq container">
+			<div class="faq__background section-background" aria-hidden="true">
+				<div class="faq__background_decor"></div>
+				<div class="faq__background_decor dots-decor"></div>
+				<div class="faq__background_decor dots-decor"></div>
+			</div>
+			<div class="faq__inner">
+				<div class="faq__inner_decor dots-decor" aria-hidden="true"></div>
+				<article class="faq__block" data-aos="fade-in" data-aos-delay="100">
+					<h2 class="faq__block_title" aria-label="Открытие счета">
+						<span>
+							<picture>
+								<source srcset="img/faq/faq-list-icon-1.avif" type="image/avif">
+								<source srcset="img/faq/faq-list-icon-1.webp" type="image/webp">
+								<img src="img/faq/faq-list-icon-1.png" alt="" width="64" height="64" loading="lazy">
+							</picture>
+						</span>
+						<span>Открытие счета</span>
+					</h2>
+					<ul class="faq__block_list">
+						@@loop("html/_faq-item.html", [
+							{"name": "Как открыть счет в компании Zatara Capital Securities?"},
+							{"name": "Что делать если забыл пароль от личного кабинета?"},
+							{"name": "Сколько стоит открытие счета в компании Zatara Capital Securities?"},
+							{"name": "Могу ли я открыть несколько счетов?"},
+						])
+					</ul>
+				</article>
+				<article class="faq__block" data-aos="fade-in" data-aos-delay="100">
+					<h2 class="faq__block_title" aria-label="Основные вопросы">
+						<span>
+							<picture>
+								<source srcset="img/faq/faq-list-icon-2.avif" type="image/avif">
+								<source srcset="img/faq/faq-list-icon-2.webp" type="image/webp">
+								<img src="img/faq/faq-list-icon-2.png" alt="" width="64" height="64" loading="lazy">
+							</picture>
+						</span>
+						<span>Основные вопросы</span>
+					</h2>
+					<ul class="faq__block_list">
+						@@loop("html/_faq-item.html", [
+							{"name": "Какой маркетинг вы предлагаете?"},
+							{"name": "Кто может открыть счет в Zatara Capital Securities?"},
+							{"name": "Какая минимальная и максимальная сумма для инвестиций?"},
+							{"name": "Какая минимальная сумма вывода?"},
+							{"name": "Какими способами я могу добавить средства на свой счет?"},
+							{"name": "Как скоро после оформления платежа мои средства появятся на балансе счета?"},
+							{"name": "Могу ли я открыть несколько депозитов?"},
+							{"name": "Как вывести деньги из системы?"},
+							{"name": "Как часто начисляется прибыль?"},
+							{"name": "Как и когда я могу создать заявку на вывод средств?"},
+							{"name": "Как быстро происходит вывод средств?"},
+							{"name": "Берете ли вы комиссию при выводе средств?"},
+							{"name": "Как снять тело депозита?"},
+						])
+					</ul>
+				</article>
+				<article class="faq__block" data-aos="fade-in" data-aos-delay="100">
+					<h2 class="faq__block_title" aria-label="Баунти">
+						<span>
+							<picture>
+								<source srcset="img/faq/faq-list-icon-3.avif" type="image/avif">
+								<source srcset="img/faq/faq-list-icon-3.webp" type="image/webp">
+								<img src="img/faq/faq-list-icon-3.png" alt="" width="64" height="64" loading="lazy">
+							</picture>
+						</span>
+						<span>Баунти</span>
+					</h2>
+					<ul class="faq__block_list">
+						@@loop("html/_faq-item.html", [
+							{"name": "Что такое баунти программа?"},
+							{"name": "Какую баунти программу вы предлагаете?"},
+							{"name": "Нужен ли депозит для участия в баунти программе?"},
+							{"name": "Приглашение новых партнеров является обязательным?"},
+						])
+					</ul>
+				</article>
+				<article class="faq__block" data-aos="fade-in" data-aos-delay="100">
+					<h2 class="faq__block_title" aria-label="Безопасность">
+						<span>
+							<picture>
+								<source srcset="img/faq/faq-list-icon-4.avif" type="image/avif">
+								<source srcset="img/faq/faq-list-icon-4.webp" type="image/webp">
+								<img src="img/faq/faq-list-icon-4.png" alt="" width="64" height="64" loading="lazy">
+							</picture>
+						</span>
+						<span>Безопасность</span>
+					</h2>
+					<ul class="faq__block_list">
+						@@loop("html/_faq-item.html", [
+							{"name": "Предоставляет ли компания сведения о моих операциях и доходах третьим лицам?"},
+							{"name": "Насколько надежен ваш сервис с точки зрения безопасного хранения личных данных, денежных средств и хакерских атак?"},
+						])
+					</ul>
+				</article>
+				<article class="faq__block" data-aos="fade-in" data-aos-delay="100">
+					<h2 class="faq__block_title" aria-label="Безопасность">
+						<span>
+							<picture>
+								<source srcset="img/faq/faq-list-icon-5.avif" type="image/avif">
+								<source srcset="img/faq/faq-list-icon-5.webp" type="image/webp">
+								<img src="img/faq/faq-list-icon-5.png" alt="" width="64" height="64" loading="lazy">
+							</picture>
+						</span>
+						<span>Безопасность</span>
+					</h2>
+					<ul class="faq__block_list">
+						@@loop("html/_faq-item.html", [
+							{"name": "Какие документы необходимы для прохождения верификации?"},
+							{"name": "Основные требования к документам"},
+						])
+					</ul>
+				</article>
+				<article class="faq__block" data-aos="fade-in" data-aos-delay="100">
+					<h2 class="faq__block_title" aria-label="Остальное">
+						<span>
+							<picture>
+								<source srcset="img/faq/faq-list-icon-6.avif" type="image/avif">
+								<source srcset="img/faq/faq-list-icon-6.webp" type="image/webp">
+								<img src="img/faq/faq-list-icon-6.png" alt="" width="64" height="64" loading="lazy">
+							</picture>
+						</span>
+						<span>Остальное</span>
+					</h2>
+					<ul class="faq__block_list">
+						@@loop("html/_faq-item.html", [
+							{"name": "Я не нашел ответ на свой вопрос, куда мне обратиться?"},
+						])
+					</ul>
+				</article>
+			</div>
+		</div>
+		@@include("html/_cooperating-2.html")
+	</main>
+
+@@include("html/_footer.html")

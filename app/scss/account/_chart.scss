@@ -1,0 +1,41 @@
+.chart {
+
+	padding: 0 0.625rem;
+	
+	@include _992 {
+		padding: 0;
+	}
+
+	// .chart__inner
+
+	&__inner {
+		margin: 0 -1.25rem;
+		padding: 0 0.625rem 1.875rem;
+
+		overflow-x: auto;
+		width: calc(100vw);
+
+		@include _992 {
+			overflow-x: visible;
+			margin: 0;
+			padding: 0;
+			width: auto;
+		}
+	}
+
+	// .chart__container
+
+	&__container {
+		min-width: 56.25rem;
+		@include _992 {
+			min-width: auto;
+		}
+
+		canvas {
+			pointer-events: none;
+			@include _992 {
+				pointer-events: all;
+			}
+		}
+	}
+}

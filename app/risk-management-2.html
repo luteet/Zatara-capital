@@ -1,0 +1,167 @@
+@@include("html/_header.html", {"class": ""})
+
+	<main class="main">
+		<div class="breadcrumbs padding-start container" data-aos="fade-in" data-aos-delay="100">
+			<a href="index.html" class="breadcrumbs__link">Главная</a>
+			<span class="breadcrumbs__separator">/</span>
+			<a href="a-book.html" class="breadcrumbs__link">Торговля</a>
+			<span class="breadcrumbs__separator">/</span>
+			<span class="breadcrumbs__current">Риск менеджмент</span>
+		</div>
+		<section class="risk-managment accent-on-light">
+			<div class="risk-managment__header" data-aos="fade-in" data-aos-delay="200">
+				<h1 class="risk-managment__title hero-title">Риск менеджмент</h1>
+				<div class="risk-managment__nav tabs-nav">
+					<ul class="tabs-nav__list">
+						<li>
+							<a href="risk-management.html" class="tabs-nav__link">
+								Общая информация
+							</a>
+						</li>
+						<li>
+							<a class="tabs-nav__link is-active">
+								Функционал
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="risk-managment__text text" data-aos="fade-in" data-aos-delay="200">
+				<p>
+					Система риск-менеджмента позволяет устанавливать ограничения <b>5 различных параметров</b>, при реализации любого из которых позиции будут немедленно закрыты по текущим рыночным котировкам, а торговля заблокирована на определенное время. Установка ни одного из ограничений не является обязательной.
+				</p>
+			</div>
+			<ul class="risk-managment__list" data-aos="fade-in" data-aos-delay="300">
+				@@loop("html/_risk-managment-item.html", [
+					{
+						"name": "Максимальное кредитное плечо"
+					},
+					{
+						"name": "Максимальные потери за сутки"
+					},
+					{
+						"name": "Максимальные потери за неделю"
+					},
+					{
+						"name": "Максимальная просадка"
+					},
+					{
+						"name": "Минимальный остаток"
+					},
+				])
+			</ul>
+		</section>
+		<section class="risk-chart section-padding-start">
+			<div class="risk-chart__background section-background" aria-hidden="true">
+				<div class="section-background__decor dots-decor"></div>
+			</div>
+			<div class="risk-chart__inner">
+				<h2 class="risk-chart__title section-title add-decor is-center" data-aos="fade-in" data-aos-delay="100">
+					Схематическое представление функционирования параметров риск-менеджмента
+				</h2>
+				<div class="risk-chart__main horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false" data-aos="fade-in" data-aos-delay="200">
+					<div class="risk-chart__main_container">
+						<svg width="1240" height="433" viewBox="0 0 1240 433" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1240 384L127 384" stroke="#3EB52A" stroke-dasharray="4 4"/>
+							<text fill="#3EB52A" xml:space="preserve" class="min-text-size"><tspan x="147" y="360.288">LW</tspan></text>
+							<path d="M1240 290L1235 287.113V292.887L1240 290ZM1235.5 289.5L127 289.5V290.5L1235.5 290.5V289.5Z" class="theme-line-2"/>
+							<path d="M127 4L124.113 9L129.887 9L127 4ZM126.5 8.5L126.5 384L127.5 384L127.5 8.5L126.5 8.5Z" class="theme-line-2"/>
+							<line x1="1008.5" y1="9" x2="1008.5" y2="384" class="theme-line"/>
+							<line x1="788.5" y1="9" x2="788.5" y2="384" class="theme-line"/>
+							<line x1="568.5" y1="9" x2="568.5" y2="384" class="theme-line"/>
+							<line x1="348.5" y1="9" x2="348.5" y2="384" class="theme-line"/>
+							<path d="M1240 194L127 194" class="theme-line"/>
+							<path d="M1240 119L127 119" class="theme-line"/>
+							<path d="M1240 99L127 99" class="theme-line"/>
+							<path d="M1240 9L127 9" class="theme-line"/>
+							<text fill="#3D5075" xml:space="preserve" class="normal-text-size"><tspan x="1184" y="425.884">Недели</tspan></text>
+							<text fill="#3D5075" xml:space="preserve" class="normal-text-size"><tspan x="1002.36" y="427.884">4</tspan></text>
+							<text fill="#3D5075" xml:space="preserve" class="normal-text-size"><tspan x="783.18" y="427.884">3</tspan></text>
+							<text fill="#3D5075" xml:space="preserve" class="normal-text-size"><tspan x="561.266" y="427.884">2</tspan></text>
+							<text fill="#3D5075" xml:space="preserve" class="normal-text-size"><tspan x="344.023" y="427.884">1</tspan></text>
+							<text fill="#3D5075" xml:space="preserve" class="normal-text-size"><tspan x="121.461" y="427.884">0</tspan></text>
+							<text fill="#3D5075" xml:space="preserve" class="normal-text-size"><tspan x="0.40625" y="388.884">-20%</tspan></text>
+							<text fill="#3D5075" xml:space="preserve" class="normal-text-size"><tspan x="8.14062" y="294.884">0%</tspan></text>
+							<text fill="#3D5075" xml:space="preserve" class="normal-text-size"><tspan x="4.48438" y="198.884">20%</tspan></text>
+							<text fill="#3D5075" xml:space="preserve" class="normal-text-size"><tspan x="4" y="103.884">40%</tspan></text>
+							<text fill="#3D5075" xml:space="preserve" class="normal-text-size"><tspan x="4.28125" y="13.884">60%</tspan></text>
+							<path d="M128 289.5C177.167 273 283.1 234.7 313.5 213.5C351.5 187 354 195.5 357 196C360 196.5 453 236 467.5 241C482 246 491.5 253 503.5 237.5C513.1 225.1 534.167 153.333 543.5 119C546.833 106.667 559.6 86.3999 584 104C608.4 121.6 652.5 131.333 671.5 134C678.833 135.333 694.7 135 699.5 123C705.5 108 721 38.9999 745.5 86.4999C747.333 93.3333 754.7 107 769.5 107C788 107 776 95.9999 810 98.4999C837.2 100.5 859.333 99.3333 867 98.4999C872.833 97.6666 886 92.9999 892 80.9999C899.5 65.9999 920.5 16.4999 945.5 33.9999C970.5 51.4999 964.5 53 977.5 38C990.5 23 988.5 -14 1023 14C1057.5 42 1051.5 19.9999 1071 14C1086.6 9.19999 1119.5 8.66667 1134 9" stroke="#247FEC" stroke-width="1.6"/>
+							<path d="M1008 52L1004.54 58L1011.46 58L1008 52ZM1008 99L1011.46 93L1004.54 93L1008 99ZM1007.4 57.4L1007.4 93.6L1008.6 93.6L1008.6 57.4L1007.4 57.4Z" fill="#6405FF"/>
+							<line x1="996" y1="51.5" x2="1020" y2="51.5" stroke="#EE3737"/>
+							<line x1="996" y1="99.5" x2="1020" y2="99.5" stroke="#6405FF"/>
+							<path d="M1008 4L1004.54 10L1011.46 10L1008 4ZM1008 51L1011.46 45L1004.54 45L1008 51ZM1007.4 9.4L1007.4 45.6L1008.6 45.6L1008.6 9.4L1007.4 9.4Z" fill="#EE3737"/>
+							<text fill="#6405FF" xml:space="preserve" class="min-text-size"><tspan x="1030" y="96.288">lim(max(DD))</tspan></text>
+							<text fill="#EE3737" xml:space="preserve" class="min-text-size"><tspan x="1030" y="48.288">lim(Loss(W))</tspan></text>
+							<line x1="921" y1="119.5" x2="945" y2="119.5" stroke="#6405FF"/>
+							<text fill="#6405FF" xml:space="preserve" class="min-text-size"><tspan x="955" y="116.288">lim(max(DD))</tspan></text>
+							<path d="M933 31L929.536 37L936.464 37L933 31ZM933 119L936.464 113L929.536 113L933 119ZM932.4 36.4L932.4 113.6L933.6 113.6L933.6 36.4L932.4 36.4Z" fill="#6405FF"/>
+							<text fill="#EE3737" xml:space="preserve" class="min-text-size"><tspan x="811" y="143.288">lim(Loss(W))</tspan></text>
+							<line x1="777" y1="146.5" x2="801" y2="146.5" stroke="#EE3737"/>
+							<path d="M789 99L785.536 105L792.464 105L789 99ZM789 146L792.464 140L785.536 140L789 146ZM788.4 104.4L788.4 140.6L789.6 140.6L789.6 104.4L788.4 104.4Z" fill="#EE3737"/>
+							<line x1="717" y1="170.5" x2="741" y2="170.5" stroke="#6405FF"/>
+							<text fill="#6405FF" xml:space="preserve" class="min-text-size"><tspan x="751" y="167.288">lim(max(DD))</tspan></text>
+							<path d="M729 71L725.536 77L732.464 77L729 71ZM729 170L732.464 164L725.536 164L729 170ZM728.4 76.4L728.4 164.6L729.6 164.6L729.6 76.4L728.4 76.4Z" fill="#6405FF"/>
+							<path d="M569 147L565.536 153L572.464 153L569 147ZM569 194L572.464 188L565.536 188L569 194ZM568.4 152.4L568.4 188.6L569.6 188.6L569.6 152.4L568.4 152.4Z" fill="#6405FF"/>
+							<line x1="557" y1="146.5" x2="581" y2="146.5" stroke="#EE3737"/>
+							<line x1="557" y1="194.5" x2="581" y2="194.5" stroke="#6405FF"/>
+							<path d="M569 99L565.536 105L572.464 105L569 99ZM569 146L572.464 140L565.536 140L569 146ZM568.4 104.4L568.4 140.6L569.6 140.6L569.6 104.4L568.4 104.4Z" fill="#EE3737"/>
+							<text fill="#6405FF" xml:space="preserve" class="min-text-size"><tspan x="591" y="191.288">lim(max(DD))</tspan></text>
+							<text fill="#EE3737" xml:space="preserve" class="min-text-size"><tspan x="591" y="143.288">lim(Loss(W))</tspan></text>
+							<path d="M349 243L345.536 249L352.464 249L349 243ZM349 290L352.464 284L345.536 284L349 290ZM348.4 248.4L348.4 284.6L349.6 284.6L349.6 248.4L348.4 248.4Z" fill="#6405FF"/>
+							<line x1="337" y1="242.5" x2="361" y2="242.5" stroke="#EE3737"/>
+							<line x1="337" y1="290.5" x2="361" y2="290.5" stroke="#6405FF"/>
+							<path d="M349 195L345.536 201L352.464 201L349 195ZM349 242L352.464 236L345.536 236L349 242ZM348.4 200.4L348.4 236.6L349.6 236.6L349.6 200.4L348.4 200.4Z" fill="#EE3737"/>
+							<text fill="#6405FF" xml:space="preserve" class="min-text-size"><tspan x="371" y="287.288">lim(max(DD))</tspan></text>
+							<text fill="#EE3737" xml:space="preserve" class="min-text-size"><tspan x="371" y="242.288">lim(Loss(W))</tspan></text>
+						</svg>
+					</div>
+				</div>
+				<dl class="risk-chart__legend" data-aos="fade-in" data-aos-delay="100">
+					<dt style="--color: #247FEC;"><span class="risk-chart__legend_line"></span></dt>
+					<dd>Equity</dd>
+					
+					<dt style="--color: #6405FF;">lim(max(DD)) (20 %)</dt>
+					<dd>ограничение максимальной просадки</dd>
+
+					<dt style="--color: #EE3737;">lim(Loss(W)) (10 %)</dt>
+					<dd>ограничение максимальных потерь за неделю</dd>
+
+					<dt style="--color: #3EB52A;">LWM (Low watermark) (800 USD)</dt>
+					<dd>ограничение минимального остатка средств</dd>
+				</dl>
+			</div>
+		</section>
+		<section class="a-book-advantages">
+			<div class="a-book-advantages__background section-background" aria-hidden="true"></div>
+			<div class="a-book-advantages__decor dots-decor" aria-hidden="true"></div>
+			<h2 class="a-book-advantages__title section-title add-decor" data-aos="fade-in" data-aos-delay="200">
+				Особенности работы функционала
+			</h2>
+			<div class="a-book-advantages__block text" data-aos="fade-in" data-aos-delay="200">
+				<h3>
+					Заявки на <mark>ввод и вывод средств</mark>
+				</h3>
+				<p>Заявки на ввод и вывод средств с торгового счета принимаются только в выходные дни. Непосредственно ввод либо вывод средств производится в начале торговой недели (понедельник 00:05 (EET)) с автоматической корректировкой значений риск-менеджмента (в денежном эквиваленте: долевое отношение при отсутствии заявки на изменение параметров риск-менеджмента не корректируется).</p>
+			</div>
+			<div class="a-book-advantages__image" data-aos="fade-in" data-aos-delay="100">
+				<picture>
+					<source srcset="img/risk-management/risk-management-features-image.avif" type="image/avif">
+					<source srcset="img/risk-management/risk-management-features-image.webp" type="image/webp">
+					<img src="img/risk-management/risk-management-features-image.png" alt="" width="348" height="390" loading="lazy" class="image-aspect-ratio">
+				</picture>
+			</div>
+			<div class="a-book-advantages__block text" data-aos="fade-in" data-aos-delay="200">
+				<h3>
+					Параметр <mark>«минимального остатка»</mark>
+				</h3>
+				<p>При выводе средств необходимо учитывать этот параметр  (если он задан). Поскольку «минимальный остаток» представляет собой фиксированное значение в валюте, то при выводе суммы, за вычетом которой equity торгового счета станет меньше значения «минимального остатка», – произойдет реализация последнего и торговля на счете заблокируется в момент вывода средств (понедельник 00:05 (EET)).</p>
+			</div>
+			<div class="a-book-advantages__item" data-aos="fade-in" data-aos-delay="200">
+				Заявки на изменение параметров риск-менеджмента исполняются в начале торговой недели (понедельник 00:05 (EET)).
+			</div>
+		</section>
+		@@include("html/_why-we.html")
+		@@include("html/_cooperating.html")
+	</main>
+
+@@include("html/_footer.html")

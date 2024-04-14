@@ -1,12 +1,12 @@
 .stocks {
 
-	padding-top: 7.5rem;
+	padding-top: 7.5rem; padding-bottom: 6.25rem;
 
 	@include _992 {
-
-		padding-top: 10.625rem;
-		
+		padding-top: 10.625rem; padding-bottom: 12rem;
 	}
+
+	transition: background .3s ease;
 
 	&::before {
 		content: "";
@@ -19,9 +19,10 @@
 			display: block;
 		}
 		width: 125rem; aspect-ratio: 1/1;
-		background: radial-gradient(circle, rgba(143,45,252,0.7) 0%, rgba(143,45,252,0.3) 20%, rgba(143,45,252,0.05) 40%, rgba(143,45,252,0) 50%);
+		background: var(--gradient-circle);
 		border-radius: 50%;
 		opacity: .5;
+		pointer-events: none;
 	}
 
 	// .stocks__heading
@@ -99,7 +100,11 @@
 	// .stocks__list
 
 	&__list {
-		
+		@include _992 {
+			display: grid;
+			grid-template-columns: repeat(4,1fr);
+			gap: 1.25rem;
+		}
 	}
 
 	// .stocks__item

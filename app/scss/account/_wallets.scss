@@ -1,0 +1,143 @@
+.wallets {
+
+	padding-top: 1.875rem;
+
+	@include _992 {
+		padding-top: 2.5rem;
+	}
+
+	// .wallets__list
+
+	&__list {
+	}
+}
+
+.wallets-item {
+
+	&:not(:first-child) {
+		margin-top: 0.9375rem;
+	}
+
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+
+	gap: 1.25rem;
+
+	padding: 0.875rem 0.875rem 0.875rem 1.25rem;
+
+	background: var(--theme-primary-4);
+	box-shadow: 0.875rem 0.875rem 1.5rem rgba(1, 17, 50, 0.7);
+	border-radius: 0.75rem;
+
+	@include _992 {
+		align-items: center;
+		flex-direction: row;
+	}
+
+	// .wallets-item__col
+
+	&__col {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.9375rem;
+
+		flex: 1 1;
+
+		@include _992 {
+			&:nth-child(2) {
+				max-width: 33.125rem;
+			}
+		}
+	}
+
+	// .wallets-item__info
+
+	&__info {
+		display: grid;
+		align-items: center;
+		grid-template-columns: 2.375rem auto;
+		gap: 0.3125rem 0.9375rem;
+
+		@include _992 {
+			gap: 0.3125rem 1.25rem;
+		}
+
+		img {
+			width: 2.375rem; height: 1.875rem;
+			object-fit: contain;
+			object-position: left;
+		}
+
+		span {
+			font-weight: 500;
+			line-height: 160%;
+		}
+	}
+
+	// .wallets-item__address
+
+	&__address {
+		flex: 1 1;
+		position: relative;
+
+		.input {
+			width: 100%;
+
+			font-size: 0.875rem;
+			padding: 0.7656rem 3.125rem 0.7656rem 0.875rem;
+
+			text-overflow: ellipsis;
+		}
+
+		.copy-target {
+			position: absolute;
+			right: 0; top: 0;
+			padding: 0.3125rem 0.9375rem; height: 100%;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			background: transparent;
+			color: var(--theme-secondary-4);
+
+			svg {
+				width: 1.25rem; height: 1.25rem;
+			}
+
+			@media (any-hover: hover) {
+				transition: color .2s;
+				&:hover {
+					color: var(--theme-text-color);
+				}
+			
+				&:active {
+					color: var(--theme-secondary-2);
+				}
+			}
+		}
+	}
+
+	// .wallets-item__remove
+
+	&__remove {
+		background: transparent;
+		color: var(--theme-secondary);
+
+		svg {
+			width: 1.25rem; height: 1.25rem;
+		}
+
+		@media (any-hover: hover) {
+			transition: color .2s;
+			&:hover {
+				color: var(--theme-text-color);
+			}
+		
+			&:active {
+				color: var(--theme-secondary-2);
+			}
+		}
+	}
+}

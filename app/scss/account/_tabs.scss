@@ -1,0 +1,76 @@
+.account-tabs {
+
+	padding-top: 2.5rem;
+
+	// .account-tabs__list
+
+	&__list {
+		display: grid;
+		grid-template-columns: 100%;
+		gap: 0.625rem;
+
+		@include _550 {
+			grid-template-columns: 1fr 1fr;
+
+			border-radius: 0.625rem;
+			background: var(--theme-primary-2);
+
+			padding: 0.3125rem;
+		}
+
+		@include _992 {
+			display: inline-grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+
+		li {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	// .account-tabs__link
+
+	&__link {
+		display: block;
+		text-align: center;
+		width: 100%;
+		
+		padding: 1.0625rem 1rem;
+		border: 0.0625rem solid var(--theme-secondary);
+
+		@include _550 {
+			border: 0;
+		}
+
+		@include _992 {
+			padding: 1.0625rem 2.75rem;
+			min-width: min(13.75rem, 25%);
+		}
+
+		font-size: 0.875rem;
+		line-height: 120%;
+		font-weight: 500;
+		background: transparent;
+		color: var(--theme-secondary-2);
+		border-radius: 0.5625rem;
+
+		transition: background .3s, color .3s, border-color .3s;
+
+		&.is-active {
+			background: var(--accent);
+			color: var(--white);
+			border-color: var(--accent);
+		}
+
+		@media (any-hover: hover) {
+			&:not(.is-active):hover {
+				color: var(--accent);
+			}
+		
+			&:not(.is-active):active {
+				color: var(--accent-2);
+			}
+		}
+	}
+}

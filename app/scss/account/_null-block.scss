@@ -1,0 +1,41 @@
+.account-null-block {
+
+	display: flex;
+	flex-direction: column;
+
+	@include _992 {
+		margin-top: 0.625rem;
+	}
+
+	// .account-null-block__body
+
+	&__body {
+		flex: 1 1;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+
+		min-height: 22.8125rem;
+		@include _992 {
+			min-height: 12.5rem;
+		}
+	}
+
+	// .account-null-block__title
+
+	&__title {
+		font-weight: 500;
+		font-size: 1.5rem;
+		line-height: 120%;
+		color: var(--theme-secondary-2);
+	}
+
+	// .account-null-block__text
+
+	&__text {
+		padding-top: 1.0625rem;
+		
+	}
+}

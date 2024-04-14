@@ -1,0 +1,65 @@
+.my-accounts {
+
+	// .my-accounts__header
+
+	&__header {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 0.9375rem;
+	}
+
+	// .my-accounts__title
+
+	&__title {
+	}
+
+	// .my-accounts__link
+
+	&__link {
+		font-size: 0.875rem;
+		line-height: 120%;
+	}
+
+	// .my-accounts__table
+
+	&__table {
+		margin-top: 1.875rem;
+
+		width: 100%;
+		border-spacing: 0;
+
+		th {
+			font-size: 0.75rem;
+			line-height: 120%;
+			font-weight: 500;
+			color: var(--theme-secondary-4);
+			text-align: start;
+			
+			padding-bottom: 0.625rem;
+		}
+
+		td {
+			padding: 0.7813rem 0;
+
+			line-height: 100%;
+			font-weight: 500;
+			font-size: 1rem;
+		}
+
+		tr:last-child td {
+			padding: 0.7813rem 0 0;
+		}
+	}
+
+	// .my-accounts__table_logo
+
+	&__table_logo {
+		max-width: 2.125rem; height: 1.625rem;
+		img {
+			min-width: 1.5rem; max-width: 2.125rem; height: 1.625rem;
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+}

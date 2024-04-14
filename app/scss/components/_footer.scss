@@ -5,6 +5,54 @@
 	z-index: 2;
 
 	padding-top: 4.375rem;
+	&.is-alt {
+		padding-top: 3.125rem;
+
+		border-radius: 1.875rem 1.875rem 0px 0px;
+
+		@include _992 {
+			padding-top: 2.4375rem;
+			border-radius: 3.75rem 3.75rem 0px 0px;
+		}
+
+		&::before {
+			@include _992 {
+				display: none;
+			}
+		}
+	}
+
+	&.is-alt & {
+		&__decor {
+			position: absolute;
+			left: calc(50% - 48rem); top: 0;
+			width: 4.6875rem; height: 9.0625rem;
+			transform: translate(0,-60%);
+		}
+
+		&__background {
+			overflow: hidden;
+			display: none;
+			@include _992 {
+				display: block;
+			}
+			&_decor:nth-child(1) {
+				@include _992 {
+					position: absolute;
+					right: 0; bottom: 0;
+					transform: translate(50%,50%);
+					width: 125rem;
+					aspect-ratio: 1/1;
+					background: var(--gradient-circle);
+					border-radius: 50%;
+					opacity: .5;
+			
+					pointer-events: none;
+				}
+				
+			}
+		}
+	}
 
 	&::before {
 		content: "";
@@ -14,9 +62,11 @@
 		@include _992 {
 			transform: translate(-50%,50%);
 			width: 125rem;
+			display: block;
 		}
+		display: none;
 		aspect-ratio: 1/1;
-		background: radial-gradient(circle, rgba(143,45,252,0.7) 0%, rgba(143,45,252,0.3) 20%, rgba(143,45,252,0.05) 40%, rgba(143,45,252,0) 50%);
+		background: var(--gradient-circle);
 		border-radius: 50%;
 		opacity: .5;
 
@@ -26,6 +76,8 @@
 	// .footer__container
 
 	&__container {
+		position: relative;
+		z-index: 2;
 	}
 
 	// .footer__row
@@ -33,6 +85,7 @@
 	&__row {
 		display: grid;
 		grid-template-columns: 1fr 1.25fr;
+		align-items: center;
 
 		&:not(:first-child) {
 			border-top: 0.0625rem solid var(--theme-secondary-3);
@@ -57,8 +110,10 @@
 
 		img {
 			object-fit: contain;
-			@include _768 {
+			width: 4.6875rem; height: 5rem;
+			@include _992 {
 				object-position: left center;
+				width: 9.375rem; height: 2.5rem;
 			}
 		}
 	}
@@ -80,7 +135,7 @@
 		display: flex;
 		background: var(--theme-primary-2);
 		padding: 0.3125rem;
-		border-radius: 0.5rem;
+		border-radius: 0.625rem;
 
 		margin-top: 2.5rem;
 
@@ -174,6 +229,7 @@
 		@include _992 {
 			margin-top: 1.25rem; padding-top: 0;
 			border-top: 0; padding-bottom: 0;
+			text-align: start;
 		}
 
 		font-size: 0.875rem;

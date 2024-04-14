@@ -1,0 +1,27 @@
+.datepicker-picker {
+	background: var(--theme-primary-4);
+}
+
+.datepicker-controls .button {
+	background: var(--theme-primary-4);
+	color: var(--theme-text-color);
+}
+
+.datepicker-header .datepicker-controls .button:hover {
+	background: var(--theme-secondary);
+	color: var(--theme-text-color);
+}
+
+.datepicker-cell:not(.disabled):hover {
+	background: var(--theme-secondary);
+}
+
+.datepicker-cell.focused:not(.selected) {
+	background: var(--accent);
+	color: var(--white);
+}
+
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+	background: var(--accent);
+	color: var(--white);
+}

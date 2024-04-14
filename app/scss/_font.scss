@@ -73,10 +73,75 @@ mark {
 	font-weight: 700;
 	font-size: 1.25rem;
 	line-height: 120%;
+
+	&.is-large {
+		font-size: 1.5rem;
+	}
 	
 	@include _992 {
 		font-size: 2rem;
 		line-height: 120%;
+
+		&.is-large {
+			font-size: 2.25rem;
+		}
+	}
+
+	&.is-center-on-mob {
+		text-align: center;
+		@include _992 {
+			text-align: start;
+		}
+
+		&.add-decor::before {
+			left: 50%;
+			transform: translate(-50%,0);
+			@include _992 {
+				left: 0;
+				transform: none;
+			}
+		}
+	}
+
+	&.is-center {
+		text-align: center;
+
+		&.add-decor::before {
+			left: 50%;
+			transform: translate(-50%,0);
+		}
+	}
+
+	&.add-decor {
+
+		padding-bottom: 1.25rem;
+		position: relative;
+
+		@include _992 {
+			padding-bottom: 1.5625rem;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0; bottom: 0;
+			width: 1.5rem; height: 0.125rem;
+			background: var(--accent-2);
+
+			@include _992 {
+				width: 3.125rem;
+			}
+		}
+	}
+
+	&.is-min {
+		font-size: 1.125rem;
+		font-weight: 500;
+
+		@include _992 {
+			font-size: 1.5rem;
+			line-height: 160%;
+		}
 	}
 
 }
@@ -103,11 +168,104 @@ mark {
 	line-height: 160%;
 	color: var(--theme-secondary-2);
 
+	em {
+		font-style: normal;
+		font-size: 0.875rem;
+		line-height: 160%;
+
+		@include _992 {
+			font-size: 1.5rem;
+		}
+	}
+
 	p:not(:first-child) {
 		padding-top: 1.375rem;
 	}
 
 	@include _992 {
 		font-size: 1rem;
+	}
+
+	p {
+		a {
+			color: var(--accent);
+			text-decoration: underline;
+			text-underline-offset: 0.4ch;
+
+			@media (any-hover: hover) {
+				transition: color .15s ease;
+				&:hover {
+					color: var(--accent-hover);
+				}
+			
+				&:active {
+					color: var(--accent-2);
+				}
+			}
+		}
+	}
+
+	&.is-min {
+		@include _992 {
+			font-size: 0.875rem;
+		}
+	}
+
+	hr {
+		margin-top: 1.375rem;
+		max-width: 29.1875rem; height: 0.0625rem; width: 100%;
+		background: linear-gradient(90deg, rgba(219,71,213,0) 0%, #DB47D5 50%, rgba(219,71,213,0) 100%);
+	}
+
+	ul {
+		&:not(:first-child) {
+			padding-top: 1.5625rem;
+		}
+
+		li {
+			position: relative;
+			padding-left: 1.3125rem;
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 0; top: 0.5rem;
+				width: 0.4375rem; height: 0.4375rem;
+				border-radius: 50%;
+				background: var(--accent);
+				box-shadow: 0px 0px 1.25rem 0.3125rem var(--accent);
+			}
+		}
+
+		li:not(:first-child) {
+			margin-top: 1.5625rem;
+		}
+	}
+}
+
+.hero-title {
+
+	font-weight: 700;
+	font-size: 1.5rem;
+	line-height: 120%;
+
+	@include _550 {
+		font-size: 2rem;
+	}
+	
+	@include _992 {
+		font-size: 2.75rem;
+		line-height: 120%;
+	}
+
+	padding-bottom: 1.25rem;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0; bottom: 0;
+		width: 3.125rem; height: 0.125rem;
+		background: var(--accent-2);
 	}
 }

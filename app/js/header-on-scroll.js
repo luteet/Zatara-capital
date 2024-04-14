@@ -8,21 +8,21 @@ export default function headerOnScroll(header) {
 		if(top[0] >= 300 && top[1] == false) {
 		
 			top[1] = true;
-			header.style.setProperty('--pos', '-100%');
+			header.style.setProperty('--opacity', '0');
 		
 			setTimeout(function() {
 				header.classList.add('on-scroll');
 				document.documentElement.style.setProperty("--height-header", header.offsetHeight + "px");
-				header.style.setProperty('--pos', '0%');
+				setTimeout(() => header.style.setProperty('--opacity', '1'),100)
 			},200);
 		
 		} else if(top[0] <= 300 && top[1] == true) {
 		
 			top[1] = false;
-			header.style.setProperty('--pos', '-100%');
+			header.style.setProperty('--opacity', '0');
 		
 			setTimeout(function() {
-				header.style.setProperty('--pos', '0%');
+				setTimeout(() => header.style.setProperty('--opacity', '1'),100)
 				header.classList.remove('on-scroll');
 				document.documentElement.style.setProperty("--height-header", header.offsetHeight + "px");
 				

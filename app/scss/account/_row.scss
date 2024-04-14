@@ -1,0 +1,32 @@
+.account-row {
+	display: grid;
+	gap: 4.375rem 1.875rem;
+
+	@include _992 {
+		gap: 0 1.25rem;
+		grid-template-columns: calc(100% - 20rem - 1.25rem) 20rem;
+	}
+
+	@media (min-width: 1600px) {
+		gap: 0 1.875rem;
+		grid-template-columns: calc(100% - 21.25rem - 1.875rem) 21.25rem;
+	}
+
+	&:not(:first-child) {
+		padding-top: 2.5rem;
+	}
+}
+
+.account-col {
+	display: flex;
+	flex-direction: column;
+	gap: 0.9375rem;
+	
+	@include _992 {
+		gap: 1.25rem;
+	}
+
+	@media (min-width: 1600px) {
+		gap: 1.875rem;
+	}
+}

@@ -1,0 +1,33 @@
+.change-email {
+
+	max-width: 56.5625rem;
+
+	.account-tabs__list {
+		width: 100%;
+	}
+
+	.account-block__body {
+		margin-top: 1.25rem;
+	}
+
+	// .change-email__form
+
+	&__form {
+		margin-top: 1.875rem;
+
+		display: grid;
+		gap: 1.25rem;
+
+		@include _768 {
+			gap: 1.875rem;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	// .change-email__submit
+
+	&__submit {
+		min-width: 12.5rem;
+		justify-self: start;
+	}
+}

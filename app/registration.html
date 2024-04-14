@@ -1,0 +1,75 @@
+@@include("html/_header.html", {"class": ""})
+
+	<main class="main">
+		<section class="authentication padding-start accent-on-light" data-aos="fade-in" data-aos-delay="100">
+			<form class="authentication__block">
+				<img src="img/login/login-decor-image.png" width="0" height="0" loading="lazy" alt="" aria-hidden="true" class="authentication__decor">
+				<h1 class="authentication__title section-title is-center">
+					Регистрация
+				</h1>
+				<div class="authentication__row">
+					<div class="authentication__col">
+						<label class="form-label">
+							<span>Имя и Фамилия</span>
+							<input type="text" name="fullname" placeholder="Имя и Фамилия" required class="input">
+						</label>
+						<label class="form-label">
+							<span>Логин</span>
+							<input type="text" name="login" placeholder="Придумайте логин" required class="input">
+						</label>
+						<label class="form-label">
+							<span>Электронная почта</span>
+							<input type="email" name="email" placeholder="Электронная почта" required class="input">
+						</label>
+					</div>
+					<div class="authentication__col">
+						<label class="form-label">
+							<span>Телефон</span>
+							<input type="tel" name="tel" placeholder="Ваш номер телефона" required class="input">
+						</label>
+						<label class="form-label">
+							<span>Пароль</span>
+							<input type="password" name="password" placeholder="Придумайте пароль" required class="input">
+							<button class="toggle-visible-password" type="button">
+								<svg width="24" height="24">
+									<use href="img/sprites.svg#password-hidden"></use>
+								</svg>
+								<svg width="24" height="24">
+									<use href="img/sprites.svg#password-visible"></use>
+								</svg>
+							</button>
+						</label>
+						<label class="form-label">
+							<span>Подтверждение пароля</span>
+							<input type="password" name="password-2" placeholder="Введите пароль еще раз" required class="input">
+							<button class="toggle-visible-password" type="button">
+								<svg width="24" height="24">
+									<use href="img/sprites.svg#password-hidden"></use>
+								</svg>
+								<svg width="24" height="24">
+									<use href="img/sprites.svg#password-visible"></use>
+								</svg>
+							</button>
+						</label>
+					</div>
+				</div>
+				<label class="authentication__checkbox checkbox">
+					<input type="checkbox" name="privacy" required checked class="checkbox__input">
+					<span class="checkbox__element">
+						<svg width="16" height="16">
+							<use href="img/sprites.svg#check-2"></use>
+						</svg>
+					</span>
+					<span class="checkbox__text">
+						Я прочитал(-а), понял(-а) и принимаю <a href="#">Условия использования</a>, <a href="#">Политику конфиденциальности</a>, <a href="#">Предупреждение о рисках</a>, <a href="#">Политику выявления конфликтов интересов</a> и <a href="#">Политику исполнения ордеров</a>
+					</span>
+				</label>
+				<button class="authentication__submit button" type="submit" aria-label="Регистрация">
+					<span>Регистрация</span>
+					<span class="button-flare" aria-hidden="true"></span>
+				</button>
+			</form>
+		</section>
+	</main>
+
+@@include("html/_footer-none.html")

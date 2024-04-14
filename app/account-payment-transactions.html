@@ -1,0 +1,86 @@
+@@include("html/_account-header.html")
+
+	<div class="account-block">
+		<h1 class="account-title">
+			Платежные операции
+		</h1>
+		@@include("html/_mobile-nav.html")
+		<div class="payment-transactions horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+			<div class="payment-transactions__inner">
+				<div class="payment-transactions__container">
+					<table class="payment-transactions__table">
+						<colgroup><col><col><col><col><col><col></colgroup>
+						<thead>
+							<tr>
+								<th>Дата</th><th>Операция</th><th>Платежная система</th><th>Сумма</th><th>Batch-номер</th><th>Статус</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>27.08.2023, 09:43</td>
+								<td>Пополнение</td>
+								<td>
+									<div class="payment-transactions__system">
+										<img src="img/crypto/Tether.svg" width="34" height="24" loading="lazy" alt="">
+										Tether (TRC20)
+									</div>
+								</td>
+								<td><b>200.00</b></td>
+								<td><b>IN000051</b></td>
+								<td>
+									<div class="payment-transactions__status">
+										<svg width="24" height="24" class="process-color">
+											<use href="img/sprites.svg#in-process"></use>
+										</svg>
+										Ожидает подтверждения
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>27.08.2023, 09:43</td>
+								<td>Пополнение</td>
+								<td>
+									<div class="payment-transactions__system">
+										<img src="img/crypto/Tether.svg" width="34" height="24" loading="lazy" alt="">
+										Tether (TRC20)
+									</div>
+								</td>
+								<td><b>200.00</b></td>
+								<td><b>IN000051</b></td>
+								<td>
+									<div class="payment-transactions__status">
+										<svg width="24" height="24" class="success-color">
+											<use href="img/sprites.svg#check-4"></use>
+										</svg>
+										Ожидает подтверждения
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>27.08.2023, 09:43</td>
+								<td>Пополнение</td>
+								<td>
+									<div class="payment-transactions__system">
+										<img src="img/crypto/Tether.svg" width="34" height="24" loading="lazy" alt="">
+										Tether (TRC20)
+									</div>
+								</td>
+								<td><b>200.00</b></td>
+								<td><b>IN000051</b></td>
+								<td>
+									<div class="payment-transactions__status">
+										<svg width="24" height="24" class="failure-color">
+											<use href="img/sprites.svg#cancel"></use>
+										</svg>
+										Отмена
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+@@include("html/_account-footer.html")

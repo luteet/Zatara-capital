@@ -1,0 +1,2480 @@
+<!DOCTYPE html>
+<html lang="ru" data-lang="ru">
+
+<head>
+	<script>
+		if (localStorage.getItem("zatara-capital-theme") == "light") document.querySelector("html").classList.add("is-active-light-theme");
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="theme-color" content="#001337">
+	<title>Zatara Capital</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__inner" data-aos="fade-in" data-aos-delay="50">
+				<div class="header__logo">
+					<a href="index.html" class="header__logo_link">
+						<div class="theme-change">
+							<img src="img/logo-dark.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo_img">
+							<img src="img/logo-light.svg" alt="Logo" width="150" height="35" loading="lazy" class="header__logo_img">
+						</div>
+					</a>
+				</div>
+				<nav class="header__nav">
+					<div class="header__nav_body">
+						<a href="registration.html" class="header__nav_button button" aria-label="Регистрация">
+							<span>Регистрация</span>
+							<svg width="18" height="22">
+								<use href="img/sprites.svg#next-arrow"></use>
+							</svg>
+							<span class="button-flare" aria-hidden="true"></span>
+						</a>
+						<ul class="header__nav_list">
+							<li>
+								<a href="about-us.html">
+									<span>О компании</span>
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</a>
+								<div>
+									<ul>
+										<li>
+											<a href="about-us.html">
+												О нас
+											</a>
+										</li>
+										<li>
+											<a href="about-us.html?target=our-advantages">
+												Наши преимущества
+											</a>
+										</li>
+										<li>
+											<a href="documents.html">
+												Документация
+											</a>
+										</li>
+										<li>
+											<a href="funds-protection.html">
+												Защита средств
+											</a>
+										</li>
+										<li>
+											<a href="liquidity-providers.html">
+												Поставщики ликвидности
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="a-book.html">
+									<span>Торговля</span>
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</a>
+								<div>
+									<ul>
+										<li>
+											<a href="a-book.html">
+												Торги по модели A-Book
+											</a>
+										</li>
+										<li>
+											<a href="aggregation-liquidity.html">
+												Агрегация ликвидности
+											</a>
+										</li>
+										<li>
+											<a href="risk-management.html">
+												Риск менеджмент
+											</a>
+										</li>
+										<li>
+											<a href="stocks-and-ETFs.html">
+												Акции и ETF
+											</a>
+										</li>
+										<li>
+											<a href="currency-trading.html">
+												Торговля валютой
+											</a>
+										</li>
+										<li>
+											<a href="metal-trading.html">
+												Торговля металлами
+											</a>
+										</li>
+										<li>
+											<a href="futures-trading.html">
+												Торговля фьючерсами
+											</a>
+										</li>
+										<li>
+											<a href="options-trading.html">
+												Торговля опционами
+											</a>
+										</li>
+										<li>
+											<a href="investing-in-hedge-funds.html">
+												Инвестирование в хедж-фонды
+											</a>
+										</li>
+										<li>
+											<a href="bond-trading.html">
+												Торговля облигациями
+											</a>
+										</li>
+										<li>
+											<a href="cryptocurrency-trading.html">
+												Торговля криптовалютой
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="news.html">
+									<span>Новости</span>
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</a>
+								<div>
+									<ul>
+										<li>
+											<a href="news.html">
+												Новости рынка
+											</a>
+										</li>
+										<li>
+											<a href="holidays.html">
+												Праздничные дни
+											</a>
+										</li>
+										<li>
+											<a href="economic-calendar.html">
+												Экономический календарь
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="trading-platform.html">
+									<span>Торговая платформа</span>
+								</a>
+							</li>
+							<li>
+								<a href="faq.html">
+									<span>FAQ</span>
+								</a>
+							</li>
+							<li>
+								<a href="contacts.html">
+									<span>Контакты</span>
+								</a>
+							</li>
+						</ul>
+						<div class="header__nav_add">
+							<div class="header__nav_lang header__lang drop-down hover-mode">
+								<button class="header__lang_target drop-down__target" type="button" aria-label="Выбрать язык">
+									<img src="img/lang/lang-ru.svg" width="20" height="20" alt="" loading="lazy" class="header__lang_flag">
+									<span>Ru</span>
+									<svg width="24" height="24" class="drop-down__target_arrow">
+										<use href="img/sprites.svg#drop-down-arrow"></use>
+									</svg>
+								</button>
+								<div class="header__lang_block drop-down__block on-right-mode">
+									<ul>
+										<li>
+											<a href="#" class="is-current">
+												<img src="img/lang/lang-ru.svg" width="20" height="20" alt="" loading="lazy" class="header__lang_flag">
+												<span>Ru</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/lang/lang-en.svg" width="20" height="20" alt="" loading="lazy" class="header__lang_flag">
+												<span>En</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="header__nav_theme header__theme">
+								<button class="header__theme_target" data-change-theme-to="dark">
+									<img src="img/dark-theme-icon.svg" width="12" height="12" loading="lazy" alt="">
+								</button>
+								<button class="header__theme_target" data-change-theme-to="light">
+									<img src="img/light-theme-icon.svg" width="12" height="12" loading="lazy" alt="">
+								</button>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<div class="header__account drop-down">
+					<button type="button" class="header__account_target drop-down__target" aria-label="Личный кабинет">
+						<span>Личный кабинет</span>
+						<svg width="19" height="20" class="visible-on-mob header__account_icon">
+							<use href="img/sprites.svg#user"></use>
+						</svg>
+						<svg width="24" height="24" class="header__account_arrow drop-down__target_arrow">
+							<use href="img/sprites.svg#drop-down-arrow"></use>
+						</svg>
+					</button>
+					<div class="header__account_block drop-down__block on-right-mode">
+						<ul>
+							<li>
+								<span class="success-color">
+									<svg width="24" height="24">
+										<use href="img/sprites.svg#account-verification"></use>
+									</svg>
+									<span>
+										Верифицирован
+									</span>
+								</span>
+							</li>
+							<li>
+								<a href="registration.html">
+									Регистрация
+								</a>
+							</li>
+							<li>
+								<a href="login.html">
+									Войти
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<button class="header__burger" type="button" aria-label="Menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</header>
+
+		<main class="main alt-footer">
+			<div class="breadcrumbs padding-start container" data-aos="fade-in" data-aos-delay="100">
+				<a href="index.html" class="breadcrumbs__link">Главная</a>
+				<span class="breadcrumbs__separator">/</span>
+				<a href="news.html" class="breadcrumbs__link">Новости</a>
+				<span class="breadcrumbs__separator">/</span>
+				<span class="breadcrumbs__current">Праздничные дни</span>
+			</div>
+			<section class="holidays accent-on-light">
+				<div class="holidays__background" aria-hidden="true">
+					<div class="holidays__background_decor"></div>
+					<div class="holidays__background_decor dots-decor"></div>
+					<div class="holidays__background_decor dots-decor"></div>
+				</div>
+				<div class="holidays__hero" data-aos="fade-in" data-aos-delay="200">
+					<h1 class="holidays__title hero-title">Праздничные дни</h1>
+					<div class="holidays__text text">
+						<p>
+							Полный список международных праздничных дней на 2023 год
+						</p>
+					</div>
+				</div>
+				<div class="holidays__list" data-aos="fade-in" data-aos-delay="300">
+					<div class="holidays__list_decor dots-decor" aria-hidden="true"></div>
+					<div class="holidays__item holidays-item">
+						<button class="holidays-item__target" type="button" aria-label="Январь">
+							<span>Январь</span>
+							<span></span>
+						</button>
+						<div class="holidays-item__block">
+							<div>
+								<div class="holidays-item__inner horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+									<div class="holidays-item__container">
+										<table class="holidays-item__table">
+											<colgroup>
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th>Дата</th>
+													<th>Страна</th>
+													<th>Валюта</th>
+													<th>Название биржи</th>
+													<th>Праздник</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="11">01.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Великобритания</td>
+													<td>GBP</td>
+													<td>Лондонская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Германия</td>
+													<td>EUR</td>
+													<td>Франкфуртская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Канада</td>
+													<td>CAD</td>
+													<td>Фондовая биржа Торонто</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Франция</td>
+													<td>EUR</td>
+													<td>Парижская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td rowspan="4">02.01.2023</td>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>День святого Бертольда</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td>03.01.2023</td>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td rowspan="3">08.01.2023</td>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>День совершеннолетия</td>
+												</tr>
+												<tr>
+													<td>15.01.2023</td>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>День Мартина Лютера Кинга</td>
+												</tr>
+												<tr>
+													<td>26.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>День Австралии</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="holidays__item holidays-item">
+						<button class="holidays-item__target" type="button" aria-label="Февраль">
+							<span>Февраль</span>
+							<span></span>
+						</button>
+						<div class="holidays-item__block">
+							<div>
+								<div class="holidays-item__inner horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+									<div class="holidays-item__container">
+										<table class="holidays-item__table">
+											<colgroup>
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th>Дата</th>
+													<th>Страна</th>
+													<th>Валюта</th>
+													<th>Название биржи</th>
+													<th>Праздник</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="11">01.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Великобритания</td>
+													<td>GBP</td>
+													<td>Лондонская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Германия</td>
+													<td>EUR</td>
+													<td>Франкфуртская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Канада</td>
+													<td>CAD</td>
+													<td>Фондовая биржа Торонто</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Франция</td>
+													<td>EUR</td>
+													<td>Парижская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td rowspan="4">02.01.2023</td>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>День святого Бертольда</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td>03.01.2023</td>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td rowspan="3">08.01.2023</td>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>День совершеннолетия</td>
+												</tr>
+												<tr>
+													<td>15.01.2023</td>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>День Мартина Лютера Кинга</td>
+												</tr>
+												<tr>
+													<td>26.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>День Австралии</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="holidays__item holidays-item">
+						<button class="holidays-item__target" type="button" aria-label="Март">
+							<span>Март</span>
+							<span></span>
+						</button>
+						<div class="holidays-item__block">
+							<div>
+								<div class="holidays-item__inner horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+									<div class="holidays-item__container">
+										<table class="holidays-item__table">
+											<colgroup>
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th>Дата</th>
+													<th>Страна</th>
+													<th>Валюта</th>
+													<th>Название биржи</th>
+													<th>Праздник</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="11">01.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Великобритания</td>
+													<td>GBP</td>
+													<td>Лондонская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Германия</td>
+													<td>EUR</td>
+													<td>Франкфуртская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Канада</td>
+													<td>CAD</td>
+													<td>Фондовая биржа Торонто</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Франция</td>
+													<td>EUR</td>
+													<td>Парижская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td rowspan="4">02.01.2023</td>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>День святого Бертольда</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td>03.01.2023</td>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td rowspan="3">08.01.2023</td>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>День совершеннолетия</td>
+												</tr>
+												<tr>
+													<td>15.01.2023</td>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>День Мартина Лютера Кинга</td>
+												</tr>
+												<tr>
+													<td>26.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>День Австралии</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="holidays__item holidays-item">
+						<button class="holidays-item__target" type="button" aria-label="Апрель">
+							<span>Апрель</span>
+							<span></span>
+						</button>
+						<div class="holidays-item__block">
+							<div>
+								<div class="holidays-item__inner horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+									<div class="holidays-item__container">
+										<table class="holidays-item__table">
+											<colgroup>
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th>Дата</th>
+													<th>Страна</th>
+													<th>Валюта</th>
+													<th>Название биржи</th>
+													<th>Праздник</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="11">01.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Великобритания</td>
+													<td>GBP</td>
+													<td>Лондонская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Германия</td>
+													<td>EUR</td>
+													<td>Франкфуртская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Канада</td>
+													<td>CAD</td>
+													<td>Фондовая биржа Торонто</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Франция</td>
+													<td>EUR</td>
+													<td>Парижская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td rowspan="4">02.01.2023</td>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>День святого Бертольда</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td>03.01.2023</td>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td rowspan="3">08.01.2023</td>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>День совершеннолетия</td>
+												</tr>
+												<tr>
+													<td>15.01.2023</td>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>День Мартина Лютера Кинга</td>
+												</tr>
+												<tr>
+													<td>26.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>День Австралии</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="holidays__item holidays-item">
+						<button class="holidays-item__target" type="button" aria-label="Май">
+							<span>Май</span>
+							<span></span>
+						</button>
+						<div class="holidays-item__block">
+							<div>
+								<div class="holidays-item__inner horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+									<div class="holidays-item__container">
+										<table class="holidays-item__table">
+											<colgroup>
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th>Дата</th>
+													<th>Страна</th>
+													<th>Валюта</th>
+													<th>Название биржи</th>
+													<th>Праздник</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="11">01.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Великобритания</td>
+													<td>GBP</td>
+													<td>Лондонская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Германия</td>
+													<td>EUR</td>
+													<td>Франкфуртская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Канада</td>
+													<td>CAD</td>
+													<td>Фондовая биржа Торонто</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Франция</td>
+													<td>EUR</td>
+													<td>Парижская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td rowspan="4">02.01.2023</td>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>День святого Бертольда</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td>03.01.2023</td>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td rowspan="3">08.01.2023</td>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>День совершеннолетия</td>
+												</tr>
+												<tr>
+													<td>15.01.2023</td>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>День Мартина Лютера Кинга</td>
+												</tr>
+												<tr>
+													<td>26.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>День Австралии</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="holidays__item holidays-item">
+						<button class="holidays-item__target" type="button" aria-label="Июнь">
+							<span>Июнь</span>
+							<span></span>
+						</button>
+						<div class="holidays-item__block">
+							<div>
+								<div class="holidays-item__inner horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+									<div class="holidays-item__container">
+										<table class="holidays-item__table">
+											<colgroup>
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th>Дата</th>
+													<th>Страна</th>
+													<th>Валюта</th>
+													<th>Название биржи</th>
+													<th>Праздник</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="11">01.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Великобритания</td>
+													<td>GBP</td>
+													<td>Лондонская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Германия</td>
+													<td>EUR</td>
+													<td>Франкфуртская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Канада</td>
+													<td>CAD</td>
+													<td>Фондовая биржа Торонто</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Франция</td>
+													<td>EUR</td>
+													<td>Парижская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td rowspan="4">02.01.2023</td>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>День святого Бертольда</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td>03.01.2023</td>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td rowspan="3">08.01.2023</td>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>День совершеннолетия</td>
+												</tr>
+												<tr>
+													<td>15.01.2023</td>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>День Мартина Лютера Кинга</td>
+												</tr>
+												<tr>
+													<td>26.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>День Австралии</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="holidays__item holidays-item">
+						<button class="holidays-item__target" type="button" aria-label="Июль">
+							<span>Июль</span>
+							<span></span>
+						</button>
+						<div class="holidays-item__block">
+							<div>
+								<div class="holidays-item__inner horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+									<div class="holidays-item__container">
+										<table class="holidays-item__table">
+											<colgroup>
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th>Дата</th>
+													<th>Страна</th>
+													<th>Валюта</th>
+													<th>Название биржи</th>
+													<th>Праздник</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="11">01.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Великобритания</td>
+													<td>GBP</td>
+													<td>Лондонская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Германия</td>
+													<td>EUR</td>
+													<td>Франкфуртская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Канада</td>
+													<td>CAD</td>
+													<td>Фондовая биржа Торонто</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Франция</td>
+													<td>EUR</td>
+													<td>Парижская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td rowspan="4">02.01.2023</td>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>День святого Бертольда</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td>03.01.2023</td>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td rowspan="3">08.01.2023</td>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>День совершеннолетия</td>
+												</tr>
+												<tr>
+													<td>15.01.2023</td>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>День Мартина Лютера Кинга</td>
+												</tr>
+												<tr>
+													<td>26.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>День Австралии</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="holidays__item holidays-item">
+						<button class="holidays-item__target" type="button" aria-label="Август">
+							<span>Август</span>
+							<span></span>
+						</button>
+						<div class="holidays-item__block">
+							<div>
+								<div class="holidays-item__inner horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+									<div class="holidays-item__container">
+										<table class="holidays-item__table">
+											<colgroup>
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th>Дата</th>
+													<th>Страна</th>
+													<th>Валюта</th>
+													<th>Название биржи</th>
+													<th>Праздник</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="11">01.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Великобритания</td>
+													<td>GBP</td>
+													<td>Лондонская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Германия</td>
+													<td>EUR</td>
+													<td>Франкфуртская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Канада</td>
+													<td>CAD</td>
+													<td>Фондовая биржа Торонто</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Франция</td>
+													<td>EUR</td>
+													<td>Парижская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td rowspan="4">02.01.2023</td>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>День святого Бертольда</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td>03.01.2023</td>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td rowspan="3">08.01.2023</td>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>День совершеннолетия</td>
+												</tr>
+												<tr>
+													<td>15.01.2023</td>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>День Мартина Лютера Кинга</td>
+												</tr>
+												<tr>
+													<td>26.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>День Австралии</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="holidays__item holidays-item">
+						<button class="holidays-item__target" type="button" aria-label="Сентябрь">
+							<span>Сентябрь</span>
+							<span></span>
+						</button>
+						<div class="holidays-item__block">
+							<div>
+								<div class="holidays-item__inner horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+									<div class="holidays-item__container">
+										<table class="holidays-item__table">
+											<colgroup>
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th>Дата</th>
+													<th>Страна</th>
+													<th>Валюта</th>
+													<th>Название биржи</th>
+													<th>Праздник</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="11">01.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Великобритания</td>
+													<td>GBP</td>
+													<td>Лондонская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Германия</td>
+													<td>EUR</td>
+													<td>Франкфуртская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Канада</td>
+													<td>CAD</td>
+													<td>Фондовая биржа Торонто</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Франция</td>
+													<td>EUR</td>
+													<td>Парижская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td rowspan="4">02.01.2023</td>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>День святого Бертольда</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td>03.01.2023</td>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td rowspan="3">08.01.2023</td>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>День совершеннолетия</td>
+												</tr>
+												<tr>
+													<td>15.01.2023</td>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>День Мартина Лютера Кинга</td>
+												</tr>
+												<tr>
+													<td>26.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>День Австралии</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="holidays__item holidays-item">
+						<button class="holidays-item__target" type="button" aria-label="Октябрь">
+							<span>Октябрь</span>
+							<span></span>
+						</button>
+						<div class="holidays-item__block">
+							<div>
+								<div class="holidays-item__inner horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+									<div class="holidays-item__container">
+										<table class="holidays-item__table">
+											<colgroup>
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th>Дата</th>
+													<th>Страна</th>
+													<th>Валюта</th>
+													<th>Название биржи</th>
+													<th>Праздник</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="11">01.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Великобритания</td>
+													<td>GBP</td>
+													<td>Лондонская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Германия</td>
+													<td>EUR</td>
+													<td>Франкфуртская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Канада</td>
+													<td>CAD</td>
+													<td>Фондовая биржа Торонто</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Франция</td>
+													<td>EUR</td>
+													<td>Парижская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td rowspan="4">02.01.2023</td>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>День святого Бертольда</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td>03.01.2023</td>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td rowspan="3">08.01.2023</td>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>День совершеннолетия</td>
+												</tr>
+												<tr>
+													<td>15.01.2023</td>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>День Мартина Лютера Кинга</td>
+												</tr>
+												<tr>
+													<td>26.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>День Австралии</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="holidays__item holidays-item">
+						<button class="holidays-item__target" type="button" aria-label="Ноябрь">
+							<span>Ноябрь</span>
+							<span></span>
+						</button>
+						<div class="holidays-item__block">
+							<div>
+								<div class="holidays-item__inner horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+									<div class="holidays-item__container">
+										<table class="holidays-item__table">
+											<colgroup>
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th>Дата</th>
+													<th>Страна</th>
+													<th>Валюта</th>
+													<th>Название биржи</th>
+													<th>Праздник</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="11">01.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Великобритания</td>
+													<td>GBP</td>
+													<td>Лондонская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Германия</td>
+													<td>EUR</td>
+													<td>Франкфуртская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Канада</td>
+													<td>CAD</td>
+													<td>Фондовая биржа Торонто</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Франция</td>
+													<td>EUR</td>
+													<td>Парижская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td rowspan="4">02.01.2023</td>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>День святого Бертольда</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td>03.01.2023</td>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td rowspan="3">08.01.2023</td>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>День совершеннолетия</td>
+												</tr>
+												<tr>
+													<td>15.01.2023</td>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>День Мартина Лютера Кинга</td>
+												</tr>
+												<tr>
+													<td>26.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>День Австралии</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="holidays__item holidays-item">
+						<button class="holidays-item__target" type="button" aria-label="Декабрь">
+							<span>Декабрь</span>
+							<span></span>
+						</button>
+						<div class="holidays-item__block">
+							<div>
+								<div class="holidays-item__inner horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+									<div class="holidays-item__container">
+										<table class="holidays-item__table">
+											<colgroup>
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th>Дата</th>
+													<th>Страна</th>
+													<th>Валюта</th>
+													<th>Название биржи</th>
+													<th>Праздник</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="11">01.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Великобритания</td>
+													<td>GBP</td>
+													<td>Лондонская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Германия</td>
+													<td>EUR</td>
+													<td>Франкфуртская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Канада</td>
+													<td>CAD</td>
+													<td>Фондовая биржа Торонто</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Франция</td>
+													<td>EUR</td>
+													<td>Парижская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td rowspan="4">02.01.2023</td>
+													<td>Новая Зеландия</td>
+													<td>NZD</td>
+													<td>Новозеландская биржа</td>
+													<td>Новый год</td>
+												</tr>
+												<tr>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Новогодние праздники</td>
+												</tr>
+												<tr>
+													<td>Швейцария</td>
+													<td>CHF</td>
+													<td>Швейцарская биржа</td>
+													<td>День святого Бертольда</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td>03.01.2023</td>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>Биржевые каникулы</td>
+												</tr>
+												<tr>
+													<td rowspan="3">08.01.2023</td>
+													<td>Россия</td>
+													<td>RUB</td>
+													<td>Московская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Украина</td>
+													<td>UAH</td>
+													<td>Украинская фондовая биржа</td>
+													<td>Рождество</td>
+												</tr>
+												<tr>
+													<td>Япония</td>
+													<td>JPY</td>
+													<td>Токийская фондовая биржа</td>
+													<td>День совершеннолетия</td>
+												</tr>
+												<tr>
+													<td>15.01.2023</td>
+													<td>США</td>
+													<td>USD</td>
+													<td>Нью-Йоркская фондовая биржа</td>
+													<td>День Мартина Лютера Кинга</td>
+												</tr>
+												<tr>
+													<td>26.01.2023</td>
+													<td>Австралия</td>
+													<td>AUD</td>
+													<td>Австралийская фондовая биржа</td>
+													<td>День Австралии</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="cooperating visible-on-mob">
+				<div class="cooperating__decor dots-decor" aria-hidden="true"></div>
+				<div class="cooperating__body">
+					<div class="cooperating__background" aria-hidden="true">
+						<div class="theme-change">
+							<picture>
+								<source srcset="img/index/cooperating/cooperating-image.avif" type="image/avif">
+								<source srcset="img/index/cooperating/cooperating-image.webp" type="image/webp">
+								<img src="img/index/cooperating/cooperating-image.jpg" alt="" width="0" height="0" loading="lazy">
+							</picture>
+							<picture>
+								<source srcset="img/index/cooperating/cooperating-image-light.avif" type="image/avif">
+								<source srcset="img/index/cooperating/cooperating-image-light.webp" type="image/webp">
+								<img src="img/index/cooperating/cooperating-image-light.jpg" alt="" width="0" height="0" loading="lazy">
+							</picture>
+						</div>
+					</div>
+					<h2 class="cooperating__title section-title" data-aos="fade-in" data-aos-delay="100">
+						Начнем сотрудничество?
+					</h2>
+					<div class="cooperating__text" data-aos="fade-in" data-aos-delay="100">
+						<p>
+							Пройдите простую регистрацию для начала инвестиционной деятельности
+						</p>
+					</div>
+					<div class="cooperating__footer" data-aos="fade-in" data-aos-delay="100">
+						<a href="#" class="cooperating__button button">
+							<span>Стать инвестором</span>
+							<svg width="24" height="24" class="button-arrow">
+								<use href="img/sprites.svg#next-arrow"></use>
+							</svg>
+							<span class="button-flare" aria-hidden="true"></span>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__row visible-on-desktop">
+					<div class="footer__row_col">
+						<div class="footer__logo">
+							<a href="index.html" class="footer__logo_link">
+								<div class="theme-change">
+									<img src="img/logo-dark.svg" alt="Logo" width="150" height="35" loading="lazy" class="footer__logo_img">
+									<img src="img/logo-light.svg" alt="Logo" width="150" height="35" loading="lazy" class="footer__logo_img">
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="footer__row_col">
+						<form class="footer__form">
+							<input type="email" name="email" placeholder="Будь в курсе последних новостей / Введите свой E-mail" required>
+							<button class="button is-alternative is-min" type="submit">
+								Подписаться
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="footer__row visible-on-desktop">
+					<div class="footer__row_col">
+						<ul class="footer__contacts">
+							<li>
+								<a href="tel:+13146035827" aria-label="+1 314 603 5827">
+									<svg width="16" height="16">
+										<use href="img/sprites.svg#phone"></use>
+									</svg>
+									<span>
+										+1 314 603 5827
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="mailto:info@zataracs.com" aria-label="info@zataracs.com">
+									<svg width="16" height="16">
+										<use href="img/sprites.svg#email"></use>
+									</svg>
+									<span>
+										info@zataracs.com
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg width="16" height="16">
+										<use href="img/sprites.svg#map-point"></use>
+									</svg>
+									<span>
+										1801 Century Park East, ste 450, LA, CA, 90067, USA
+									</span>
+								</a>
+							</li>
+						</ul>
+						<div class="footer__copyright">
+							© 2023 Zatara Capital Securities
+						</div>
+					</div>
+					<div class="footer__row_col">
+						<nav class="footer__nav">
+							<ul>
+								<li><a href="#">Уведомление о рисках</a></li>
+								<li><a href="#">Политика в отношении конфликтов интересов</a></li>
+								<li><a href="#">Безопасность средств</a></li>
+								<li><a href="#">Политика идентификации клиентов</a></li>
+								<li><a href="#">Политика безопасности</a></li>
+								<li><a href="#">Политика возврата средств</a></li>
+								<li><a href="#">Условия и положения</a></li>
+								<li><a href="#">Политика исполнения сделок</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="footer__logo visible-on-mob">
+					<a href="index.html" class="footer__logo_link">
+						<div class="theme-change">
+							<img src="img/logo-dark-mob.svg" alt="Logo" width="150" height="35" loading="lazy" class="footer__logo_img">
+							<img src="img/logo-light-mob.svg" alt="Logo" width="150" height="35" loading="lazy" class="footer__logo_img">
+						</div>
+					</a>
+				</div>
+				<ul class="footer__contacts visible-on-mob">
+					<li>
+						<a href="tel:+13146035827" aria-label="+1 314 603 5827">
+							<svg width="16" height="16">
+								<use href="img/sprites.svg#phone"></use>
+							</svg>
+							<span>
+								+1 314 603 5827
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:info@zataracs.com" aria-label="info@zataracs.com">
+							<svg width="16" height="16">
+								<use href="img/sprites.svg#email"></use>
+							</svg>
+							<span>
+								info@zataracs.com
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg width="16" height="16">
+								<use href="img/sprites.svg#map-point"></use>
+							</svg>
+							<span>
+								1801 Century Park East, ste 450, LA, CA, 90067, USA
+							</span>
+						</a>
+					</li>
+				</ul>
+				<div class="footer__mob_nav drop-down visible-on-mob">
+					<button class="footer__mob_nav_target drop-down__target" aria-label="Правовая информация" type="button">
+						<span>Правовая информация</span>
+						<svg width="24" height="24" class="drop-down__target_arrow">
+							<use href="img/sprites.svg#drop-down-arrow"></use>
+						</svg>
+					</button>
+					<div class="footer__mob_nav_block drop-down__block">
+						<ul>
+							<li><a href="#">Уведомление о рисках</a></li>
+							<li><a href="#">Политика в отношении конфликтов интересов</a></li>
+							<li><a href="#">Безопасность средств</a></li>
+							<li><a href="#">Политика идентификации клиентов</a></li>
+							<li><a href="#">Политика безопасности</a></li>
+							<li><a href="#">Политика возврата средств</a></li>
+							<li><a href="#">Условия и положения</a></li>
+							<li><a href="#">Политика исполнения сделок</a></li>
+						</ul>
+					</div>
+				</div>
+				<form class="footer__form visible-on-mob">
+					<input type="email" name="email" placeholder="Введите свой E-mail" required>
+					<button class="button is-alternative is-min" type="submit">
+						Подписаться
+					</button>
+				</form>
+				<div class="footer__note">
+					<h2>Уведомление о рисках</h2>
+					<p>
+						Торговля валютой и производными финансовыми инструментами является спекулятивной и сопряжена с высоким уровнем риска, который может подходить не всем инвесторам. Существует вероятность потери вложенного капитала, поэтому компания рекомендует не вкладывать средства, которые вы не можете себе позволить. Более подробную информацию о рисках можно найти здесь.
+					</p>
+				</div>
+				<div class="footer__copyright visible-on-mob">
+					© 2023 Zatara Capital Securities
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>

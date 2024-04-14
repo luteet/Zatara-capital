@@ -1,0 +1,61 @@
+@@include("html/_account-header.html")
+
+	<div class="account-block">
+		<h1 class="account-title">
+			Верификация
+		</h1>
+		@@include("html/_mobile-nav.html")
+		<div class="verification">
+			<div class="verification__hero account-block">
+				<div class="account-block__body is-min-on-mob">
+					<h2 class="verification__hero_title account-block__title">Идентификация пользователя</h2>
+					<div class="verification__text text">
+						<p>
+							Для идентификации загрузите фотографию или отсканированную копию пасспорта. Обратите внимание, что вы не можете использовать документы, которые вам не принадлежат, так как это запрещено политикой конфиденциальности Zatara Capital Securities. После загрузки данных <a href="#">свяжитесь</a> с вашим персональным менеджером или отделом технической поддержки любым удобным для вас способом.
+						</p>
+					</div>
+				</div>
+			</div>
+			<ol class="verification__number">
+				<li class="verification__number_block">
+					<h3>Загрузите фото паспорта</h3>
+					<div class="verification__number_image">
+						<picture>
+							<source srcset="img/account/verification/account-verification-image-1.avif" type="image/avif">
+							<source srcset="img/account/verification/account-verification-image-1.webp" type="image/webp">
+							<img src="img/account/verification/account-verification-image-1.png" alt="" width="360" height="240" class="image-aspect-ratio" loading="lazy">
+						</picture>
+					</div>
+				</li>
+				<li class="verification__number_block">
+					<h3>Загрузите сэлфи с паспортом</h3>
+					<div class="verification__number_image">
+						<picture>
+							<source srcset="img/account/verification/account-verification-image-2.avif" type="image/avif">
+							<source srcset="img/account/verification/account-verification-image-2.webp" type="image/webp">
+							<img src="img/account/verification/account-verification-image-2.png" alt="" width="360" height="240" class="image-aspect-ratio" loading="lazy">
+						</picture>
+					</div>
+				</li>
+			</ol>
+			<div class="verification__footer">
+				<div class="verification__file form-file">
+					<div class="form-file__body">
+						<span></span>
+						<label class="form-file__target" aria-label="Выберите файл">
+							<input type="file" name="avatar" required>
+							<span>Выберите файл</span>
+						</label>
+					</div>
+				</div>
+				<div class="verification__note text">
+					<p>Вы можете загрузить сразу несколько файлов в формате: ".jpg", ".jpeg", ".png", ".gif", ".webp", ".pdf"</p>
+				</div>
+				<button class="verification__submit button" type="button" aria-label="Загрузить документ">
+					<span>Загрузить документ</span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+@@include("html/_account-footer.html")

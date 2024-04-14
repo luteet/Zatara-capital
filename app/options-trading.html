@@ -1,0 +1,65 @@
+@@include("html/_header.html", {"class": ""})
+
+	<main class="main">
+		<div class="breadcrumbs padding-start container" data-aos="fade-in" data-aos-delay="100">
+			<a href="index.html" class="breadcrumbs__link">Главная</a>
+			<span class="breadcrumbs__separator">/</span>
+			<a href="a-book.html" class="breadcrumbs__link">Торговля</a>
+			<span class="breadcrumbs__separator">/</span>
+			<span class="breadcrumbs__current">Торговля опционами</span>
+		</div>
+		<section class="hero">
+			<div class="hero__decor dots-decor is-end" aria-hidden="true"></div>
+			<h1 class="hero__title hero-title" data-aos="fade-in" data-aos-delay="200">Торговля опционами</h1>
+			<div class="hero__image" data-aos="fade-in" data-aos-delay="100">
+				<div class="hero__image_inner is-center">
+					<picture>
+						<source srcset="img/trading/trading-options.avif" type="image/avif">
+						<source srcset="img/trading/trading-options.webp" type="image/webp">
+						<img src="img/trading/trading-options.png" alt="" width="413" height="450" class="image-aspect-ratio is-min-3" style="--aspect-ratio: 413/450;" loading="lazy">
+					</picture>
+				</div>
+			</div>
+			<div class="hero__content text" data-aos="fade-in" data-aos-delay="200">
+				<p>Простое управление рисками при торговле опционами на рынках от Чикаго до Осаки. Ищите, анализируйте, покупайте и продавайте опционы на удобной и многофункциональной торговой платформе. </p>
+				<p>Используйте доску опционов и расчет греков c подразумеваемой волатильностью и удобными фильтрами, позволяющими производить более точную выборку по инструментам.</p>
+			</div>
+			<div class="hero__footer" data-aos="fade-in" data-aos-delay="300">
+				<a href="registration.html" class="hero__button button" aria-label="Регистрация">
+					<span>Регистрация</span>
+					<svg width="24" height="24" class="button-arrow">
+						<use href="img/sprites.svg#next-arrow"></use>
+					</svg>
+					<span class="button-flare" aria-hidden="true"></span>
+				</a>
+			</div>
+		</section>
+		<section class="advantages-block">
+			<div class="advantages-block__inner" data-aos="fade-in" data-aos-delay="300">
+				<div class="advantages-block__background" aria-hidden="true">
+					<picture>
+						<source srcset="img/trading/trading-decor.avif" type="image/avif">
+						<source srcset="img/trading/trading-decor.webp" type="image/webp">
+						<img src="img/trading/trading-decor.jpg" alt="" width="0" height="0" loading="lazy">
+					</picture>
+				</div>
+				<h2 class="advantages-block__title section-title add-decor is-min is-center">
+					Преимущества торговли опционами с Zatara Capital Securities
+				</h2>
+				<ul class="advantages-block__list">
+					<li>
+						<strong>6 000</strong>
+						<p>Опционы на множество базовых активов</p>
+					</li>
+					<li>
+						<strong>Греки и IV</strong>
+						<p>Наиболее часто используемые индикаторы</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		@@include("html/_why-we.html")
+		@@include("html/_cooperating.html")
+	</main>
+
+@@include("html/_footer.html")

@@ -1,0 +1,349 @@
+html.is-active-light-theme {
+
+	--theme-primary: #FFF;
+	--theme-text-color: #121212;
+
+	--theme-primary-2: #F8F8F8;
+	--theme-primary-3: #EAEAEA;
+	--theme-primary-4: #FFF;
+	--theme-primary-5: #FFF;
+	--theme-primary-6: #F2F5F9;
+	--theme-primary-8: #E0E0E0;
+
+	--theme-secondary: #E0E0E0;
+	--theme-secondary-4: #999;
+
+	--gradient-circle: transparent;
+	--gradient-circle-2: transparent;
+
+	--decor-circles: url("data:image/svg+xml,%3Csvg viewBox='0 0 848 848' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle opacity='0.05' cx='424' cy='424' r='315.5' stroke='%23121212'/%3E%3Ccircle opacity='0.04' cx='424' cy='424' r='423.5' stroke='%23121212'/%3E%3Ccircle opacity='0.06' cx='424' cy='424' r='214.5' stroke='%23121212'/%3E%3C/svg%3E%0A");
+
+	--shadow: rgba(0, 12, 35, 0.08);
+	--shadow-2: rgba(1, 17, 50, 0.12);
+	--shadow-3: rgba(1, 17, 50, 0.1);
+	--shadow-4: rgba(27, 0, 25, 0.24);
+	--shadow-5: rgba(0, 12, 35, 0.07);
+	
+	scrollbar-color: var(--theme-secondary) var(--theme-primary);
+
+	&::-webkit-scrollbar {
+		background: var(--theme-primary);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: var(--theme-secondary);
+		border: 0.25rem solid var(--theme-primary);
+	}
+
+	.dots-decor {
+		background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 35 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2.5' cy='2.5' r='2.5' fill='%236405FF'/%3E%3C/svg%3E%0A");
+	}
+
+	.horizontal-scrollbar {
+		
+		.simplebar-scrollbar.simplebar-visible::before {
+			background: var(--accent);
+		}
+	
+		.simplebar-track.simplebar-horizontal {
+			background: var(--theme-primary-3);
+		}
+	}
+
+	.arrow-canvas {
+		opacity: .3;
+	}
+
+	.accent-stock {
+		background: rgba(255,255,255,0.75);
+	}
+
+	.header.is-transparent .header__nav li div ul {
+		@include _992 {
+			background: var(--white);
+		}
+	}
+
+	.header__lang_block.is-transparent {
+		@include _992 {
+			background: #fff;
+		}
+	}
+
+	.header__lang_block {
+		background: #fff;
+		@include _992 {
+			background: var(--theme-primary-2);
+		}
+	}
+
+	.header__nav {
+		background: var(--theme-primary-2);
+		@include _992 {
+			background: transparent;
+		}
+	}
+
+	.accent-on-light, .breadcrumbs, .hero, .advantages-block {
+		background: var(--theme-primary-2);
+	}
+
+	.faq {
+		background: var(--theme-primary-2);
+	}
+
+	.breadcrumbs__link {
+		color: var(--accent);
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--accent-2);
+			}
+		
+			&:active {
+				color: var(--accent-2);
+			}
+		}
+	}
+
+	.stock-item {
+		box-shadow: 0.9375rem 0.9375rem 1.875rem rgba(12, 0, 32, 0.15);
+	}
+
+	.markets__table_block {
+		box-shadow: 0px 1.25rem 2.5rem rgba(0, 12, 35, 0.08);
+		background: var(--white);
+	}
+	
+	.tabs-nav__list {
+		background: #EAEAEA;
+	}
+
+	.tabs-nav__link.is-active {
+		background: var(--white);
+		color: var(--black);
+	}
+
+	.why-we__background {
+		background: var(--theme-primary-2);
+	}
+
+	.cooperating {
+		background: var(--theme-primary-2);
+	}
+
+	.why-we__background::before {
+		animation-name: fadeOut;
+	}
+
+	.why-we__background::after {
+		animation-name: fadeIn;
+	}
+
+	.footer {
+		background: var(--theme-primary-2);
+		z-index: auto;
+	}
+
+	.footer__form {
+		background: #EAEAEA;
+	}
+
+	.footer__row:not(:first-child), .footer__note {
+		border-color: #E0E0E0;
+	}
+
+	.cooperating__background {
+		background: #F8F8F8;
+		box-shadow: 0px 1.25rem 2.5rem rgba(0, 12, 35, 0.1);
+	}
+
+	.stock-item__chart {
+		background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.5' y1='2.18557e-08' x2='0.499998' y2='50' stroke-opacity='0.07' stroke='%23121212'/%3E%3C/svg%3E%0A");
+	}
+	
+	.about-us-info__note_inner {
+		background: var(--accent-2);
+		color: var(--white);
+		box-shadow: none;
+	}
+
+	.documents__item {
+		box-shadow: 0.625rem 0.625rem 1.25rem rgba(1, 17, 50, 0.07);
+	}
+
+	.a-book__item_list li::before {
+		box-shadow: none;
+	}
+
+	.a-book-advantages {
+		border-radius: 0;
+		@include _992 {
+			border-radius: 0;
+		}
+	}
+
+	.a-book-advantages__item::before {
+		box-shadow: none;
+	}
+
+	.how-it-works__scheme_list:nth-child(3) li::after, .how-it-works__scheme_list:last-child li::before {
+		box-shadow: none;
+	}
+
+	.advantages-system__content li::before {
+		box-shadow: none;
+	}
+
+	.theme-line {
+		stroke: rgba(18,18,18,0.07);
+	}
+
+	.theme-line-2 {
+		fill: rgba(18,18,18,0.2);
+	}
+
+	.advantages-block__background {
+		background: var(--accent-2);
+	}
+
+	.advantages-block__title, .advantages-block__list li strong, .advantages-block__list li p {
+		color: var(--white);
+		&::before {
+			background: var(--white);
+		}
+	}
+
+	.mobile-app__inner::before {
+		background: var(--white);
+	}
+
+	.mobile-app__links a {
+		box-shadow: none;
+		background: #121212;
+	}
+
+	.stay-informed__block_background {
+		background: var(--accent-2);
+	}
+
+	.stay-informed__block_title::before {
+		background: var(--white);
+	}
+
+	.stay-informed__block_text {
+		color: var(--white);
+	}
+
+	.stay-informed__block_button::before {
+		border-color: var(--white);
+	}
+
+	.main.alt-footer+.footer .footer__container {
+		@include _992 {
+			border-top: 0.0625rem solid #E0E0E0;
+		}
+	}
+
+	.pagination {
+		a {
+			&.is-current {
+				background: #F2F5F9;
+				color: var(--accent-2);
+			}
+		}
+	}
+
+	.news-card__body {
+		box-shadow: none;
+	}
+
+	.single__note {
+		@include _992 {
+			box-shadow: 0px 1.25rem 2.5rem rgba(0, 12, 35, 0.1);
+		}
+	}
+
+	.single__content blockquote svg:first-child {
+		color: var(--accent);
+	}
+
+	.text ul li::before {
+		box-shadow: none;
+	}
+
+	.single__footer {
+		border-top: 0.0625rem solid #E0E0E0;
+	}
+
+	.holidays-item {
+		box-shadow: .875rem .875rem 1.5rem rgba(1, 17, 50, 0.05);
+	}
+
+	.economic-calendar__block {
+		background: var(--white);
+	}
+
+	.economic-calendar__date input {
+		background: var(--theme-primary-2);
+	}
+
+	.economic-calendar__block_table tr:not(:last-child) td:not([rowspan]) {
+		border-color: var(--theme-primary-8);
+	}
+
+	.faq-block-item {
+		box-shadow: 0.5rem 0.5rem 1rem rgba(1, 17, 50, 0.07);
+	}
+
+	.drop-down__block.economic-calendar__block_drop_down ul {
+		box-shadow: 0px 1.25rem 1.25rem rgba(0, 12, 35, 0.1);
+	}
+
+	.our-contacts__main {
+		box-shadow: 0px 1.25rem 2.5rem rgba(0, 12, 35, 0.07);
+	}
+
+	.feedback__form_input, .feedback__form_textarea {
+		box-shadow: 0px 0.25rem 0px #E7E7E7;
+		background: #f0f0f0;
+	}
+
+	.footer.is-alt {
+		background: var(--theme-primary-2);
+		border-radius: 0;
+	}
+
+	.footer.is-alt .footer__background {
+		overflow: visible;
+		
+		&::after {
+			background: var(--white);
+			z-index: 0;
+		}
+	}
+
+	.checkbox__element {
+		background: var(--white);
+	}
+
+	.input {
+		border-color: var(--theme-primary-8);
+		background: var(--theme-primary-2);
+	}
+
+	.authentication__block {
+		box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.08);
+	}
+
+	.toggle-visible-password {
+		color: #CCCCCC;
+	}
+
+	.intuitive-trading + .why-we .why-we__background {
+		background: transparent;
+	}
+}
+
+.accent-on-light, .breadcrumbs, .hero, .advantages-block {
+	transition: background .3s ease;
+}

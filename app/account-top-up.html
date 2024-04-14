@@ -1,0 +1,107 @@
+@@include("html/_account-header.html")
+
+	<div class="account-block">
+		<h1 class="account-title">
+			Пополнить счет
+		</h1>
+		@@include("html/_mobile-nav.html")
+		<div class="top-up">
+			<div class="top-up__container">
+				<div class="top-up__block top-up-block account-block">
+					<div class="account-block__body top-up-block__body is-min-on-mob">
+						<h2 class="account-block__title is-large">
+							Наши платежные реквизиты для оплаты вручную через Tether (TRC20)
+						</h2>
+						<div class="top-up-block__row">
+							<div class="top-up-block__item form-item">
+								<span>Счет получателя (USDT TRC20-address)</span>
+								<span>
+									<input type="text" value="THmnayhjXJKESExaXrUwHbgPYiGJD7nbSo" class="input">
+								</span>
+							</div>
+							<div class="top-up-block__item form-item">
+								<span>Сумма:</span>
+								<span>
+									<input type="text" value="1000.00" class="input">
+									<span>USDT (TRC20)</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="top-up__block top-up-block account-block">
+					<div class="account-block__body top-up-block__body is-min-on-mob">
+						<h2 class="account-block__title is-large">
+							Данные платежа через Tether (TRC20), произведенного вручную и реквизиты плательщика
+						</h2>
+						<div class="top-up-block__row">
+							<div class="top-up-block__item form-item">
+								<span>Дата</span>
+								<span>
+									<input type="text" name="date" value="28 августа 2023" class="input datepicker-input">
+								</span>
+							</div>
+							<div class="top-up-block__item form-item">
+								<span>Сумма:</span>
+								<span>
+									<input type="text" value="1000.00" class="input">
+									<span>USDT (TRC20)</span>
+								</span>
+							</div>
+							<div class="top-up-block__item form-item">
+								<span>Batch-номер (операции/транзакции)</span>
+								<span>
+									<input type="text" value="IN000051" class="input">
+								</span>
+							</div>
+							<div class="top-up-block__item form-item">
+								<span>Примечание</span>
+								<span>
+									<input type="text" value="Invoice #51, GitHAb676" class="input">
+								</span>
+							</div>
+							<div class="top-up-block__item form-item">
+								<span>USDT (TRC20) address</span>
+								<span>
+									<input type="text" class="input">
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="top-up__footer">
+					<button class="top-up__button button" type="button" aria-label="Создать">
+						<span>Создать</span>
+					</button>
+				</div>
+				<ul class="top-up__total">
+					<li>
+						<span>Статус:</span>
+						<b>Ожидает подтверждения</b>
+					</li>
+					<li>
+						<span>Дата:</span>
+						<b>сегодня, 09:36</b>
+					</li>
+					<li>
+						<span>Платежная система:</span>
+						<b>Tether (TRC20)</b>
+					</li>
+					<li>
+						<span>Сумма:</span>
+						<b>1000.00</b>
+					</li>
+				</ul>
+				<div class="top-up__footer">
+					<button class="top-up__button button is-alternative" type="button" aria-label="Создать">
+						<span>Подтвердить</span>
+					</button>
+					<button class="top-up__button button is-transparent-2" type="button" aria-label="Создать">
+						<span>Отменить</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+@@include("html/_account-footer.html")

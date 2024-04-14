@@ -1,0 +1,231 @@
+@@include("html/_header.html", {"class": ""})
+
+	<main class="main">
+		<div class="breadcrumbs padding-start container" data-aos="fade-in" data-aos-delay="100">
+			<a href="index.html" class="breadcrumbs__link">Главная</a>
+			<span class="breadcrumbs__separator">/</span>
+			<a href="about-us.html" class="breadcrumbs__link">О компании</a>
+			<span class="breadcrumbs__separator">/</span>
+			<span class="breadcrumbs__current">Агрегация ликвидности</span>
+		</div>
+		<section class="hero is-large-padding-bottom">
+			<h1 class="hero__title hero-title" data-aos="fade-in" data-aos-delay="200">Агрегация ликвидности</h1>
+			<div class="hero__image">
+				<div class="hero__image_inner is-center" data-aos="fade-in" data-aos-delay="100">
+					<picture>
+						<source srcset="img/aggregation-liquidity/aggregation-liquidity-hero-image.avif" type="image/avif">
+						<source srcset="img/aggregation-liquidity/aggregation-liquidity-hero-image.webp" type="image/webp">
+						<img src="img/aggregation-liquidity/aggregation-liquidity-hero-image.png" alt="" width="537" height="342" class="image-aspect-ratio" style="--aspect-ratio: 537/342;" loading="lazy">
+					</picture>
+				</div>
+			</div>
+			<div class="hero__content text" data-aos="fade-in" data-aos-delay="200">
+				<p>Мы предоставляем клиентам ликвидность, агрегированную от нескольких контрагентов, что предоставляет ряд преимуществ: клиенты всегда получают лучшие цены, защищены от некачественного исполнения ордеров со стороны контрагента, и полностью для него анонимны.</p>
+			</div>
+			<div class="hero__footer" data-aos="fade-in" data-aos-delay="300">
+				<a href="#" class="hero__button button" aria-label="Стать инвестором">
+					<span>Стать инвестором</span>
+					<svg width="24" height="24" class="button-arrow">
+						<use href="img/sprites.svg#next-arrow"></use>
+					</svg>
+					<span class="button-flare" aria-hidden="true"></span>
+				</a>
+			</div>
+		</section>
+		<section class="how-it-works section-padding-start accent-on-light">
+			<div class="how-it-works__background section-background" aria-hidden="true"></div>
+			<div class="how-it-works__decor dots-decor" aria-hidden="true"></div>
+			<h2 class="how-it-works__title section-title add-decor is-center" data-aos="fade-in" data-aos-delay="100" data-aos-anchor=".how-it-works__inner">
+				Как это работает
+			</h2>
+			<div class="how-it-works__inner horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false" data-aos="fade-in" data-aos-delay="200">
+				<div class="how-it-works__container">
+					<div class="how-it-works__body">
+						<div class="how-it-works__row">
+							<div class="how-it-works__info">
+								<div class="how-it-works__info_col">
+									<h3>STP</h3>
+								</div>
+								<div class="how-it-works__info_col text">
+									<p>
+										На счетах типа STP работает агрегатор, разработанный компанией Itransition.
+									</p>
+								</div>
+							</div>
+							<div class="how-it-works__info">
+								<div class="how-it-works__info_col">
+									<h3>ECN</h3>
+								</div>
+								<div class="how-it-works__info_col text">
+									<p>
+										На счетах типа ECN работает агрегатор, разработанный компанией Softwire.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="how-it-works__scheme arrows-wrapper">
+							<canvas class="arrow-canvas" aria-hidden="true"></canvas>
+							<canvas class="arrow-canvas-2" aria-hidden="true"></canvas>
+							<ul class="how-it-works__scheme_list arrow-item" data-arrow-to="[block-1, right, left]">
+								<li class="arrow-item" data-arrow-id="param-1" data-arrow-to="[param-2, right, right, noneArrow]; [param-3, right, right, noneArrow]; [param-4, right, right, noneArrow]">
+									Клиент 1
+								</li>
+								<li class="arrow-item" data-arrow-id="param-2">
+									Клиент 2
+								</li>
+								<li class="arrow-item" data-arrow-id="param-3">
+									...
+								</li>
+								<li class="arrow-item" data-arrow-id="param-4">
+									Клиент n
+								</li>
+							</ul>
+							<div class="how-it-works__scheme_block arrow-item" data-arrow-id="block-1" data-arrow-to="[block-2, right, left, doubleArrows]">
+								<div class="theme-change">
+									<img src="img/logo-dark.svg" alt="Logo" width="118" height="36" loading="lazy">
+									<img src="img/logo-light.svg" alt="Logo" width="118" height="36" loading="lazy">
+								</div>
+							</div>
+							<div class="how-it-works__scheme_block" data-arrow-id="block-2">
+								Агрегатор
+							</div>
+							<ul class="how-it-works__scheme_list arrow-item" data-arrow-to="[block-2, left, right]">
+								<li class="arrow-item" data-arrow-id="param-5" data-arrow-to="[param-6, left, left, noneArrow]; [param-7, left, left, noneArrow]; [param-8, left, left, noneArrow]">
+									Контрагент 1
+								</li>
+								<li class="arrow-item" data-arrow-id="param-6">
+									Контрагент 2
+								</li>
+								<li class="arrow-item" data-arrow-id="param-7">
+									...
+								</li>
+								<li class="arrow-item" data-arrow-id="param-8">
+									Контрагент n
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="aggregation-advantages section-padding-start">
+			<div class="aggregation-advantages__background section-background" aria-hidden="true">
+				<div class="aggregation-advantages__decor dots-decor"></div>
+				<div class="aggregation-advantages__decor"></div>
+			</div>
+			<div class="aggregation-advantages__decor dots-decor" aria-hidden="true"></div>
+			<div class="aggregation-advantages__decor" aria-hidden="true"></div>
+			<h2 class="aggregation-advantages__title section-title add-decor is-center" data-aos="fade-in" data-aos-delay="100">
+				Преимущества агрегации ликвидности
+			</h2>
+			<div class="aggregation-advantages__legends" data-aos="fade-in" data-aos-delay="200">
+				<span>
+					Единственный контрагент
+				</span>
+				<span>
+					Пул контрагентов
+				</span>
+			</div>
+			<div class="aggregation-advantages__info" data-aos="fade-in" data-aos-delay="200">
+				Возможность выбора контрагента для хеджирования сделки
+			</div>
+			<div class="aggregation-advantages__wrapper">
+				<div class="aggregation-advantages__inner horizontal-scrollbar center-scroll-position" data-simplebar data-simplebar-auto-hide="false" data-aos="fade-in" data-aos-delay="300">
+					<div class="aggregation-advantages__container">
+						<div class="aggregation-advantages__scheme arrows-wrapper arrows-large-padding">
+							<canvas class="arrow-canvas" aria-hidden="true"></canvas>
+							<canvas class="arrow-canvas-2" aria-hidden="true"></canvas>
+							<ul class="aggregation-advantages__scheme_list">
+								<li class="aggregation-advantages__scheme_block arrow-item" data-arrow-to="[block-1, right, right]; [block-2, right, right]; [block-3, right, right]; [block-4, right, right]">
+									<svg width="30" height="30" class="failure-color">
+										<use href="img/sprites.svg#decor-close"></use>
+									</svg>
+									Нет
+								</li>
+								<li class="aggregation-advantages__scheme_block text" data-arrow-id="block-1">
+									<h3>Цена контрагента</h3>
+									<p>Нет возможности выбрать лучшую цену. Необходимость исполнения приказа по цене единственного контрагента.</p>
+								</li>
+								<li class="aggregation-advantages__scheme_block text" data-arrow-id="block-2">
+									<h3>Нет защиты от нерыночных котировок</h3>
+									<p>В случае появления у контрагента нерыночной котировки (шпильки), стоп-ордер будет активирован данной котировкой и клиент понесет дополнительные убытки.</p>
+								</li>
+								<li class="aggregation-advantages__scheme_block text" data-arrow-id="block-3">
+									<h3>Нет защиты от некачественного исполнения</h3>
+									<p>Высокая вероятность исполнения ордера с большим проскальзыванием, задержкой и прочими атрибутами некачественного исполнения.</p>
+								</li>
+								<li class="aggregation-advantages__scheme_block text" data-arrow-id="block-4">
+									<h3>Нет защиты от форс-мажора</h3>
+									<p>Нет возможности обойти форс-мажорные ситуации: обрыв связи с контрагентом, отсутствие потока котировок и т.п.</p>
+								</li>
+							</ul>
+							<ul class="aggregation-advantages__scheme_list">
+								<li class="aggregation-advantages__scheme_block arrow-item" data-arrow-to="[block-5, left, left]; [block-6, left, left]; [block-7, left, left]; [block-8, left, left]">
+									<svg width="30" height="30" class="success-color">
+										<use href="img/sprites.svg#check"></use>
+									</svg>
+									Да
+								</li>
+								<li class="aggregation-advantages__scheme_block text" data-arrow-id="block-5">
+									<h3>Лучшие цены</h3>
+									<p>Цены у разных контрагентов различаются. Агрегатор позволяет выбрать лучшую из предложенных цен.</p>
+								</li>
+								<li class="aggregation-advantages__scheme_block text" data-arrow-id="block-6">
+									<h3>Защита от нерыночных котировок</h3>
+									<p>В случае появления у контрагента нерыночной котировки (шпильки), стоп-ордер не будет активирован данной котировкой.</p>
+								</li>
+								<li class="aggregation-advantages__scheme_block text" data-arrow-id="block-7">
+									<h3>Защита от некачественного исполнения</h3>
+									<p>Минимизируется вероятность исполнения ордера с большим проскальзыванием, задержкой и прочими атрибутами некачественного исполнения.</p>
+								</li>
+								<li class="aggregation-advantages__scheme_block text" data-arrow-id="block-8">
+									<h3>Защита от форс-мажора</h3>
+									<p>В случае возникновения какого-либо форс-мажора: обрыв связи с контрагентом, отсутствие потока котировок и т.д., ордербудет исполнен у другого контрагента.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="aggregation-advantages__wrapper_decor dots-decor" aria-hidden="true"></div>
+			</div>
+			<div class="aggregation-advantages__info" data-aos="fade-in" data-aos-delay="100">
+				Анонимность клиентов для конечного контрагента
+			</div>
+			<div class="aggregation-advantages__inner horizontal-scrollbar center-scroll-position"  data-aos="fade-in" data-aos-delay="100" data-simplebar data-simplebar-auto-hide="false">
+				<div class="aggregation-advantages__container">
+					<div class="aggregation-advantages__scheme arrows-wrapper arrows-large-padding">
+						<canvas class="arrow-canvas" aria-hidden="true"></canvas>
+						<canvas class="arrow-canvas-2" aria-hidden="true"></canvas>
+						<ul class="aggregation-advantages__scheme_list">
+							<li class="aggregation-advantages__scheme_block arrow-item" data-arrow-to="[block-1, right, right]">
+								<svg width="30" height="30" class="failure-color">
+									<use href="img/sprites.svg#decor-close"></use>
+								</svg>
+								Нет
+							</li>
+							<li class="aggregation-advantages__scheme_block text" data-arrow-id="block-1">
+								<h3>Возможно ухудшение условий торговли</h3>
+								<p>Контрагент получает ордера каждого клиента персонифицировано, и может ухудшить исполнение в индивидуальном порядке отдельным клиентам, торгующим доходно.</p>
+							</li>
+						</ul>
+						<ul class="aggregation-advantages__scheme_list">
+							<li class="aggregation-advantages__scheme_block arrow-item" data-arrow-to="[block-2, left, left]">
+								<svg width="30" height="30" class="success-color">
+									<use href="img/sprites.svg#check"></use>
+								</svg>
+								Да
+							</li>
+							<li class="aggregation-advantages__scheme_block text" data-arrow-id="block-2">
+								<h3>Невозможность ухудшения условий торговли</h3>
+								<p>Контрагент получает ордера клиентов анонимно, и не может определить кто из клиентов торгует доходно либо убыточно,и ухудшить исполнение в индивидуальном порядке.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include("html/_why-we.html")
+		@@include("html/_cooperating.html")
+	</main>
+
+@@include("html/_footer.html")

@@ -1,0 +1,144 @@
+.verification {
+
+	margin-top: 2.5rem;
+
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+
+	// .verification__hero
+
+	&__hero {
+	}
+
+	// .verification__hero_title
+
+	&__hero_title {
+		margin-bottom: 1.875rem;
+	}
+
+	// .verification__text
+
+	&__text {
+	}
+
+	// .verification__number
+
+	&__number {
+		display: grid;
+		gap: 1.25rem;
+
+		@include _992 {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		list-style-type: none;
+		counter-reset: number;
+	}
+
+	// .verification__number_block
+
+	&__number_block {
+		list-style-type: none;
+
+		padding: 1.875rem 1.25rem;
+		background: var(--theme-primary-4);
+		box-shadow: 0.75rem 0.75rem 1.5rem var(--shadow);
+		border-radius: 1.25rem;
+
+		@include _550 {
+			padding: 1.875rem;
+		}
+
+		h3 {
+			
+			font-weight: 500;
+			font-size: 0.875rem;
+			line-height: 120%;
+
+			@media (min-width: 360px) {
+				font-size: 1rem;
+			}
+
+			@include _550 {
+				font-size: 1.25rem;
+			}
+			
+			&::before {
+				counter-increment: number;
+				content: counter(number);
+
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+
+				width: 2.5rem; height: 2.5rem;
+				border-radius: 50%;
+				margin-right: 0.9375rem;
+
+				background: var(--theme-primary-2);
+				color: var(--accent);
+
+				font-size: 1rem;
+				line-height: 120%;
+				font-weight: 700;
+				
+				box-shadow: 0.1875rem 0.1875rem 0.375rem rgba(0, 0, 0, 0.15);
+			
+			}
+			
+		}
+	}
+
+	// .verification__number_image
+
+	&__number_image {
+		max-width: 22.5rem; margin: 1.5625rem auto 0;
+
+		border: 0.0625rem solid var(--theme-secondary);
+		border-radius: 1.25rem;
+
+		min-height: 15rem;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+
+	// .verification__footer
+
+	&__footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		gap: 1.25rem;
+
+		padding: 1.875rem 1.25rem;
+		background: var(--theme-primary-4);
+		box-shadow: 0.75rem 0.75rem 1.5rem var(--shadow);
+		border-radius: 1.25rem;
+
+		@include _550 {
+			padding: 1.875rem;
+		}
+	}
+
+	// .verification__file
+
+	&__file {
+		max-width: 30.625rem;
+	}
+
+	// .verification__note
+
+	&__note {
+		text-align: center;
+	}
+
+	// .verification__submit
+
+	&__submit {
+	}
+}

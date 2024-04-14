@@ -1,0 +1,117 @@
+@@include("html/_account-header.html")
+
+	<div class="account-row">
+		<div class="account-col">
+			<div class="account-block">
+				<div class="account-block__header">
+					<h1 class="account-title">
+						Криптовалюты
+					</h1>
+					<div class="trading-status is-close visible-on-mob">
+						<svg width="16" height="16">
+							<use href="img/sprites.svg#close-2"></use>
+						</svg>
+						<span>
+							Рынок открыт
+						</span>
+					</div>
+				</div>
+				@@include("html/_mobile-nav.html")
+			</div>
+		</div>
+	</div>
+	<div class="account-row">
+		<div class="account-col">
+			<div class="account-block chart">
+				<div class="account-block__body disable-on-mob">
+					<div class="chart__inner horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+						<div class="chart__container">
+							<canvas width="861" height="395" data-id="chart-1"></canvas>
+						</div>
+					</div>
+				</div>
+				<script>
+					const dataObj = {
+						labels: ['Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август'],
+						data: {
+							gradient: ["rgba(219, 71, 213, 0)", "#DB47D5"],
+							values: [
+								23474.23,
+								24474.23,
+								25474.23,
+								28474.23,
+								27474.23,
+								26474.23,
+								27474.23,
+							],
+							after: "$",
+						},
+					}
+				</script>
+			</div>
+		</div>
+		<div class="account-col">
+			<div class="account-block refill-account">
+				<div class="account-block__body">
+					<h2 class="refill-account__title account-block__title">
+						Купить BTC
+					</h2>
+					<div class="refill-account__text">
+						<p>
+							1 BTC = 26159.44$
+						</p>
+					</div>
+					<form class="refill-account__inner">
+						<div class="refill-account__item">
+							<span>Количество</span>
+							<input type="text" name="length" class="input" placeholder="0" inputmode="numeric">
+							<span>BTC</span>
+						</div>
+						<div class="refill-account__item">
+							<span>Способ оплаты</span>
+							<select name="payment-system" class="custom-select">
+								<option value="Мой баланс">
+									Мой баланс
+								</option>
+								<option value="Мой баланс 2">
+									Мой баланс 2
+								</option>
+								<option value="Мой баланс 3">
+									Мой баланс 3
+								</option>
+							</select>
+						</div>
+						<button class="refill-account__submit button" type="button" aria-label="Обменять">
+							<span>Купить</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="account-row">
+		<div class="account-col">
+			<div class="about-crypto">
+				<h2 class="about-crypto__name">
+					<img src="img/crypto/Bitcoin.svg" width="30" height="30" loading="lazy" alt="">
+					BTC
+				</h2>
+				<div class="about-crypto__pricing">
+					26159.44 USD 
+					<span class="success-color">
+						<svg width="20" height="20">
+							<use href="img/sprites.svg#up-right-arrow-2"></use>
+						</svg>
+						0.57%
+					</span>
+				</div>
+				<div class="about-crypto__text text">
+					<p>
+						Биткоин — это криптовалюта, которую люди по всему миру покупают и продают чаще всего. Это самый большой кусок криптовалютного пирога. Биткоин стал первой цифровой монетой, и уже по его стопам пошли все остальные. Сейчас мы можем уверенно говорить о том, что появление Биткоина породило новый класс активов и позволило миру сделать огромный шаг в сторону отказа от традиционных денег. Многие фанаты криптовалют считают, что Биткоин выведет мировую финансовую систему на новый уровень — мы не будем так категоричны, но нам тоже интересно, что будет дальше.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+@@include("html/_account-footer.html")

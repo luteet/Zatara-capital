@@ -1,0 +1,251 @@
+.account-table {
+
+	margin: 2.5rem -0.625rem 0;
+
+	width: 100vw;
+
+	@include _992 {
+		width: auto;
+
+		margin: 2.5rem 0 0;
+		padding: 1.875rem 1.25rem 2.5rem;
+		background: var(--theme-primary-4);
+		border-radius: 1.25rem;
+
+		transition: background .3s;
+	}
+
+	// .account-table__inner
+
+	&__inner {
+		padding: 0 0.625rem 1.875rem;
+		@include _992 {
+			padding: 0;
+		}
+	}
+
+	// .account-table__container
+
+	&__container {
+	}
+
+	// .account-table__block
+
+	&__block {
+		
+		min-width: 56.25rem;
+		@include _992 {
+			width: 100%;
+			min-width: auto;
+		}
+
+		col {
+			&:nth-child(1) {
+				width: 2.5rem;
+			}
+
+			&:nth-child(3), &:nth-child(4) {
+				width: 15%;
+			}
+		}
+
+		th {
+			font-size: 0.875rem;
+			line-height: 160%;
+			font-weight: 500;
+			text-align: start;
+			color: var(--theme-secondary-2);
+
+			padding-bottom: 0.9375rem;
+		}
+
+		td {
+			padding: 0.9375rem 0;
+
+			font-size: 0.875rem;
+			line-height: 160%;
+
+			&:not(:last-child) {
+				padding-right: 0.625rem;
+			}
+
+			&:nth-child(4) {
+				font-weight: 500;
+			}
+		}
+
+		tbody tr:last-child td {
+			padding: 0.9375rem 0 0;
+		}
+	}
+
+	&.is-alt &__block col {
+		&:nth-child(3), &:nth-child(4), &:nth-child(5) {
+			width: 15%;
+		}
+		&:last-child {
+			width: 3.125rem;
+		}
+	}
+
+	// .account-table__favorite
+
+	&__favorite {
+		position: relative;
+		cursor: pointer;
+		min-height: 1.875rem;
+
+		display: flex;
+		-webkit-tap-highlight-color: transparent;
+
+		input {
+			position: absolute;
+			width: 1px; height: 1px;
+			margin: -1px; padding: 0;
+			border: 0;
+			
+			white-space: nowrap;
+			clip-path: inset(100%);
+			clip: rect(0 0 0 0);
+			overflow: hidden;
+		}
+
+		input:checked + span svg {
+			&:nth-child(1) {
+				opacity: 0; visibility: hidden;
+			}
+			&:nth-child(2) {
+				opacity: 1; visibility: visible;
+			}
+		}
+
+		span {
+			display: grid;
+			> * {
+				grid-area: 1/1;
+				align-self: center;
+				width: 1rem; height: 1rem;
+
+				transition: opacity .2s ease, visibility .2s ease;
+
+				&:nth-child(1) {
+					color: var(--theme-secondary-2);
+				}
+
+				&:nth-child(2) {
+					opacity: 0; visibility: hidden;
+					color: var(--process);
+				}
+			}
+		}
+	}
+
+	// .account-table__info
+
+	&__info {
+		display: grid;
+		grid-template-columns: 1.875rem auto;
+		gap: 0.125rem 1.25rem;
+		color: var(--theme-text-color);
+	}
+
+	&__info.none-logo {
+		grid-template-columns: 100%;
+	}
+
+	// .account-table__info_logo
+
+	&__info_logo {
+
+		grid-column: 1; grid-row: 1/3;
+		align-self: center;
+
+		img {
+			width: 1.875rem; height: 1.875rem;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+
+		&.none-round img {
+			border-radius: 0;
+			width: 2.5rem;
+			object-fit: contain;
+			object-position: left;
+		}
+	}
+
+	// .account-table__info_name
+
+	&__info_name {
+		font-size: 0.875rem;
+		line-height: 100%;
+		font-weight: 500;
+	}
+
+	// .account-table__info_initials
+
+	&__info_initials {
+		font-size: 0.75rem;
+		line-height: 100%;
+		color: var(--theme-secondary-2);
+	}
+
+	&__settings.is-active &__settings_target {
+		color: var(--accent-2);
+	}
+
+	&__settings_target {
+		background: transparent;
+
+		display: flex;
+		align-items: center;
+
+		color: var(--theme-text-color);
+
+		width: 1.875rem; height: 1.875rem;
+
+		svg {
+			width: 100%; height: 100%;
+		}
+	}
+
+	&__settings_block {
+		min-width: 8.75rem;
+
+		&::before {
+			content: "";
+			position: absolute;
+			right: 0.375rem; top: 0;
+			border-left: 0.625rem solid transparent;
+			border-right: 0.625rem solid transparent;
+			border-bottom: 0.625rem solid var(--theme-primary-2);
+			transform: translate(0,-80%);
+		}
+
+		background: var(--theme-primary-2);
+		border-radius: 0.5rem;
+
+		padding: 0.3125rem 0;
+
+		a {
+			font-size: 0.8125rem;
+			line-height: 120%;
+			font-weight: 500;
+			color: var(--theme-secondary-2);
+
+			display: block;
+			padding: 0.1875rem 0.625rem;
+
+			@media (any-hover: hover) {
+				transition: color .1s ease;
+				&:hover {
+					color: var(--accent);
+				}
+			
+				&:active {
+					color: var(--accent-2);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+.about-crypto {
+
+	// .about-crypto__name
+
+	&__name {
+		display: flex;
+		align-items: center;
+		gap: 0.9375rem;
+
+		font-weight: 600;
+		font-size: 1.875rem;
+		line-height: 120%;
+
+		img {
+			flex: 0 0 1.875rem; width: 1.875rem; height: 1.875rem;
+			border-radius: 50%;
+			object-fit: cover;
+			margin-bottom: 0.125rem;
+		}
+	}
+
+	// .about-crypto__pricing
+
+	&__pricing {
+		padding-top: 0.9375rem;
+
+		span {
+			
+			svg {
+				flex: 0 0 1.25rem; width: 1.25rem; height: 1.25rem;
+				margin-bottom: -0.25rem;
+			}
+		}
+	}
+
+	// .about-crypto__text
+
+	&__text {
+		padding-top: 1.25rem;
+	}
+}

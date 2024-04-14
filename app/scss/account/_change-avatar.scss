@@ -1,0 +1,68 @@
+.change-avatar {
+	
+	max-width: 56.5625rem;
+
+	.account-tabs__list {
+		width: 100%;
+	}
+
+	//margin-top: 1.25rem;
+	.account-block__body {
+		margin-top: 1.25rem;
+	}
+
+	// .change-avatar__row
+
+	&__row {
+		padding-top: 1.875rem;
+
+		display: grid;
+		gap: 1.25rem;
+
+		@include _992 {
+			grid-template-columns: 1fr 1fr;
+			gap: 0 1.5625rem;
+		}
+	}
+
+	// .change-avatar__col
+
+	&__col {
+		&:nth-child(2) {
+			display: grid;
+			gap: 0.625rem;
+			align-items: start;
+
+			@include _550 {
+				grid-template-columns: 1fr 1fr;
+			}
+		}
+	}
+
+	// .change-avatar__file
+
+	&__file {
+	}
+
+	// .change-avatar__note
+
+	&__note {
+		display: block;
+		margin-top: 1.25rem;
+
+		font-size: 0.8125rem;
+		line-height: 100%;
+		color: var(--theme-secondary-4);
+
+		@include _550 {
+			font-size: 0.875rem;
+		}
+
+	}
+
+	// .change-avatar__button
+
+	&__button {
+		min-height: 3.125rem;
+	}
+}
