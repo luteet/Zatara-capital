@@ -20,6 +20,8 @@
 		top: 5%;
 		left: calc(50% - 48.125rem);
 
+		pointer-events: none;
+
 		&.is-end {
 			right: calc(50% - 48.125rem); bottom: 5%;
 			left: auto; top: auto;
@@ -84,6 +86,8 @@
 			border-radius: 50%;
 			opacity: .7;
 			z-index: -1;
+
+			pointer-events: none;
 		}
 	}
 
