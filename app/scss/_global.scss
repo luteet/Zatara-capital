@@ -470,7 +470,7 @@ html.is-active-light-theme .section-background::after {
 	text-underline-offset: 0.4ch;
 	text-decoration: underline;
 	@media (any-hover: hover) {
-		transition: color 0.1s;
+		transition: color 0.2s;
 		&:hover {
 			color: var(--accent-2);
 			text-decoration: underline;

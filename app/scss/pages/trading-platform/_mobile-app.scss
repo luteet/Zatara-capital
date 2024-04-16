@@ -1,8 +1,8 @@
 .mobile-app {
 
-	@include _992 {
+	/* @include _992 {
 		padding-top: 5rem;
-	}
+	} */
 
 	// .mobile-app__advantages
 
@@ -19,6 +19,7 @@
 		z-index: 2;
 
 		li {
+			position: relative;
 			align-self: self-end;
 
 			background: var(--theme-primary-2);
@@ -27,9 +28,24 @@
 
 			padding: 1.875rem;
 
+			.dots-decor {
+				display: none;
+			}
+
 			@include _992 {
 
+				&:nth-child(even) {
+					border-radius: 2.5rem 0;
+				}
+
 				padding: 2.5rem 3.3125rem 2.875rem;
+
+				.dots-decor {
+					display: block;
+					right: 25%; top: 0;
+					width: 4.6875rem; height: 9.0625rem;
+					transform: translate(0,-50%);
+				}
 
 				&:nth-child(odd) {
 					margin-bottom: calc(0px - (var(--height) / 4));
