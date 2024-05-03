@@ -24,6 +24,9 @@ function getCoords(elem) {
 
 const themeChangeEvent = new Event("theme-change");
 
+const accountHeaderSearch = document.querySelector(".account-header__search"),
+searchPopup = document.querySelector(".search-popup");
+
 //changeTheme(headerThemeTarget.dataset.changeThemeTo, themeChangeEvent);
 
 
@@ -43,7 +46,7 @@ dropDown()
 
 // =-=-=-=-=-=-=-=-=-=-=-=- <click-events> -=-=-=-=-=-=-=-=-=-=-=-=
 
-let asideTimeout;
+let asideTimeout, tabsTimeout;
 body.addEventListener('click', function (event) {
 
 	function $(elem) {
@@ -112,7 +115,7 @@ body.addEventListener('click', function (event) {
 	
 		accountHeaderSearchOpen.closest(".account-header__search").classList.add("is-active");
 	
-	} else if(!$(".account-header__search")) document.querySelectorAll(".account-header__search").forEach(search => search.classList.remove("is-active"));
+	} else if(!$(".account-header__search") && !$(".search-popup")) document.querySelectorAll(".account-header__search").forEach(search => search.classList.remove("is-active"));
 	
 	// =-=-=-=-=-=-=-=-=-=-=-=- </account-header-search> -=-=-=-=-=-=-=-=-=-=-=-=
 
@@ -176,6 +179,73 @@ body.addEventListener('click', function (event) {
 	
 	// =-=-=-=-=-=-=-=-=-=-=-=- </header-theme-change> -=-=-=-=-=-=-=-=-=-=-=-=
 
+
+	// =-=-=-=-=-=-=-=-=-=-=-=- <tabs> -=-=-=-=-=-=-=-=-=-=-=-=
+	
+	const tabsNavLink = $(".account-tabs__link")
+	if(tabsNavLink) {
+	
+		if(tabsNavLink.getAttribute("href").indexOf("#") == 0) {
+			event.preventDefault();
+
+			if(tabsNavLink.getAttribute("href") !== "#" && !tabsNavLink.classList.contains("is-active")) {
+
+				const wrapper = tabsNavLink.closest('.account-tabs-wrapper'),
+				container = wrapper.querySelector(".account-tabs-container"),
+				activeLink = wrapper.querySelector(".account-tabs__link.is-active"),
+				activeBlock = wrapper.querySelector(".account-tabs-block.is-active"),
+				targetBlock = wrapper.querySelector(tabsNavLink.getAttribute("href"));
+
+				if(targetBlock) {
+
+					container.style.minHeight = container.scrollHeight + 'px';
+					activeBlock.classList.add("fade-out");
+					activeBlock.classList.remove("fade-in");
+					activeLink && activeLink.classList.remove("is-active");
+
+					if(tabsTimeout) clearTimeout(tabsTimeout)
+
+					tabsTimeout = setTimeout(() => {
+						activeBlock.classList.remove("is-active");
+						activeBlock.classList.remove("fade-out");
+						targetBlock.classList.add("is-active");
+						setTimeout(() => {
+							targetBlock.classList.add("fade-in");
+							tabsNavLink.classList.add("is-active");
+							setTimeout(() => {
+								container.style.removeProperty("min-height");
+							},300)
+						},0)
+					},300)
+				}
+
+			}
+
+		}
+	
+	}
+	
+	// =-=-=-=-=-=-=-=-=-=-=-=- </tabs> -=-=-=-=-=-=-=-=-=-=-=-=
+
+
+	// =-=-=-=-=-=-=-=-=-=-=-=- <search-popup> -=-=-=-=-=-=-=-=-=-=-=-=
+	
+	if(searchPopup.classList.contains("is-active")) {
+		if(!$(".search-popup") && !$(".account-header__search")) {
+	
+			searchPopup.classList.remove("is-active")
+		
+		}
+		if($(".search-popup__close")) {
+	
+			searchPopup.classList.remove("is-active")
+			document.querySelectorAll(".account-header__search").forEach(search => search.classList.remove("is-active"));
+		
+		}
+	}
+	
+	// =-=-=-=-=-=-=-=-=-=-=-=- </search-popup> -=-=-=-=-=-=-=-=-=-=-=-=
+
 })
 
 // =-=-=-=-=-=-=-=-=-=-=-=- </click-events> -=-=-=-=-=-=-=-=-=-=-=-=
@@ -206,6 +276,10 @@ const getDeviceType = () => {
 let windowSize = 0, deviceType;
 const formItems = document.querySelectorAll(".form-item");
 
+accountHeaderSearch.querySelector("input").addEventListener("focus", () => {
+	searchPopup.classList.add("is-active");
+})
+
 function resize() {
 
 	//html.style.setProperty("--height-header", header.offsetHeight + "px");
@@ -224,6 +298,10 @@ function resize() {
 	
 	windowSize = window.innerWidth;
 	deviceType = getDeviceType();
+
+	searchPopup.style.setProperty("--x", getCoords(accountHeaderSearch).left + "px")
+	searchPopup.style.setProperty("--y", getCoords(accountHeaderSearch).top + accountHeaderSearch.offsetHeight + "px")
+	searchPopup.style.setProperty("--max-width", accountHeaderSearch.offsetWidth + "px")
 	
 }
 

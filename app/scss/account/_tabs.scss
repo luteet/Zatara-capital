@@ -29,6 +29,50 @@
 		}
 	}
 
+	&.is-min {
+		padding-top: 0;
+		width: 100%;
+
+		@include _992 {
+			width: auto;
+		}
+	}
+
+	&.is-min &__list {
+		grid-template-columns: 1fr 1fr;
+		border-radius: 0.625rem;
+		background: var(--theme-primary-2);
+
+		padding: 0.3125rem;
+
+		@include _550 {
+			grid-template-columns: 1fr 1fr;
+
+			border-radius: 0.625rem;
+			background: var(--theme-primary-2);
+
+			padding: 0.3125rem;
+		}
+
+		@include _992 {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	&.is-min li {
+
+		@media (min-width: 1500px) {
+			min-width: 13.75rem;
+		}
+	}
+
+	&.is-min &__link {
+		border: 0;
+		@include _992 {
+			font-size: 0.875rem;
+		}
+	}
+
 	// .account-tabs__link
 
 	&__link {
@@ -72,5 +116,14 @@
 				color: var(--accent-2);
 			}
 		}
+	}
+}
+
+.account-tabs-block {
+	min-height: 100%;
+	display: none;
+	&.is-active {
+		display: flex;
+		flex-direction: column;
 	}
 }

@@ -115,6 +115,10 @@ input, textarea {
 
 	transition: border-color .2s, background .2s;
 
+	&[disabled] {
+		color: var(--theme-secondary-2);
+	}
+
 	&.mode-2 {
 		background: var(--theme-primary-4);
 		border-color: var(--theme-primary-9);

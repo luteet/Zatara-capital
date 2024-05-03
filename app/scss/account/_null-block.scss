@@ -3,10 +3,6 @@
 	display: flex;
 	flex-direction: column;
 
-	@include _992 {
-		margin-top: 0.625rem;
-	}
-
 	// .account-null-block__body
 
 	&__body {

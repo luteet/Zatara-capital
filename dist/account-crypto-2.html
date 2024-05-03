@@ -329,324 +329,258 @@
 		</header>
 		<main class="account-main">
 
-			<div class="account-block">
-				<h1 class="account-title">
-					Настройки
-				</h1>
-				<nav class="mobile-nav visible-on-mob">
-					<button class="mobile-nav__target" type="button">
-						<svg width="24" height="24">
-							<use href="img/sprites.svg#navigation"></use>
-						</svg>
-						<span>Разделы</span>
-					</button>
-					<div class="mobile-nav__block">
-						<div class="mobile-nav__item">
-							<h2>Меню</h2>
-							<ul>
-								<li>
-									<a href="account-index.html" aria-label="Мой кабинет" class="is-current">
-										<svg width="24" height="24">
-											<use href="img/sprites.svg#nav-home"></use>
-										</svg>
-										<span>Мой кабинет</span>
-									</a>
-								</li>
-								<li>
-									<a href="account-stocks.html" aria-label="Маркет">
-										<svg width="24" height="24">
-											<use href="img/sprites.svg#nav-market"></use>
-										</svg>
-										<span>Маркет</span>
-										<svg width="16" height="16">
-											<use href="img/sprites.svg#drop-down-arrow"></use>
-										</svg>
-									</a>
-									<div>
-										<ul>
-											<li><a href="account-stocks.html">Акции</a></li>
-											<li><a href="account-crypto.html">Криптовалюты</a></li>
-											<li><a href="account-forex.html">Форекс</a></li>
-											<li><a href="account-favorites.html">Избранное</a></li>
-										</ul>
-									</div>
-								</li>
-								<li>
-									<a href="account-my-stocks.html" aria-label="Мои активы">
-										<svg width="24" height="24">
-											<use href="img/sprites.svg#nav-my-assets"></use>
-										</svg>
-										<span>Мои активы</span>
-										<svg width="16" height="16">
-											<use href="img/sprites.svg#drop-down-arrow"></use>
-										</svg>
-									</a>
-									<div>
-										<ul>
-											<li><a href="account-my-stocks.html">Акции</a></li>
-											<li><a href="account-my-crypto.html">Криптовалюты</a></li>
-											<li><a href="account-my-forex.html">Форекс</a></li>
-											<li><a href="account-favorites.html">Избранное</a></li>
-										</ul>
-									</div>
-								</li>
-								<li>
-									<a href="account-my-wallets.html" aria-label="Мои кошельки">
-										<svg width="24" height="24">
-											<use href="img/sprites.svg#nav-my-wallets"></use>
-										</svg>
-										<span>Мои кошельки</span>
-									</a>
-								</li>
-								<li>
-									<a href="account-replenishment.html" aria-label="Пополнить счет">
-										<svg width="24" height="24">
-											<use href="img/sprites.svg#nav-fund"></use>
-										</svg>
-										<span>Пополнить счет</span>
-									</a>
-								</li>
-								<li>
-									<a href="account-withdrawal.html" aria-label="Вывод средств">
-										<svg width="24" height="24">
-											<use href="img/sprites.svg#nav-withdrawal"></use>
-										</svg>
-										<span>Вывод средств</span>
-									</a>
-								</li>
-								<li>
-									<a href="account-currency-exchange.html" aria-label="Внутренний обмен">
-										<svg width="24" height="24">
-											<use href="img/sprites.svg#nav-internal-exchange"></use>
-										</svg>
-										<span>Внутренний обмен</span>
-									</a>
-								</li>
-								<li>
-									<a href="account-payment-transactions.html" aria-label="Платежные операции">
-										<svg width="24" height="24">
-											<use href="img/sprites.svg#nav-payment-transactions"></use>
-										</svg>
-										<span>Платежные операции</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="mobile-nav__item">
-							<h2>Аккаунт</h2>
-							<ul>
-								<li>
-									<a href="account-verification.html" aria-label="Верификация">
-										<svg width="24" height="24">
-											<use href="img/sprites.svg#account-verification"></use>
-										</svg>
-										<span>Верификация</span>
-									</a>
-								</li>
-								<li>
-									<a href="account-personal-data.html" aria-label="Настройки">
-										<svg width="24" height="24">
-											<use href="img/sprites.svg#account-settings"></use>
-										</svg>
-										<span>Настройки</span>
-									</a>
-								</li>
-								<li>
-									<a href="account-help.html" aria-label="Помощь и поддержка">
-										<svg width="24" height="24">
-											<use href="img/sprites.svg#account-help"></use>
-										</svg>
-										<span>Помощь и поддержка</span>
-									</a>
-								</li>
-								<li>
-									<a href="login.html" aria-label="Выйти">
-										<svg width="24" height="24">
-											<use href="img/sprites.svg#account-logout"></use>
-										</svg>
-										<span>Выйти</span>
-									</a>
-								</li>
-							</ul>
+			<div class="account-row">
+				<div class="account-col">
+					<div class="account-block">
+						<div class="account-block__header">
+							<h1 class="account-title">
+								Криптовалюты
+							</h1>
+							<div class="trading-status is-open visible-on-mob">
+								<svg width="16" height="16">
+									<use href="img/sprites.svg#close-2"></use>
+								</svg>
+								<span>
+									Рынок открыт
+								</span>
+							</div>
 						</div>
 					</div>
-				</nav>
-				<form class="personal-data">
-					<div class="account-tabs">
-						<ul class="account-tabs__list">
+					<div class="account-block">
+						<nav class="mobile-nav visible-on-mob">
+							<button class="mobile-nav__target" type="button">
+								<svg width="24" height="24">
+									<use href="img/sprites.svg#navigation"></use>
+								</svg>
+								<span>Разделы</span>
+							</button>
+							<div class="mobile-nav__block">
+								<div class="mobile-nav__item">
+									<h2>Меню</h2>
+									<ul>
+										<li>
+											<a href="account-index.html" aria-label="Мой кабинет" class="is-current">
+												<svg width="24" height="24">
+													<use href="img/sprites.svg#nav-home"></use>
+												</svg>
+												<span>Мой кабинет</span>
+											</a>
+										</li>
+										<li>
+											<a href="account-stocks.html" aria-label="Маркет">
+												<svg width="24" height="24">
+													<use href="img/sprites.svg#nav-market"></use>
+												</svg>
+												<span>Маркет</span>
+												<svg width="16" height="16">
+													<use href="img/sprites.svg#drop-down-arrow"></use>
+												</svg>
+											</a>
+											<div>
+												<ul>
+													<li><a href="account-stocks.html">Акции</a></li>
+													<li><a href="account-crypto.html">Криптовалюты</a></li>
+													<li><a href="account-forex.html">Форекс</a></li>
+													<li><a href="account-favorites.html">Избранное</a></li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<a href="account-my-stocks.html" aria-label="Мои активы">
+												<svg width="24" height="24">
+													<use href="img/sprites.svg#nav-my-assets"></use>
+												</svg>
+												<span>Мои активы</span>
+												<svg width="16" height="16">
+													<use href="img/sprites.svg#drop-down-arrow"></use>
+												</svg>
+											</a>
+											<div>
+												<ul>
+													<li><a href="account-my-stocks.html">Акции</a></li>
+													<li><a href="account-my-crypto.html">Криптовалюты</a></li>
+													<li><a href="account-my-forex.html">Форекс</a></li>
+													<li><a href="account-favorites.html">Избранное</a></li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<a href="account-my-wallets.html" aria-label="Мои кошельки">
+												<svg width="24" height="24">
+													<use href="img/sprites.svg#nav-my-wallets"></use>
+												</svg>
+												<span>Мои кошельки</span>
+											</a>
+										</li>
+										<li>
+											<a href="account-replenishment.html" aria-label="Пополнить счет">
+												<svg width="24" height="24">
+													<use href="img/sprites.svg#nav-fund"></use>
+												</svg>
+												<span>Пополнить счет</span>
+											</a>
+										</li>
+										<li>
+											<a href="account-withdrawal.html" aria-label="Вывод средств">
+												<svg width="24" height="24">
+													<use href="img/sprites.svg#nav-withdrawal"></use>
+												</svg>
+												<span>Вывод средств</span>
+											</a>
+										</li>
+										<li>
+											<a href="account-currency-exchange.html" aria-label="Внутренний обмен">
+												<svg width="24" height="24">
+													<use href="img/sprites.svg#nav-internal-exchange"></use>
+												</svg>
+												<span>Внутренний обмен</span>
+											</a>
+										</li>
+										<li>
+											<a href="account-payment-transactions.html" aria-label="Платежные операции">
+												<svg width="24" height="24">
+													<use href="img/sprites.svg#nav-payment-transactions"></use>
+												</svg>
+												<span>Платежные операции</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="mobile-nav__item">
+									<h2>Аккаунт</h2>
+									<ul>
+										<li>
+											<a href="account-verification.html" aria-label="Верификация">
+												<svg width="24" height="24">
+													<use href="img/sprites.svg#account-verification"></use>
+												</svg>
+												<span>Верификация</span>
+											</a>
+										</li>
+										<li>
+											<a href="account-personal-data.html" aria-label="Настройки">
+												<svg width="24" height="24">
+													<use href="img/sprites.svg#account-settings"></use>
+												</svg>
+												<span>Настройки</span>
+											</a>
+										</li>
+										<li>
+											<a href="account-help.html" aria-label="Помощь и поддержка">
+												<svg width="24" height="24">
+													<use href="img/sprites.svg#account-help"></use>
+												</svg>
+												<span>Помощь и поддержка</span>
+											</a>
+										</li>
+										<li>
+											<a href="login.html" aria-label="Выйти">
+												<svg width="24" height="24">
+													<use href="img/sprites.svg#account-logout"></use>
+												</svg>
+												<span>Выйти</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+						<div class="account-block chart">
+							<div class="account-block__body disable-on-mob">
+								<div class="chart__inner horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+									<div class="chart__container">
+										<canvas width="861" height="395" data-id="chart-1"></canvas>
+									</div>
+								</div>
+							</div>
+							<script>
+								const dataObj = {
+									labels: ['Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август'],
+									data: {
+										gradient: ["rgba(219, 71, 213, 0)", "#DB47D5"],
+										values: [
+											23474.23,
+											24474.23,
+											25474.23,
+											28474.23,
+											27474.23,
+											26474.23,
+											27474.23,
+										],
+										after: "$",
+									},
+								}
+							</script>
+						</div>
+						<ul class="cards-info visible-on-desktop">
 							<li>
-								<a href="account-personal-data.html" class="account-tabs__link is-active">
-									Личные данные
-								</a>
+								<span>Количество</span>
+								<b style="color: #24BCEC;">5</b>
 							</li>
 							<li>
-								<a href="account-change-avatar.html" class="account-tabs__link">
-									Изменить аватар
-								</a>
+								<span>Сумма покупки</span>
+								<b style="color: #1771C4;">$ 300 000.00</b>
 							</li>
 							<li>
-								<a href="account-change-password.html" class="account-tabs__link">
-									Изменить пароль
-								</a>
+								<span>Сумма продажи</span>
+								<b style="color: #1747C4;">$ 350 000.00</b>
 							</li>
 							<li>
-								<a href="account-change-email.html" class="account-tabs__link">
-									Изменить e-mail
-								</a>
+								<span>Доход</span>
+								<b style="color: #3EB52A;">$ 50 000.00</b>
 							</li>
 						</ul>
 					</div>
-					<div class="personal-data__row">
-						<div class="personal-data__block account-block">
-							<div class="account-block__body is-min">
-								<h2 class="account-block__title is-large">Личные параметры</h2>
-								<label class="personal-data__form_item form-item">
-									<span>Ваше имя</span>
-									<input type="text" name="name" placeholder="Имя" value="Oleg" class="input" disabled>
-								</label>
-								<label class="personal-data__form_item form-item">
-									<span>Ваш логин</span>
-									<input type="text" name="login" placeholder="Логин" value="John Dow" class="input">
-								</label>
-								<label class="personal-data__form_item form-item">
-									<span>Ваш e-mail</span>
-									<input type="email" name="email" placeholder="E-mail" value="webzenkov@gmail.com" class="input">
-								</label>
-								<label class="personal-data__form_item form-item">
-									<span>Ваш часовой пояс (GMT)</span>
-									<select name="gmt" class="custom-select">
-										<option value="+0:00">+0:00</option>
-										<option value="+1:00">+1:00</option>
-										<option value="+2:00">+2:00</option>
-										<option value="+3:00">+3:00</option>
-										<option value="+4:00">+4:00</option>
-									</select>
-								</label>
-								<div class="personal-data__form_item">
-									<label class="checkbox">
-										<input type="checkbox" name="notification-on-email" class="checkbox__input">
-										<span class="checkbox__element">
-											<svg width="24" height="24">
-												<use href="img/sprites.svg#check-2"></use>
-											</svg>
-										</span>
-										<span class="checkbox__text">
-											Не получать оповещения на e-mail
-										</span>
+				</div>
+				<div class="account-col">
+					<div class="account-block sell-crypto">
+						<div class="account-block__body">
+							<h2 class="sell-crypto__title account-block__title">
+								Обменять криптовалюту
+							</h2>
+							<form class="sell-crypto__inner">
+								<b class="sell-crypto__info">1 BTC = 26159.44$</b>
+								<div class="sell-crypto__item">
+									<span>Количество</span>
+									<label>
+										<input type="text" name="length" class="input" value="1" placeholder="0" inputmode="numeric">
+										<span>BTC</span>
 									</label>
+									<small>140 000.00$</small>
 								</div>
-							</div>
-						</div>
-						<div class="personal-data__block account-block">
-							<div class="account-block__body is-min">
-								<h2 class="account-block__title is-large">Личные данные</h2>
-								<div class="personal-data__form_row">
-									<label class="personal-data__form_item form-item">
-										<span>Страна</span>
-										<select name="country" class="custom-select">
-											<option value="Украина">Украина</option>
-											<option value="Страна 1">Страна 1</option>
-											<option value="Страна 2">Страна 2</option>
-											<option value="Страна 3">Страна 3</option>
-										</select>
-									</label>
-									<label class="personal-data__form_item form-item">
-										<span>Гражданство</span>
-										<select name="nationality" class="custom-select">
-											<option value="Украинское">Украинское</option>
-											<option value="Гражданство 1">Гражданство 1</option>
-											<option value="Гражданство 2">Гражданство 2</option>
-											<option value="Гражданство 3">Гражданство 3</option>
-										</select>
-									</label>
-									<label class="personal-data__form_item form-item">
-										<span>Город</span>
-										<input type="text" name="city" placeholder="" value="" class="input">
-									</label>
-									<label class="personal-data__form_item form-item">
-										<span>Дата рождения</span>
-										<input type="text" name="birthday" placeholder="" value="" class="input">
-									</label>
-									<label class="personal-data__form_item form-item">
-										<span>Адрес</span>
-										<input type="text" name="address" placeholder="" value="" class="input">
-									</label>
-									<label class="personal-data__form_item form-item">
-										<span>Телеграм</span>
-										<input type="text" name="telegram" placeholder="" value="" class="input">
-									</label>
-									<label class="personal-data__form_item form-item">
-										<span>Почтовый индекс</span>
-										<input type="text" name="post-code" placeholder="" value="" class="input">
-									</label>
-									<label class="personal-data__form_item form-item">
-										<span>Номер телефона</span>
-										<input type="tel" name="tel" placeholder="" value="" class="input">
-									</label>
-								</div>
-								<div class="personal-data__note">
-									<p>Мы никогда и ни при каких обстоятельствах не передаем личные данные третьим лицам</p>
-								</div>
-							</div>
+								<dl class="sell-crypto__list">
+									<dt>120 000.00$</dt>
+									<dd>Сумма покупки</dd>
+									<dt>140 000.00$</dt>
+									<dd>Сумма продажи</dd>
+									<dt class="success-color">20 000.00$</dt>
+									<dd>Доход</dd>
+								</dl>
+								<button class="sell-crypto__submit button" type="submit">
+									Купить
+								</button>
+							</form>
 						</div>
 					</div>
-					<div class="personal-data__block account-block">
-						<div class="account-block__body is-min">
-							<h2 class="account-block__title is-large">Безопасность</h2>
-							<div class="personal-data__security">
-								<div class="personal-data__security_col">
-									<span>Контроль смены IP-адреса</span>
-									<div class="personal-data__security_item">
-										<select name="ip-address-change-control" class="custom-select">
-											<option value="По умолчанию">По умолчанию</option>
-											<option value="По умолчанию 1">По умолчанию 1</option>
-											<option value="По умолчанию 2">По умолчанию 2</option>
-											<option value="По умолчанию 3">По умолчанию 3</option>
-										</select>
-									</div>
-									<span>Автовыход через</span>
-									<div class="personal-data__security_item">
-										<input type="text" value="0" placeholder="0" inputmode="numeric" class="input">
-										<span>мин.</span>
-									</div>
-								</div>
-								<div class="personal-data__security_col">
-									<div class="personal-data__security_item">
-										<label class="checkbox">
-											<input type="checkbox" class="checkbox__input">
-											<span class="checkbox__element">
-												<svg width="24" height="24">
-													<use href="img/sprites.svg#check-2"></use>
-												</svg>
-											</span>
-											<span class="checkbox__text">
-												Привязывать сессию к IP-адресу
-											</span>
-										</label>
-									</div>
-									<div class="personal-data__security_item">
-										<label class="checkbox">
-											<input type="checkbox" class="checkbox__input">
-											<span class="checkbox__element">
-												<svg width="24" height="24">
-													<use href="img/sprites.svg#check-2"></use>
-												</svg>
-											</span>
-											<span class="checkbox__text">
-												Запретить параллельные сессии
-											</span>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="personal-data__footer">
-						<button class="personal-data__submit button" type="button" aria-label="Сохранить">
-							<span>Сохранить</span>
-						</button>
-					</div>
-				</form>
+					<ul class="cards-info visible-on-mob">
+						<li>
+							<span>Количество</span>
+							<b style="color: #24BCEC;">5</b>
+						</li>
+						<li>
+							<span>Сумма покупки</span>
+							<b style="color: #1771C4;">$ 300 000.00</b>
+						</li>
+						<li>
+							<span>Сумма продажи</span>
+							<b style="color: #1747C4;">$ 350 000.00</b>
+						</li>
+						<li>
+							<span>Доход</span>
+							<b style="color: #3EB52A;">$ 50 000.00</b>
+						</li>
+					</ul>
+				</div>
 			</div>
 
 		</main>

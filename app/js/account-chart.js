@@ -176,8 +176,8 @@ export default function accountChart() {
 
 	document.documentElement.addEventListener("theme-change", () => {
 		charts.map(chart => {
-			chart.options.scales.y.grid.color = "#EBEBEB";
-			chart.options.scales.x.grid.color = "#EBEBEB";
+			chart.options.scales.y.grid.color = localStorage.getItem("zatara-capital-theme") == "light" ? "#EBEBEB" : "#102140";
+			chart.options.scales.x.grid.color = localStorage.getItem("zatara-capital-theme") == "light" ? "#EBEBEB" : "#102140";
 			chart.update();
 		})
 	})

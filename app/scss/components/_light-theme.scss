@@ -342,6 +342,23 @@ html.is-active-light-theme {
 	.intuitive-trading + .why-we .why-we__background {
 		background: transparent;
 	}
+
+	.account-tabs.is-min .account-tabs__list {
+		background: #EAEAEA;
+	}
+
+	.account-tabs.is-min .account-tabs__link {
+		color: #888;
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--accent);
+			}
+		}
+		&.is-active {
+			color: var(--theme-text-color);
+		}
+	}
+	
 }
 
 .accent-on-light, .breadcrumbs, .hero, .advantages-block {

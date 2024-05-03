@@ -1,6 +1,6 @@
 @@include("html/_account-header.html")
 
-	<div class="account-row">
+	<div class="account-row account-tabs-wrapper">
 		<div class="account-col">
 			<div class="account-block">
 				<div class="account-block__header">
@@ -15,24 +15,46 @@
 							Рынок закрыт
 						</span>
 					</div>
-					<search class="account-search" role="search">
-						<form>
-							<svg width="24" height="24" class="account-search__icon">
-								<use href="img/sprites.svg#search"></use>
-							</svg>
-							<input type="search" name="search" placeholder="Поиск акций..." class="account-search__input input mode-2">
-						</form>
-					</search>
+					<div class="account-tabs is-min">
+						<ul class="account-tabs__list">
+							<li>
+								<a href="#block-1" class="account-tabs__link is-active">
+									Активные
+								</a>
+							</li>
+							<li>
+								<a href="#block-2" class="account-tabs__link">
+									История
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 				@@include("html/_mobile-nav.html")
 			</div>
-			<div class="account-block account-null-block is-fill">
-				<div class="account-block__body account-null-block__body">
-					<h2 class="account-null-block__title">Нет данных</h2>
-					<div class="account-null-block__text text">
-						<p>
-							Начните <a href="#" class="link-2">торговать с Форекс</a> и здесь появятся Ваши активы
-						</p>
+			<div class="account-tabs-container">
+				<div class="account-tabs-block is-active fade-in" id="block-1">
+					<div class="account-block account-null-block is-fill">
+						<div class="account-block__body account-null-block__body">
+							<h2 class="account-null-block__title">Нет данных</h2>
+							<div class="account-null-block__text text">
+								<p>
+									Начните <a href="#" class="link-2">торговать с Форекс</a> и здесь появятся Ваши активы
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="account-tabs-block" id="block-2">
+					<div class="account-block account-null-block is-fill">
+						<div class="account-block__body account-null-block__body">
+							<h2 class="account-null-block__title">Нет данных</h2>
+							<div class="account-null-block__text text">
+								<p>
+									Начните <a href="#" class="link-2">торговать с Форекс</a> и здесь появятся Ваши активы
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

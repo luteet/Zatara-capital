@@ -31,6 +31,9 @@ html.is-active-light-theme {
 	.account-header__search_input {
 		background: var(--theme-primary-2);
 		border-color: var(--theme-primary-4);
+		&:focus {
+			border-color: var(--theme-primary-8);
+		}
 	}
 
 	.account-header__min_nav a {
@@ -146,6 +149,19 @@ html.is-active-light-theme {
 	.form-file.is-alt .form-file__body {
 		background: var(--theme-primary);
 		border: 0.0625rem solid var(--theme-secondary);
+	}
+
+	.sell-crypto__item > span {
+		opacity: 1;
+		color: var(--theme-secondary-4);
+	}
+
+	.cards-info li {
+		background: var(--theme-primary);
+	}
+
+	.search-popup {
+		background: var(--theme-primary);
 	}
 
 }

@@ -1,0 +1,120 @@
+@@include("html/_account-header.html")
+
+	<div class="account-row">
+		<div class="account-col">
+			<div class="account-block">
+				<div class="account-block__header">
+					<h1 class="account-title">
+						Криптовалюты
+					</h1>
+					<div class="trading-status is-open visible-on-mob">
+						<svg width="16" height="16">
+							<use href="img/sprites.svg#close-2"></use>
+						</svg>
+						<span>
+							Рынок открыт
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="account-block">
+				@@include("html/_mobile-nav.html")
+				<div class="account-block chart">
+					<div class="account-block__body disable-on-mob">
+						<div class="chart__inner horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+							<div class="chart__container">
+								<canvas width="861" height="395" data-id="chart-1"></canvas>
+							</div>
+						</div>
+					</div>
+					<script>
+						const dataObj = {
+							labels: ['Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август'],
+							data: {
+								gradient: ["rgba(219, 71, 213, 0)", "#DB47D5"],
+								values: [
+									23474.23,
+									24474.23,
+									25474.23,
+									28474.23,
+									27474.23,
+									26474.23,
+									27474.23,
+								],
+								after: "$",
+							},
+						}
+					</script>
+				</div>
+				<ul class="cards-info visible-on-desktop">
+					<li>
+						<span>Количество</span>
+						<b style="color: #24BCEC;">5</b>
+					</li>
+					<li>
+						<span>Сумма покупки</span>
+						<b style="color: #1771C4;">$ 300 000.00</b>
+					</li>
+					<li>
+						<span>Сумма продажи</span>
+						<b style="color: #1747C4;">$ 350 000.00</b>
+					</li>
+					<li>
+						<span>Доход</span>
+						<b style="color: #3EB52A;">$ 50 000.00</b>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="account-col">
+			<div class="account-block sell-crypto">
+				<div class="account-block__body">
+					<h2 class="sell-crypto__title account-block__title">
+						Обменять криптовалюту
+					</h2>
+					<form class="sell-crypto__inner">
+						<b class="sell-crypto__info">1 BTC = 26159.44$</b>
+						<div class="sell-crypto__item">
+							<span>Количество</span>
+							<label>
+								<input type="text" name="length" class="input" value="1" placeholder="0" inputmode="numeric">
+								<span>BTC</span>
+							</label>
+							<small>140 000.00$</small>
+						</div>
+						<dl class="sell-crypto__list">
+							<dt>120 000.00$</dt>
+							<dd>Сумма покупки</dd>
+							<dt>140 000.00$</dt>
+							<dd>Сумма продажи</dd>
+							<dt class="success-color">20 000.00$</dt>
+							<dd>Доход</dd>
+						</dl>
+						<button class="sell-crypto__submit button" type="submit">
+							Купить
+						</button>
+					</form>
+				</div>
+			</div>
+			<ul class="cards-info visible-on-mob">
+				<li>
+					<span>Количество</span>
+					<b style="color: #24BCEC;">5</b>
+				</li>
+				<li>
+					<span>Сумма покупки</span>
+					<b style="color: #1771C4;">$ 300 000.00</b>
+				</li>
+				<li>
+					<span>Сумма продажи</span>
+					<b style="color: #1747C4;">$ 350 000.00</b>
+				</li>
+				<li>
+					<span>Доход</span>
+					<b style="color: #3EB52A;">$ 50 000.00</b>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+@@include("html/_account-footer.html")

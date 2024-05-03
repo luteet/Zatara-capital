@@ -1,0 +1,52 @@
+.cards-info {
+
+	display: grid;
+	gap: 0.9375rem;
+	text-align: center;
+	
+	@include _550 {
+		text-align: start;
+
+		gap: 1.25rem;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@include _992 {
+		grid-template-columns: repeat(4,1fr);
+	}
+
+	padding-top: 1.25rem;
+
+	li {
+
+		background: var(--theme-primary-2);
+		transition: background .3s;
+		
+		border-radius: 1.25rem;
+		padding: 1.25rem;
+
+		display: flex;
+		flex-direction: column;
+		gap: 0.625rem;
+
+		span {
+			font-weight: 500;
+			font-size: 0.875rem;
+			line-height: 120%;
+		}
+
+		b {
+			font-weight: 500;
+			font-size: 1.5rem;
+			line-height: 120%;
+
+			@include _550 {
+				font-size: 1.25rem;
+			}
+
+			@media (min-width: 1440px) {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}

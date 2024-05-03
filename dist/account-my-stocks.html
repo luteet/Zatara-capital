@@ -329,7 +329,7 @@
 		</header>
 		<main class="account-main">
 
-			<div class="account-row">
+			<div class="account-row account-tabs-wrapper">
 				<div class="account-col">
 					<div class="account-block stocks">
 						<div class="account-block__header">
@@ -344,14 +344,20 @@
 									Рынок закрыт
 								</span>
 							</div>
-							<search class="account-search" role="search">
-								<form>
-									<svg width="24" height="24" class="account-search__icon">
-										<use href="img/sprites.svg#search"></use>
-									</svg>
-									<input type="search" name="search" placeholder="Поиск акций..." class="account-search__input input mode-2">
-								</form>
-							</search>
+							<div class="account-tabs is-min">
+								<ul class="account-tabs__list">
+									<li>
+										<a href="#block-1" class="account-tabs__link is-active">
+											Активные
+										</a>
+									</li>
+									<li>
+										<a href="#block-2" class="account-tabs__link">
+											История
+										</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 						<nav class="mobile-nav visible-on-mob">
 							<button class="mobile-nav__target" type="button">
@@ -491,195 +497,393 @@
 								</div>
 							</div>
 						</nav>
-						<div class="account-table is-alt horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
-							<div class="account-table__inner">
-								<div class="account-table__container">
-									<table class="account-table__block">
-										<colgroup>
-											<col>
-											<col>
-											<col>
-											<col>
-											<col>
-											<col>
-										</colgroup>
-										<thead>
-											<tr>
-												<th></th>
-												<th>Наименование</th>
-												<th>Кол-во</th>
-												<th>Цена</th>
-												<th>24h %</th>
-												<th></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>
-													<label class="account-table__favorite" type="button">
-														<input type="checkbox">
-														<span>
-															<svg width="24" height="24">
-																<use href="img/sprites.svg#favorite-off"></use>
-															</svg>
-															<svg width="24" height="24">
-																<use href="img/sprites.svg#favorite-on"></use>
-															</svg>
-														</span>
-													</label>
-												</td>
-												<td>
-													<div class="account-table__info">
-														<div class="account-table__info_logo">
-															<picture>
-																<source srcset="img/stocks/stocks-logo-1.avif" type="image/avif">
-																<source srcset="img/stocks/stocks-logo-1.webp" type="image/webp">
-																<img src="img/stocks/stocks-logo-1.png" alt="" width="30" height="30" loading="lazy">
-															</picture>
-														</div>
-														<b class="account-table__info_name">AMBEV S.A.</b>
-														<span class="account-table__info_initials">
-															ABEV
-														</span>
-													</div>
-												</td>
-												<td>20 шт.</td>
-												<td>$2.87</td>
-												<td class="success-color">0.35%</td>
-												<td>
-													<div class="account-table__settings drop-down">
-														<button class="account-table__settings_target drop-down__target" type="button">
-															<svg width="29" height="3">
-																<use href="img/sprites.svg#etc"></use>
-															</svg>
-														</button>
-														<div class="account-table__settings_block drop-down__block on-right-mode">
-															<ul>
-																<li>
-																	<a href="#">
-																		Купить еще
-																	</a>
-																</li>
-																<li>
-																	<a href="#">
-																		Продать
-																	</a>
-																</li>
-															</ul>
-														</div>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<label class="account-table__favorite" type="button">
-														<input type="checkbox">
-														<span>
-															<svg width="24" height="24">
-																<use href="img/sprites.svg#favorite-off"></use>
-															</svg>
-															<svg width="24" height="24">
-																<use href="img/sprites.svg#favorite-on"></use>
-															</svg>
-														</span>
-													</label>
-												</td>
-												<td>
-													<div class="account-table__info">
-														<div class="account-table__info_logo">
-															<picture>
-																<source srcset="img/stocks/stocks-logo-2.avif" type="image/avif">
-																<source srcset="img/stocks/stocks-logo-2.webp" type="image/webp">
-																<img src="img/stocks/stocks-logo-2.png" alt="" width="30" height="30" loading="lazy">
-															</picture>
-														</div>
-														<b class="account-table__info_name">Asbury Automotive Group, Inc.</b>
-														<span class="account-table__info_initials">ABG</span>
-													</div>
-												</td>
-												<td>5 шт.</td>
-												<td>$254.37</td>
-												<td class="none-color">0%</td>
-												<td>
-													<div class="account-table__settings drop-down">
-														<button class="account-table__settings_target drop-down__target" type="button">
-															<svg width="29" height="3">
-																<use href="img/sprites.svg#etc"></use>
-															</svg>
-														</button>
-														<div class="account-table__settings_block drop-down__block on-right-mode">
-															<ul>
-																<li>
-																	<a href="#">
-																		Купить еще
-																	</a>
-																</li>
-																<li>
-																	<a href="#">
-																		Продать
-																	</a>
-																</li>
-															</ul>
-														</div>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<label class="account-table__favorite" type="button">
-														<input type="checkbox">
-														<span>
-															<svg width="24" height="24">
-																<use href="img/sprites.svg#favorite-off"></use>
-															</svg>
-															<svg width="24" height="24">
-																<use href="img/sprites.svg#favorite-on"></use>
-															</svg>
-														</span>
-													</label>
-												</td>
-												<td>
-													<div class="account-table__info">
-														<div class="account-table__info_logo">
-															<picture>
-																<source srcset="img/stocks/stocks-logo-3.avif" type="image/avif">
-																<source srcset="img/stocks/stocks-logo-3.webp" type="image/webp">
-																<img src="img/stocks/stocks-logo-3.png" alt="" width="30" height="30" loading="lazy">
-															</picture>
-														</div>
-														<b class="account-table__info_name">ABM Industries, Inc.</b>
-														<span class="account-table__info_initials">ABM</span>
-													</div>
-												</td>
-												<td>14 шт.</td>
-												<td>$45.54</td>
-												<td class="failure-color">-0.1%</td>
-												<td>
-													<div class="account-table__settings drop-down">
-														<button class="account-table__settings_target drop-down__target" type="button">
-															<svg width="29" height="3">
-																<use href="img/sprites.svg#etc"></use>
-															</svg>
-														</button>
-														<div class="account-table__settings_block drop-down__block on-right-mode">
-															<ul>
-																<li>
-																	<a href="#">
-																		Купить еще
-																	</a>
-																</li>
-																<li>
-																	<a href="#">
-																		Продать
-																	</a>
-																</li>
-															</ul>
-														</div>
-													</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
+						<div class="account-tabs-container">
+							<div class="account-tabs-block is-active fade-in" id="block-1">
+								<div class="account-table is-alt horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+									<div class="account-table__inner">
+										<div class="account-table__container">
+											<table class="account-table__block">
+												<colgroup>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+												</colgroup>
+												<thead>
+													<tr>
+														<th></th>
+														<th>Наименование</th>
+														<th>Кол-во</th>
+														<th>Цена</th>
+														<th>24h %</th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<label class="account-table__favorite" type="button">
+																<input type="checkbox">
+																<span>
+																	<svg width="24" height="24">
+																		<use href="img/sprites.svg#favorite-off"></use>
+																	</svg>
+																	<svg width="24" height="24">
+																		<use href="img/sprites.svg#favorite-on"></use>
+																	</svg>
+																</span>
+															</label>
+														</td>
+														<td>
+															<div class="account-table__info">
+																<div class="account-table__info_logo">
+																	<picture>
+																		<source srcset="img/stocks/stocks-logo-1.avif" type="image/avif">
+																		<source srcset="img/stocks/stocks-logo-1.webp" type="image/webp">
+																		<img src="img/stocks/stocks-logo-1.png" alt="" width="30" height="30" loading="lazy">
+																	</picture>
+																</div>
+																<b class="account-table__info_name">AMBEV S.A.</b>
+																<span class="account-table__info_initials">
+																	ABEV
+																</span>
+															</div>
+														</td>
+														<td>20 шт.</td>
+														<td>$2.87</td>
+														<td class="success-color">0.35%</td>
+														<td>
+															<div class="account-table__settings drop-down">
+																<button class="account-table__settings_target drop-down__target" type="button">
+																	<svg width="29" height="3">
+																		<use href="img/sprites.svg#etc"></use>
+																	</svg>
+																</button>
+																<div class="account-table__settings_block drop-down__block on-right-mode">
+																	<ul>
+																		<li>
+																			<a href="#">
+																				Купить еще
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#">
+																				Продать
+																			</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<label class="account-table__favorite" type="button">
+																<input type="checkbox">
+																<span>
+																	<svg width="24" height="24">
+																		<use href="img/sprites.svg#favorite-off"></use>
+																	</svg>
+																	<svg width="24" height="24">
+																		<use href="img/sprites.svg#favorite-on"></use>
+																	</svg>
+																</span>
+															</label>
+														</td>
+														<td>
+															<div class="account-table__info">
+																<div class="account-table__info_logo">
+																	<picture>
+																		<source srcset="img/stocks/stocks-logo-2.avif" type="image/avif">
+																		<source srcset="img/stocks/stocks-logo-2.webp" type="image/webp">
+																		<img src="img/stocks/stocks-logo-2.png" alt="" width="30" height="30" loading="lazy">
+																	</picture>
+																</div>
+																<b class="account-table__info_name">Asbury Automotive Group, Inc.</b>
+																<span class="account-table__info_initials">ABG</span>
+															</div>
+														</td>
+														<td>5 шт.</td>
+														<td>$254.37</td>
+														<td class="none-color">0%</td>
+														<td>
+															<div class="account-table__settings drop-down">
+																<button class="account-table__settings_target drop-down__target" type="button">
+																	<svg width="29" height="3">
+																		<use href="img/sprites.svg#etc"></use>
+																	</svg>
+																</button>
+																<div class="account-table__settings_block drop-down__block on-right-mode">
+																	<ul>
+																		<li>
+																			<a href="#">
+																				Купить еще
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#">
+																				Продать
+																			</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<label class="account-table__favorite" type="button">
+																<input type="checkbox">
+																<span>
+																	<svg width="24" height="24">
+																		<use href="img/sprites.svg#favorite-off"></use>
+																	</svg>
+																	<svg width="24" height="24">
+																		<use href="img/sprites.svg#favorite-on"></use>
+																	</svg>
+																</span>
+															</label>
+														</td>
+														<td>
+															<div class="account-table__info">
+																<div class="account-table__info_logo">
+																	<picture>
+																		<source srcset="img/stocks/stocks-logo-3.avif" type="image/avif">
+																		<source srcset="img/stocks/stocks-logo-3.webp" type="image/webp">
+																		<img src="img/stocks/stocks-logo-3.png" alt="" width="30" height="30" loading="lazy">
+																	</picture>
+																</div>
+																<b class="account-table__info_name">ABM Industries, Inc.</b>
+																<span class="account-table__info_initials">ABM</span>
+															</div>
+														</td>
+														<td>14 шт.</td>
+														<td>$45.54</td>
+														<td class="failure-color">-0.1%</td>
+														<td>
+															<div class="account-table__settings drop-down">
+																<button class="account-table__settings_target drop-down__target" type="button">
+																	<svg width="29" height="3">
+																		<use href="img/sprites.svg#etc"></use>
+																	</svg>
+																</button>
+																<div class="account-table__settings_block drop-down__block on-right-mode">
+																	<ul>
+																		<li>
+																			<a href="#">
+																				Купить еще
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#">
+																				Продать
+																			</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="account-tabs-block" id="block-2">
+								<div class="account-table is-alt horizontal-scrollbar" data-simplebar data-simplebar-auto-hide="false">
+									<div class="account-table__inner">
+										<div class="account-table__container">
+											<table class="account-table__block">
+												<colgroup>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+													<col>
+												</colgroup>
+												<thead>
+													<tr>
+														<th></th>
+														<th>Наименование</th>
+														<th>Кол-во</th>
+														<th>Цена</th>
+														<th>24h %</th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<label class="account-table__favorite" type="button">
+																<input type="checkbox">
+																<span>
+																	<svg width="24" height="24">
+																		<use href="img/sprites.svg#favorite-off"></use>
+																	</svg>
+																	<svg width="24" height="24">
+																		<use href="img/sprites.svg#favorite-on"></use>
+																	</svg>
+																</span>
+															</label>
+														</td>
+														<td>
+															<div class="account-table__info">
+																<div class="account-table__info_logo">
+																	<picture>
+																		<source srcset="img/stocks/stocks-logo-1.avif" type="image/avif">
+																		<source srcset="img/stocks/stocks-logo-1.webp" type="image/webp">
+																		<img src="img/stocks/stocks-logo-1.png" alt="" width="30" height="30" loading="lazy">
+																	</picture>
+																</div>
+																<b class="account-table__info_name">AMBEV S.A.</b>
+																<span class="account-table__info_initials">
+																	ABEV
+																</span>
+															</div>
+														</td>
+														<td>20 шт.</td>
+														<td>$2.87</td>
+														<td class="success-color">0.35%</td>
+														<td>
+															<div class="account-table__settings drop-down">
+																<button class="account-table__settings_target drop-down__target" type="button">
+																	<svg width="29" height="3">
+																		<use href="img/sprites.svg#etc"></use>
+																	</svg>
+																</button>
+																<div class="account-table__settings_block drop-down__block on-right-mode">
+																	<ul>
+																		<li>
+																			<a href="#">
+																				Купить еще
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#">
+																				Продать
+																			</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<label class="account-table__favorite" type="button">
+																<input type="checkbox">
+																<span>
+																	<svg width="24" height="24">
+																		<use href="img/sprites.svg#favorite-off"></use>
+																	</svg>
+																	<svg width="24" height="24">
+																		<use href="img/sprites.svg#favorite-on"></use>
+																	</svg>
+																</span>
+															</label>
+														</td>
+														<td>
+															<div class="account-table__info">
+																<div class="account-table__info_logo">
+																	<picture>
+																		<source srcset="img/stocks/stocks-logo-2.avif" type="image/avif">
+																		<source srcset="img/stocks/stocks-logo-2.webp" type="image/webp">
+																		<img src="img/stocks/stocks-logo-2.png" alt="" width="30" height="30" loading="lazy">
+																	</picture>
+																</div>
+																<b class="account-table__info_name">Asbury Automotive Group, Inc.</b>
+																<span class="account-table__info_initials">ABG</span>
+															</div>
+														</td>
+														<td>5 шт.</td>
+														<td>$254.37</td>
+														<td class="none-color">0%</td>
+														<td>
+															<div class="account-table__settings drop-down">
+																<button class="account-table__settings_target drop-down__target" type="button">
+																	<svg width="29" height="3">
+																		<use href="img/sprites.svg#etc"></use>
+																	</svg>
+																</button>
+																<div class="account-table__settings_block drop-down__block on-right-mode">
+																	<ul>
+																		<li>
+																			<a href="#">
+																				Купить еще
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#">
+																				Продать
+																			</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<label class="account-table__favorite" type="button">
+																<input type="checkbox">
+																<span>
+																	<svg width="24" height="24">
+																		<use href="img/sprites.svg#favorite-off"></use>
+																	</svg>
+																	<svg width="24" height="24">
+																		<use href="img/sprites.svg#favorite-on"></use>
+																	</svg>
+																</span>
+															</label>
+														</td>
+														<td>
+															<div class="account-table__info">
+																<div class="account-table__info_logo">
+																	<picture>
+																		<source srcset="img/stocks/stocks-logo-3.avif" type="image/avif">
+																		<source srcset="img/stocks/stocks-logo-3.webp" type="image/webp">
+																		<img src="img/stocks/stocks-logo-3.png" alt="" width="30" height="30" loading="lazy">
+																	</picture>
+																</div>
+																<b class="account-table__info_name">ABM Industries, Inc.</b>
+																<span class="account-table__info_initials">ABM</span>
+															</div>
+														</td>
+														<td>14 шт.</td>
+														<td>$45.54</td>
+														<td class="failure-color">-0.1%</td>
+														<td>
+															<div class="account-table__settings drop-down">
+																<button class="account-table__settings_target drop-down__target" type="button">
+																	<svg width="29" height="3">
+																		<use href="img/sprites.svg#etc"></use>
+																	</svg>
+																</button>
+																<div class="account-table__settings_block drop-down__block on-right-mode">
+																	<ul>
+																		<li>
+																			<a href="#">
+																				Купить еще
+																			</a>
+																		</li>
+																		<li>
+																			<a href="#">
+																				Продать
+																			</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -729,6 +933,59 @@
 			</div>
 
 		</main>
+	</div>
+
+	<div class="search-popup">
+		<button class="search-popup__close" type="button">
+			<svg width="24" height="24">
+				<use href="img/sprites.svg#close-3"></use>
+			</svg>
+		</button>
+		<b class="search-popup__title">Поиск акций</b>
+		<div class="search-popup__list">
+			<a href="#" class="search-popup__item search-popup-item" aria-label="AMBEV S.A.">
+				<div class="search-popup-item__about">
+					<div class="search-popup-item__logo">
+						<picture>
+							<source srcset="img/stocks/stocks-logo-1.avif" type="image/avif">
+							<source srcset="img/stocks/stocks-logo-1.webp" type="image/webp">
+							<img src="img/stocks/stocks-logo-1.png" alt="" width="30" height="30" loading="lazy">
+						</picture>
+					</div>
+					<span class="search-popup-item__name">AMBEV S.A.</span>
+					<span class="search-popup-item__initials">ABEV</span>
+				</div>
+				<span class="search-popup-item__price">$2.87</span>
+			</a>
+			<a href="#" class="search-popup__item search-popup-item" aria-label="Asbury Automotive Group, Inc.">
+				<div class="search-popup-item__about">
+					<div class="search-popup-item__logo">
+						<picture>
+							<source srcset="img/stocks/stocks-logo-2.avif" type="image/avif">
+							<source srcset="img/stocks/stocks-logo-2.webp" type="image/webp">
+							<img src="img/stocks/stocks-logo-2.png" alt="" width="30" height="30" loading="lazy">
+						</picture>
+					</div>
+					<span class="search-popup-item__name">Asbury Automotive Group, Inc.</span>
+					<span class="search-popup-item__initials">ABG</span>
+				</div>
+				<span class="search-popup-item__price">$254.37</span>
+			</a>
+			<a href="#" class="search-popup__item search-popup-item" aria-label="ABM Industries, Inc.">
+				<div class="search-popup-item__about">
+					<div class="search-popup-item__logo">
+						<picture>
+							<source srcset="img/stocks/stocks-logo-3.avif" type="image/avif">
+							<source srcset="img/stocks/stocks-logo-3.webp" type="image/webp">
+							<img src="img/stocks/stocks-logo-3.png" alt="" width="30" height="30" loading="lazy">
+						</picture>
+					</div>
+					<span class="search-popup-item__name">ABM Industries, Inc.</span>
+					<span class="search-popup-item__initials">ABM</span>
+				</div>
+				<span class="search-popup-item__price">$45.54</span>
+			</a>
+		</div>
 	</div>
 
 	<script src="js/account-libs.min.js"></script>
