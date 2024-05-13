@@ -62,14 +62,11 @@
 		max-width: calc(100% + 1.25rem);
 
 		padding-bottom: 1.875rem;
+
 		@include _992 {
 			padding-bottom: 0;
 			margin: 3.75rem 0 0;
 			max-width: 100%;
-		}
-
-		.simplebar-content-wrapper {
-			//scroll-snap-type: x;
 		}
 	}
 
@@ -78,6 +75,7 @@
 	&__inner_body {
 		min-width: 51.25rem;
 		padding: 0 0.625rem;
+		
 		@include _992 {
 			padding: 0;
 		}
@@ -88,10 +86,13 @@
 	&__list {
 		display: grid;
 		grid-template-columns: repeat(5,1fr);
-		gap: 0.0625rem;
-		padding: 0.0625rem;
 
-		background: var(--theme-primary-8);
+		--items-per-row: 5;
+
+		border: 0.0625rem solid var(--theme-primary-8);
+		background: var(--theme-primary-4);
+		//background: white;
+		//margin-bottom: -0.0625rem;
 
 		width: 50rem;
 		@include _992 {
@@ -103,7 +104,19 @@
 	// .banks__item
 
 	&__item {
-		background: var(--theme-primary-4);
-		//scroll-snap-align: start;
+
+		border-bottom: 0.0625rem solid var(--theme-primary-8);
+
+		&:nth-child(5n + 5):nth-last-child(1), 
+		&:nth-child(5n + 4):nth-last-child(-n + 2), 
+		&:nth-child(5n + 3):nth-last-child(-n + 3), 
+		&:nth-child(5n + 2):nth-last-child(-n + 4), 
+		&:nth-child(5n + 1):nth-last-child(-n + 5) {
+			border-bottom: 0;
+		}
+
+		&:not(:nth-child(5n + 5)) {
+			border-right: 0.0625rem solid var(--theme-primary-8);
+		}
 	}
 }
